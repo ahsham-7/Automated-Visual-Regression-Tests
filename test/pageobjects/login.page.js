@@ -8,13 +8,13 @@ class LoginPage extends Page {
      * define selectors using getter methods
      */
    openStage(){
-    super.openStage('https://sl:getin1@stage2.bayut.com/')
+    super.openStage('https://sl:getin1@stage.bayut.sector.run')
    }
    openProduction(){
     super.openProduction('https://www.bayut.com/')
    }
    openE2E () {
-    super.openE2E('https://sl:getin1@bayut-e2e-development.herokuapp.com')
+    super.openE2E('https://sl:getin1@bayut-e2e-development.dubizzle.dev')
 }
     get Loginpopup (){
         return $('//button[@aria-label="Login"]')
