@@ -1,5 +1,5 @@
-
 import Page from './page.js';
+
 class truvalue extends Page{
     openProduction(){
         super.openProduction('https://www.bayut.com/tru-value')

@@ -33,6 +33,8 @@ class HomePage extends Page{
     get ChatGptTab(){
         return $('//button[@aria-label="BayutGPT button"]')
     }
+
+    
     async SaveShot(name){
         await browser.saveScreen(`${name}`, {})
    }

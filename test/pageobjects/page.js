@@ -45,7 +45,20 @@ export default class Page {
     async Scroll_WaitForExist(element){
      await element.waitForExist({timeout: 3000})
      await element.scrollIntoView()
-    } 
+    }
+    async waitForPageToLoad() {
+     browser.waitUntil(
+         () => {
+             // You can customize this condition based on your application
+             return browser.execute(() => document.readyState === 'complete');
+         },
+         {
+             timeout: 7000,
+             timeoutMsg: 'Page did not load within the specified time',
+             interval: 500, // Polling interval in milliseconds
+         }
+     );   
+ } 
 }
     
        

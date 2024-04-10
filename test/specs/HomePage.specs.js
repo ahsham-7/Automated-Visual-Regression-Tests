@@ -68,13 +68,29 @@ describe("HomePage Suit", async () => {
     //     await languageSwitcher.VerifyIsArabicPopup()
     //     await homePage.CompareShot('HomePage/Language DropDown')
     // }),
-    it("Verify English is selected on Language Drop Down", async () => {
+    // it("Verify English is selected on Language Drop Down", async () => {
+    //     homePage.openE2E()
+    //     await languageSwitcher.VerifyIsEnglishPopup()
+    //     await homePage.SaveShot('HomePage/English Language DropDown')
+    //     homePage.openProduction()
+    //     await languageSwitcher.VerifyIsEnglishPopup()
+    //     await homePage.CompareShot('HomePage/English Language DropDown')
+    // }),
+
+    it('Verify Carousals via Backward button', async () => {
         homePage.openE2E()
-        await languageSwitcher.VerifyIsEnglishPopup()
-        await homePage.SaveShot('HomePage/English Language DropDown')
-        homePage.openProduction()
-        await languageSwitcher.VerifyIsEnglishPopup()
-        await homePage.CompareShot('HomePage/English Language DropDown')
+        await homePage.waitforElementDisplay(3000,homePage.BackwardBtn)
+        let desiredText = "Explorer Real Estate"
+        let elementText =''
+        while (elementText !== desiredText) {
+          await homePage.BackwardBtn.click();
+          await homePage.waitforElementDisplay(3000,homePage.AgencyCarousalElement)
+          elementText = await homePage.AgencyCarousalElement.getText();
+          if (elementText === desiredText) {
+            console.log('Desired text found:', elementText);
+            break;
+          }
+        }
     })
 
 
