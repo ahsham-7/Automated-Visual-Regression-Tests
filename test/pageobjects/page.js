@@ -39,8 +39,9 @@ export default class Page {
      async Scroll(){
         await browser.scroll(0, 3500)
     }
-    async waitExistence(element,time){
-        await browser.waitForExist(`${element}`, time);
+    async waitExistence(element) {
+        const timeout = 5000; // Default timeout value
+        await browser.waitForExist(`${element}`, timeout);
     }
     async Scroll_WaitForExist(element){
      await element.waitForExist({timeout: 3000})
@@ -59,6 +60,11 @@ export default class Page {
          }
      );   
  } 
+
+ async waitForElementDisplayed(element) {
+    const timeout = 5000; // Default timeout value
+    return element.waitForDisplayed({ timeout });
+}
 }
     
        
