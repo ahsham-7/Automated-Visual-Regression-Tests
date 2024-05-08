@@ -54,6 +54,11 @@ class DetailPage extends Page {
         await this.MapButton.click()
         await this.waitForElementDisplayed(this.MapCanvas)
     }
+    async AllowBtnVisible(){
+        await this.DontAllowButton.waitForDisplayed();
+        return await this.DontAllowButton.isDisplayed();
+    }
+    
 
 
     

@@ -33,14 +33,25 @@ describe("Detail Page Suite", async ()=>{
     it('Verify Half Map View ', async ()=>{
         DetailPage.openStage()
         await DetailPage.OpenMapHalfGalleryView()
-       // await DetailPage.AllowButton.click();
         await DetailPage.SaveShot('Detail Page/Half Map View')
         DetailPage.openProduction()
         await DetailPage.waitForPageToLoad()
         await DetailPage.OpenMapHalfGalleryView()
-        await DetailPage.DontAllowButton.click()
+        console.log("Found it")
+        const isAllowBtnVisible = await DetailPage.AllowBtnVisible();
+        if (isAllowBtnVisible) {
+        console.log("Found it 1");
+         await DetailPage.DontAllowButton.click();
+        console.log("Found it 2");
+        }
+
+        DetailPage.openProduction()
+        await DetailPage.waitForPageToLoad()
+        await DetailPage.OpenMapHalfGalleryView()
+      
         await DetailPage.CompareShot('Detail Page/Half Map View')
     })
+
     
 
     
