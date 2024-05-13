@@ -61,15 +61,38 @@ describe("Detail Page Suite", async ()=>{
     //     await DetailPage.CompareShot('Detail Page/Location & Nearby Section')
     // }),
 
-    it('Verify Appearence of Location section in Map View', async ()=>{
+    it('Verify Appearence of Schools section in Map View', async ()=>{
         DetailPage.openStage()
-        await DetailPage.OpenLocationMapview()
-        await DetailPage.SaveShot('Detail Page/Locations in Map View')
+        await DetailPage.OpenSchoolsMapview()
+        await DetailPage.SaveShot('Detail Page/Schools in Map View')
         DetailPage.openProduction()
         await DetailPage.waitForPageToLoad()
-        await DetailPage.OpenLocationMapview()
-        await DetailPage.CompareShot('Detail Page/Locations in Map View')
+        await DetailPage.OpenSchoolsMapview()
+        await DetailPage.CompareShot('Detail Page/Schools in Map View')
+    }),
+
+    it('Verify Appearence of Restaurants section in Map View', async ()=>{
+        DetailPage.openStage()
+        await DetailPage.OpenRestaurantsMapview()
+        await DetailPage.SaveShot('Detail Page/Restaurants in Map View')
+        DetailPage.openProduction()
+        await DetailPage.waitForPageToLoad()
+        await DetailPage.OpenRestaurantsMapview()
+        await DetailPage.CompareShot('Detail Page/Restaurants in Map View')
+    }),
+
+    it('Verify Appearence of Hospital section in Map View', async ()=>{
+        DetailPage.openStage()
+        await DetailPage.OpenHospitalsMapview()
+        await DetailPage.SaveShot('Detail Page/Hospitals in Map View')
+        DetailPage.openProduction()
+        await DetailPage.waitForPageToLoad()
+        await DetailPage.OpenHospitalsMapview()
+        await DetailPage.CompareShot('Detail Page/Hospitals in Map View')
     })
+    
+
+
 
 
 

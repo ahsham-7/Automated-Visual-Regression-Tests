@@ -83,12 +83,15 @@ class DetailPage extends Page {
     }
     async OpenSchoolsMapview(){
         await this.SchoolBox.click()
+        await this.waitForElementDisplayed(this.MapCanvas)
     }
     async OpenRestaurantsMapview(){
         await this.RestrauntsBox.click()
+        await this.waitForElementDisplayed(this.MapCanvas)
     }
     async OpenHospitalsMapview(){
         await this.HospitalBox.click()
+        await this.waitForElementDisplayed(this.MapCanvas)
     }
 
 
