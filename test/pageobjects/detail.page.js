@@ -32,6 +32,22 @@ class DetailPage extends Page {
     get DontAllowButton(){
         return $('//button[@id="moe-dontallow_button"]')
     }
+    get Location_NearbyLabel(){
+        return $('//h2[text()="Location & Nearby"]')
+    }
+    get LocationBox(){
+        return $('//div[@class="_4866b17e" and text()="Location"]')
+    }
+    get SchoolBox(){
+        return $('//div[@class="_4866b17e" and text()="Schools"]')
+    }
+    get RestrauntsBox(){
+        return $('//div[@class="_4866b17e" and text()="Restaurants"]')
+    }
+    get HospitalBox(){
+        return $('//div[@class="_4866b17e" and text()="Hospitals"]')
+    }
+
     async isAllowButtonDisplayed() {
         return await this.waitForElementDisplayed(this.AllowButton, { timeout: 5000, reverse: true });
     }
@@ -58,7 +74,22 @@ class DetailPage extends Page {
         await this.DontAllowButton.waitForDisplayed();
         return await this.DontAllowButton.isDisplayed();
     }
-    
+    async GoToLocation_NearbySection(){
+        await this.Scroll_WaitForExist(this.Location_NearbyLabel)
+    }
+    async OpenLocationMapview(){
+        await this.LocationBox.click()
+        await this.waitForElementDisplayed(this.MapCanvas)
+    }
+    async OpenSchoolsMapview(){
+        await this.SchoolBox.click()
+    }
+    async OpenRestaurantsMapview(){
+        await this.RestrauntsBox.click()
+    }
+    async OpenHospitalsMapview(){
+        await this.HospitalBox.click()
+    }
 
 
     

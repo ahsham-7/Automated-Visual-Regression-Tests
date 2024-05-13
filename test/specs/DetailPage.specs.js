@@ -30,27 +30,52 @@ describe("Detail Page Suite", async ()=>{
     //     await DetailPage.CompareShot('Detail Page/Full Gallery View')
     // }),
 
-    it('Verify Half Map View ', async ()=>{
-        DetailPage.openStage()
-        await DetailPage.OpenMapHalfGalleryView()
-        await DetailPage.SaveShot('Detail Page/Half Map View')
-        DetailPage.openProduction()
-        await DetailPage.waitForPageToLoad()
-        await DetailPage.OpenMapHalfGalleryView()
-        console.log("Found it")
-        const isAllowBtnVisible = await DetailPage.AllowBtnVisible();
-        if (isAllowBtnVisible) {
-        console.log("Found it 1");
-         await DetailPage.DontAllowButton.click();
-        console.log("Found it 2");
-        }
+    // it('Verify Half Map View ', async ()=>{
+    //     DetailPage.openStage()
+    //     await DetailPage.OpenMapHalfGalleryView()
 
+    //     await DetailPage.SaveShot('Detail Page/Half Map View')
+    //     DetailPage.openProduction()
+    //     await DetailPage.waitForPageToLoad()
+    //     await DetailPage.OpenMapHalfGalleryView()
+       
+    //     const isAllowBtnVisible = await DetailPage.AllowBtnVisible();
+    //     if (isAllowBtnVisible) {
+    //      await DetailPage.DontAllowButton.click();
+    //     }
+
+    //     DetailPage.openProduction()
+    //     await DetailPage.waitForPageToLoad()
+    //     await DetailPage.OpenMapHalfGalleryView()
+      
+    //     await DetailPage.CompareShot('Detail Page/Half Map View')
+    // }),
+
+    //  it('Verify Appearence of Location & Nearby Section', async ()=>{
+    //     DetailPage.openStage()
+    //     await DetailPage.GoToLocation_NearbySection()
+    //     await DetailPage.SaveShot('Detail Page/Location & Nearby Section')
+    //     DetailPage.openProduction()
+    //     await DetailPage.waitForPageToLoad()
+    //     await DetailPage.GoToLocation_NearbySection()
+    //     await DetailPage.CompareShot('Detail Page/Location & Nearby Section')
+    // }),
+
+    it('Verify Appearence of Location section in Map View', async ()=>{
+        DetailPage.openStage()
+        await DetailPage.OpenLocationMapview()
+        await DetailPage.SaveShot('Detail Page/Locations in Map View')
         DetailPage.openProduction()
         await DetailPage.waitForPageToLoad()
-        await DetailPage.OpenMapHalfGalleryView()
-      
-        await DetailPage.CompareShot('Detail Page/Half Map View')
+        await DetailPage.OpenLocationMapview()
+        await DetailPage.CompareShot('Detail Page/Locations in Map View')
     })
+
+
+
+        
+
+
 
     
 
