@@ -44,7 +44,7 @@ export default class Page {
         await browser.waitForExist(`${element}`, timeout);
     }
     async Scroll_WaitForExist(element){
-     await element.waitForExist({timeout: 3000})
+     await element.waitForExist({timeout: 5000})
      await element.scrollIntoView()
     }
     async waitForPageToLoad() {

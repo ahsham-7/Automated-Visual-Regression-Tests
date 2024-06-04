@@ -47,6 +47,24 @@ class DetailPage extends Page {
     get HospitalBox(){
         return $('//div[@class="_4866b17e" and text()="Hospitals"]')
     }
+    get AmenitiesLabel(){
+        return $('//h2[text()="Features / Amenities"]')
+    }
+    get MoreAmenetiesBtn(){
+        return $('//div[@aria-label="More amenities"]')
+    }
+    get PropertyInfoLabel(){
+        return $('//h2[text()="Property Information"]')
+    }
+    get PropertyOverview(){
+        return $('//div[@aria-label="Property overview"]')
+    }
+    get ReadMoreBtn(){
+        return $('//div[text()="Read More"]')
+    }
+    get RegulatoryInfoSection(){
+        return $('//div[@class="f72ded01"]')
+    }
 
     async isAllowButtonDisplayed() {
         return await this.waitForElementDisplayed(this.AllowButton, { timeout: 5000, reverse: true });
@@ -93,7 +111,27 @@ class DetailPage extends Page {
         await this.HospitalBox.click()
         await this.waitForElementDisplayed(this.MapCanvas)
     }
+    async ViewFullAmenities(){
+        await this.MoreAmenetiesBtn.click()
+    }
+    async ViewAmenities(){
+        await this.Scroll_WaitForExist(this.AmenitiesLabel)
+    }
+    async ViewPropertyInfoSection(){
+        await browser.executeScript('arguments[0].scrollIntoView(true);', this.PropertyInfoLabel);
+    }
+    async ViewReadMorePropertyDescription(){
+        await this.waitForElementDisplayed(this.ReadMoreBtn)
+        await this.ReadMoreBtn.scrollIntoView();
+        await this.ReadMoreBtn.click()
+    }
+    async ViewReadLessPropertyDescription(){
+        
+    }
 
+    async ViewRegulatoryInfo(){
+        await this.Scroll_WaitForExist(this.RegulatoryInfoSection)
+    }
 
     
 
