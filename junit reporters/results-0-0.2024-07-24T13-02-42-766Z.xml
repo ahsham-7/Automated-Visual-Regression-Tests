@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="1" errors="0" skipped="0">
+  <testsuite name="Detail Page Suite" timestamp="2024-07-24T18:02:43" time="14.133" tests="1" failures="1" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Detail Page Suite"/>
+      <property name="capabilities" value="chrome.126_0_6478_128.windows"/>
+      <property name="file" value="file:///C:/Users/ahsham.khan/Desktop/WebDriver/BayutVisuals/test/specs/DetailPage.specs.js"/>
+    </properties>
+    <testcase classname="chrome.126_0_6478_128.windows.Detail_Page_Suite" name="Verify Appearence of Hospital section in Map View" time="14.126">
+      <failure message="Unexpected result structure from checkScreen"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/826089f8ef34d815c23c2fc40cc30d48/window/maximize - {}
+COMMAND: DELETE /session/826089f8ef34d815c23c2fc40cc30d48/cookie - {}
+COMMAND: POST /session/826089f8ef34d815c23c2fc40cc30d48/element - {"using":"xpath","value":"//div[@class=\"ad5c301a\"]//div[@class=\"a68e82ed\" and text()=\"Hospitals\"]"}
+COMMAND: POST /session/826089f8ef34d815c23c2fc40cc30d48/url - {"url":"https://sl:getin1@stage.bayut.sector.run/property/details-6331676.html"}
+RESULT: {}
+RESULT: {}
+RESULT: {"using":"xpath","value":"//div[@class=\"ad5c301a\"]//div[@class=\"a68e82ed\" and text()=\"Hospitals\"]"}
+COMMAND: POST /session/826089f8ef34d815c23c2fc40cc30d48/elements - {"using":"xpath","value":"//div[@class=\"ad5c301a\"]//div[@class=\"a68e82ed\" and text()=\"Hospitals\"]"}
+RESULT: {"url":"https://sl:getin1@stage.bayut.sector.run/property/details-6331676.html"}
+RESULT: {"using":"xpath","value":"//div[@class=\"ad5c301a\"]//div[@class=\"a68e82ed\" and text()=\"Hospitals\"]"}
+COMMAND: POST /session/826089f8ef34d815c23c2fc40cc30d48/element - {"using":"xpath","value":"//div[@class=\"ad5c301a\"]//div[@class=\"a68e82ed\" and text()=\"Hospitals\"]"}
+RESULT: {"using":"xpath","value":"//div[@class=\"ad5c301a\"]//div[@class=\"a68e82ed\" and text()=\"Hospitals\"]"}
+COMMAND: POST /session/826089f8ef34d815c23c2fc40cc30d48/element/f.C6809255419D007751FC736147FB2317.d.7DEF700F6A3315D78B76E1F0A31E94C2.e.64/click - {}
+RESULT: {}
+COMMAND: POST /session/826089f8ef34d815c23c2fc40cc30d48/element - {"using":"xpath","value":"//canvas[@aria-label=\"Map\"]"}
+RESULT: {"using":"xpath","value":"//canvas[@aria-label=\"Map\"]"}
+COMMAND: POST /session/826089f8ef34d815c23c2fc40cc30d48/element - {"using":"xpath","value":"//canvas[@aria-label=\"Map\"]"}
+RESULT: {"using":"xpath","value":"//canvas[@aria-label=\"Map\"]"}
+COMMAND: POST /session/826089f8ef34d815c23c2fc40cc30d48/element - {"using":"xpath","value":"//canvas[@aria-label=\"Map\"]"}
+RESULT: {"using":"xpath","value":"//canvas[@aria-label=\"Map\"]"}
+COMMAND: POST /session/826089f8ef34d815c23c2fc40cc30d48/element - {"using":"xpath","value":"//canvas[@aria-label=\"Map\"]"}
+RESULT: {"using":"xpath","value":"//canvas[@aria-label=\"Map\"]"}
+COMMAND: POST /session/826089f8ef34d815c23c2fc40cc30d48/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.C6809255419D007751FC736147FB2317.d.7DEF700F6A3315D78B76E1F0A31E94C2.e.86","ELEMENT":"f.C6809255419D007751FC736147FB2317.d.7DEF700F6A3315D78B76E1F0A31E94C2.e.86"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.C6809255419D007751FC736147FB2317.d.7DEF700F6A3315D78B76E1F0A31E94C2.e.86","ELEMENT":"f.C6809255419D007751FC736147FB2317.d.7DEF700F6A3315D78B76E1F0A31E94C2.e.86"}]}
+COMMAND: POST /session/826089f8ef34d815c23c2fc40cc30d48/execute/sync - {"script":"return (function hideScrollBars(hide) {\n    try {\n        if (hide) {\n            document.body.style.overflow = 'hidden';\n        }\n        else {\n            document.body.style.overflow = '';\n        }\n    }\n    catch (e) {\n    }\n}).apply(null, arguments)","args":[true]}
+RESULT: {"script":"return (function hideScrollBars(hide) {\n    try {\n        if (hide) {\n            document.body.style.overflow = 'hidden';\n        }\n        else {\n            document.body.style.overflow = '';\n        }\n    }\n    catch (e) {\n    }\n}).apply(null, arguments)","args":[true]}
+COMMAND: POST /session/826089f8ef34d815c23c2fc40cc30d48/execute/sync - {"script":"return (function getScreenDimensions() {\n    var body = document.body;\n    var html = document.documentElement;\n    var bodyDimensions = {\n        scrollHeight: body == null ? 0 : body.scrollHeight,\n  ... (1101 more bytes)","args":[]}
+RESULT: {"script":"return (function getScreenDimensions() {\n    var body = document.body;\n    var html = document.documentElement;\n    var bodyDimensions = {\n        scrollHeight: body == null ? 0 : body.scrollHeight,\n  ... (1101 more bytes)","args":[]}
+COMMAND: GET /session/826089f8ef34d815c23c2fc40cc30d48/screenshot - {}
+RESULT: {}
+COMMAND: POST /session/826089f8ef34d815c23c2fc40cc30d48/execute/sync - {"script":"return (function hideScrollBars(hide) {\n    try {\n        if (hide) {\n            document.body.style.overflow = 'hidden';\n        }\n        else {\n            document.body.style.overflow = '';\n        }\n    }\n    catch (e) {\n    }\n}).apply(null, arguments)","args":[false]}
+RESULT: {"script":"return (function hideScrollBars(hide) {\n    try {\n        if (hide) {\n            document.body.style.overflow = 'hidden';\n        }\n        else {\n            document.body.style.overflow = '';\n        }\n    }\n    catch (e) {\n    }\n}).apply(null, arguments)","args":[false]}
+RESULT: undefined
+COMMAND: POST /session/826089f8ef34d815c23c2fc40cc30d48/window/maximize - {}
+COMMAND: DELETE /session/826089f8ef34d815c23c2fc40cc30d48/cookie - {}
+COMMAND: POST /session/826089f8ef34d815c23c2fc40cc30d48/execute/sync - {"script":"return (() => document.readyState === 'complete').apply(null, arguments)","args":[]}
+COMMAND: POST /session/826089f8ef34d815c23c2fc40cc30d48/element - {"using":"xpath","value":"//div[@class=\"ad5c301a\"]//div[@class=\"a68e82ed\" and text()=\"Hospitals\"]"}
+COMMAND: POST /session/826089f8ef34d815c23c2fc40cc30d48/url - {"url":"https://www.bayut.com/property/details-6331676.html"}
+RESULT: {}
+RESULT: {}
+RESULT: {"script":"return (() => document.readyState === 'complete').apply(null, arguments)","args":[]}
+RESULT: {"using":"xpath","value":"//div[@class=\"ad5c301a\"]//div[@class=\"a68e82ed\" and text()=\"Hospitals\"]"}
+COMMAND: POST /session/826089f8ef34d815c23c2fc40cc30d48/element/f.C6809255419D007751FC736147FB2317.d.7DEF700F6A3315D78B76E1F0A31E94C2.e.64/click - {}
+RESULT: {"url":"https://www.bayut.com/property/details-6331676.html"}
+COMMAND: POST /session/826089f8ef34d815c23c2fc40cc30d48/element - {"using":"xpath","value":"//div[@class=\"ad5c301a\"]//div[@class=\"a68e82ed\" and text()=\"Hospitals\"]"}
+RESULT: {"using":"xpath","value":"//div[@class=\"ad5c301a\"]//div[@class=\"a68e82ed\" and text()=\"Hospitals\"]"}
+COMMAND: POST /session/826089f8ef34d815c23c2fc40cc30d48/element/f.C6809255419D007751FC736147FB2317.d.7DEF700F6A3315D78B76E1F0A31E94C2.e.64/click - {}
+COMMAND: POST /session/826089f8ef34d815c23c2fc40cc30d48/element - {"using":"xpath","value":"//div[@class=\"ad5c301a\"]//div[@class=\"a68e82ed\" and text()=\"Hospitals\"]"}
+RESULT: {"using":"xpath","value":"//div[@class=\"ad5c301a\"]//div[@class=\"a68e82ed\" and text()=\"Hospitals\"]"}
+COMMAND: POST /session/826089f8ef34d815c23c2fc40cc30d48/element/f.C6809255419D007751FC736147FB2317.d.0E825FEE48CD0723BFFA517C4F330128.e.65/click - {}
+RESULT: {}
+COMMAND: POST /session/826089f8ef34d815c23c2fc40cc30d48/element - {"using":"xpath","value":"//canvas[@aria-label=\"Map\"]"}
+RESULT: {"using":"xpath","value":"//canvas[@aria-label=\"Map\"]"}
+COMMAND: POST /session/826089f8ef34d815c23c2fc40cc30d48/element - {"using":"xpath","value":"//canvas[@aria-label=\"Map\"]"}
+RESULT: {"using":"xpath","value":"//canvas[@aria-label=\"Map\"]"}
+COMMAND: POST /session/826089f8ef34d815c23c2fc40cc30d48/element - {"using":"xpath","value":"//canvas[@aria-label=\"Map\"]"}
+RESULT: {"using":"xpath","value":"//canvas[@aria-label=\"Map\"]"}
+COMMAND: POST /session/826089f8ef34d815c23c2fc40cc30d48/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.C6809255419D007751FC736147FB2317.d.0E825FEE48CD0723BFFA517C4F330128.e.86","ELEMENT":"f.C6809255419D007751FC736147FB2317.d.0E825FEE48CD0723BFFA517C4F330128.e.86"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.C6809255419D007751FC736147FB2317.d.0E825FEE48CD0723BFFA517C4F330128.e.86","ELEMENT":"f.C6809255419D007751FC736147FB2317.d.0E825FEE48CD0723BFFA517C4F330128.e.86"}]}
+COMMAND: POST /session/826089f8ef34d815c23c2fc40cc30d48/execute/sync - {"script":"return (function hideScrollBars(hide) {\n    try {\n        if (hide) {\n            document.body.style.overflow = 'hidden';\n        }\n        else {\n            document.body.style.overflow = '';\n        }\n    }\n    catch (e) {\n    }\n}).apply(null, arguments)","args":[true]}
+RESULT: {"script":"return (function hideScrollBars(hide) {\n    try {\n        if (hide) {\n            document.body.style.overflow = 'hidden';\n        }\n        else {\n            document.body.style.overflow = '';\n        }\n    }\n    catch (e) {\n    }\n}).apply(null, arguments)","args":[true]}
+COMMAND: POST /session/826089f8ef34d815c23c2fc40cc30d48/execute/sync - {"script":"return (function getScreenDimensions() {\n    var body = document.body;\n    var html = document.documentElement;\n    var bodyDimensions = {\n        scrollHeight: body == null ? 0 : body.scrollHeight,\n  ... (1101 more bytes)","args":[]}
+RESULT: {"script":"return (function getScreenDimensions() {\n    var body = document.body;\n    var html = document.documentElement;\n    var bodyDimensions = {\n        scrollHeight: body == null ? 0 : body.scrollHeight,\n  ... (1101 more bytes)","args":[]}
+COMMAND: GET /session/826089f8ef34d815c23c2fc40cc30d48/screenshot - {}
+RESULT: {}
+COMMAND: POST /session/826089f8ef34d815c23c2fc40cc30d48/execute/sync - {"script":"return (function hideScrollBars(hide) {\n    try {\n        if (hide) {\n            document.body.style.overflow = 'hidden';\n        }\n        else {\n            document.body.style.overflow = '';\n        }\n    }\n    catch (e) {\n    }\n}).apply(null, arguments)","args":[false]}
+RESULT: {"script":"return (function hideScrollBars(hide) {\n    try {\n        if (hide) {\n            document.body.style.overflow = 'hidden';\n        }\n        else {\n            document.body.style.overflow = '';\n        }\n    }\n    catch (e) {\n    }\n}).apply(null, arguments)","args":[false]}
+RESULT: undefined
+COMMAND: DELETE /session/826089f8ef34d815c23c2fc40cc30d48 - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: Unexpected result structure from checkScreen
+    at DetailPage.CompareShot (file:///C:/Users/ahsham.khan/Desktop/WebDriver/BayutVisuals/test/pageobjects/page.js:60:23)
+    at async Context.<anonymous> (file:///C:/Users/ahsham.khan/Desktop/WebDriver/BayutVisuals/test/specs/DetailPage.specs.js:212:31)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

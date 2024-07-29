@@ -39,13 +39,13 @@ class DetailPage extends Page {
         return $('//div[@class="_4866b17e" and text()="Location"]')
     }
     get SchoolBox(){
-        return $('//div[@class="_4866b17e" and text()="Schools"]')
+        return $('//div[@class="a68e82ed" and text()="Schools"]')
     }
     get RestrauntsBox(){
         return $('//div[@class="_4866b17e" and text()="Restaurants"]')
     }
     get HospitalBox(){
-        return $('//div[@class="_4866b17e" and text()="Hospitals"]')
+        return $('//div[@class="ad5c301a"]//div[@class="a68e82ed" and text()="Hospitals"]')
     }
     get AmenitiesLabel(){
         return $('//h2[text()="Features / Amenities"]')
@@ -63,7 +63,10 @@ class DetailPage extends Page {
         return $('//div[text()="Read More"]')
     }
     get RegulatoryInfoSection(){
-        return $('//div[@class="f72ded01"]')
+        return $('//div[@class="_948d9e0a _1cc8fb85 _95d4067f"]/h2[text()="Regulatory Information"]')
+    }
+    get Agent_AgencyCard(){
+        return $('//div[@aria-label="Agency info" and @class="_948d9e0a e6c84807 _95d4067f"]')
     }
 
     async isAllowButtonDisplayed() {
@@ -131,6 +134,9 @@ class DetailPage extends Page {
 
     async ViewRegulatoryInfo(){
         await this.Scroll_WaitForExist(this.RegulatoryInfoSection)
+    }
+    async View_Agent_AgencyCard(){
+        await this.Scroll_WaitForExist(this.Agent_AgencyCard)
     }
 
     

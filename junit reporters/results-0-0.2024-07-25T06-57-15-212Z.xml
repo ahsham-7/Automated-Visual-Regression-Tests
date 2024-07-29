@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="1" errors="0" skipped="0">
+  <testsuite name="Detail Page Suite" timestamp="2024-07-25T11:57:16" time="20.157" tests="1" failures="1" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Detail Page Suite"/>
+      <property name="capabilities" value="chrome.126_0_6478_128.windows"/>
+      <property name="file" value="file:///C:/Users/ahsham.khan/Desktop/WebDriver/BayutVisuals/test/specs/DetailPage.specs.js"/>
+    </properties>
+    <testcase classname="chrome.126_0_6478_128.windows.Detail_Page_Suite" name="Verify Appearance of Hospital section in Map View" time="20.141">
+      <failure message="expect(received).toEqual(expected) // deep equality&#xA;&#xA;Expected: 0&#xA;Received: 2.324"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/97f0ebf3b31c1511bae5a2e09b24bdec/window/maximize - {}
+COMMAND: DELETE /session/97f0ebf3b31c1511bae5a2e09b24bdec/cookie - {}
+COMMAND: POST /session/97f0ebf3b31c1511bae5a2e09b24bdec/element - {"using":"xpath","value":"//div[@class=\"ad5c301a\"]//div[@class=\"a68e82ed\" and text()=\"Hospitals\"]"}
+COMMAND: POST /session/97f0ebf3b31c1511bae5a2e09b24bdec/url - {"url":"https://sl:getin1@stage.bayut.sector.run/property/details-6331676.html"}
+RESULT: {}
+RESULT: {}
+RESULT: {"using":"xpath","value":"//div[@class=\"ad5c301a\"]//div[@class=\"a68e82ed\" and text()=\"Hospitals\"]"}
+COMMAND: POST /session/97f0ebf3b31c1511bae5a2e09b24bdec/elements - {"using":"xpath","value":"//div[@class=\"ad5c301a\"]//div[@class=\"a68e82ed\" and text()=\"Hospitals\"]"}
+RESULT: {"url":"https://sl:getin1@stage.bayut.sector.run/property/details-6331676.html"}
+RESULT: {"using":"xpath","value":"//div[@class=\"ad5c301a\"]//div[@class=\"a68e82ed\" and text()=\"Hospitals\"]"}
+COMMAND: POST /session/97f0ebf3b31c1511bae5a2e09b24bdec/element - {"using":"xpath","value":"//div[@class=\"ad5c301a\"]//div[@class=\"a68e82ed\" and text()=\"Hospitals\"]"}
+RESULT: {"using":"xpath","value":"//div[@class=\"ad5c301a\"]//div[@class=\"a68e82ed\" and text()=\"Hospitals\"]"}
+COMMAND: POST /session/97f0ebf3b31c1511bae5a2e09b24bdec/element/f.648A14C79FA3B73A9AC5988658F57AB7.d.F8FB80BFC126D3EA34B318757F99B942.e.64/click - {}
+RESULT: {}
+COMMAND: POST /session/97f0ebf3b31c1511bae5a2e09b24bdec/element - {"using":"xpath","value":"//canvas[@aria-label=\"Map\"]"}
+RESULT: {"using":"xpath","value":"//canvas[@aria-label=\"Map\"]"}
+COMMAND: POST /session/97f0ebf3b31c1511bae5a2e09b24bdec/element - {"using":"xpath","value":"//canvas[@aria-label=\"Map\"]"}
+RESULT: {"using":"xpath","value":"//canvas[@aria-label=\"Map\"]"}
+COMMAND: POST /session/97f0ebf3b31c1511bae5a2e09b24bdec/element - {"using":"xpath","value":"//canvas[@aria-label=\"Map\"]"}
+RESULT: {"using":"xpath","value":"//canvas[@aria-label=\"Map\"]"}
+COMMAND: POST /session/97f0ebf3b31c1511bae5a2e09b24bdec/element - {"using":"xpath","value":"//canvas[@aria-label=\"Map\"]"}
+RESULT: {"using":"xpath","value":"//canvas[@aria-label=\"Map\"]"}
+COMMAND: POST /session/97f0ebf3b31c1511bae5a2e09b24bdec/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.648A14C79FA3B73A9AC5988658F57AB7.d.F8FB80BFC126D3EA34B318757F99B942.e.88","ELEMENT":"f.648A14C79FA3B73A9AC5988658F57AB7.d.F8FB80BFC126D3EA34B318757F99B942.e.88"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.648A14C79FA3B73A9AC5988658F57AB7.d.F8FB80BFC126D3EA34B318757F99B942.e.88","ELEMENT":"f.648A14C79FA3B73A9AC5988658F57AB7.d.F8FB80BFC126D3EA34B318757F99B942.e.88"}]}
+COMMAND: POST /session/97f0ebf3b31c1511bae5a2e09b24bdec/execute/sync - {"script":"return (function hideScrollBars(hide) {\n    try {\n        if (hide) {\n            document.body.style.overflow = 'hidden';\n        }\n        else {\n            document.body.style.overflow = '';\n        }\n    }\n    catch (e) {\n    }\n}).apply(null, arguments)","args":[true]}
+RESULT: {"script":"return (function hideScrollBars(hide) {\n    try {\n        if (hide) {\n            document.body.style.overflow = 'hidden';\n        }\n        else {\n            document.body.style.overflow = '';\n        }\n    }\n    catch (e) {\n    }\n}).apply(null, arguments)","args":[true]}
+COMMAND: POST /session/97f0ebf3b31c1511bae5a2e09b24bdec/execute/sync - {"script":"return (function getScreenDimensions() {\n    var body = document.body;\n    var html = document.documentElement;\n    var bodyDimensions = {\n        scrollHeight: body == null ? 0 : body.scrollHeight,\n  ... (1101 more bytes)","args":[]}
+RESULT: {"script":"return (function getScreenDimensions() {\n    var body = document.body;\n    var html = document.documentElement;\n    var bodyDimensions = {\n        scrollHeight: body == null ? 0 : body.scrollHeight,\n  ... (1101 more bytes)","args":[]}
+COMMAND: GET /session/97f0ebf3b31c1511bae5a2e09b24bdec/screenshot - {}
+RESULT: {}
+COMMAND: POST /session/97f0ebf3b31c1511bae5a2e09b24bdec/execute/sync - {"script":"return (function hideScrollBars(hide) {\n    try {\n        if (hide) {\n            document.body.style.overflow = 'hidden';\n        }\n        else {\n            document.body.style.overflow = '';\n        }\n    }\n    catch (e) {\n    }\n}).apply(null, arguments)","args":[false]}
+RESULT: {"script":"return (function hideScrollBars(hide) {\n    try {\n        if (hide) {\n            document.body.style.overflow = 'hidden';\n        }\n        else {\n            document.body.style.overflow = '';\n        }\n    }\n    catch (e) {\n    }\n}).apply(null, arguments)","args":[false]}
+RESULT: undefined
+COMMAND: POST /session/97f0ebf3b31c1511bae5a2e09b24bdec/window/maximize - {}
+COMMAND: DELETE /session/97f0ebf3b31c1511bae5a2e09b24bdec/cookie - {}
+COMMAND: POST /session/97f0ebf3b31c1511bae5a2e09b24bdec/execute/sync - {"script":"return (() => document.readyState === 'complete').apply(null, arguments)","args":[]}
+COMMAND: POST /session/97f0ebf3b31c1511bae5a2e09b24bdec/element - {"using":"xpath","value":"//div[@class=\"ad5c301a\"]//div[@class=\"a68e82ed\" and text()=\"Hospitals\"]"}
+COMMAND: POST /session/97f0ebf3b31c1511bae5a2e09b24bdec/url - {"url":"https://www.bayut.com/property/details-6331676.html"}
+RESULT: {}
+RESULT: {}
+RESULT: {"script":"return (() => document.readyState === 'complete').apply(null, arguments)","args":[]}
+RESULT: {"using":"xpath","value":"//div[@class=\"ad5c301a\"]//div[@class=\"a68e82ed\" and text()=\"Hospitals\"]"}
+COMMAND: POST /session/97f0ebf3b31c1511bae5a2e09b24bdec/element/f.648A14C79FA3B73A9AC5988658F57AB7.d.F8FB80BFC126D3EA34B318757F99B942.e.64/click - {}
+RESULT: {"url":"https://www.bayut.com/property/details-6331676.html"}
+COMMAND: POST /session/97f0ebf3b31c1511bae5a2e09b24bdec/element - {"using":"xpath","value":"//div[@class=\"ad5c301a\"]//div[@class=\"a68e82ed\" and text()=\"Hospitals\"]"}
+RESULT: {"using":"xpath","value":"//div[@class=\"ad5c301a\"]//div[@class=\"a68e82ed\" and text()=\"Hospitals\"]"}
+COMMAND: POST /session/97f0ebf3b31c1511bae5a2e09b24bdec/element/f.648A14C79FA3B73A9AC5988658F57AB7.d.F8FB80BFC126D3EA34B318757F99B942.e.64/click - {}
+COMMAND: POST /session/97f0ebf3b31c1511bae5a2e09b24bdec/element - {"using":"xpath","value":"//div[@class=\"ad5c301a\"]//div[@class=\"a68e82ed\" and text()=\"Hospitals\"]"}
+RESULT: {"using":"xpath","value":"//div[@class=\"ad5c301a\"]//div[@class=\"a68e82ed\" and text()=\"Hospitals\"]"}
+COMMAND: POST /session/97f0ebf3b31c1511bae5a2e09b24bdec/element/f.648A14C79FA3B73A9AC5988658F57AB7.d.B3550696E6ED93548E5BE443A543C4DB.e.63/click - {}
+RESULT: {}
+COMMAND: POST /session/97f0ebf3b31c1511bae5a2e09b24bdec/element - {"using":"xpath","value":"//canvas[@aria-label=\"Map\"]"}
+RESULT: {"using":"xpath","value":"//canvas[@aria-label=\"Map\"]"}
+COMMAND: POST /session/97f0ebf3b31c1511bae5a2e09b24bdec/element - {"using":"xpath","value":"//canvas[@aria-label=\"Map\"]"}
+RESULT: {"using":"xpath","value":"//canvas[@aria-label=\"Map\"]"}
+COMMAND: POST /session/97f0ebf3b31c1511bae5a2e09b24bdec/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.648A14C79FA3B73A9AC5988658F57AB7.d.B3550696E6ED93548E5BE443A543C4DB.e.84","ELEMENT":"f.648A14C79FA3B73A9AC5988658F57AB7.d.B3550696E6ED93548E5BE443A543C4DB.e.84"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.648A14C79FA3B73A9AC5988658F57AB7.d.B3550696E6ED93548E5BE443A543C4DB.e.84","ELEMENT":"f.648A14C79FA3B73A9AC5988658F57AB7.d.B3550696E6ED93548E5BE443A543C4DB.e.84"}]}
+COMMAND: POST /session/97f0ebf3b31c1511bae5a2e09b24bdec/execute/sync - {"script":"return (function hideScrollBars(hide) {\n    try {\n        if (hide) {\n            document.body.style.overflow = 'hidden';\n        }\n        else {\n            document.body.style.overflow = '';\n        }\n    }\n    catch (e) {\n    }\n}).apply(null, arguments)","args":[true]}
+RESULT: {"script":"return (function hideScrollBars(hide) {\n    try {\n        if (hide) {\n            document.body.style.overflow = 'hidden';\n        }\n        else {\n            document.body.style.overflow = '';\n        }\n    }\n    catch (e) {\n    }\n}).apply(null, arguments)","args":[true]}
+COMMAND: POST /session/97f0ebf3b31c1511bae5a2e09b24bdec/execute/sync - {"script":"return (function getScreenDimensions() {\n    var body = document.body;\n    var html = document.documentElement;\n    var bodyDimensions = {\n        scrollHeight: body == null ? 0 : body.scrollHeight,\n  ... (1101 more bytes)","args":[]}
+RESULT: {"script":"return (function getScreenDimensions() {\n    var body = document.body;\n    var html = document.documentElement;\n    var bodyDimensions = {\n        scrollHeight: body == null ? 0 : body.scrollHeight,\n  ... (1101 more bytes)","args":[]}
+COMMAND: GET /session/97f0ebf3b31c1511bae5a2e09b24bdec/screenshot - {}
+RESULT: {}
+COMMAND: POST /session/97f0ebf3b31c1511bae5a2e09b24bdec/execute/sync - {"script":"return (function hideScrollBars(hide) {\n    try {\n        if (hide) {\n            document.body.style.overflow = 'hidden';\n        }\n        else {\n            document.body.style.overflow = '';\n        }\n    }\n    catch (e) {\n    }\n}).apply(null, arguments)","args":[false]}
+RESULT: {"script":"return (function hideScrollBars(hide) {\n    try {\n        if (hide) {\n            document.body.style.overflow = 'hidden';\n        }\n        else {\n            document.body.style.overflow = '';\n        }\n    }\n    catch (e) {\n    }\n}).apply(null, arguments)","args":[false]}
+RESULT: undefined
+COMMAND: DELETE /session/97f0ebf3b31c1511bae5a2e09b24bdec - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: expect(received).toEqual(expected) // deep equality
+
+Expected: 0
+Received: 2.324
+    at DetailPage.CompareShot (file:///C:/Users/ahsham.khan/Desktop/WebDriver/BayutVisuals/test/pageobjects/page.js:73:30)
+    at async Context.<anonymous> (file:///C:/Users/ahsham.khan/Desktop/WebDriver/BayutVisuals/test/specs/DetailPage.specs.js:213:23)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

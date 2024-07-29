@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="3" failures="3" errors="0" skipped="0">
+  <testsuite name="Detail Page Suite" timestamp="2024-07-24T17:42:22" time="45.437" tests="3" failures="3" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Detail Page Suite"/>
+      <property name="capabilities" value="chrome.126_0_6478_128.windows"/>
+      <property name="file" value="file:///C:/Users/ahsham.khan/Desktop/WebDriver/BayutVisuals/test/specs/DetailPage.specs.js"/>
+    </properties>
+    <testcase classname="chrome.126_0_6478_128.windows.Detail_Page_Suite" name="Verify Agent Agency card" time="23.005">
+      <failure message="expect(received).toEqual(expected) // deep equality&#xA;&#xA;Expected: 0&#xA;Received: 1.229"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/61360f3d6652e4a84da97842009de179/window/maximize - {}
+COMMAND: DELETE /session/61360f3d6652e4a84da97842009de179/cookie - {}
+COMMAND: POST /session/61360f3d6652e4a84da97842009de179/element - {"using":"xpath","value":"//div[@aria-label=\"Agency info\" and @class=\"_948d9e0a e6c84807 _95d4067f\"]"}
+COMMAND: POST /session/61360f3d6652e4a84da97842009de179/url - {"url":"https://sl:getin1@stage.bayut.sector.run/property/details-6331676.html"}
+RESULT: {}
+RESULT: {}
+RESULT: {"using":"xpath","value":"//div[@aria-label=\"Agency info\" and @class=\"_948d9e0a e6c84807 _95d4067f\"]"}
+COMMAND: POST /session/61360f3d6652e4a84da97842009de179/elements - {"using":"xpath","value":"//div[@aria-label=\"Agency info\" and @class=\"_948d9e0a e6c84807 _95d4067f\"]"}
+RESULT: {"url":"https://sl:getin1@stage.bayut.sector.run/property/details-6331676.html"}
+RESULT: {"using":"xpath","value":"//div[@aria-label=\"Agency info\" and @class=\"_948d9e0a e6c84807 _95d4067f\"]"}
+COMMAND: POST /session/61360f3d6652e4a84da97842009de179/elements - {"using":"xpath","value":"//div[@aria-label=\"Agency info\" and @class=\"_948d9e0a e6c84807 _95d4067f\"]"}
+RESULT: {"using":"xpath","value":"//div[@aria-label=\"Agency info\" and @class=\"_948d9e0a e6c84807 _95d4067f\"]"}
+COMMAND: POST /session/61360f3d6652e4a84da97842009de179/element - {"using":"xpath","value":"//div[@aria-label=\"Agency info\" and @class=\"_948d9e0a e6c84807 _95d4067f\"]"}
+RESULT: {"using":"xpath","value":"//div[@aria-label=\"Agency info\" and @class=\"_948d9e0a e6c84807 _95d4067f\"]"}
+COMMAND: GET /session/61360f3d6652e4a84da97842009de179/element/f.2D5A78691F81C78472CBE0E5F0BB0043.d.8E7DB4CE36EB8DBD57596FBE538F610B.e.64/rect - {}
+RESULT: {}
+COMMAND: GET /session/61360f3d6652e4a84da97842009de179/window/rect - {}
+RESULT: {}
+COMMAND: POST /session/61360f3d6652e4a84da97842009de179/execute/sync - {"script":"return (() => [\n        window.scrollX, window.scrollY\n    ]).apply(null, arguments)","args":[]}
+RESULT: {"script":"return (() => [\n        window.scrollX, window.scrollY\n    ]).apply(null, arguments)","args":[]}
+COMMAND: POST /session/61360f3d6652e4a84da97842009de179/actions - {"actions":[{"id":"action1","type":"wheel","parameters":{},"actions":[{"type":"scroll","x":0,"y":0,"deltaX":-194,"deltaY":775,"duration":200,"origin":{"element-6066-11e4-a52e-4f735466cecf":"f.2D5A78691F81C78472CBE0E5F0BB0043.d.8E7DB4CE36EB8DBD57596FBE538F610B.e.64"}}]}]}
+RESULT: {"actions":[{"id":"action1","type":"wheel","parameters":{},"actions":[{"type":"scroll","x":0,"y":0,"deltaX":-194,"deltaY":775,"duration":200,"origin":{"element-6066-11e4-a52e-4f735466cecf":"f.2D5A78691F81C78472CBE0E5F0BB0043.d.8E7DB4CE36EB8DBD57596FBE538F610B.e.64"}}]}]}
+COMMAND: DELETE /session/61360f3d6652e4a84da97842009de179/actions - {}
+RESULT: {}
+COMMAND: POST /session/61360f3d6652e4a84da97842009de179/execute/sync - {"script":"return (function hideScrollBars(hide) {\n    try {\n        if (hide) {\n            document.body.style.overflow = 'hidden';\n        }\n        else {\n            document.body.style.overflow = '';\n        }\n    }\n    catch (e) {\n    }\n}).apply(null, arguments)","args":[true]}
+RESULT: {"script":"return (function hideScrollBars(hide) {\n    try {\n        if (hide) {\n            document.body.style.overflow = 'hidden';\n        }\n        else {\n            document.body.style.overflow = '';\n        }\n    }\n    catch (e) {\n    }\n}).apply(null, arguments)","args":[true]}
+COMMAND: POST /session/61360f3d6652e4a84da97842009de179/execute/sync - {"script":"return (function getScreenDimensions() {\n    var body = document.body;\n    var html = document.documentElement;\n    var bodyDimensions = {\n        scrollHeight: body == null ? 0 : body.scrollHeight,\n  ... (1101 more bytes)","args":[]}
+RESULT: {"script":"return (function getScreenDimensions() {\n    var body = document.body;\n    var html = document.documentElement;\n    var bodyDimensions = {\n        scrollHeight: body == null ? 0 : body.scrollHeight,\n  ... (1101 more bytes)","args":[]}
+COMMAND: GET /session/61360f3d6652e4a84da97842009de179/screenshot - {}
+RESULT: {}
+COMMAND: POST /session/61360f3d6652e4a84da97842009de179/execute/sync - {"script":"return (function hideScrollBars(hide) {\n    try {\n        if (hide) {\n            document.body.style.overflow = 'hidden';\n        }\n        else {\n            document.body.style.overflow = '';\n        }\n    }\n    catch (e) {\n    }\n}).apply(null, arguments)","args":[false]}
+RESULT: {"script":"return (function hideScrollBars(hide) {\n    try {\n        if (hide) {\n            document.body.style.overflow = 'hidden';\n        }\n        else {\n            document.body.style.overflow = '';\n        }\n    }\n    catch (e) {\n    }\n}).apply(null, arguments)","args":[false]}
+RESULT: undefined
+COMMAND: POST /session/61360f3d6652e4a84da97842009de179/window/maximize - {}
+COMMAND: DELETE /session/61360f3d6652e4a84da97842009de179/cookie - {}
+COMMAND: POST /session/61360f3d6652e4a84da97842009de179/execute/sync - {"script":"return (() => document.readyState === 'complete').apply(null, arguments)","args":[]}
+COMMAND: POST /session/61360f3d6652e4a84da97842009de179/element - {"using":"xpath","value":"//div[@aria-label=\"Agency info\" and @class=\"_948d9e0a e6c84807 _95d4067f\"]"}
+COMMAND: POST /session/61360f3d6652e4a84da97842009de179/url - {"url":"https://www.bayut.com/property/details-6331676.html"}
+RESULT: {}
+RESULT: {}
+RESULT: {"script":"return (() => document.readyState === 'complete').apply(null, arguments)","args":[]}
+RESULT: {"using":"xpath","value":"//div[@aria-label=\"Agency info\" and @class=\"_948d9e0a e6c84807 _95d4067f\"]"}
+COMMAND: POST /session/61360f3d6652e4a84da97842009de179/elements - {"using":"xpath","value":"//div[@aria-label=\"Agency info\" and @class=\"_948d9e0a e6c84807 _95d4067f\"]"}
+RESULT: {"url":"https://www.bayut.com/property/details-6331676.html"}
+RESULT: {"using":"xpath","value":"//div[@aria-label=\"Agency info\" and @class=\"_948d9e0a e6c84807 _95d4067f\"]"}
+COMMAND: GET /session/61360f3d6652e4a84da97842009de179/element/f.2D5A78691F81C78472CBE0E5F0BB0043.d.8E7DB4CE36EB8DBD57596FBE538F610B.e.64/rect - {}
+COMMAND: POST /session/61360f3d6652e4a84da97842009de179/element - {"using":"xpath","value":"//div[@aria-label=\"Agency info\" and @class=\"_948d9e0a e6c84807 _95d4067f\"]"}
+RESULT: {"using":"xpath","value":"//div[@aria-label=\"Agency info\" and @class=\"_948d9e0a e6c84807 _95d4067f\"]"}
+COMMAND: GET /session/61360f3d6652e4a84da97842009de179/element/f.2D5A78691F81C78472CBE0E5F0BB0043.d.ECF3308E06234B279A83B610A5C92170.e.63/rect - {}
+RESULT: {}
+COMMAND: GET /session/61360f3d6652e4a84da97842009de179/window/rect - {}
+RESULT: {}
+COMMAND: POST /session/61360f3d6652e4a84da97842009de179/execute/sync - {"script":"return (() => [\n        window.scrollX, window.scrollY\n    ]).apply(null, arguments)","args":[]}
+RESULT: {"script":"return (() => [\n        window.scrollX, window.scrollY\n    ]).apply(null, arguments)","args":[]}
+COMMAND: POST /session/61360f3d6652e4a84da97842009de179/actions - {"actions":[{"id":"action2","type":"wheel","parameters":{},"actions":[{"type":"scroll","x":0,"y":0,"deltaX":-194,"deltaY":775,"duration":200,"origin":{"element-6066-11e4-a52e-4f735466cecf":"f.2D5A78691F81C78472CBE0E5F0BB0043.d.8E7DB4CE36EB8DBD57596FBE538F610B.e.64"}}]}]}
+COMMAND: POST /session/61360f3d6652e4a84da97842009de179/execute/sync - {"script":"return ((elem, options) => elem.scrollIntoView(options)).apply(null, arguments)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.2D5A78691F81C78472CBE0E5F0BB0043.d.ECF3308E06234B279A83B610A5C92170.e.63","ELEMENT":"f.2D5A78691F81C78472CBE0E5F0BB0043.d.ECF3308E06234B279A83B610A5C92170.e.63"},{"block":"start","inline":"nearest"}]}
+RESULT: {"script":"return ((elem, options) => elem.scrollIntoView(options)).apply(null, arguments)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.2D5A78691F81C78472CBE0E5F0BB0043.d.ECF3308E06234B279A83B610A5C92170.e.63","ELEMENT":"f.2D5A78691F81C78472CBE0E5F0BB0043.d.ECF3308E06234B279A83B610A5C92170.e.63"},{"block":"start","inline":"nearest"}]}
+COMMAND: POST /session/61360f3d6652e4a84da97842009de179/execute/sync - {"script":"return (function hideScrollBars(hide) {\n    try {\n        if (hide) {\n            document.body.style.overflow = 'hidden';\n        }\n        else {\n            document.body.style.overflow = '';\n        }\n    }\n    catch (e) {\n    }\n}).apply(null, arguments)","args":[true]}
+RESULT: {"script":"return (function hideScrollBars(hide) {\n    try {\n        if (hide) {\n            document.body.style.overflow = 'hidden';\n        }\n        else {\n            document.body.style.overflow = '';\n        }\n    }\n    catch (e) {\n    }\n}).apply(null, arguments)","args":[true]}
+COMMAND: POST /session/61360f3d6652e4a84da97842009de179/execute/sync - {"script":"return (function getScreenDimensions() {\n    var body = document.body;\n    var html = document.documentElement;\n    var bodyDimensions = {\n        scrollHeight: body == null ? 0 : body.scrollHeight,\n  ... (1101 more bytes)","args":[]}
+RESULT: {"script":"return (function getScreenDimensions() {\n    var body = document.body;\n    var html = document.documentElement;\n    var bodyDimensions = {\n        scrollHeight: body == null ? 0 : body.scrollHeight,\n  ... (1101 more bytes)","args":[]}
+COMMAND: GET /session/61360f3d6652e4a84da97842009de179/screenshot - {}
+RESULT: {}
+COMMAND: POST /session/61360f3d6652e4a84da97842009de179/execute/sync - {"script":"return (function hideScrollBars(hide) {\n    try {\n        if (hide) {\n            document.body.style.overflow = 'hidden';\n        }\n        else {\n            document.body.style.overflow = '';\n        }\n    }\n    catch (e) {\n    }\n}).apply(null, arguments)","args":[false]}
+RESULT: {"script":"return (function hideScrollBars(hide) {\n    try {\n        if (hide) {\n            document.body.style.overflow = 'hidden';\n        }\n        else {\n            document.body.style.overflow = '';\n        }\n    }\n    catch (e) {\n    }\n}).apply(null, arguments)","args":[false]}
+RESULT: undefined
+]]></system-out>
+      <system-err><![CDATA[
+Error: expect(received).toEqual(expected) // deep equality
+
+Expected: 0
+Received: 1.229
+    at DetailPage.CompareShot (file:///C:/Users/ahsham.khan/Desktop/WebDriver/BayutVisuals/test/pageobjects/page.js:47:34)
+    at async Context.<anonymous> (file:///C:/Users/ahsham.khan/Desktop/WebDriver/BayutVisuals/test/specs/DetailPage.specs.js:163:33)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.126_0_6478_128.windows.Detail_Page_Suite" name="Verify Full Amenities Section" time="12.272">
+      <failure message="expect(received).toEqual(expected) // deep equality&#xA;&#xA;Expected: 0&#xA;Received: 61.18"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/61360f3d6652e4a84da97842009de179/window/maximize - {}
+COMMAND: DELETE /session/61360f3d6652e4a84da97842009de179/cookie - {}
+COMMAND: POST /session/61360f3d6652e4a84da97842009de179/element - {"using":"xpath","value":"//div[@aria-label=\"More amenities\"]"}
+COMMAND: POST /session/61360f3d6652e4a84da97842009de179/url - {"url":"https://sl:getin1@stage.bayut.sector.run/property/details-6331676.html"}
+RESULT: {}
+RESULT: {}
+RESULT: {"using":"xpath","value":"//div[@aria-label=\"More amenities\"]"}
+COMMAND: POST /session/61360f3d6652e4a84da97842009de179/element/f.2D5A78691F81C78472CBE0E5F0BB0043.d.ECF3308E06234B279A83B610A5C92170.e.86/click - {}
+RESULT: {"url":"https://sl:getin1@stage.bayut.sector.run/property/details-6331676.html"}
+COMMAND: POST /session/61360f3d6652e4a84da97842009de179/element - {"using":"xpath","value":"//div[@aria-label=\"More amenities\"]"}
+RESULT: {"using":"xpath","value":"//div[@aria-label=\"More amenities\"]"}
+COMMAND: POST /session/61360f3d6652e4a84da97842009de179/element/f.2D5A78691F81C78472CBE0E5F0BB0043.d.ECF3308E06234B279A83B610A5C92170.e.86/click - {}
+COMMAND: POST /session/61360f3d6652e4a84da97842009de179/element - {"using":"xpath","value":"//div[@aria-label=\"More amenities\"]"}
+RESULT: {"using":"xpath","value":"//div[@aria-label=\"More amenities\"]"}
+COMMAND: POST /session/61360f3d6652e4a84da97842009de179/element/f.2D5A78691F81C78472CBE0E5F0BB0043.d.18AD7F27A72F8788135A9051433BE250.e.64/click - {}
+RESULT: {}
+COMMAND: POST /session/61360f3d6652e4a84da97842009de179/execute/sync - {"script":"return (function hideScrollBars(hide) {\n    try {\n        if (hide) {\n            document.body.style.overflow = 'hidden';\n        }\n        else {\n            document.body.style.overflow = '';\n        }\n    }\n    catch (e) {\n    }\n}).apply(null, arguments)","args":[true]}
+RESULT: {"script":"return (function hideScrollBars(hide) {\n    try {\n        if (hide) {\n            document.body.style.overflow = 'hidden';\n        }\n        else {\n            document.body.style.overflow = '';\n        }\n    }\n    catch (e) {\n    }\n}).apply(null, arguments)","args":[true]}
+COMMAND: POST /session/61360f3d6652e4a84da97842009de179/execute/sync - {"script":"return (function getScreenDimensions() {\n    var body = document.body;\n    var html = document.documentElement;\n    var bodyDimensions = {\n        scrollHeight: body == null ? 0 : body.scrollHeight,\n  ... (1101 more bytes)","args":[]}
+RESULT: {"script":"return (function getScreenDimensions() {\n    var body = document.body;\n    var html = document.documentElement;\n    var bodyDimensions = {\n        scrollHeight: body == null ? 0 : body.scrollHeight,\n  ... (1101 more bytes)","args":[]}
+COMMAND: GET /session/61360f3d6652e4a84da97842009de179/screenshot - {}
+RESULT: {}
+COMMAND: POST /session/61360f3d6652e4a84da97842009de179/execute/sync - {"script":"return (function hideScrollBars(hide) {\n    try {\n        if (hide) {\n            document.body.style.overflow = 'hidden';\n        }\n        else {\n            document.body.style.overflow = '';\n        }\n    }\n    catch (e) {\n    }\n}).apply(null, arguments)","args":[false]}
+RESULT: {"script":"return (function hideScrollBars(hide) {\n    try {\n        if (hide) {\n            document.body.style.overflow = 'hidden';\n        }\n        else {\n            document.body.style.overflow = '';\n        }\n    }\n    catch (e) {\n    }\n}).apply(null, arguments)","args":[false]}
+RESULT: undefined
+COMMAND: POST /session/61360f3d6652e4a84da97842009de179/window/maximize - {}
+COMMAND: DELETE /session/61360f3d6652e4a84da97842009de179/cookie - {}
+COMMAND: POST /session/61360f3d6652e4a84da97842009de179/execute/sync - {"script":"return (() => document.readyState === 'complete').apply(null, arguments)","args":[]}
+COMMAND: POST /session/61360f3d6652e4a84da97842009de179/element - {"using":"xpath","value":"//div[@aria-label=\"More amenities\"]"}
+COMMAND: POST /session/61360f3d6652e4a84da97842009de179/url - {"url":"https://www.bayut.com/property/details-6331676.html"}
+RESULT: {}
+RESULT: {}
+RESULT: {"script":"return (() => document.readyState === 'complete').apply(null, arguments)","args":[]}
+RESULT: {"using":"xpath","value":"//div[@aria-label=\"More amenities\"]"}
+COMMAND: POST /session/61360f3d6652e4a84da97842009de179/element/f.2D5A78691F81C78472CBE0E5F0BB0043.d.18AD7F27A72F8788135A9051433BE250.e.64/click - {}
+RESULT: {"url":"https://www.bayut.com/property/details-6331676.html"}
+COMMAND: POST /session/61360f3d6652e4a84da97842009de179/element - {"using":"xpath","value":"//div[@aria-label=\"More amenities\"]"}
+RESULT: {"using":"xpath","value":"//div[@aria-label=\"More amenities\"]"}
+COMMAND: POST /session/61360f3d6652e4a84da97842009de179/element/f.2D5A78691F81C78472CBE0E5F0BB0043.d.18AD7F27A72F8788135A9051433BE250.e.64/click - {}
+COMMAND: POST /session/61360f3d6652e4a84da97842009de179/element - {"using":"xpath","value":"//div[@aria-label=\"More amenities\"]"}
+RESULT: {"using":"xpath","value":"//div[@aria-label=\"More amenities\"]"}
+COMMAND: POST /session/61360f3d6652e4a84da97842009de179/element/f.2D5A78691F81C78472CBE0E5F0BB0043.d.8D19FE27420A1E74BDEE8CC80FB4D2F9.e.64/click - {}
+RESULT: {}
+COMMAND: POST /session/61360f3d6652e4a84da97842009de179/execute/sync - {"script":"return (function hideScrollBars(hide) {\n    try {\n        if (hide) {\n            document.body.style.overflow = 'hidden';\n        }\n        else {\n            document.body.style.overflow = '';\n        }\n    }\n    catch (e) {\n    }\n}).apply(null, arguments)","args":[true]}
+RESULT: {"script":"return (function hideScrollBars(hide) {\n    try {\n        if (hide) {\n            document.body.style.overflow = 'hidden';\n        }\n        else {\n            document.body.style.overflow = '';\n        }\n    }\n    catch (e) {\n    }\n}).apply(null, arguments)","args":[true]}
+COMMAND: POST /session/61360f3d6652e4a84da97842009de179/execute/sync - {"script":"return (function getScreenDimensions() {\n    var body = document.body;\n    var html = document.documentElement;\n    var bodyDimensions = {\n        scrollHeight: body == null ? 0 : body.scrollHeight,\n  ... (1101 more bytes)","args":[]}
+RESULT: {"script":"return (function getScreenDimensions() {\n    var body = document.body;\n    var html = document.documentElement;\n    var bodyDimensions = {\n        scrollHeight: body == null ? 0 : body.scrollHeight,\n  ... (1101 more bytes)","args":[]}
+COMMAND: GET /session/61360f3d6652e4a84da97842009de179/screenshot - {}
+RESULT: {}
+COMMAND: POST /session/61360f3d6652e4a84da97842009de179/execute/sync - {"script":"return (function hideScrollBars(hide) {\n    try {\n        if (hide) {\n            document.body.style.overflow = 'hidden';\n        }\n        else {\n            document.body.style.overflow = '';\n        }\n    }\n    catch (e) {\n    }\n}).apply(null, arguments)","args":[false]}
+RESULT: {"script":"return (function hideScrollBars(hide) {\n    try {\n        if (hide) {\n            document.body.style.overflow = 'hidden';\n        }\n        else {\n            document.body.style.overflow = '';\n        }\n    }\n    catch (e) {\n    }\n}).apply(null, arguments)","args":[false]}
+RESULT: undefined
+]]></system-out>
+      <system-err><![CDATA[
+Error: expect(received).toEqual(expected) // deep equality
+
+Expected: 0
+Received: 61.18
+    at DetailPage.CompareShot (file:///C:/Users/ahsham.khan/Desktop/WebDriver/BayutVisuals/test/pageobjects/page.js:47:34)
+    at async Context.<anonymous> (file:///C:/Users/ahsham.khan/Desktop/WebDriver/BayutVisuals/test/specs/DetailPage.specs.js:189:31)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.126_0_6478_128.windows.Detail_Page_Suite" name="Verify Appearence of Hospital section in Map View" time="10.149">
+      <failure message="Can't call click on element with selector &quot;//div[@class=&quot;_4866b17e&quot; and text()=&quot;Hospitals&quot;]&quot; because element wasn't found"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/61360f3d6652e4a84da97842009de179/window/maximize - {}
+COMMAND: DELETE /session/61360f3d6652e4a84da97842009de179/cookie - {}
+COMMAND: POST /session/61360f3d6652e4a84da97842009de179/element - {"using":"xpath","value":"//div[@class=\"_4866b17e\" and text()=\"Hospitals\"]"}
+COMMAND: POST /session/61360f3d6652e4a84da97842009de179/url - {"url":"https://sl:getin1@stage.bayut.sector.run/property/details-6331676.html"}
+RESULT: {}
+RESULT: {}
+RESULT: {"using":"xpath","value":"//div[@class=\"_4866b17e\" and text()=\"Hospitals\"]"}
+COMMAND: POST /session/61360f3d6652e4a84da97842009de179/elements - {"using":"xpath","value":"//div[@class=\"_4866b17e\" and text()=\"Hospitals\"]"}
+RESULT: {"url":"https://sl:getin1@stage.bayut.sector.run/property/details-6331676.html"}
+RESULT: {"using":"xpath","value":"//div[@class=\"_4866b17e\" and text()=\"Hospitals\"]"}
+COMMAND: POST /session/61360f3d6652e4a84da97842009de179/elements - {"using":"xpath","value":"//div[@class=\"_4866b17e\" and text()=\"Hospitals\"]"}
+RESULT: {"using":"xpath","value":"//div[@class=\"_4866b17e\" and text()=\"Hospitals\"]"}
+COMMAND: POST /session/61360f3d6652e4a84da97842009de179/elements - {"using":"xpath","value":"//div[@class=\"_4866b17e\" and text()=\"Hospitals\"]"}
+RESULT: {"using":"xpath","value":"//div[@class=\"_4866b17e\" and text()=\"Hospitals\"]"}
+COMMAND: POST /session/61360f3d6652e4a84da97842009de179/elements - {"using":"xpath","value":"//div[@class=\"_4866b17e\" and text()=\"Hospitals\"]"}
+RESULT: {"using":"xpath","value":"//div[@class=\"_4866b17e\" and text()=\"Hospitals\"]"}
+COMMAND: POST /session/61360f3d6652e4a84da97842009de179/elements - {"using":"xpath","value":"//div[@class=\"_4866b17e\" and text()=\"Hospitals\"]"}
+RESULT: {"using":"xpath","value":"//div[@class=\"_4866b17e\" and text()=\"Hospitals\"]"}
+COMMAND: POST /session/61360f3d6652e4a84da97842009de179/elements - {"using":"xpath","value":"//div[@class=\"_4866b17e\" and text()=\"Hospitals\"]"}
+RESULT: {"using":"xpath","value":"//div[@class=\"_4866b17e\" and text()=\"Hospitals\"]"}
+COMMAND: POST /session/61360f3d6652e4a84da97842009de179/elements - {"using":"xpath","value":"//div[@class=\"_4866b17e\" and text()=\"Hospitals\"]"}
+RESULT: {"using":"xpath","value":"//div[@class=\"_4866b17e\" and text()=\"Hospitals\"]"}
+COMMAND: POST /session/61360f3d6652e4a84da97842009de179/elements - {"using":"xpath","value":"//div[@class=\"_4866b17e\" and text()=\"Hospitals\"]"}
+RESULT: {"using":"xpath","value":"//div[@class=\"_4866b17e\" and text()=\"Hospitals\"]"}
+COMMAND: POST /session/61360f3d6652e4a84da97842009de179/elements - {"using":"xpath","value":"//div[@class=\"_4866b17e\" and text()=\"Hospitals\"]"}
+RESULT: {"using":"xpath","value":"//div[@class=\"_4866b17e\" and text()=\"Hospitals\"]"}
+COMMAND: POST /session/61360f3d6652e4a84da97842009de179/elements - {"using":"xpath","value":"//div[@class=\"_4866b17e\" and text()=\"Hospitals\"]"}
+RESULT: {"using":"xpath","value":"//div[@class=\"_4866b17e\" and text()=\"Hospitals\"]"}
+COMMAND: POST /session/61360f3d6652e4a84da97842009de179/elements - {"using":"xpath","value":"//div[@class=\"_4866b17e\" and text()=\"Hospitals\"]"}
+RESULT: {"using":"xpath","value":"//div[@class=\"_4866b17e\" and text()=\"Hospitals\"]"}
+COMMAND: POST /session/61360f3d6652e4a84da97842009de179/elements - {"using":"xpath","value":"//div[@class=\"_4866b17e\" and text()=\"Hospitals\"]"}
+RESULT: {"using":"xpath","value":"//div[@class=\"_4866b17e\" and text()=\"Hospitals\"]"}
+COMMAND: POST /session/61360f3d6652e4a84da97842009de179/elements - {"using":"xpath","value":"//div[@class=\"_4866b17e\" and text()=\"Hospitals\"]"}
+RESULT: {"using":"xpath","value":"//div[@class=\"_4866b17e\" and text()=\"Hospitals\"]"}
+COMMAND: POST /session/61360f3d6652e4a84da97842009de179/elements - {"using":"xpath","value":"//div[@class=\"_4866b17e\" and text()=\"Hospitals\"]"}
+RESULT: {"using":"xpath","value":"//div[@class=\"_4866b17e\" and text()=\"Hospitals\"]"}
+COMMAND: POST /session/61360f3d6652e4a84da97842009de179/elements - {"using":"xpath","value":"//div[@class=\"_4866b17e\" and text()=\"Hospitals\"]"}
+RESULT: {"using":"xpath","value":"//div[@class=\"_4866b17e\" and text()=\"Hospitals\"]"}
+COMMAND: POST /session/61360f3d6652e4a84da97842009de179/elements - {"using":"xpath","value":"//div[@class=\"_4866b17e\" and text()=\"Hospitals\"]"}
+RESULT: {"using":"xpath","value":"//div[@class=\"_4866b17e\" and text()=\"Hospitals\"]"}
+COMMAND: POST /session/61360f3d6652e4a84da97842009de179/elements - {"using":"xpath","value":"//div[@class=\"_4866b17e\" and text()=\"Hospitals\"]"}
+RESULT: {"using":"xpath","value":"//div[@class=\"_4866b17e\" and text()=\"Hospitals\"]"}
+COMMAND: POST /session/61360f3d6652e4a84da97842009de179/elements - {"using":"xpath","value":"//div[@class=\"_4866b17e\" and text()=\"Hospitals\"]"}
+RESULT: {"using":"xpath","value":"//div[@class=\"_4866b17e\" and text()=\"Hospitals\"]"}
+COMMAND: POST /session/61360f3d6652e4a84da97842009de179/elements - {"using":"xpath","value":"//div[@class=\"_4866b17e\" and text()=\"Hospitals\"]"}
+RESULT: {"using":"xpath","value":"//div[@class=\"_4866b17e\" and text()=\"Hospitals\"]"}
+COMMAND: POST /session/61360f3d6652e4a84da97842009de179/elements - {"using":"xpath","value":"//div[@class=\"_4866b17e\" and text()=\"Hospitals\"]"}
+RESULT: {"using":"xpath","value":"//div[@class=\"_4866b17e\" and text()=\"Hospitals\"]"}
+COMMAND: DELETE /session/61360f3d6652e4a84da97842009de179 - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: Can't call click on element with selector "//div[@class="_4866b17e" and text()="Hospitals"]" because element wasn't found
+    at async DetailPage.OpenHospitalsMapview (file:///C:/Users/ahsham.khan/Desktop/WebDriver/BayutVisuals/test/pageobjects/detail.page.js:114:9)
+    at async Context.<anonymous> (file:///C:/Users/ahsham.khan/Desktop/WebDriver/BayutVisuals/test/specs/DetailPage.specs.js:206:7)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

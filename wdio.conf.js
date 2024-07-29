@@ -110,7 +110,7 @@ export const config = {
         'image-comparison',
         {
             // Some options, see the docs for more
-            baselineFolder: join(process.cwd(),'./baseLineLimages/'),
+            baselineFolder: join(process.cwd(),'./baseLineImages/'),
             formatImageName: '{tag}-{logName}',
             screenshotPath: join(process.cwd(), './actualImages/'),
             savePerInstance: true,
@@ -140,7 +140,18 @@ export const config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
-    reporters: ['spec'],
+    reporters: ['spec',
+       // ['junit',{outputDir:'./',},],
+       ['junit', {
+        outputDir: 'junit reporters',
+        suiteNameFormat: /[^a-zA-Z0-9@]+/,
+        outputFileFormat: function(options) { // optional
+            const date = new Date();
+            const timestamp = date.toISOString().replace(/[:.]/g, '-'); // Format the date and time for the file name
+            return `results-${options.cid}.${timestamp}.xml`;
+        }
+    }]
+    ],
 
     
     //

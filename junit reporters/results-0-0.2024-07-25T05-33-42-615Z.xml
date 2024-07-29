@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="1" errors="0" skipped="0">
+  <testsuite name="Detail Page Suite" timestamp="2024-07-25T10:33:43" time="18.709" tests="1" failures="1" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Detail Page Suite"/>
+      <property name="capabilities" value="chrome.126_0_6478_128.windows"/>
+      <property name="file" value="file:///C:/Users/ahsham.khan/Desktop/WebDriver/BayutVisuals/test/specs/DetailPage.specs.js"/>
+    </properties>
+    <testcase classname="chrome.126_0_6478_128.windows.Detail_Page_Suite" name="Verify Appearence of Hospital section in Map View" time="18.701">
+      <failure message="element (&quot;//canvas[@aria-label=&quot;Map&quot;]&quot;) still not displayed after 5000ms"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/43ea8d06c15dd84d430c46e64fd27637/window/maximize - {}
+COMMAND: DELETE /session/43ea8d06c15dd84d430c46e64fd27637/cookie - {}
+COMMAND: POST /session/43ea8d06c15dd84d430c46e64fd27637/element - {"using":"xpath","value":"//div[@class=\"ad5c301a\"]//div[@class=\"a68e82ed\" and text()=\"Hospitals\"]"}
+COMMAND: POST /session/43ea8d06c15dd84d430c46e64fd27637/url - {"url":"https://sl:getin1@stage.bayut.sector.run/property/details-6331676.html"}
+RESULT: {}
+RESULT: {"using":"xpath","value":"//div[@class=\"ad5c301a\"]//div[@class=\"a68e82ed\" and text()=\"Hospitals\"]"}
+COMMAND: POST /session/43ea8d06c15dd84d430c46e64fd27637/elements - {"using":"xpath","value":"//div[@class=\"ad5c301a\"]//div[@class=\"a68e82ed\" and text()=\"Hospitals\"]"}
+RESULT: {}
+RESULT: {"url":"https://sl:getin1@stage.bayut.sector.run/property/details-6331676.html"}
+RESULT: {"using":"xpath","value":"//div[@class=\"ad5c301a\"]//div[@class=\"a68e82ed\" and text()=\"Hospitals\"]"}
+COMMAND: POST /session/43ea8d06c15dd84d430c46e64fd27637/element - {"using":"xpath","value":"//div[@class=\"ad5c301a\"]//div[@class=\"a68e82ed\" and text()=\"Hospitals\"]"}
+RESULT: {"using":"xpath","value":"//div[@class=\"ad5c301a\"]//div[@class=\"a68e82ed\" and text()=\"Hospitals\"]"}
+COMMAND: POST /session/43ea8d06c15dd84d430c46e64fd27637/element/f.D06CD80815F9584BCC42EF3159BD9A8A.d.C6F1E5CBEA19128C980857E60575A9F8.e.6/click - {}
+RESULT: {}
+COMMAND: POST /session/43ea8d06c15dd84d430c46e64fd27637/element - {"using":"xpath","value":"//canvas[@aria-label=\"Map\"]"}
+RESULT: {"using":"xpath","value":"//canvas[@aria-label=\"Map\"]"}
+COMMAND: POST /session/43ea8d06c15dd84d430c46e64fd27637/element - {"using":"xpath","value":"//canvas[@aria-label=\"Map\"]"}
+RESULT: {"using":"xpath","value":"//canvas[@aria-label=\"Map\"]"}
+COMMAND: POST /session/43ea8d06c15dd84d430c46e64fd27637/element - {"using":"xpath","value":"//canvas[@aria-label=\"Map\"]"}
+RESULT: {"using":"xpath","value":"//canvas[@aria-label=\"Map\"]"}
+COMMAND: POST /session/43ea8d06c15dd84d430c46e64fd27637/element - {"using":"xpath","value":"//canvas[@aria-label=\"Map\"]"}
+RESULT: {"using":"xpath","value":"//canvas[@aria-label=\"Map\"]"}
+COMMAND: POST /session/43ea8d06c15dd84d430c46e64fd27637/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.D06CD80815F9584BCC42EF3159BD9A8A.d.C6F1E5CBEA19128C980857E60575A9F8.e.7","ELEMENT":"f.D06CD80815F9584BCC42EF3159BD9A8A.d.C6F1E5CBEA19128C980857E60575A9F8.e.7"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.D06CD80815F9584BCC42EF3159BD9A8A.d.C6F1E5CBEA19128C980857E60575A9F8.e.7","ELEMENT":"f.D06CD80815F9584BCC42EF3159BD9A8A.d.C6F1E5CBEA19128C980857E60575A9F8.e.7"}]}
+COMMAND: POST /session/43ea8d06c15dd84d430c46e64fd27637/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.D06CD80815F9584BCC42EF3159BD9A8A.d.C6F1E5CBEA19128C980857E60575A9F8.e.7","ELEMENT":"f.D06CD80815F9584BCC42EF3159BD9A8A.d.C6F1E5CBEA19128C980857E60575A9F8.e.7"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.D06CD80815F9584BCC42EF3159BD9A8A.d.C6F1E5CBEA19128C980857E60575A9F8.e.7","ELEMENT":"f.D06CD80815F9584BCC42EF3159BD9A8A.d.C6F1E5CBEA19128C980857E60575A9F8.e.7"}]}
+COMMAND: POST /session/43ea8d06c15dd84d430c46e64fd27637/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.D06CD80815F9584BCC42EF3159BD9A8A.d.C6F1E5CBEA19128C980857E60575A9F8.e.7","ELEMENT":"f.D06CD80815F9584BCC42EF3159BD9A8A.d.C6F1E5CBEA19128C980857E60575A9F8.e.7"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.D06CD80815F9584BCC42EF3159BD9A8A.d.C6F1E5CBEA19128C980857E60575A9F8.e.7","ELEMENT":"f.D06CD80815F9584BCC42EF3159BD9A8A.d.C6F1E5CBEA19128C980857E60575A9F8.e.7"}]}
+COMMAND: POST /session/43ea8d06c15dd84d430c46e64fd27637/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.D06CD80815F9584BCC42EF3159BD9A8A.d.C6F1E5CBEA19128C980857E60575A9F8.e.7","ELEMENT":"f.D06CD80815F9584BCC42EF3159BD9A8A.d.C6F1E5CBEA19128C980857E60575A9F8.e.7"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.D06CD80815F9584BCC42EF3159BD9A8A.d.C6F1E5CBEA19128C980857E60575A9F8.e.7","ELEMENT":"f.D06CD80815F9584BCC42EF3159BD9A8A.d.C6F1E5CBEA19128C980857E60575A9F8.e.7"}]}
+COMMAND: POST /session/43ea8d06c15dd84d430c46e64fd27637/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.D06CD80815F9584BCC42EF3159BD9A8A.d.C6F1E5CBEA19128C980857E60575A9F8.e.7","ELEMENT":"f.D06CD80815F9584BCC42EF3159BD9A8A.d.C6F1E5CBEA19128C980857E60575A9F8.e.7"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.D06CD80815F9584BCC42EF3159BD9A8A.d.C6F1E5CBEA19128C980857E60575A9F8.e.7","ELEMENT":"f.D06CD80815F9584BCC42EF3159BD9A8A.d.C6F1E5CBEA19128C980857E60575A9F8.e.7"}]}
+COMMAND: POST /session/43ea8d06c15dd84d430c46e64fd27637/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.D06CD80815F9584BCC42EF3159BD9A8A.d.C6F1E5CBEA19128C980857E60575A9F8.e.7","ELEMENT":"f.D06CD80815F9584BCC42EF3159BD9A8A.d.C6F1E5CBEA19128C980857E60575A9F8.e.7"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.D06CD80815F9584BCC42EF3159BD9A8A.d.C6F1E5CBEA19128C980857E60575A9F8.e.7","ELEMENT":"f.D06CD80815F9584BCC42EF3159BD9A8A.d.C6F1E5CBEA19128C980857E60575A9F8.e.7"}]}
+COMMAND: POST /session/43ea8d06c15dd84d430c46e64fd27637/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.D06CD80815F9584BCC42EF3159BD9A8A.d.C6F1E5CBEA19128C980857E60575A9F8.e.7","ELEMENT":"f.D06CD80815F9584BCC42EF3159BD9A8A.d.C6F1E5CBEA19128C980857E60575A9F8.e.7"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.D06CD80815F9584BCC42EF3159BD9A8A.d.C6F1E5CBEA19128C980857E60575A9F8.e.7","ELEMENT":"f.D06CD80815F9584BCC42EF3159BD9A8A.d.C6F1E5CBEA19128C980857E60575A9F8.e.7"}]}
+COMMAND: POST /session/43ea8d06c15dd84d430c46e64fd27637/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.D06CD80815F9584BCC42EF3159BD9A8A.d.C6F1E5CBEA19128C980857E60575A9F8.e.7","ELEMENT":"f.D06CD80815F9584BCC42EF3159BD9A8A.d.C6F1E5CBEA19128C980857E60575A9F8.e.7"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7807 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.D06CD80815F9584BCC42EF3159BD9A8A.d.C6F1E5CBEA19128C980857E60575A9F8.e.7","ELEMENT":"f.D06CD80815F9584BCC42EF3159BD9A8A.d.C6F1E5CBEA19128C980857E60575A9F8.e.7"}]}
+COMMAND: DELETE /session/43ea8d06c15dd84d430c46e64fd27637 - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: element ("//canvas[@aria-label="Map"]") still not displayed after 5000ms
+    at async DetailPage.OpenHospitalsMapview (file:///C:/Users/ahsham.khan/Desktop/WebDriver/BayutVisuals/test/pageobjects/detail.page.js:115:9)
+    at async Context.<anonymous> (file:///C:/Users/ahsham.khan/Desktop/WebDriver/BayutVisuals/test/specs/DetailPage.specs.js:206:7)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

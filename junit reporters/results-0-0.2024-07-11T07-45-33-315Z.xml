@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="1" errors="0" skipped="0">
+  <testsuite name="Detail Page Suite" timestamp="2024-07-11T12:45:34" time="6.61" tests="1" failures="1" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Detail Page Suite"/>
+      <property name="capabilities" value="chrome.126_0_6478_127.windows"/>
+      <property name="file" value="file:///C:/Users/ahsham.khan/Desktop/WebDriver/BayutVisuals/test/specs/DetailPage.specs.js"/>
+    </properties>
+    <testcase classname="chrome.126_0_6478_127.windows.Detail_Page_Suite" name="Verify Half Gallery View" time="6.605">
+      <failure message="element (&quot;//div[@class=&quot;_6d2ea5a7 _2ff2123c&quot;]&quot;) still not displayed after 5000ms"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/f8116f7617f2998014f7bff35de53b6f/window/maximize - {}
+COMMAND: DELETE /session/f8116f7617f2998014f7bff35de53b6f/cookie - {}
+COMMAND: POST /session/f8116f7617f2998014f7bff35de53b6f/element - {"using":"xpath","value":"//div[@class=\"_6d2ea5a7 _2ff2123c\"]"}
+COMMAND: POST /session/f8116f7617f2998014f7bff35de53b6f/url - {"url":"https://sl:getin1@stage.bayut.sector.run/property/details-6331676.html"}
+RESULT: {}
+RESULT: {}
+RESULT: {"using":"xpath","value":"//div[@class=\"_6d2ea5a7 _2ff2123c\"]"}
+COMMAND: POST /session/f8116f7617f2998014f7bff35de53b6f/element - {"using":"xpath","value":"//div[@class=\"_6d2ea5a7 _2ff2123c\"]"}
+RESULT: {"url":"https://sl:getin1@stage.bayut.sector.run/property/details-6331676.html"}
+RESULT: {"using":"xpath","value":"//div[@class=\"_6d2ea5a7 _2ff2123c\"]"}
+COMMAND: DELETE /session/f8116f7617f2998014f7bff35de53b6f - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: element ("//div[@class="_6d2ea5a7 _2ff2123c"]") still not displayed after 5000ms
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async DetailPage.OpenHalf_GalleryView (file:///C:/Users/ahsham.khan/Desktop/WebDriver/BayutVisuals/test/pageobjects/detail.page.js:74:9)
+    at async Context.<anonymous> (file:///C:/Users/ahsham.khan/Desktop/WebDriver/BayutVisuals/test/specs/DetailPage.specs.js:15:9)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

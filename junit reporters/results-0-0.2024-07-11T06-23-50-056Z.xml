@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="1" errors="0" skipped="0">
+  <testsuite name="Detail Page Suite" timestamp="2024-07-11T11:23:51" time="5.61" tests="1" failures="1" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Detail Page Suite"/>
+      <property name="capabilities" value="chrome.126_0_6478_127.windows"/>
+      <property name="file" value="file:///C:/Users/ahsham.khan/Desktop/WebDriver/BayutVisuals/test/specs/DetailPage.specs.js"/>
+    </properties>
+    <testcase classname="chrome.126_0_6478_127.windows.Detail_Page_Suite" name="Verify Regulatory Information Section" time="5.605">
+      <failure message="element (&quot;//div[@class=&quot;f72ded01&quot;]&quot;) still not existing after 5000ms"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/ef31bd2a118e76b6a7b949afb014e39d/window/maximize - {}
+COMMAND: DELETE /session/ef31bd2a118e76b6a7b949afb014e39d/cookie - {}
+COMMAND: POST /session/ef31bd2a118e76b6a7b949afb014e39d/element - {"using":"xpath","value":"//div[@class=\"f72ded01\"]"}
+COMMAND: POST /session/ef31bd2a118e76b6a7b949afb014e39d/url - {"url":"https://sl:getin1@stage.bayut.sector.run/property/details-6331676.html"}
+RESULT: {}
+RESULT: {"using":"xpath","value":"//div[@class=\"f72ded01\"]"}
+COMMAND: POST /session/ef31bd2a118e76b6a7b949afb014e39d/elements - {"using":"xpath","value":"//div[@class=\"f72ded01\"]"}
+RESULT: {}
+RESULT: {"url":"https://sl:getin1@stage.bayut.sector.run/property/details-6331676.html"}
+RESULT: {"using":"xpath","value":"//div[@class=\"f72ded01\"]"}
+COMMAND: DELETE /session/ef31bd2a118e76b6a7b949afb014e39d - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: element ("//div[@class="f72ded01"]") still not existing after 5000ms
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async DetailPage.Scroll_WaitForExist (file:///C:/Users/ahsham.khan/Desktop/WebDriver/BayutVisuals/test/pageobjects/page.js:47:6)
+    at async DetailPage.ViewRegulatoryInfo (file:///C:/Users/ahsham.khan/Desktop/WebDriver/BayutVisuals/test/pageobjects/detail.page.js:133:9)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>
