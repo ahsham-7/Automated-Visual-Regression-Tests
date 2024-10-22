@@ -1,0 +1,35 @@
+name: Image Comparison Tests and Deploy
+
+# Trigger the workflow manually from the Actions tab
+on:
+  workflow_dispatch:
+
+jobs:
+  run-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout the repository
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Step 2: Set up Node.js
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'  # Use the Node version your project needs
+
+      # Step 3: Install dependencies
+      - name: Install dependencies
+        run: npm install
+
+      # Step 4: Run WebdriverIO Tests
+      - name: Run WebdriverIO Tests
+        run: npm run test  # Make sure this script runs your image comparison tests
+
+      # Step 5: Deploy the test results (HTML and images) to GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages  # Branch where the HTML report and images will be deployed
+          folder: ./path_to_your_report_directory  # The folder where your HTML report and images are generated
