@@ -14,22 +14,29 @@ jobs:
         uses: actions/checkout@v3
 
       # Step 2: Set up Node.js
-      - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '18'  # Use the Node version your project needs
 
-      # Step 3: Install dependencies
+      # Step 3: Install Chrome dependencies
+      - name: Install Chrome dependencies
+        run: sudo apt-get install -y libgbm-dev libxshmfence-dev
+
+      # Step 4: Install dependencies
       - name: Install dependencies
         run: npm install
 
-      # Step 4: Run WebdriverIO Tests
+      # Step 5: Make WebdriverIO executable
+      - name: Make WebdriverIO executable
+        run: chmod +x ./node_modules/.bin/wdio
+
+      # Step 6: Run WebdriverIO Tests
       - name: Run WebdriverIO Tests
         run: npm run test  # Make sure this script runs your image comparison tests
 
-      # Step 5: Deploy the test results (HTML and images) to GitHub Pages
+      # Step 7: Deploy the test results (HTML and images) to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages  # Branch where the HTML report and images will be deployed
-          folder: ./path_to_your_report_directory  # The folder where your HTML report and images are generated
+          folder: ./reports  # Adjusted to match the reports folder
