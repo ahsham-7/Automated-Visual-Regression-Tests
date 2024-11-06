@@ -50,5 +50,5 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages  # Branch for HTML report and images
-          folder: ./reports  # Path to report and images folder
+          folder: reports  # Path to report and images folder
           token: ${{ secrets.GITHUB_TOKEN }}  # Use the default GitHub Actions token for deployment
