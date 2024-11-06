@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="1" errors="0" skipped="0">
+  <testsuite name="Detail Page Suite" timestamp="2024-11-06T11:21:30" time="60.082" tests="1" failures="1" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Detail Page Suite"/>
+      <property name="capabilities" value="chrome.130_0_6723_92.windows"/>
+      <property name="file" value="file:///C:/Users/ahsham.khan/Desktop/WebDriver/NewVss/Automated-Visual-Regression-Tests/test/specs/DetailPage.specs.js"/>
+    </properties>
+    <testcase classname="chrome.130_0_6723_92.windows.Detail_Page_Suite" name="tc 5" time="60.018">
+      <failure message="Timeout of 60000ms exceeded. The execution in the test &quot;Detail Page Suite tc 5&quot; took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts). (C:\Users\ahsham.khan\Desktop\WebDriver\NewVss\Automated-Visual-Regression-Tests\test\specs\DetailPage.specs.js)"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/ecd3e5bfcd89079d0a1020021f6ee53a/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/ecd3e5bfcd89079d0a1020021f6ee53a/element - {"using":"xpath","value":"//input[@id=\"username\"]"}
+RESULT: {"using":"xpath","value":"//input[@id=\"username\"]"}
+COMMAND: POST /session/ecd3e5bfcd89079d0a1020021f6ee53a/element/f.BD5AC20A7C79D23702DDA388F52915E0.d.A06C982F6588C4DE4372A7642BF631FA.e.3/clear - {}
+RESULT: {}
+COMMAND: POST /session/ecd3e5bfcd89079d0a1020021f6ee53a/element/f.BD5AC20A7C79D23702DDA388F52915E0.d.A06C982F6588C4DE4372A7642BF631FA.e.3/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/ecd3e5bfcd89079d0a1020021f6ee53a/element/f.BD5AC20A7C79D23702DDA388F52915E0.d.A06C982F6588C4DE4372A7642BF631FA.e.5/clear - {}
+RESULT: {}
+COMMAND: POST /session/ecd3e5bfcd89079d0a1020021f6ee53a/element/f.BD5AC20A7C79D23702DDA388F52915E0.d.A06C982F6588C4DE4372A7642BF631FA.e.5/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/ecd3e5bfcd89079d0a1020021f6ee53a/element/f.BD5AC20A7C79D23702DDA388F52915E0.d.A06C982F6588C4DE4372A7642BF631FA.e.6/click - {}
+RESULT: {}
+COMMAND: POST /session/ecd3e5bfcd89079d0a1020021f6ee53a/element/f.BD5AC20A7C79D23702DDA388F52915E0.d.2C9A8A874C2A5CF05CE14B2D37794271.e.76/click - {}
+RESULT: {}
+COMMAND: GET /session/ecd3e5bfcd89079d0a1020021f6ee53a/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/ecd3e5bfcd89079d0a1020021f6ee53a/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/ecd3e5bfcd89079d0a1020021f6ee53a/element/f.BD5AC20A7C79D23702DDA388F52915E0.d.2C9A8A874C2A5CF05CE14B2D37794271.e.76/click - {}
+COMMAND: DELETE /session/ecd3e5bfcd89079d0a1020021f6ee53a - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: Timeout of 60000ms exceeded. The execution in the test "Detail Page Suite tc 5" took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts). (C:\Users\ahsham.khan\Desktop\WebDriver\NewVss\Automated-Visual-Regression-Tests\test\specs\DetailPage.specs.js)
+    at createTimeoutError (C:\Users\ahsham.khan\Desktop\WebDriver\NewVss\Automated-Visual-Regression-Tests\node_modules\mocha\lib\errors.js:498:15)
+    at Runnable._timeoutError (C:\Users\ahsham.khan\Desktop\WebDriver\NewVss\Automated-Visual-Regression-Tests\node_modules\mocha\lib\runnable.js:429:10)
+    at Timeout.<anonymous> (C:\Users\ahsham.khan\Desktop\WebDriver\NewVss\Automated-Visual-Regression-Tests\node_modules\mocha\lib\runnable.js:244:24)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

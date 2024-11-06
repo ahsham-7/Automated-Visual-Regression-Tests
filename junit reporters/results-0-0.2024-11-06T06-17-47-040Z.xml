@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="1" errors="0" skipped="0">
+  <testsuite name="Detail Page Suite" timestamp="2024-11-06T11:17:48" time="11.583" tests="1" failures="1" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Detail Page Suite"/>
+      <property name="capabilities" value="chrome.130_0_6723_92.windows"/>
+      <property name="file" value="file:///C:/Users/ahsham.khan/Desktop/WebDriver/NewVss/Automated-Visual-Regression-Tests/test/specs/DetailPage.specs.js"/>
+    </properties>
+    <testcase classname="chrome.130_0_6723_92.windows.Detail_Page_Suite" name="tc 5" time="11.576">
+      <failure message="Can't call click on element with selector &quot;//div[@class=&quot;a68e82ed&quot; and text()=&quot;Schools&quot;]&quot; because element wasn't found"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/54eb9231d53816b9b9c120fa600db75b/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/54eb9231d53816b9b9c120fa600db75b/element - {"using":"xpath","value":"//div[@class=\"a68e82ed\" and text()=\"Schools\"]"}
+RESULT: {"using":"xpath","value":"//div[@class=\"a68e82ed\" and text()=\"Schools\"]"}
+COMMAND: DELETE /session/54eb9231d53816b9b9c120fa600db75b - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: Can't call click on element with selector "//div[@class="a68e82ed" and text()="Schools"]" because element wasn't found
+    at async DetailPage.OpenSchoolsMapview (file:///C:/Users/ahsham.khan/Desktop/WebDriver/NewVss/Automated-Visual-Regression-Tests/test/pageobjects/detail.page.js:106:9)
+    at async Context.<anonymous> (file:///C:/Users/ahsham.khan/Desktop/WebDriver/NewVss/Automated-Visual-Regression-Tests/test/specs/DetailPage.specs.js:74:9)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

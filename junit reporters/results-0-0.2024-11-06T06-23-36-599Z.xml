@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="1" errors="0" skipped="0">
+  <testsuite name="Detail Page Suite" timestamp="2024-11-06T11:23:38" time="41.403" tests="1" failures="1" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Detail Page Suite"/>
+      <property name="capabilities" value="chrome.130_0_6723_92.windows"/>
+      <property name="file" value="file:///C:/Users/ahsham.khan/Desktop/WebDriver/NewVss/Automated-Visual-Regression-Tests/test/specs/DetailPage.specs.js"/>
+    </properties>
+    <testcase classname="chrome.130_0_6723_92.windows.Detail_Page_Suite" name="tc 5" time="41.397">
+      <failure message="Image differences detected"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/9e30f2fc7d394a01b2dc788685913330/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/9e30f2fc7d394a01b2dc788685913330/element - {"using":"xpath","value":"//input[@id=\"username\"]"}
+RESULT: {"using":"xpath","value":"//input[@id=\"username\"]"}
+COMMAND: POST /session/9e30f2fc7d394a01b2dc788685913330/element/f.48BD31FE91A8C7F58F99CB8CFF0A41EC.d.52606D5C76C955351BF46C3FF29FFA2D.e.3/clear - {}
+RESULT: {}
+COMMAND: POST /session/9e30f2fc7d394a01b2dc788685913330/element/f.48BD31FE91A8C7F58F99CB8CFF0A41EC.d.52606D5C76C955351BF46C3FF29FFA2D.e.3/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/9e30f2fc7d394a01b2dc788685913330/element/f.48BD31FE91A8C7F58F99CB8CFF0A41EC.d.52606D5C76C955351BF46C3FF29FFA2D.e.5/clear - {}
+RESULT: {}
+COMMAND: POST /session/9e30f2fc7d394a01b2dc788685913330/element/f.48BD31FE91A8C7F58F99CB8CFF0A41EC.d.52606D5C76C955351BF46C3FF29FFA2D.e.5/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/9e30f2fc7d394a01b2dc788685913330/element/f.48BD31FE91A8C7F58F99CB8CFF0A41EC.d.52606D5C76C955351BF46C3FF29FFA2D.e.6/click - {}
+RESULT: {}
+COMMAND: POST /session/9e30f2fc7d394a01b2dc788685913330/element/f.48BD31FE91A8C7F58F99CB8CFF0A41EC.d.8EE37C412F16D2877D67AC10FF95001C.e.77/click - {}
+RESULT: {}
+COMMAND: GET /session/9e30f2fc7d394a01b2dc788685913330/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/9e30f2fc7d394a01b2dc788685913330/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/9e30f2fc7d394a01b2dc788685913330/element - {"using":"xpath","value":"//div[@class=\"a68e82ed\" and text()=\"Schools\"]"}
+RESULT: {"using":"xpath","value":"//div[@class=\"a68e82ed\" and text()=\"Schools\"]"}
+COMMAND: POST /session/9e30f2fc7d394a01b2dc788685913330/element/f.48BD31FE91A8C7F58F99CB8CFF0A41EC.d.87F171065415DC07A2247AC146DB3B80.e.63/click - {}
+RESULT: {}
+COMMAND: GET /session/9e30f2fc7d394a01b2dc788685913330/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: DELETE /session/9e30f2fc7d394a01b2dc788685913330 - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: Image differences detected
+    at Context.<anonymous> (file:///C:/Users/ahsham.khan/Desktop/WebDriver/NewVss/Automated-Visual-Regression-Tests/test/specs/DetailPage.specs.js:83:15)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

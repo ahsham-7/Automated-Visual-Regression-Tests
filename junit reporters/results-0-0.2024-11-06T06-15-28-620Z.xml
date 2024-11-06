@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="1" errors="0" skipped="0">
+  <testsuite name="Detail Page Suite" timestamp="2024-11-06T11:15:29" time="0.108" tests="1" failures="1" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Detail Page Suite"/>
+      <property name="capabilities" value="chrome.130_0_6723_92.windows"/>
+      <property name="file" value="file:///C:/Users/ahsham.khan/Desktop/WebDriver/NewVss/Automated-Visual-Regression-Tests/test/specs/DetailPage.specs.js"/>
+    </properties>
+    <testcase classname="chrome.130_0_6723_92.windows.Detail_Page_Suite" name="tc 5" time="0.097">
+      <failure message="(intermediate value).openE2E is not a function"/>
+      <system-out><![CDATA[
+COMMAND: DELETE /session/c693e06e80cdb8915310ea853b93df17 - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+TypeError: (intermediate value).openE2E is not a function
+    at DetailPage.openStage (file:///C:/Users/ahsham.khan/Desktop/WebDriver/NewVss/Automated-Visual-Regression-Tests/test/pageobjects/detail.page.js:8:15)
+    at Context.<anonymous> (file:///C:/Users/ahsham.khan/Desktop/WebDriver/NewVss/Automated-Visual-Regression-Tests/test/specs/DetailPage.specs.js:73:21)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

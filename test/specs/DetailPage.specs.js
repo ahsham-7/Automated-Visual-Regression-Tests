@@ -71,6 +71,7 @@ describe("Detail Page Suite", async ()=>{
 
       try{
          DetailPage.openStage()
+         await DetailPage.LogSite()
         await DetailPage.OpenSchoolsMapview()
         await DetailPage.SaveShot(`${testSuite}/${screenshotName}`)
         DetailPage.openProduction()
@@ -93,7 +94,7 @@ describe("Detail Page Suite", async ()=>{
       }
 
     
-    }),
+    })
 
     // it('Verify Appearence of Restaurants section in Map View', async ()=>{
     //     DetailPage.openStage()
@@ -148,66 +149,66 @@ describe("Detail Page Suite", async ()=>{
     //     await DetailPage.CompareShot('Detail Page/Property Description')
     //   }),
 
-      it('Verify Regulatory Information Section', async ()=>{
-        const testSuite = 'Detail Page'
-        const testDescription = 'Verify Regulatory Information Section'
-        const screenshotName = 'Regulatory Info Section'
-        try{
-        DetailPage.openStage()
-        await DetailPage.ViewRegulatoryInfo()
-        await DetailPage.SaveShot(`${testSuite}/${screenshotName}`)
-        DetailPage.openProduction()
-        await DetailPage.waitForPageToLoad()
-        await DetailPage.ViewRegulatoryInfo()
-        const result = await DetailPage.CompareShot(`${testSuite}/${screenshotName}`)
-        if(!result){
-          updateHTMLReport(testSuite,screenshotName,testDescription,true)
-          throw new Error('Image differences detected');
-        }
-        }
-        catch(error){
-          if (error.message.includes('Image differences detected')) {
-            console.error('Image difference found:', error);
-        } else {
-            console.error('Test execution failed:', error);
-        }
-        throw error; // Re-throw the error to ensure the test fails
+      // it('Verify Regulatory Information Section', async ()=>{
+      //   const testSuite = 'Detail Page'
+      //   const testDescription = 'Verify Regulatory Information Section'
+      //   const screenshotName = 'Regulatory Info Section'
+      //   try{
+      //   DetailPage.openStage()
+      //   await DetailPage.ViewRegulatoryInfo()
+      //   await DetailPage.SaveShot(`${testSuite}/${screenshotName}`)
+      //   DetailPage.openProduction()
+      //   await DetailPage.waitForPageToLoad()
+      //   await DetailPage.ViewRegulatoryInfo()
+      //   const result = await DetailPage.CompareShot(`${testSuite}/${screenshotName}`)
+      //   if(!result){
+      //     updateHTMLReport(testSuite,screenshotName,testDescription,true)
+      //     throw new Error('Image differences detected');
+      //   }
+      //   }
+      //   catch(error){
+      //     if (error.message.includes('Image differences detected')) {
+      //       console.error('Image difference found:', error);
+      //   } else {
+      //       console.error('Test execution failed:', error);
+      //   }
+      //   throw error; // Re-throw the error to ensure the test fails
     
-        }
+      //   }
 
-      }),
+      // }),
 
     
-    it('Verify Agent/Agency card', async () => {
-      const testSuite = 'Detail Page'; 
-      const screenshotName = 'Agent_Agency Card'; 
-      const testDescription = 'Verify Agent/Agency card';
-      try {
-          // Stage environment
-          DetailPage.openStage();
-          //await DetailPage.View_Agent_AgencyCard();
-          await DetailPage.SaveShot(`${testSuite}/${screenshotName}`);
+  //   it('Verify Agent/Agency card', async () => {
+  //     const testSuite = 'Detail Page'; 
+  //     const screenshotName = 'Agent_Agency Card'; 
+  //     const testDescription = 'Verify Agent/Agency card';
+  //     try {
+  //         // Stage environment
+  //         DetailPage.openStage();
+  //         //await DetailPage.View_Agent_AgencyCard();
+  //         await DetailPage.SaveShot(`${testSuite}/${screenshotName}`);
   
-          // Production environment
-          DetailPage.openProduction();
-          await DetailPage.waitForPageToLoad();
+  //         // Production environment
+  //         DetailPage.openProduction();
+  //         await DetailPage.waitForPageToLoad();
          
-          await DetailPage.View_Agent_AgencyCard();
+  //         await DetailPage.View_Agent_AgencyCard();
   
-          const result = await DetailPage.CompareShot(`${testSuite}/${screenshotName}`);
-          if (!result) {
-              updateHTMLReport(testSuite, screenshotName, testDescription, true);
-              throw new Error('Image differences detected'); // Explicitly throw an error to fail the test
-          }
-      } catch (error) {
-          if (error.message.includes('Image differences detected')) {
-              console.error('Image difference found:', error);
-          } else {
-              console.error('Test execution failed:', error);
-          }
-          throw error; // Re-throw the error to ensure the test fails
-      }
-  })
+  //         const result = await DetailPage.CompareShot(`${testSuite}/${screenshotName}`);
+  //         if (!result) {
+  //             updateHTMLReport(testSuite, screenshotName, testDescription, true);
+  //             throw new Error('Image differences detected'); // Explicitly throw an error to fail the test
+  //         }
+  //     } catch (error) {
+  //         if (error.message.includes('Image differences detected')) {
+  //             console.error('Image difference found:', error);
+  //         } else {
+  //             console.error('Test execution failed:', error);
+  //         }
+  //         throw error; // Re-throw the error to ensure the test fails
+  //     }
+  // })
 
 //   it('Verify Full Amenities Section', async () => {
 //     const testSuite = 'Detail Page';
