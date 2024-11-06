@@ -19,25 +19,18 @@ jobs:
         with:
           node-version: '18'  # Use the Node version your project needs
 
-      # Step 3: Install Chrome dependencies
-      - name: Install Chrome dependencies
-        run: sudo apt-get install -y libgbm-dev libxshmfence-dev
-
-      # Step 4: Install dependencies
+      # Step 3: Install dependencies
       - name: Install dependencies
         run: npm install
 
-      # Step 5: Make WebdriverIO executable
-      - name: Make WebdriverIO executable
-        run: chmod +x ./node_modules/.bin/wdio
-
-      # Step 6: Run WebdriverIO Tests
+      # Step 4: Run WebdriverIO Tests
       - name: Run WebdriverIO Tests
         run: npm run test  # Make sure this script runs your image comparison tests
 
-      # Step 7: Deploy the test results (HTML and images) to GitHub Pages
+      # Step 5: Deploy the test results (HTML and images) to GitHub Pages only if previous steps failed
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages  # Branch where the HTML report and images will be deployed
-          folder: ./reports  # Path to the reports folder where your HTML report is located
+          folder: ./reports  # The folder where your HTML report and images are generated
+        if: ${{ failure() }}  # Ensures this step runs only if previous steps failed
