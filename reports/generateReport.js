@@ -132,7 +132,7 @@ function writeReport() {
   </body>
   </html>
   `;
-  fs.writeFileSync(path.join(reportDir, 'report.html'), htmlContent);
+  fs.writeFileSync(path.join(reportDir, 'index.html'), htmlContent);
   console.log('Report updated with test results!');
 }
 
