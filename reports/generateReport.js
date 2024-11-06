@@ -8,7 +8,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 // Define directories for baseline, actual, and diff images (these will be uploaded to GitHub Pages)
-const baseUrl = 'https://yourusername.github.io/repository-name/images/';  // Replace with your GitHub Pages URL
+const baseUrl = 'https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/';
 
 // Initial HTML content for the report
 let htmlContent = `
