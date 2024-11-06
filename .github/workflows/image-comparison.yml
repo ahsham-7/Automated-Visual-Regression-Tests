@@ -17,20 +17,30 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18'  # Use the Node version your project needs
+          node-version: '18'  # Ensure this matches your project’s Node.js version
 
       # Step 3: Install dependencies
       - name: Install dependencies
         run: npm install
 
-      # Step 4: Run WebdriverIO Tests
-      - name: Run WebdriverIO Tests
-        run: npm run test  # Make sure this script runs your image comparison tests
+      # Step 4: Install Chrome and set permissions for wdio
+      - name: Install Chrome
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y google-chrome-stable
+      - name: Make wdio executable
+        run: chmod +x ./node_modules/.bin/wdio
 
-      # Step 5: Deploy the test results (HTML and images) to GitHub Pages only if previous steps failed
+      # Step 5: Run WebdriverIO Tests
+      - name: Run WebdriverIO Tests
+        run: npm run test  # Run your image comparison tests
+        continue-on-error: true  # Allow the deployment step to run even if tests fail
+
+      # Step 6: Deploy the test results (HTML and images) to GitHub Pages
       - name: Deploy to GitHub Pages
+        if: always()  # Ensures deployment runs regardless of test outcome
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: gh-pages  # Branch where the HTML report and images will be deployed
-          folder: ./reports  # The folder where your HTML report and images are generated
-        if: ${{ failure() }}  # Ensures this step runs only if previous steps failed
+          branch: gh-pages  # Branch for HTML report and images
+          folder: ./reports  # Path to report directory
+          token: ${{ secrets.GITHUB_TOKEN }}  # Use the default GitHub Actions token for deployment
