@@ -1,4 +1,23 @@
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
 
+// Get the current directory and filename
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
+// Base URL for GitHub Pages (change to your repo's GitHub Pages URL)
+const baseUrl = 'https://yourusername.github.io/yourrepo/images/';
+
+// Directories for baseline, actual, and diff images
+const baselineDir = path.join(__dirname, '../baseLineImages/desktop_chrome');
+const actualDir = path.join(__dirname, '../actualImages/actual/desktop_chrome');
+const diffDir = path.join(__dirname, '../actualImages/diff/desktop_chrome');
+const reportDir = path.join(__dirname);
+
+// Initial HTML content for the report
+let htmlContent = `
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -76,29 +95,58 @@
 <body>
   <h1>Visual Regression Report</h1>
   <div class="container">
+`;
 
+/**
+ * Function to update the HTML report with the results of a test.
+ * @param {string} testSuite - The title of the test suite.
+ * @param {string} screenshotName - The name of the screenshot.
+ * @param {string} testDescription - The description of the test.
+ * @param {boolean} diffGenerated - Whether a diff was generated.
+ */
+function updateHTMLReport(testSuite, screenshotName, testDescription, diffGenerated) {
+  // Sanitize testSuite and screenshotName (replace spaces with underscores)
+  const sanitizedTestSuite = testSuite.replace(/ /g, '_');
+  const sanitizedScreenshotName = screenshotName.replace(/ /g, '_');
+
+  // Construct name with dash
+  const nameWithDash = `${sanitizedTestSuite}/${sanitizedScreenshotName}-`;
+
+  // Image paths on GitHub Pages (relative to your hosted repo)
+  const baselineImagePath = `${baseUrl}${sanitizedTestSuite}/${sanitizedScreenshotName}-baseline.png`;
+  const actualImagePath = `${baseUrl}${sanitizedTestSuite}/${sanitizedScreenshotName}-actual.png`;
+  const diffImagePath = `${baseUrl}${sanitizedTestSuite}/${sanitizedScreenshotName}-diff.png`;
+
+  // Add HTML content for each test section
+  htmlContent += `
   <div class="test-section">
-      <div class="test-heading">Detail Page</div>
-      <div class="test-description">Verify Appearence of School in Map View</div>
+      <div class="test-heading">${testSuite}</div>
+      <div class="test-description">${testDescription}</div>
       <div class="image-diff">
           <div>
               <h3>Baseline</h3>
-              <button onclick="window.open('file:///C:/Users/ahsham.khan/Desktop/WebDriver/NewVss/Automated-Visual-Regression-Tests/baseLineImages/desktop_chrome/Detail_Page/Schools_in_Map_View-.png', '_blank')">View Baseline</button>
+              <button onclick="window.open('${baselineImagePath}', '_blank')">View Baseline</button>
           </div>
           <div>
               <h3>Actual</h3>
-              <button onclick="window.open('file:///C:/Users/ahsham.khan/Desktop/WebDriver/NewVss/Automated-Visual-Regression-Tests/actualImages/actual/desktop_chrome/Detail_Page/Schools_in_Map_View-.png', '_blank')">View Actual</button>
+              <button onclick="window.open('${actualImagePath}', '_blank')">View Actual</button>
           </div>
-          
+          ${diffGenerated ? `
           <div>
               <h3>Diff</h3>
-              <button onclick="window.open('file:///C:/Users/ahsham.khan/Desktop/WebDriver/NewVss/Automated-Visual-Regression-Tests/actualImages/diff/desktop_chrome/Detail_Page/Schools_in_Map_View-.png', '_blank')">View Diff</button>
+              <button onclick="window.open('${diffImagePath}', '_blank')">View Diff</button>
           </div>
-          
+          ` : ''}
       </div>
   </div>
-  
-  </div>
-  </body>
-  </html>
-  
+  `;
+}
+
+function writeReport() {
+  htmlContent += `</div></body></html>`;
+  fs.writeFileSync(path.join(reportDir, 'report.html'), htmlContent);
+  console.log('Report updated with test results!');
+}
+
+// Export the functions for use in other modules
+export { updateHTMLReport, writeReport };

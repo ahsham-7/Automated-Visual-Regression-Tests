@@ -36,11 +36,19 @@ jobs:
         run: npm run test  # Run your image comparison tests
         continue-on-error: true  # Allow the deployment step to run even if tests fail
 
-      # Step 6: Deploy the test results (HTML and images) to GitHub Pages
+      # Step 6: Upload images to GitHub Pages
+      - name: Upload images to GitHub Pages
+        run: |
+          mkdir -p gh-pages/images
+          cp -R ./baseLineImages/* ./gh-pages/images/
+          cp -R ./actualImages/* ./gh-pages/images/
+          cp -R ./actualImages/diff/* ./gh-pages/images/
+
+      # Step 7: Deploy the test results (HTML and images) to GitHub Pages
       - name: Deploy to GitHub Pages
         if: always()  # Ensures deployment runs regardless of test outcome
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages  # Branch for HTML report and images
-          folder: ./reports  # Path to report directory
+          folder: ./gh-pages  # Path to report and images folder
           token: ${{ secrets.GITHUB_TOKEN }}  # Use the default GitHub Actions token for deployment

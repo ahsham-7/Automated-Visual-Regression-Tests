@@ -7,11 +7,8 @@ import { dirname } from 'path';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-// Define directories for baseline, actual, and diff images
-const baselineDir = path.join(__dirname, '../baseLineImages/desktop_chrome');
-const actualDir = path.join(__dirname, '../actualImages/actual/desktop_chrome');
-const diffDir = path.join(__dirname, '../actualImages/diff/desktop_chrome');
-const reportDir = path.join(__dirname);
+// Define directories for baseline, actual, and diff images (these will be uploaded to GitHub Pages)
+const baseUrl = 'https://yourusername.github.io/repository-name/images/';  // Replace with your GitHub Pages URL
 
 // Initial HTML content for the report
 let htmlContent = `
@@ -94,27 +91,17 @@ let htmlContent = `
   <div class="container">
 `;
 
-/**
- * Function to update the HTML report with the results of a test.
- * @param {string} testSuite - The title of the test suite.
- * @param {string} screenshotName - The name of the screenshot.
- * @param {string} testDescription - The description of the test.
- * @param {boolean} diffGenerated - Whether a diff was generated.
- */
 function updateHTMLReport(testSuite, screenshotName, testDescription, diffGenerated) {
-  // Sanitize testSuite and screenshotName (replace spaces with underscores)
   const sanitizedTestSuite = testSuite.replace(/ /g, '_');
   const sanitizedScreenshotName = screenshotName.replace(/ /g, '_');
 
-  // Construct name with dash
   const nameWithDash = `${sanitizedTestSuite}/${sanitizedScreenshotName}-`;
 
-  // Directories containing the images
-  const baselineImagePath = path.join(baselineDir, `${nameWithDash}.png`).replace(/\\/g, '/');
-  const actualImagePath = path.join(actualDir, `${nameWithDash}.png`).replace(/\\/g, '/');
-  const diffImagePath = path.join(diffDir, `${nameWithDash}.png`).replace(/\\/g, '/');
+  // Use the base URL for GitHub Pages images
+  const baselineImageUrl = `${baseUrl}${nameWithDash}.png`;
+  const actualImageUrl = `${baseUrl}${nameWithDash}.png`;
+  const diffImageUrl = `${baseUrl}${nameWithDash}.png`;
 
-  // Add HTML content for each test section
   htmlContent += `
   <div class="test-section">
       <div class="test-heading">${testSuite}</div>
@@ -122,16 +109,16 @@ function updateHTMLReport(testSuite, screenshotName, testDescription, diffGenera
       <div class="image-diff">
           <div>
               <h3>Baseline</h3>
-              <button onclick="window.open('file:///${baselineImagePath}', '_blank')">View Baseline</button>
+              <button onclick="window.open('${baselineImageUrl}', '_blank')">View Baseline</button>
           </div>
           <div>
               <h3>Actual</h3>
-              <button onclick="window.open('file:///${actualImagePath}', '_blank')">View Actual</button>
+              <button onclick="window.open('${actualImageUrl}', '_blank')">View Actual</button>
           </div>
           ${diffGenerated ? `
           <div>
               <h3>Diff</h3>
-              <button onclick="window.open('file:///${diffImagePath}', '_blank')">View Diff</button>
+              <button onclick="window.open('${diffImageUrl}', '_blank')">View Diff</button>
           </div>
           ` : ''}
       </div>
@@ -149,5 +136,4 @@ function writeReport() {
   console.log('Report updated with test results!');
 }
 
-// Export the functions for use in other modules
 export { updateHTMLReport, writeReport };
