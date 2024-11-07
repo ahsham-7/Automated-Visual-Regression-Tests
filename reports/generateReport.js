@@ -35,11 +35,10 @@ function updateHTMLReport(testSuite, screenshotName, testDescription, diffGenera
   const sanitizedTestSuite = testSuite.replace(/ /g, '_');
   const sanitizedScreenshotName = screenshotName.replace(/ /g, '_');
 
-  const nameWithDash = `${sanitizedTestSuite}/${sanitizedScreenshotName}-`;
-
-  const baselineImageUrl = `${baseUrl}baseline/${nameWithDash}.png`;
-  const actualImageUrl = `${baseUrl}actual/${nameWithDash}.png`;
-  const diffImageUrl = `${baseUrl}diff/${nameWithDash}.png`;
+  // Construct paths for each type of image
+  const baselineImageUrl = `${baseUrl}baseline/desktop_chrome/${sanitizedTestSuite}/${sanitizedScreenshotName}-.png`;
+  const actualImageUrl = `${baseUrl}actual/desktop_chrome/${sanitizedTestSuite}/${sanitizedScreenshotName}-.png`;
+  const diffImageUrl = `${baseUrl}diff/desktop_chrome/${sanitizedTestSuite}/${sanitizedScreenshotName}-.png`;
 
   htmlContent += `
   <div class="test-section">
@@ -64,6 +63,7 @@ function updateHTMLReport(testSuite, screenshotName, testDescription, diffGenera
   </div>
   `;
 }
+
 
 // Function to write the final HTML report
 function writeReport() {
