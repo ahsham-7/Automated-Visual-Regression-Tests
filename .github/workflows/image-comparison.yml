@@ -47,7 +47,7 @@ jobs:
           cp -R ./baseLineImages/* ./gh-pages/images/baseline/
           cp -R ./actualImages/actual/* ./gh-pages/images/actual/
           cp -R ./actualImages/diff/* ./gh-pages/images/diff/
-          cp ./gh-pages/index.html ./gh-pages/index.html  # Use index.html for GitHub Pages
+          cp ./reports/index.html ./gh-pages/index.html  # Use index.html for GitHub Pages
 
       # Step 7: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
