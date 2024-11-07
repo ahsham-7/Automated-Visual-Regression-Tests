@@ -41,12 +41,12 @@ jobs:
       # Step 6: Prepare files for deployment to GitHub Pages
       - name: Prepare files for deployment
         run: |
-          mkdir -p gh-pages/images/baseline
-          mkdir -p gh-pages/images/actual
-          mkdir -p gh-pages/images/diff
-          cp -R ./baseLineImages/* ./gh-pages/images/baseline/
-          cp -R ./actualImages/actual/* ./gh-pages/images/actual/
-          cp -R ./actualImages/diff/* ./gh-pages/images/diff/
+          mkdir -p gh-pages/images/baseline/desktop_chrome
+          mkdir -p gh-pages/images/actual/desktop_chrome
+          mkdir -p gh-pages/images/diff/desktop_chrome
+          cp -R ./baseLineImages/* ./gh-pages/images/baseline/desktop_chrome/
+          cp -R ./actualImages/actual/* ./gh-pages/images/actual/desktop_chrome/
+          cp -R ./actualImages/diff/* ./gh-pages/images/diff/desktop_chrome/
           cp ./reports/index.html ./gh-pages/index.html  # Use index.html for GitHub Pages
 
       # Step 7: Deploy to GitHub Pages
