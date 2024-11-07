@@ -1,6 +1,5 @@
 name: Image Comparison Tests and Deploy
 
-# Trigger the workflow manually from the Actions tab
 on:
   workflow_dispatch:
 
@@ -45,7 +44,7 @@ jobs:
           cp -R ./baseLineImages/* ./gh-pages/images/baseline/
           cp -R ./actualImages/actual/* ./gh-pages/images/actual/
           cp -R ./actualImages/diff/* ./gh-pages/images/diff/
-          cp -R ./path/to/your/html/report.html ./gh-pages/index.html  # Make sure the report file is named index.html or update as needed
+          cp ./gh-pages/index.html ./gh-pages/index.html  # Use index.html for GitHub Pages
 
       # Step 7: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages

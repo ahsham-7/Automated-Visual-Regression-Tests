@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="2" failures="2" errors="0" skipped="0">
+  <testsuite name="Detail Page Suite" timestamp="2024-11-07T22:52:00" time="74.248" tests="2" failures="2" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Detail Page Suite"/>
+      <property name="capabilities" value="chrome.130_0_6723_116.windows"/>
+      <property name="file" value="file:///C:/Users/ahsham.khan/Desktop/WebDriver/NewVss/Automated-Visual-Regression-Tests/test/specs/DetailPage.specs.js"/>
+    </properties>
+    <testcase classname="chrome.130_0_6723_116.windows.Detail_Page_Suite" name="tc 5" time="74.195">
+      <failure message="Image differences detected"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/5aef8c6442919a97e5e8ebf75804c3b8/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/5aef8c6442919a97e5e8ebf75804c3b8/element - {"using":"xpath","value":"//input[@id=\"username\"]"}
+RESULT: {"using":"xpath","value":"//input[@id=\"username\"]"}
+COMMAND: POST /session/5aef8c6442919a97e5e8ebf75804c3b8/element/f.187EC482A9C07B68CFE781724254D46D.d.21CF7A3EA6C328DA64E801AB85C9F62C.e.3/clear - {}
+RESULT: {}
+COMMAND: POST /session/5aef8c6442919a97e5e8ebf75804c3b8/element/f.187EC482A9C07B68CFE781724254D46D.d.21CF7A3EA6C328DA64E801AB85C9F62C.e.3/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/5aef8c6442919a97e5e8ebf75804c3b8/element/f.187EC482A9C07B68CFE781724254D46D.d.21CF7A3EA6C328DA64E801AB85C9F62C.e.5/clear - {}
+RESULT: {}
+COMMAND: POST /session/5aef8c6442919a97e5e8ebf75804c3b8/element/f.187EC482A9C07B68CFE781724254D46D.d.21CF7A3EA6C328DA64E801AB85C9F62C.e.5/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/5aef8c6442919a97e5e8ebf75804c3b8/element/f.187EC482A9C07B68CFE781724254D46D.d.21CF7A3EA6C328DA64E801AB85C9F62C.e.6/click - {}
+RESULT: {}
+COMMAND: POST /session/5aef8c6442919a97e5e8ebf75804c3b8/element/f.187EC482A9C07B68CFE781724254D46D.d.0931CED4574D5407DA68C59EE2ED7365.e.138/click - {}
+RESULT: {}
+COMMAND: GET /session/5aef8c6442919a97e5e8ebf75804c3b8/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/5aef8c6442919a97e5e8ebf75804c3b8/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/5aef8c6442919a97e5e8ebf75804c3b8/element - {"using":"xpath","value":"//div[@class=\"a68e82ed\" and text()=\"Schools\"]"}
+RESULT: {"using":"xpath","value":"//div[@class=\"a68e82ed\" and text()=\"Schools\"]"}
+COMMAND: POST /session/5aef8c6442919a97e5e8ebf75804c3b8/element/f.187EC482A9C07B68CFE781724254D46D.d.5284B00FD9F3D18FC4A903CA7067EAA0.e.80/click - {}
+RESULT: {}
+COMMAND: GET /session/5aef8c6442919a97e5e8ebf75804c3b8/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: DELETE /session/5aef8c6442919a97e5e8ebf75804c3b8 - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: Image differences detected
+    at Context.<anonymous> (file:///C:/Users/ahsham.khan/Desktop/WebDriver/NewVss/Automated-Visual-Regression-Tests/test/specs/DetailPage.specs.js:83:15)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.130_0_6723_116.windows.Detail_Page_Suite" name="after all hook for Detail Page Suite" time="0.047">
+      <failure message="ENOENT: no such file or directory, open 'C:\Users\ahsham.khan\Desktop\WebDriver\NewVss\Automated-Visual-Regression-Tests\reports\gh-pages\report.html'"/>
+      <system-err><![CDATA[
+Error: ENOENT: no such file or directory, open 'C:\Users\ahsham.khan\Desktop\WebDriver\NewVss\Automated-Visual-Regression-Tests\reports\gh-pages\report.html'
+    at Object.openSync (node:fs:596:3)
+    at Object.writeFileSync (node:fs:2322:35)
+    at writeReport (file:///C:/Users/ahsham.khan/Desktop/WebDriver/NewVss/Automated-Visual-Regression-Tests/reports/generateReport.js:135:6)
+    at Context.<anonymous> (file:///C:/Users/ahsham.khan/Desktop/WebDriver/NewVss/Automated-Visual-Regression-Tests/test/specs/DetailPage.specs.js:6:5)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

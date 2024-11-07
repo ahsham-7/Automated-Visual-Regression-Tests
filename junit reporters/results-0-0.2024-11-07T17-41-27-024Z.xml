@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="2" failures="2" errors="0" skipped="0">
+  <testsuite name="Detail Page Suite" timestamp="2024-11-07T22:41:28" time="82.386" tests="2" failures="2" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Detail Page Suite"/>
+      <property name="capabilities" value="chrome.130_0_6723_116.windows"/>
+      <property name="file" value="file:///C:/Users/ahsham.khan/Desktop/WebDriver/NewVss/Automated-Visual-Regression-Tests/test/specs/DetailPage.specs.js"/>
+    </properties>
+    <testcase classname="chrome.130_0_6723_116.windows.Detail_Page_Suite" name="tc 5" time="82.319">
+      <failure message="Image differences detected"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/1bb31900b51a28bddaa0ed0b4272dda8/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/1bb31900b51a28bddaa0ed0b4272dda8/element - {"using":"xpath","value":"//input[@id=\"username\"]"}
+RESULT: {"using":"xpath","value":"//input[@id=\"username\"]"}
+COMMAND: POST /session/1bb31900b51a28bddaa0ed0b4272dda8/element/f.26946818DF35466F0901674FD912EB27.d.D1D771EDADBA19AF168F26C36AEFF87F.e.4/clear - {}
+RESULT: {}
+COMMAND: POST /session/1bb31900b51a28bddaa0ed0b4272dda8/element/f.26946818DF35466F0901674FD912EB27.d.D1D771EDADBA19AF168F26C36AEFF87F.e.4/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/1bb31900b51a28bddaa0ed0b4272dda8/element/f.26946818DF35466F0901674FD912EB27.d.D1D771EDADBA19AF168F26C36AEFF87F.e.6/clear - {}
+RESULT: {}
+COMMAND: POST /session/1bb31900b51a28bddaa0ed0b4272dda8/element/f.26946818DF35466F0901674FD912EB27.d.D1D771EDADBA19AF168F26C36AEFF87F.e.6/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/1bb31900b51a28bddaa0ed0b4272dda8/element/f.26946818DF35466F0901674FD912EB27.d.D1D771EDADBA19AF168F26C36AEFF87F.e.7/click - {}
+RESULT: {}
+COMMAND: POST /session/1bb31900b51a28bddaa0ed0b4272dda8/element/f.26946818DF35466F0901674FD912EB27.d.9B89EFC92B89F799609D3417EB85B0FB.e.128/click - {}
+RESULT: {}
+COMMAND: GET /session/1bb31900b51a28bddaa0ed0b4272dda8/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/1bb31900b51a28bddaa0ed0b4272dda8/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/1bb31900b51a28bddaa0ed0b4272dda8/element - {"using":"xpath","value":"//div[@class=\"a68e82ed\" and text()=\"Schools\"]"}
+RESULT: {"using":"xpath","value":"//div[@class=\"a68e82ed\" and text()=\"Schools\"]"}
+COMMAND: POST /session/1bb31900b51a28bddaa0ed0b4272dda8/element/f.26946818DF35466F0901674FD912EB27.d.8D5742F78FF9B0A1B923710CEEE702EC.e.82/click - {}
+RESULT: {}
+COMMAND: GET /session/1bb31900b51a28bddaa0ed0b4272dda8/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: DELETE /session/1bb31900b51a28bddaa0ed0b4272dda8 - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: Image differences detected
+    at Context.<anonymous> (file:///C:/Users/ahsham.khan/Desktop/WebDriver/NewVss/Automated-Visual-Regression-Tests/test/specs/DetailPage.specs.js:83:15)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.130_0_6723_116.windows.Detail_Page_Suite" name="after all hook for Detail Page Suite" time="0.06">
+      <failure message="reportDir is not defined"/>
+      <system-err><![CDATA[
+ReferenceError: reportDir is not defined
+    at writeReport (file:///C:/Users/ahsham.khan/Desktop/WebDriver/NewVss/Automated-Visual-Regression-Tests/reports/generateReport.js:135:30)
+    at Context.<anonymous> (file:///C:/Users/ahsham.khan/Desktop/WebDriver/NewVss/Automated-Visual-Regression-Tests/test/specs/DetailPage.specs.js:6:5)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>
