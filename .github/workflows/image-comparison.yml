@@ -44,9 +44,9 @@ jobs:
           mkdir -p gh-pages/images/baseline/desktop_chrome
           mkdir -p gh-pages/images/actual/desktop_chrome
           mkdir -p gh-pages/images/diff/desktop_chrome
-          cp -R ./baseLineImages/* ./gh-pages/images/baseline/desktop_chrome/
-          cp -R ./actualImages/actual/* ./gh-pages/images/actual/desktop_chrome/
-          cp -R ./actualImages/diff/* ./gh-pages/images/diff/desktop_chrome/
+          cp -R ./baseLineImages/* ./gh-pages/images/baseline/desktop_chrome/desktop_chrome/Detail_Page/
+          cp -R ./actualImages/actual/* ./gh-pages/images/actual/desktop_chrome/desktop_chrome/Detail_Page/
+          cp -R ./actualImages/diff/* ./gh-pages/images/diff/desktop_chrome/desktop_chrome/Detail_Page/
           cp ./reports/index.html ./gh-pages/index.html  # Use index.html for GitHub Pages
 
       # Step 7: Deploy to GitHub Pages
