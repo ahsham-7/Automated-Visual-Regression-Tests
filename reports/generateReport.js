@@ -35,9 +35,9 @@ function updateHTMLReport(testSuite, screenshotName, testDescription, diffGenera
   const sanitizedTestSuite = testSuite.replace(/ /g, '_');
   const sanitizedScreenshotName = screenshotName.replace(/ /g, '_');
 
-  const baselineImageUrl = `${baseUrl}baseline/desktop_chrome/desktop_chrome/Detail_Page/${nameWithDash}.png`;
-  const actualImageUrl = `${baseUrl}actual/desktop_chrome/desktop_chrome/Detail_Page/${nameWithDash}.png`;
-  const diffImageUrl = `${baseUrl}diff/desktop_chrome/desktop_chrome/Detail_Page/${nameWithDash}.png`;
+  const baselineImageUrl = `${baseUrl}baseline/${sanitizedTestSuite}/${sanitizedScreenshotName}-.png`;
+  const actualImageUrl = `${baseUrl}actual/${sanitizedTestSuite}/${sanitizedScreenshotName}-.png`;
+  const diffImageUrl = `${baseUrl}diff/${sanitizedTestSuite}/${sanitizedScreenshotName}-.png`;
 
   htmlContent += `
   <div class="test-section">
