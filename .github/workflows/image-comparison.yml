@@ -35,11 +35,16 @@ jobs:
         run: npm run test  # Run your image comparison tests
         continue-on-error: true  # Allow deployment step to run even if tests fail
 
-      # Step 6: Generate HTML Report
+      # Step 6: Generate the report (This should overwrite the existing index.html file)
       - name: Generate HTML Report
         run: node ./reports/generateReport.js  # Path to report generation script
 
-      # Step 7: Prepare files for deployment to GitHub Pages
+      # Step 7: Ensure index.html is updated
+      - name: Ensure index.html is updated
+        run: |
+          cp ./reports/index.html ./gh-pages/index.html  # Make sure the latest index.html is in gh-pages
+
+      # Step 8: Prepare files for deployment to GitHub Pages
       - name: Prepare files for deployment
         run: |
           mkdir -p gh-pages/images/baseline/desktop_chrome/${sanitizedTestSuite}
@@ -48,9 +53,8 @@ jobs:
           cp -R ./baseLineImages/desktop_chrome/${sanitizedTestSuite}/* ./gh-pages/images/baseline/desktop_chrome/${sanitizedTestSuite}/
           cp -R ./actualImages/actual/desktop_chrome/${sanitizedTestSuite}/* ./gh-pages/images/actual/desktop_chrome/${sanitizedTestSuite}/
           cp -R ./actualImages/diff/desktop_chrome/${sanitizedTestSuite}/* ./gh-pages/images/diff/desktop_chrome/${sanitizedTestSuite}/
-          cp ./reports/index.html ./gh-pages/index.html  # Ensure the generated index.html is copied to gh-pages
 
-      # Step 8: Deploy to GitHub Pages
+      # Step 9: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         if: always()  # Ensures deployment runs regardless of test outcome
         uses: JamesIves/github-pages-deploy-action@v4
