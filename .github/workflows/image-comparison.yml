@@ -42,6 +42,7 @@ jobs:
       # Step 7: Ensure index.html is updated
       - name: Ensure index.html is updated
         run: |
+          mkdir -p gh-pages  # Ensure gh-pages directory exists
           cp ./reports/index.html ./gh-pages/index.html  # Make sure the latest index.html is in gh-pages
 
       # Step 8: Prepare files for deployment to GitHub Pages
