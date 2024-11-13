@@ -12,6 +12,7 @@ const reportDir = path.join(__dirname, 'gh-pages');
 
 
 
+
 // Initialize HTML content for the report
 let htmlContent = `
 <!DOCTYPE html>
