@@ -1,7 +1,7 @@
 name: Image Comparison Tests and Deploy
 
 on:
-  workflow_dispatch:
+  workflow_dispatch:  # Trigger manually through GitHub Actions UI
 
 jobs:
   run-tests:
@@ -35,10 +35,11 @@ jobs:
         run: npm run test  # Run your image comparison tests
         continue-on-error: true  # Allow deployment step to run even if tests fail
 
+      # Step 6: Generate HTML Report
       - name: Generate HTML Report
         run: node ./reports/generateReport.js  # Path to report generation script
 
-      # Step 6: Prepare files for deployment to GitHub Pages
+      # Step 7: Prepare files for deployment to GitHub Pages
       - name: Prepare files for deployment
         run: |
           mkdir -p gh-pages/images/baseline/desktop_chrome/${sanitizedTestSuite}
@@ -47,9 +48,9 @@ jobs:
           cp -R ./baseLineImages/desktop_chrome/${sanitizedTestSuite}/* ./gh-pages/images/baseline/desktop_chrome/${sanitizedTestSuite}/
           cp -R ./actualImages/actual/desktop_chrome/${sanitizedTestSuite}/* ./gh-pages/images/actual/desktop_chrome/${sanitizedTestSuite}/
           cp -R ./actualImages/diff/desktop_chrome/${sanitizedTestSuite}/* ./gh-pages/images/diff/desktop_chrome/${sanitizedTestSuite}/
-          cp ./reports/index.html ./gh-pages/index.html
+          cp ./reports/index.html ./gh-pages/index.html  # Ensure the generated index.html is copied to gh-pages
 
-      # Step 7: Deploy to GitHub Pages
+      # Step 8: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         if: always()  # Ensures deployment runs regardless of test outcome
         uses: JamesIves/github-pages-deploy-action@v4
