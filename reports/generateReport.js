@@ -99,12 +99,10 @@ function updateHTMLReport(testSuite, screenshotName, testDescription, diffGenera
   const sanitizedTestSuite = testSuite.replace(/ /g, '_');
   const sanitizedScreenshotName = screenshotName.replace(/ /g, '_');
 
-  // Dynamically build URLs based on sanitizedTestSuite and sanitizedScreenshotName
-  const baselineImageUrl = `${baseUrl}baseline/${sanitizedTestSuite}/${sanitizedScreenshotName}-.png`;
-  const actualImageUrl = `${baseUrl}actual/${sanitizedTestSuite}/${sanitizedScreenshotName}-.png`;
-  const diffImageUrl = `${baseUrl}diff/${sanitizedTestSuite}/${sanitizedScreenshotName}-.png`;
+  const baselineImageUrl = `${baseUrl}baseline/desktop_chrome/${sanitizedTestSuite}/${sanitizedScreenshotName}-.png`;
+  const actualImageUrl = `${baseUrl}actual/desktop_chrome/${sanitizedTestSuite}/${sanitizedScreenshotName}-.png`;
+  const diffImageUrl = `${baseUrl}diff/desktop_chrome/${sanitizedTestSuite}/${sanitizedScreenshotName}-.png`;
 
-  // Add test information to HTML content
   htmlContent += `
   <div class="test-section">
       <div class="test-heading">${testSuite}</div>
