@@ -10,8 +10,6 @@ const __dirname = dirname(__filename);
 // Define the report directory for index.html
 const reportDir = path.join(__dirname, 'gh-pages');
 
-// Base URL for GitHub Pages images
-const baseUrl = 'https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/';
 
 
 // Initialize HTML content for the report
@@ -98,6 +96,7 @@ let htmlContent = `
 // Function to add a test result to the HTML report
 
 function updateHTMLReport(testSuite, screenshotName, testDescription, diffGenerated) {
+  const baseUrl = 'https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/';
   const sanitizedTestSuite = testSuite.replace(/ /g, '_');
   const sanitizedScreenshotName = screenshotName.replace(/ /g, '_');
 
