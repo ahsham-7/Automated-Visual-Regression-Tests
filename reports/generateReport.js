@@ -8,7 +8,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 // Define the report directory for index.html
-const reportDir = path.join(__dirname, 'gh-pages'); // Adjusted to match the YAML deployment path
+const reportDir = path.join(__dirname, 'gh-pages');
 
 // Base URL for GitHub Pages images
 const baseUrl = 'https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/';
@@ -22,7 +22,71 @@ let htmlContent = `
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Visual Regression Report</title>
   <style>
-    /* CSS styles here */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    h1 {
+      background-color: #4CAF50;
+      color: white;
+      width: 100%;
+      text-align: center;
+      margin: 0;
+      padding: 20px 0;
+    }
+    .container {
+      width: 80%;
+      margin: 20px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .test-section {
+      margin-bottom: 40px;
+    }
+    .test-heading {
+      font-size: 1.5em;
+      margin-bottom: 20px;
+      color: #333;
+      border-bottom: 2px solid #4CAF50;
+      padding-bottom: 10px;
+    }
+    .test-description {
+      font-size: 1em;
+      margin-bottom: 10px;
+      color: #555;
+    }
+    .image-diff {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .image-diff div {
+      flex: 1;
+      margin: 0 10px;
+      text-align: center;
+    }
+    .image-diff button {
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 1em;
+      color: white;
+      background-color: #007bff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .image-diff button:hover {
+      background-color: #0056b3;
+    }
   </style>
 </head>
 <body>
@@ -35,10 +99,12 @@ function updateHTMLReport(testSuite, screenshotName, testDescription, diffGenera
   const sanitizedTestSuite = testSuite.replace(/ /g, '_');
   const sanitizedScreenshotName = screenshotName.replace(/ /g, '_');
 
-  const baselineImageUrl = `${baseUrl}baseline/desktop_chrome/Detail_Page/${sanitizedScreenshotName}-.png`;
-  const actualImageUrl = `${baseUrl}actual/desktop_chrome/Detail_Page/${sanitizedScreenshotName}-.png`;
-  const diffImageUrl = `${baseUrl}diff/desktop_chrome/Detail_Page/${sanitizedScreenshotName}-.png`;
+  // Dynamically build URLs based on sanitizedTestSuite and sanitizedScreenshotName
+  const baselineImageUrl = `${baseUrl}baseline/${sanitizedTestSuite}/${sanitizedScreenshotName}-.png`;
+  const actualImageUrl = `${baseUrl}actual/${sanitizedTestSuite}/${sanitizedScreenshotName}-.png`;
+  const diffImageUrl = `${baseUrl}diff/${sanitizedTestSuite}/${sanitizedScreenshotName}-.png`;
 
+  // Add test information to HTML content
   htmlContent += `
   <div class="test-section">
       <div class="test-heading">${testSuite}</div>
@@ -62,8 +128,6 @@ function updateHTMLReport(testSuite, screenshotName, testDescription, diffGenera
   </div>
   `;
 }
-
-
 
 // Function to write the final HTML report
 function writeReport() {

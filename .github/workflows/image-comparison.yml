@@ -16,7 +16,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18'  # Ensure this matches your project’s Node.js version
+          node-version: '18'  # Match your project’s Node.js version
 
       # Step 3: Install dependencies
       - name: Install dependencies
@@ -33,21 +33,22 @@ jobs:
       # Step 5: Run WebdriverIO Tests and Generate Report
       - name: Run WebdriverIO Tests
         run: npm run test  # Run your image comparison tests
-        continue-on-error: true  # Allow the deployment step to run even if tests fail
-      
+        continue-on-error: true  # Allow deployment step to run even if tests fail
+
       - name: Generate HTML Report
-        run: node ./reports/generateReport.js  # Replace with the path to your script file
+        run: node ./reports/generateReport.js  # Path to report generation script
 
       # Step 6: Prepare files for deployment to GitHub Pages
       - name: Prepare files for deployment
         run: |
-         mkdir -p gh-pages/images/baseline/desktop_chrome/Detail_Page
-         mkdir -p gh-pages/images/actual/desktop_chrome/Detail_Page
-         mkdir -p gh-pages/images/diff/desktop_chrome/Detail_Page
-         cp -R ./baseLineImages/desktop_chrome/Detail_Page/* ./gh-pages/images/baseline/desktop_chrome/Detail_Page/
-         cp -R ./actualImages/actual/desktop_chrome/Detail_Page/* ./gh-pages/images/actual/desktop_chrome/Detail_Page/
-         cp -R ./actualImages/diff/desktop_chrome/Detail_Page/* ./gh-pages/images/diff/desktop_chrome/Detail_Page/
-         cp ./reports/index.html ./gh-pages/index.html
+          mkdir -p gh-pages/images/baseline
+          mkdir -p gh-pages/images/actual
+          mkdir -p gh-pages/images/diff
+          
+          cp -R ./baseLineImages/* ./gh-pages/images/baseline/
+          cp -R ./actualImages/actual/* ./gh-pages/images/actual/
+          cp -R ./actualImages/diff/* ./gh-pages/images/diff/
+          cp ./reports/index.html ./gh-pages/index.html
 
       # Step 7: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
