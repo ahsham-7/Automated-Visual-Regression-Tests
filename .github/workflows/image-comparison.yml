@@ -41,7 +41,7 @@ jobs:
       - name: Ensure index.html is updated
         run: |
           mkdir -p gh-pages
-          cp ./reports/index.html ./gh-pages/index.html
+          cp ./reports/gh-pages/index.html ./gh-pages/index.html
         shell: bash
 
       - name: Sanitize test suite name
