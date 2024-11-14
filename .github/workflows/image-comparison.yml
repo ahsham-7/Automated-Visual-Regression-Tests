@@ -37,18 +37,21 @@ jobs:
 
       # Step 6: Generate the report (This should overwrite the existing index.html file)
       - name: Generate HTML Report
-        run: node ./reports/generateReport.js  # Path to report generation script
-      
-      - name: Check if index.html exists
-        run: ls -al ./reports/
+        run: |
+          node ./reports/generateReport.js || echo "Failed to generate report"
         
-      # Step 7: Ensure index.html is updated
+      # Step 7: Verify index.html existence
+      - name: Verify index.html existence
+        run: ls -al ./reports
+
+      # Step 8: Ensure index.html is updated
       - name: Ensure index.html is updated
         run: |
           mkdir -p gh-pages  # Ensure gh-pages directory exists
           cp ./reports/index.html ./gh-pages/index.html  # Make sure the latest index.html is in gh-pages
+        shell: bash
 
-      # Step 8: Prepare files for deployment to GitHub Pages
+      # Step 9: Prepare files for deployment to GitHub Pages
       - name: Prepare files for deployment
         run: |
           mkdir -p gh-pages/images/baseline/desktop_chrome/${sanitizedTestSuite}
@@ -58,7 +61,15 @@ jobs:
           cp -R ./actualImages/actual/desktop_chrome/${sanitizedTestSuite}/* ./gh-pages/images/actual/desktop_chrome/${sanitizedTestSuite}/
           cp -R ./actualImages/diff/desktop_chrome/${sanitizedTestSuite}/* ./gh-pages/images/diff/desktop_chrome/${sanitizedTestSuite}/
 
-      # Step 9: Deploy to GitHub Pages
+      # Step 10: Upload reports folder for debugging if index.html is missing
+      - name: Upload reports folder for debugging
+        if: failure()
+        uses: actions/upload-artifact@v3
+        with:
+          name: reports
+          path: ./reports
+
+      # Step 11: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         if: always()  # Ensures deployment runs regardless of test outcome
         uses: JamesIves/github-pages-deploy-action@v4
