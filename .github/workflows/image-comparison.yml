@@ -38,7 +38,10 @@ jobs:
       # Step 6: Generate the report (This should overwrite the existing index.html file)
       - name: Generate HTML Report
         run: node ./reports/generateReport.js  # Path to report generation script
-
+      
+      - name: Check if index.html exists
+        run: ls -al ./reports/
+        
       # Step 7: Ensure index.html is updated
       - name: Ensure index.html is updated
         run: |
