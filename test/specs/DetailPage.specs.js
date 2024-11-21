@@ -240,6 +240,7 @@ describe("Detail Page Suite", async ()=>{
     const testSuite = 'Detail Page';
     const screenshotName = 'Hospitals in Map View';
     const testDescription = 'Verify Appearance of Hospital section in Map View';
+    console.log("TestDescription",testDescription)
   
     try {
       DetailPage.openStage();
