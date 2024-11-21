@@ -7,6 +7,9 @@ import {CaptureShotElement} from '../utilities/helper.js'
 import truvaluesearch from '../pageobjects/truvaluesearch.page.js'
 
 describe("TruValue Suit",() =>{
+
+   // THIS IS MY CHANGE ( MUSA )
+
 // it("Verify Agency Search Location Field in TruValue page", async()=>{
             //    truvalue.openProduction()
             //   await truvalue.Scroll(800)
