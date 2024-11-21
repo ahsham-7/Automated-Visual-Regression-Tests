@@ -12,6 +12,7 @@ describe('Dld Page Suite', async () => {
 
     it('Verify Selecting Time Interval: Duration(3 Years)', async () => {
         DldPage.openE2E()
+        console.log("Secondchange")
        await DldPage.TimeIntervalFilter.click()
        await DldPage.waitForElementDisplayed(DldPage.TimeIntervaldropdown)
        await DldPage.TimeIntervaldropdown.click()
