@@ -64,10 +64,10 @@ jobs:
 
       - name: Upload reports folder for debugging
         if: failure()
-        uses: actions/upload-artifact@v3.1.3
+        uses: actions/upload-artifact@v3
         with:
-          name: reports
-          path: ./reports
+        name: reports
+        path: ./reports
 
       - name: Deploy to GitHub Pages
         if: always()
