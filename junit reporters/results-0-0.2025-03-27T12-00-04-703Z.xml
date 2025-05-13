@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="2" failures="1" errors="0" skipped="1">
+  <testsuite name="FloorPlan Suite" timestamp="2025-03-27T17:00:05" time="48.948" tests="2" failures="1" errors="0" skipped="1">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="FloorPlan Suite"/>
+      <property name="capabilities" value="chrome.134_0_6998_166.mac"/>
+      <property name="file" value="file://./test/specs/floorPlan.specs.js"/>
+    </properties>
+    <testcase classname="chrome.134_0_6998_166.mac.FloorPlan_Suite" name="TC1" time="0">
+      <skipped/>
+      <system-out><![CDATA[
+COMMAND: POST /session/be218f0110b3903d623f5255c7e2728d/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/be218f0110b3903d623f5255c7e2728d/element - {"using":"xpath","value":"//input[@name=\"username\"]"}
+RESULT: {"using":"xpath","value":"//input[@name=\"username\"]"}
+COMMAND: DELETE /session/be218f0110b3903d623f5255c7e2728d - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.134_0_6998_166.mac.FloorPlan_Suite" name="before each hook for FloorPlan Suite" time="48.943">
+      <failure message="Failed to handle login process: WebDriverError: invalid session id when running &quot;element&quot; with method &quot;POST&quot; and args &quot;{&quot;using&quot;:&quot;xpath&quot;,&quot;value&quot;:&quot;//input[@name=\&quot;username\&quot;]&quot;}&quot;"/>
+      <system-err><![CDATA[
+Error: Failed to handle login process: WebDriverError: invalid session id when running "element" with method "POST" and args "{"using":"xpath","value":"//input[@name=\"username\"]"}"
+    at Floorplan.conditionalLogin (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:175:15)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/floorPlan.specs.js:7:9)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

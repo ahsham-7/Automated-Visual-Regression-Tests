@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="2" failures="2" errors="0" skipped="0">
+  <testsuite name="FloorPlan Suite" timestamp="2025-03-27T11:01:12" time="58.443" tests="2" failures="2" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="FloorPlan Suite"/>
+      <property name="capabilities" value="chrome.134_0_6998_166.mac"/>
+      <property name="file" value="file://./test/specs/floorPlan.specs.js"/>
+    </properties>
+    <testcase classname="chrome.134_0_6998_166.mac.FloorPlan_Suite" name="TC1" time="47.825">
+      <failure message="Image differences detected"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/085b394acbd20c0d2e6579bd2621bae8/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/085b394acbd20c0d2e6579bd2621bae8/element - {"using":"xpath","value":"//input[@name=\"username\"]"}
+RESULT: {"using":"xpath","value":"//input[@name=\"username\"]"}
+COMMAND: GET /session/085b394acbd20c0d2e6579bd2621bae8/element/f.BDC837481C64FAAA24AFED53058CF1D6.d.B0D82988C488E5BAEF492599C94C866D.e.4/css/display - {}
+RESULT: {}
+COMMAND: POST /session/085b394acbd20c0d2e6579bd2621bae8/element/f.BDC837481C64FAAA24AFED53058CF1D6.d.B0D82988C488E5BAEF492599C94C866D.e.4/clear - {}
+RESULT: {}
+COMMAND: POST /session/085b394acbd20c0d2e6579bd2621bae8/element/f.BDC837481C64FAAA24AFED53058CF1D6.d.B0D82988C488E5BAEF492599C94C866D.e.4/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/085b394acbd20c0d2e6579bd2621bae8/element/f.BDC837481C64FAAA24AFED53058CF1D6.d.B0D82988C488E5BAEF492599C94C866D.e.5/clear - {}
+RESULT: {}
+COMMAND: POST /session/085b394acbd20c0d2e6579bd2621bae8/element/f.BDC837481C64FAAA24AFED53058CF1D6.d.B0D82988C488E5BAEF492599C94C866D.e.5/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/085b394acbd20c0d2e6579bd2621bae8/element/f.BDC837481C64FAAA24AFED53058CF1D6.d.B0D82988C488E5BAEF492599C94C866D.e.6/click - {}
+RESULT: {}
+COMMAND: GET /session/085b394acbd20c0d2e6579bd2621bae8/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/085b394acbd20c0d2e6579bd2621bae8/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/085b394acbd20c0d2e6579bd2621bae8/screenshot - {}
+RESULT: {}
+RESULT: undefined
+]]></system-out>
+      <system-err><![CDATA[
+Error: Image differences detected
+    at Floorplan.compareEnvironments (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:146:15)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/floorPlan.specs.js:15:8)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.134_0_6998_166.mac.FloorPlan_Suite" name="TC2" time="10.608">
+      <failure message="Can't call scrollIntoView on element with selector &quot;//h2[text()=&quot;UAE Location List&quot;]&quot; because element wasn't found"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/085b394acbd20c0d2e6579bd2621bae8/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/085b394acbd20c0d2e6579bd2621bae8/url - {"url":"https://stage.bayut.sector.run/floorplans/"}
+RESULT: {"url":"https://stage.bayut.sector.run/floorplans/"}
+COMMAND: DELETE /session/085b394acbd20c0d2e6579bd2621bae8 - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: Can't call scrollIntoView on element with selector "//h2[text()="UAE Location List"]" because element wasn't found
+    at async Floorplan.ScrollElement (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:82:9)
+    at async Floorplan.verifyUaeLocLists (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/floorplan.page.js:16:9)
+    at async file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/floorPlan.specs.js:18:126
+    at async Floorplan.compareEnvironments (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:125:21)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/floorPlan.specs.js:18:9)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

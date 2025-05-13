@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="0" errors="0" skipped="0">
+  <testsuite name="FloorPlan Suite" timestamp="2025-03-14T16:54:15" time="27.84" tests="1" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="FloorPlan Suite"/>
+      <property name="capabilities" value="chrome.134_0_6998_89.mac"/>
+      <property name="file" value="file://./test/specs/floorPlan.specs.js"/>
+    </properties>
+    <testcase classname="chrome.134_0_6998_89.mac.FloorPlan_Suite" name="TC1" time="27.836">
+      <system-out><![CDATA[
+COMMAND: POST /session/20f45d19f769fe70852a9eb5ce4bc808/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/20f45d19f769fe70852a9eb5ce4bc808/element - {"using":"xpath","value":"//input[@name=\"username\"]"}
+RESULT: {"using":"xpath","value":"//input[@name=\"username\"]"}
+COMMAND: GET /session/20f45d19f769fe70852a9eb5ce4bc808/element/f.9B0AC58AACA35E02715A57052AA17135.d.9E4F54B5DB159F481C8CA1B333765F7A.e.5/css/display - {}
+RESULT: {}
+COMMAND: POST /session/20f45d19f769fe70852a9eb5ce4bc808/element/f.9B0AC58AACA35E02715A57052AA17135.d.9E4F54B5DB159F481C8CA1B333765F7A.e.5/clear - {}
+RESULT: {}
+COMMAND: POST /session/20f45d19f769fe70852a9eb5ce4bc808/element/f.9B0AC58AACA35E02715A57052AA17135.d.9E4F54B5DB159F481C8CA1B333765F7A.e.5/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/20f45d19f769fe70852a9eb5ce4bc808/element/f.9B0AC58AACA35E02715A57052AA17135.d.9E4F54B5DB159F481C8CA1B333765F7A.e.6/clear - {}
+RESULT: {}
+COMMAND: POST /session/20f45d19f769fe70852a9eb5ce4bc808/element/f.9B0AC58AACA35E02715A57052AA17135.d.9E4F54B5DB159F481C8CA1B333765F7A.e.6/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/20f45d19f769fe70852a9eb5ce4bc808/element/f.9B0AC58AACA35E02715A57052AA17135.d.9E4F54B5DB159F481C8CA1B333765F7A.e.7/click - {}
+RESULT: {}
+COMMAND: GET /session/20f45d19f769fe70852a9eb5ce4bc808/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/20f45d19f769fe70852a9eb5ce4bc808/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/20f45d19f769fe70852a9eb5ce4bc808/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: DELETE /session/20f45d19f769fe70852a9eb5ce4bc808 - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

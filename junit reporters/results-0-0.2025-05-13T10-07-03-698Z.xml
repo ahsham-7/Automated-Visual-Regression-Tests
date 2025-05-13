@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="0" errors="0" skipped="0">
+  <testsuite name="FloorPlan Suite" timestamp="2025-05-13T15:07:04" time="14.806" tests="1" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="FloorPlan Suite"/>
+      <property name="capabilities" value="chrome.136_0_7103_93.mac"/>
+      <property name="file" value="file://./test/specs/floorPlan.specs.js"/>
+    </properties>
+    <testcase classname="chrome.136_0_7103_93.mac.FloorPlan_Suite" name="TC1" time="14.8">
+      <system-out><![CDATA[
+COMMAND: POST /session/f9d9080afe0eb045139600c78fe3989c/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/f9d9080afe0eb045139600c78fe3989c/element/f.D6611E4FA0178C4C70AE5F399A26423E.d.60422A86DEAF4E6F87C76C4C2349A8EA.e.4/css/display - {}
+RESULT: {}
+COMMAND: POST /session/f9d9080afe0eb045139600c78fe3989c/element/f.D6611E4FA0178C4C70AE5F399A26423E.d.60422A86DEAF4E6F87C76C4C2349A8EA.e.4/clear - {}
+RESULT: {}
+COMMAND: POST /session/f9d9080afe0eb045139600c78fe3989c/element/f.D6611E4FA0178C4C70AE5F399A26423E.d.60422A86DEAF4E6F87C76C4C2349A8EA.e.4/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/f9d9080afe0eb045139600c78fe3989c/element/f.D6611E4FA0178C4C70AE5F399A26423E.d.60422A86DEAF4E6F87C76C4C2349A8EA.e.5/clear - {}
+RESULT: {}
+COMMAND: POST /session/f9d9080afe0eb045139600c78fe3989c/element/f.D6611E4FA0178C4C70AE5F399A26423E.d.60422A86DEAF4E6F87C76C4C2349A8EA.e.5/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/f9d9080afe0eb045139600c78fe3989c/element/f.D6611E4FA0178C4C70AE5F399A26423E.d.60422A86DEAF4E6F87C76C4C2349A8EA.e.6/click - {}
+RESULT: {}
+COMMAND: GET /session/f9d9080afe0eb045139600c78fe3989c/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/f9d9080afe0eb045139600c78fe3989c/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/f9d9080afe0eb045139600c78fe3989c/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: DELETE /session/f9d9080afe0eb045139600c78fe3989c - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

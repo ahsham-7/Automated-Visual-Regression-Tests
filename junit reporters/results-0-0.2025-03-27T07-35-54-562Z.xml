@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="2" failures="1" errors="0" skipped="1">
+  <testsuite name="FloorPlan Suite" timestamp="2025-03-27T12:35:56" time="41.846" tests="2" failures="1" errors="0" skipped="1">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="FloorPlan Suite"/>
+      <property name="capabilities" value="chrome.134_0_6998_166.mac"/>
+      <property name="file" value="file://./test/specs/floorPlan.specs.js"/>
+    </properties>
+    <testcase classname="chrome.134_0_6998_166.mac.FloorPlan_Suite" name="TC1" time="0">
+      <skipped/>
+      <system-out><![CDATA[
+COMMAND: POST /session/4ad6374d8c0c78f3376f5236ae434ca2/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/4ad6374d8c0c78f3376f5236ae434ca2/element - {"using":"xpath","value":"//input[@name=\"username\"]"}
+RESULT: {"using":"xpath","value":"//input[@name=\"username\"]"}
+COMMAND: GET /session/4ad6374d8c0c78f3376f5236ae434ca2/element/f.95C9E94F39C0A00987CB98324D727056.d.DCC339368BFB234C6A8442B0CCC9D146.e.5/css/display - {}
+RESULT: {}
+COMMAND: POST /session/4ad6374d8c0c78f3376f5236ae434ca2/element/f.95C9E94F39C0A00987CB98324D727056.d.DCC339368BFB234C6A8442B0CCC9D146.e.5/clear - {}
+RESULT: {}
+COMMAND: POST /session/4ad6374d8c0c78f3376f5236ae434ca2/element/f.95C9E94F39C0A00987CB98324D727056.d.DCC339368BFB234C6A8442B0CCC9D146.e.5/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/4ad6374d8c0c78f3376f5236ae434ca2/element/f.95C9E94F39C0A00987CB98324D727056.d.DCC339368BFB234C6A8442B0CCC9D146.e.6/clear - {}
+RESULT: {}
+COMMAND: POST /session/4ad6374d8c0c78f3376f5236ae434ca2/element/f.95C9E94F39C0A00987CB98324D727056.d.DCC339368BFB234C6A8442B0CCC9D146.e.6/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/4ad6374d8c0c78f3376f5236ae434ca2/element/f.95C9E94F39C0A00987CB98324D727056.d.DCC339368BFB234C6A8442B0CCC9D146.e.7/click - {}
+RESULT: {}
+COMMAND: DELETE /session/4ad6374d8c0c78f3376f5236ae434ca2 - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.134_0_6998_166.mac.FloorPlan_Suite" name="before each hook for FloorPlan Suite" time="41.843">
+      <failure message="Failed to handle login process: waitUntil condition failed with the following reason: WebDriver Bidi command &quot;script.callFunction&quot; failed with error: unknown error - Cannot find context with specified id"/>
+      <system-err><![CDATA[
+Error: Failed to handle login process: waitUntil condition failed with the following reason: WebDriver Bidi command "script.callFunction" failed with error: unknown error - Cannot find context with specified id
+    at Floorplan.conditionalLogin (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:175:15)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/floorPlan.specs.js:7:9)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

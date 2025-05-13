@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="2" failures="2" errors="0" skipped="0">
+  <testsuite name="FloorPlan Suite" timestamp="2025-03-14T17:39:22" time="133.032" tests="2" failures="2" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="FloorPlan Suite"/>
+      <property name="capabilities" value="chrome.134_0_6998_89.mac"/>
+      <property name="file" value="file://./test/specs/floorPlan.specs.js"/>
+    </properties>
+    <testcase classname="chrome.134_0_6998_89.mac.FloorPlan_Suite" name="TC1" time="109.218">
+      <failure message="Timeout"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/ca881a3d4846268614f80b5c5f1ba890/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/ca881a3d4846268614f80b5c5f1ba890/element - {"using":"xpath","value":"//input[@name=\"username\"]"}
+RESULT: {"using":"xpath","value":"//input[@name=\"username\"]"}
+COMMAND: GET /session/ca881a3d4846268614f80b5c5f1ba890/element/f.968102E0676FEF59870C404B8B22C10A.d.0641757AF1F97D39881166A222BE5A95.e.5/css/display - {}
+RESULT: {}
+COMMAND: POST /session/ca881a3d4846268614f80b5c5f1ba890/element/f.968102E0676FEF59870C404B8B22C10A.d.0641757AF1F97D39881166A222BE5A95.e.5/clear - {}
+RESULT: {}
+COMMAND: POST /session/ca881a3d4846268614f80b5c5f1ba890/element/f.968102E0676FEF59870C404B8B22C10A.d.0641757AF1F97D39881166A222BE5A95.e.5/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/ca881a3d4846268614f80b5c5f1ba890/element/f.968102E0676FEF59870C404B8B22C10A.d.0641757AF1F97D39881166A222BE5A95.e.6/clear - {}
+RESULT: {}
+COMMAND: POST /session/ca881a3d4846268614f80b5c5f1ba890/element/f.968102E0676FEF59870C404B8B22C10A.d.0641757AF1F97D39881166A222BE5A95.e.6/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/ca881a3d4846268614f80b5c5f1ba890/element/f.968102E0676FEF59870C404B8B22C10A.d.0641757AF1F97D39881166A222BE5A95.e.7/click - {}
+RESULT: {}
+COMMAND: GET /session/ca881a3d4846268614f80b5c5f1ba890/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: GET /session/ca881a3d4846268614f80b5c5f1ba890/window/handles - {}
+RESULT: {}
+COMMAND: GET /session/ca881a3d4846268614f80b5c5f1ba890/window/handles - {}
+RESULT: {}
+COMMAND: GET /session/ca881a3d4846268614f80b5c5f1ba890/window/handles - {}
+RESULT: {}
+COMMAND: POST /session/ca881a3d4846268614f80b5c5f1ba890/window - {"handle":"59786CDC0A28A20E66A1BF22B0DB6255"}
+RESULT: {"handle":"59786CDC0A28A20E66A1BF22B0DB6255"}
+COMMAND: GET /session/ca881a3d4846268614f80b5c5f1ba890/screenshot - {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: Timeout
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.134_0_6998_89.mac.FloorPlan_Suite" name="TC2" time="23.809">
+      <failure message="Can't call scrollIntoView on element with selector &quot;//h2[text()=&quot;UAE Location List&quot;]&quot; because element wasn't found"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/ca881a3d4846268614f80b5c5f1ba890/window/maximize - {}
+RESULT: {}
+RESULT: {}
+COMMAND: POST /session/ca881a3d4846268614f80b5c5f1ba890/url - {"url":"https://stage.bayut.sector.run/floorplans/"}
+RESULT: undefined
+RESULT: {"url":"https://stage.bayut.sector.run/floorplans/"}
+COMMAND: POST /session/ca881a3d4846268614f80b5c5f1ba890/element - {"using":"xpath","value":"//h2[text()=\"UAE Location List\"]"}
+RESULT: {"using":"xpath","value":"//h2[text()=\"UAE Location List\"]"}
+COMMAND: POST /session/ca881a3d4846268614f80b5c5f1ba890/elements - {"using":"xpath","value":"//h2[text()=\"UAE Location List\"]"}
+RESULT: {"using":"xpath","value":"//h2[text()=\"UAE Location List\"]"}
+COMMAND: POST /session/ca881a3d4846268614f80b5c5f1ba890/elements - {"using":"xpath","value":"//h2[text()=\"UAE Location List\"]"}
+COMMAND: DELETE /session/ca881a3d4846268614f80b5c5f1ba890 - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: Can't call scrollIntoView on element with selector "//h2[text()="UAE Location List"]" because element wasn't found
+    at async Floorplan.ScrollElement (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:81:9)
+    at async Floorplan.verifyUaeLocLists (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/floorplan.page.js:16:9)
+    at async file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/floorPlan.specs.js:18:126
+    at async Floorplan.compareEnvironments (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:124:21)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/floorPlan.specs.js:18:9)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="2" failures="2" errors="0" skipped="0">
+  <testsuite name="FloorPlan Suite" timestamp="2025-03-27T11:02:16" time="14.069" tests="2" failures="2" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="FloorPlan Suite"/>
+      <property name="capabilities" value="chrome.134_0_6998_166.mac"/>
+      <property name="file" value="file://./test/specs/floorPlan.specs.js"/>
+    </properties>
+    <testcase classname="chrome.134_0_6998_166.mac.FloorPlan_Suite" name="TC1" time="3.829">
+      <failure message="Image differences detected"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/037352e32aa6d7148138ca1da4d79e66/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/037352e32aa6d7148138ca1da4d79e66/url - {"url":"https://stage.bayut.sector.run/floorplans/"}
+COMMAND: POST /session/037352e32aa6d7148138ca1da4d79e66/element - {"using":"xpath","value":"//input[@name=\"username\"]"}
+RESULT: {"using":"xpath","value":"//input[@name=\"username\"]"}
+COMMAND: GET /session/037352e32aa6d7148138ca1da4d79e66/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/037352e32aa6d7148138ca1da4d79e66/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/037352e32aa6d7148138ca1da4d79e66/url - {"url":"https://www.bayut.com/floorplans/"}
+RESULT: {"url":"https://stage.bayut.sector.run/floorplans/"}
+RESULT: {"url":"https://www.bayut.com/floorplans/"}
+COMMAND: GET /session/037352e32aa6d7148138ca1da4d79e66/screenshot - {}
+RESULT: {}
+RESULT: undefined
+]]></system-out>
+      <system-err><![CDATA[
+Error: Image differences detected
+    at Floorplan.compareEnvironments (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:146:15)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/floorPlan.specs.js:15:8)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.134_0_6998_166.mac.FloorPlan_Suite" name="TC2" time="10.234">
+      <failure message="Can't call scrollIntoView on element with selector &quot;//h2[text()=&quot;UAE Location List&quot;]&quot; because element wasn't found"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/037352e32aa6d7148138ca1da4d79e66/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/037352e32aa6d7148138ca1da4d79e66/url - {"url":"https://stage.bayut.sector.run/floorplans/"}
+COMMAND: POST /session/037352e32aa6d7148138ca1da4d79e66/element - {"using":"xpath","value":"//input[@name=\"username\"]"}
+RESULT: {"using":"xpath","value":"//input[@name=\"username\"]"}
+RESULT: {"url":"https://stage.bayut.sector.run/floorplans/"}
+COMMAND: DELETE /session/037352e32aa6d7148138ca1da4d79e66 - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: Can't call scrollIntoView on element with selector "//h2[text()="UAE Location List"]" because element wasn't found
+    at async Floorplan.ScrollElement (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:82:9)
+    at async Floorplan.verifyUaeLocLists (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/floorplan.page.js:16:9)
+    at async file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/floorPlan.specs.js:18:126
+    at async Floorplan.compareEnvironments (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:125:21)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/floorPlan.specs.js:18:9)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="2" failures="2" errors="0" skipped="0">
+  <testsuite name="FloorPlan Suite" timestamp="2025-03-20T10:56:23" time="36.746" tests="2" failures="2" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="FloorPlan Suite"/>
+      <property name="capabilities" value="chrome.134_0_6998_118.mac"/>
+      <property name="file" value="file://./test/specs/floorPlan.specs.js"/>
+    </properties>
+    <testcase classname="chrome.134_0_6998_118.mac.FloorPlan_Suite" name="TC1" time="14.098">
+      <failure message="Page did not fully load before capturing screenshot"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/d088d0730c67c104c9292569a58dbde9/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/d088d0730c67c104c9292569a58dbde9/element - {"using":"xpath","value":"//input[@name=\"username\"]"}
+RESULT: {"using":"xpath","value":"//input[@name=\"username\"]"}
+COMMAND: GET /session/d088d0730c67c104c9292569a58dbde9/element/f.086713D8541BF1D7C689735FEC114FB2.d.A5CF67F69DC31816CA31E0ADF8DDFDA5.e.5/css/display - {}
+RESULT: {}
+COMMAND: POST /session/d088d0730c67c104c9292569a58dbde9/element/f.086713D8541BF1D7C689735FEC114FB2.d.A5CF67F69DC31816CA31E0ADF8DDFDA5.e.5/clear - {}
+RESULT: {}
+COMMAND: POST /session/d088d0730c67c104c9292569a58dbde9/element/f.086713D8541BF1D7C689735FEC114FB2.d.A5CF67F69DC31816CA31E0ADF8DDFDA5.e.5/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/d088d0730c67c104c9292569a58dbde9/element/f.086713D8541BF1D7C689735FEC114FB2.d.A5CF67F69DC31816CA31E0ADF8DDFDA5.e.6/clear - {}
+RESULT: {}
+COMMAND: POST /session/d088d0730c67c104c9292569a58dbde9/element/f.086713D8541BF1D7C689735FEC114FB2.d.A5CF67F69DC31816CA31E0ADF8DDFDA5.e.6/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/d088d0730c67c104c9292569a58dbde9/element/f.086713D8541BF1D7C689735FEC114FB2.d.A5CF67F69DC31816CA31E0ADF8DDFDA5.e.7/click - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: Page did not fully load before capturing screenshot
+    at async Floorplan.compareEnvironments (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:127:5)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/floorPlan.specs.js:15:8)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.134_0_6998_118.mac.FloorPlan_Suite" name="TC2" time="22.637">
+      <failure message="Can't call scrollIntoView on element with selector &quot;//h2[text()=&quot;UAE Location List&quot;]&quot; because element wasn't found"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/d088d0730c67c104c9292569a58dbde9/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/d088d0730c67c104c9292569a58dbde9/element - {"using":"xpath","value":"//input[@name=\"username\"]"}
+RESULT: {"using":"xpath","value":"//input[@name=\"username\"]"}
+COMMAND: GET /session/d088d0730c67c104c9292569a58dbde9/element/f.086713D8541BF1D7C689735FEC114FB2.d.0B30A9594548D5E73D58E7B9E05850B1.e.65/css/display - {}
+RESULT: {}
+COMMAND: POST /session/d088d0730c67c104c9292569a58dbde9/element/f.086713D8541BF1D7C689735FEC114FB2.d.0B30A9594548D5E73D58E7B9E05850B1.e.65/clear - {}
+RESULT: {}
+COMMAND: POST /session/d088d0730c67c104c9292569a58dbde9/element/f.086713D8541BF1D7C689735FEC114FB2.d.0B30A9594548D5E73D58E7B9E05850B1.e.65/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/d088d0730c67c104c9292569a58dbde9/element/f.086713D8541BF1D7C689735FEC114FB2.d.0B30A9594548D5E73D58E7B9E05850B1.e.66/clear - {}
+RESULT: {}
+COMMAND: POST /session/d088d0730c67c104c9292569a58dbde9/element/f.086713D8541BF1D7C689735FEC114FB2.d.0B30A9594548D5E73D58E7B9E05850B1.e.66/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/d088d0730c67c104c9292569a58dbde9/element/f.086713D8541BF1D7C689735FEC114FB2.d.0B30A9594548D5E73D58E7B9E05850B1.e.67/click - {}
+RESULT: {}
+COMMAND: GET /session/d088d0730c67c104c9292569a58dbde9/element/f.086713D8541BF1D7C689735FEC114FB2.d.B6DC6D1D8CFADEF00D04D114AEDFBC35.e.92/rect - {}
+RESULT: {}
+COMMAND: GET /session/d088d0730c67c104c9292569a58dbde9/window/rect - {}
+RESULT: {}
+COMMAND: POST /session/d088d0730c67c104c9292569a58dbde9/actions - {"actions":[{"id":"action1","type":"wheel","parameters":{},"actions":[{"type":"scroll","x":-1267,"y":3079,"deltaX":0,"deltaY":0,"duration":0,"origin":{"element-6066-11e4-a52e-4f735466cecf":"f.086713D8541BF1D7C689735FEC114FB2.d.B6DC6D1D8CFADEF00D04D114AEDFBC35.e.92"}}]}]}
+RESULT: {"actions":[{"id":"action1","type":"wheel","parameters":{},"actions":[{"type":"scroll","x":-1267,"y":3079,"deltaX":0,"deltaY":0,"duration":0,"origin":{"element-6066-11e4-a52e-4f735466cecf":"f.086713D8541BF1D7C689735FEC114FB2.d.B6DC6D1D8CFADEF00D04D114AEDFBC35.e.92"}}]}]}
+COMMAND: GET /session/d088d0730c67c104c9292569a58dbde9/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/d088d0730c67c104c9292569a58dbde9/window/maximize - {}
+COMMAND: GET /session/d088d0730c67c104c9292569a58dbde9/element/f.086713D8541BF1D7C689735FEC114FB2.d.B6DC6D1D8CFADEF00D04D114AEDFBC35.e.92/rect - {}
+RESULT: {}
+RESULT: {}
+COMMAND: DELETE /session/d088d0730c67c104c9292569a58dbde9 - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: Can't call scrollIntoView on element with selector "//h2[text()="UAE Location List"]" because element wasn't found
+    at async Floorplan.ScrollElement (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:81:9)
+    at async Floorplan.verifyUaeLocLists (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/floorplan.page.js:19:9)
+    at async file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/floorPlan.specs.js:18:126
+    at async Floorplan.compareEnvironments (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:137:21)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/floorPlan.specs.js:18:9)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

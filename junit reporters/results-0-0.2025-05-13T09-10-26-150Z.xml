@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="1" errors="0" skipped="0">
+  <testsuite name="FloorPlan Suite" timestamp="2025-05-13T14:10:27" time="20.856" tests="1" failures="1" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="FloorPlan Suite"/>
+      <property name="capabilities" value="chrome.136_0_7103_93.mac"/>
+      <property name="file" value="file://./test/specs/floorPlan.specs.js"/>
+    </properties>
+    <testcase classname="chrome.136_0_7103_93.mac.FloorPlan_Suite" name="TC6" time="20.852">
+      <failure message="Failed to handle login process: Page did not load within the expected time"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/9d78c936042d693b5509bbb2fca7be35/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/9d78c936042d693b5509bbb2fca7be35/element/f.AB667D9F6CBD89F81EB9BF80F516C05E.d.1CC564E6CE63D6ECC234AAE1EF964849.e.4/css/display - {}
+RESULT: {}
+COMMAND: POST /session/9d78c936042d693b5509bbb2fca7be35/element/f.AB667D9F6CBD89F81EB9BF80F516C05E.d.1CC564E6CE63D6ECC234AAE1EF964849.e.4/clear - {}
+RESULT: {}
+COMMAND: POST /session/9d78c936042d693b5509bbb2fca7be35/element/f.AB667D9F6CBD89F81EB9BF80F516C05E.d.1CC564E6CE63D6ECC234AAE1EF964849.e.4/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/9d78c936042d693b5509bbb2fca7be35/element/f.AB667D9F6CBD89F81EB9BF80F516C05E.d.1CC564E6CE63D6ECC234AAE1EF964849.e.5/clear - {}
+RESULT: {}
+COMMAND: POST /session/9d78c936042d693b5509bbb2fca7be35/element/f.AB667D9F6CBD89F81EB9BF80F516C05E.d.1CC564E6CE63D6ECC234AAE1EF964849.e.5/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/9d78c936042d693b5509bbb2fca7be35/element/f.AB667D9F6CBD89F81EB9BF80F516C05E.d.1CC564E6CE63D6ECC234AAE1EF964849.e.6/click - {}
+RESULT: {}
+COMMAND: GET /session/9d78c936042d693b5509bbb2fca7be35/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/9d78c936042d693b5509bbb2fca7be35/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/9d78c936042d693b5509bbb2fca7be35/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/9d78c936042d693b5509bbb2fca7be35/window/maximize - {}
+RESULT: {}
+COMMAND: DELETE /session/9d78c936042d693b5509bbb2fca7be35 - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: Failed to handle login process: Page did not load within the expected time
+    at Floorplan.conditionalLogin (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:194:15)
+    at async Floorplan.compareFullPageEnvironments (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:152:5)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/floorPlan.specs.js:33:8)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="3" failures="1" errors="0" skipped="0">
+  <testsuite name="FloorPlan Suite" timestamp="2025-05-13T14:44:16" time="40.07" tests="3" failures="1" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="FloorPlan Suite"/>
+      <property name="capabilities" value="chrome.136_0_7103_93.mac"/>
+      <property name="file" value="file://./test/specs/floorPlan.specs.js"/>
+    </properties>
+    <testcase classname="chrome.136_0_7103_93.mac.FloorPlan_Suite" name="TC6" time="19.287">
+      <system-out><![CDATA[
+COMMAND: POST /session/93b6bfc7977369c9e48d41bb051cbfe3/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/93b6bfc7977369c9e48d41bb051cbfe3/element/f.0A3A1BC895CD59B1DDE2A6098D170215.d.95297E4BFE71EA4F7EED7A7841BEF906.e.4/css/display - {}
+RESULT: {}
+COMMAND: POST /session/93b6bfc7977369c9e48d41bb051cbfe3/element/f.0A3A1BC895CD59B1DDE2A6098D170215.d.95297E4BFE71EA4F7EED7A7841BEF906.e.4/clear - {}
+RESULT: {}
+COMMAND: POST /session/93b6bfc7977369c9e48d41bb051cbfe3/element/f.0A3A1BC895CD59B1DDE2A6098D170215.d.95297E4BFE71EA4F7EED7A7841BEF906.e.4/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/93b6bfc7977369c9e48d41bb051cbfe3/element/f.0A3A1BC895CD59B1DDE2A6098D170215.d.95297E4BFE71EA4F7EED7A7841BEF906.e.5/clear - {}
+RESULT: {}
+COMMAND: POST /session/93b6bfc7977369c9e48d41bb051cbfe3/element/f.0A3A1BC895CD59B1DDE2A6098D170215.d.95297E4BFE71EA4F7EED7A7841BEF906.e.5/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/93b6bfc7977369c9e48d41bb051cbfe3/element/f.0A3A1BC895CD59B1DDE2A6098D170215.d.95297E4BFE71EA4F7EED7A7841BEF906.e.6/click - {}
+RESULT: {}
+COMMAND: GET /session/93b6bfc7977369c9e48d41bb051cbfe3/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/93b6bfc7977369c9e48d41bb051cbfe3/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/93b6bfc7977369c9e48d41bb051cbfe3/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/93b6bfc7977369c9e48d41bb051cbfe3/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/93b6bfc7977369c9e48d41bb051cbfe3/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/93b6bfc7977369c9e48d41bb051cbfe3/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/93b6bfc7977369c9e48d41bb051cbfe3/screenshot - {}
+RESULT: {}
+RESULT: undefined
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.136_0_7103_93.mac.FloorPlan_Suite" name="TC7" time="19.624">
+      <system-out><![CDATA[
+COMMAND: POST /session/93b6bfc7977369c9e48d41bb051cbfe3/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/93b6bfc7977369c9e48d41bb051cbfe3/element/f.0A3A1BC895CD59B1DDE2A6098D170215.d.571B89158F2D8B9B3D29A990A385A118.e.4/css/display - {}
+RESULT: {}
+COMMAND: POST /session/93b6bfc7977369c9e48d41bb051cbfe3/element/f.0A3A1BC895CD59B1DDE2A6098D170215.d.571B89158F2D8B9B3D29A990A385A118.e.4/clear - {}
+RESULT: {}
+COMMAND: POST /session/93b6bfc7977369c9e48d41bb051cbfe3/element/f.0A3A1BC895CD59B1DDE2A6098D170215.d.571B89158F2D8B9B3D29A990A385A118.e.4/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/93b6bfc7977369c9e48d41bb051cbfe3/element/f.0A3A1BC895CD59B1DDE2A6098D170215.d.571B89158F2D8B9B3D29A990A385A118.e.5/clear - {}
+RESULT: {}
+COMMAND: POST /session/93b6bfc7977369c9e48d41bb051cbfe3/element/f.0A3A1BC895CD59B1DDE2A6098D170215.d.571B89158F2D8B9B3D29A990A385A118.e.5/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/93b6bfc7977369c9e48d41bb051cbfe3/element/f.0A3A1BC895CD59B1DDE2A6098D170215.d.571B89158F2D8B9B3D29A990A385A118.e.6/click - {}
+RESULT: {}
+COMMAND: GET /session/93b6bfc7977369c9e48d41bb051cbfe3/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/93b6bfc7977369c9e48d41bb051cbfe3/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/93b6bfc7977369c9e48d41bb051cbfe3/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/93b6bfc7977369c9e48d41bb051cbfe3/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/93b6bfc7977369c9e48d41bb051cbfe3/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/93b6bfc7977369c9e48d41bb051cbfe3/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/93b6bfc7977369c9e48d41bb051cbfe3/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/93b6bfc7977369c9e48d41bb051cbfe3/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/93b6bfc7977369c9e48d41bb051cbfe3/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/93b6bfc7977369c9e48d41bb051cbfe3/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/93b6bfc7977369c9e48d41bb051cbfe3/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/93b6bfc7977369c9e48d41bb051cbfe3/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/93b6bfc7977369c9e48d41bb051cbfe3/screenshot - {}
+RESULT: {}
+RESULT: undefined
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.136_0_7103_93.mac.FloorPlan_Suite" name="TC7" time="1.147">
+      <failure message="WebDriver Bidi command &quot;script.callFunction&quot; failed with error: unknown error - Cannot find context with specified id"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/93b6bfc7977369c9e48d41bb051cbfe3/window/maximize - {}
+RESULT: {}
+COMMAND: DELETE /session/93b6bfc7977369c9e48d41bb051cbfe3 - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: WebDriver Bidi command "script.callFunction" failed with error: unknown error - Cannot find context with specified id
+
+Driver Stack:
+    at Error
+    at     at new UnknownErrorException (<anonymous>:65:5072)
+    at     at CommandProcessor.processCommand (<anonymous>:469:10360)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

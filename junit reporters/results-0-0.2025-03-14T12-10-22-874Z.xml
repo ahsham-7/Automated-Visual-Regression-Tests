@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="2" failures="2" errors="0" skipped="0">
+  <testsuite name="FloorPlan Suite" timestamp="2025-03-14T17:10:24" time="72.655" tests="2" failures="2" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="FloorPlan Suite"/>
+      <property name="capabilities" value="chrome.134_0_6998_89.mac"/>
+      <property name="file" value="file://./test/specs/floorPlan.specs.js"/>
+    </properties>
+    <testcase classname="chrome.134_0_6998_89.mac.FloorPlan_Suite" name="TC1" time="13.018">
+      <failure message="WebDriver Bidi command &quot;script.callFunction&quot; failed with error: unknown error - Cannot find context with specified id"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/96fbee0d58061855e49755baa96945e6/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/96fbee0d58061855e49755baa96945e6/element - {"using":"xpath","value":"//input[@name=\"username\"]"}
+RESULT: {"using":"xpath","value":"//input[@name=\"username\"]"}
+COMMAND: GET /session/96fbee0d58061855e49755baa96945e6/element/f.6CAE7DC55D821724B796223DBB0ACD97.d.BE6C153C2A44389D70F04FD76F1E7CD6.e.4/css/display - {}
+RESULT: {}
+COMMAND: POST /session/96fbee0d58061855e49755baa96945e6/element/f.6CAE7DC55D821724B796223DBB0ACD97.d.BE6C153C2A44389D70F04FD76F1E7CD6.e.4/clear - {}
+RESULT: {}
+COMMAND: POST /session/96fbee0d58061855e49755baa96945e6/element/f.6CAE7DC55D821724B796223DBB0ACD97.d.BE6C153C2A44389D70F04FD76F1E7CD6.e.4/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/96fbee0d58061855e49755baa96945e6/element/f.6CAE7DC55D821724B796223DBB0ACD97.d.BE6C153C2A44389D70F04FD76F1E7CD6.e.6/clear - {}
+RESULT: {}
+COMMAND: POST /session/96fbee0d58061855e49755baa96945e6/element/f.6CAE7DC55D821724B796223DBB0ACD97.d.BE6C153C2A44389D70F04FD76F1E7CD6.e.6/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/96fbee0d58061855e49755baa96945e6/element/f.6CAE7DC55D821724B796223DBB0ACD97.d.BE6C153C2A44389D70F04FD76F1E7CD6.e.8/click - {}
+RESULT: {}
+COMMAND: GET /session/96fbee0d58061855e49755baa96945e6/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/96fbee0d58061855e49755baa96945e6/window/maximize - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: WebDriver Bidi command "script.callFunction" failed with error: unknown error - Cannot find context with specified id
+
+Driver Stack:
+    at Error
+    at     at new UnknownErrorException (<anonymous>:65:4788)
+    at     at CommandProcessor.processCommand (<anonymous>:453:9877)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.134_0_6998_89.mac.FloorPlan_Suite" name="TC2" time="59.632">
+      <failure message="Can't call scrollIntoView on element with selector &quot;//h2[text()=&quot;UAE Location List&quot;]&quot; because element wasn't found"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/96fbee0d58061855e49755baa96945e6/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/96fbee0d58061855e49755baa96945e6/url - {"url":"https://stage.bayut.sector.run/floorplans/"}
+RESULT: {"url":"https://stage.bayut.sector.run/floorplans/"}
+COMMAND: POST /session/96fbee0d58061855e49755baa96945e6/elements - {"using":"xpath","value":"//h2[text()=\"UAE Location List\"]"}
+RESULT: {"using":"xpath","value":"//h2[text()=\"UAE Location List\"]"}
+COMMAND: DELETE /session/96fbee0d58061855e49755baa96945e6 - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: Can't call scrollIntoView on element with selector "//h2[text()="UAE Location List"]" because element wasn't found
+    at async Floorplan.ScrollElement (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:81:9)
+    at async Floorplan.verifyUaeLocLists (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/floorplan.page.js:14:9)
+    at async file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/floorPlan.specs.js:18:126
+    at async Floorplan.compareEnvironments (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:124:21)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/floorPlan.specs.js:18:9)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

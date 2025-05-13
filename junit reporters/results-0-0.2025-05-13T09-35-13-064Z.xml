@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="2" failures="0" errors="0" skipped="0">
+  <testsuite name="FloorPlan Suite" timestamp="2025-05-13T14:35:13" time="32.812" tests="2" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="FloorPlan Suite"/>
+      <property name="capabilities" value="chrome.136_0_7103_93.mac"/>
+      <property name="file" value="file://./test/specs/floorPlan.specs.js"/>
+    </properties>
+    <testcase classname="chrome.136_0_7103_93.mac.FloorPlan_Suite" name="TC6" time="20.138">
+      <system-out><![CDATA[
+COMMAND: POST /session/49069f871af6d758f4b22fc125150057/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/49069f871af6d758f4b22fc125150057/element/f.AE0B0CD7BF2D855988B41517622BBDD7.d.A08FE89A2C810216E15C343D17078B5A.e.4/css/display - {}
+RESULT: {}
+COMMAND: POST /session/49069f871af6d758f4b22fc125150057/element/f.AE0B0CD7BF2D855988B41517622BBDD7.d.A08FE89A2C810216E15C343D17078B5A.e.4/clear - {}
+RESULT: {}
+COMMAND: POST /session/49069f871af6d758f4b22fc125150057/element/f.AE0B0CD7BF2D855988B41517622BBDD7.d.A08FE89A2C810216E15C343D17078B5A.e.4/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/49069f871af6d758f4b22fc125150057/element/f.AE0B0CD7BF2D855988B41517622BBDD7.d.A08FE89A2C810216E15C343D17078B5A.e.5/clear - {}
+RESULT: {}
+COMMAND: POST /session/49069f871af6d758f4b22fc125150057/element/f.AE0B0CD7BF2D855988B41517622BBDD7.d.A08FE89A2C810216E15C343D17078B5A.e.5/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/49069f871af6d758f4b22fc125150057/element/f.AE0B0CD7BF2D855988B41517622BBDD7.d.A08FE89A2C810216E15C343D17078B5A.e.6/click - {}
+RESULT: {}
+COMMAND: GET /session/49069f871af6d758f4b22fc125150057/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/49069f871af6d758f4b22fc125150057/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/49069f871af6d758f4b22fc125150057/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/49069f871af6d758f4b22fc125150057/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/49069f871af6d758f4b22fc125150057/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/49069f871af6d758f4b22fc125150057/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/49069f871af6d758f4b22fc125150057/screenshot - {}
+RESULT: {}
+RESULT: undefined
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.136_0_7103_93.mac.FloorPlan_Suite" name="TC7" time="12.667">
+      <system-out><![CDATA[
+COMMAND: POST /session/49069f871af6d758f4b22fc125150057/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/49069f871af6d758f4b22fc125150057/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/49069f871af6d758f4b22fc125150057/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/49069f871af6d758f4b22fc125150057/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/49069f871af6d758f4b22fc125150057/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/49069f871af6d758f4b22fc125150057/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/49069f871af6d758f4b22fc125150057/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/49069f871af6d758f4b22fc125150057/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/49069f871af6d758f4b22fc125150057/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/49069f871af6d758f4b22fc125150057/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/49069f871af6d758f4b22fc125150057/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/49069f871af6d758f4b22fc125150057/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: DELETE /session/49069f871af6d758f4b22fc125150057 - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

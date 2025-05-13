@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="2" failures="1" errors="0" skipped="0">
+  <testsuite name="FloorPlan Suite" timestamp="2025-03-14T17:16:20" time="167.526" tests="2" failures="1" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="FloorPlan Suite"/>
+      <property name="capabilities" value="chrome.134_0_6998_89.mac"/>
+      <property name="file" value="file://./test/specs/floorPlan.specs.js"/>
+    </properties>
+    <testcase classname="chrome.134_0_6998_89.mac.FloorPlan_Suite" name="TC1" time="109.207">
+      <failure message="Timeout"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/c731f1df4429d981678175bfaf12e674/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/c731f1df4429d981678175bfaf12e674/element - {"using":"xpath","value":"//input[@name=\"username\"]"}
+RESULT: {"using":"xpath","value":"//input[@name=\"username\"]"}
+COMMAND: GET /session/c731f1df4429d981678175bfaf12e674/element/f.2846E2A132EF3E9AAA36115D8A3F81CD.d.20AA54FACB5579AD303B9DF744FEDF36.e.3/css/display - {}
+RESULT: {}
+COMMAND: POST /session/c731f1df4429d981678175bfaf12e674/element/f.2846E2A132EF3E9AAA36115D8A3F81CD.d.20AA54FACB5579AD303B9DF744FEDF36.e.3/clear - {}
+RESULT: {}
+COMMAND: POST /session/c731f1df4429d981678175bfaf12e674/element/f.2846E2A132EF3E9AAA36115D8A3F81CD.d.20AA54FACB5579AD303B9DF744FEDF36.e.3/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/c731f1df4429d981678175bfaf12e674/element/f.2846E2A132EF3E9AAA36115D8A3F81CD.d.20AA54FACB5579AD303B9DF744FEDF36.e.5/clear - {}
+RESULT: {}
+COMMAND: POST /session/c731f1df4429d981678175bfaf12e674/element/f.2846E2A132EF3E9AAA36115D8A3F81CD.d.20AA54FACB5579AD303B9DF744FEDF36.e.5/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/c731f1df4429d981678175bfaf12e674/element/f.2846E2A132EF3E9AAA36115D8A3F81CD.d.20AA54FACB5579AD303B9DF744FEDF36.e.7/click - {}
+RESULT: {}
+COMMAND: GET /session/c731f1df4429d981678175bfaf12e674/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/c731f1df4429d981678175bfaf12e674/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/c731f1df4429d981678175bfaf12e674/screenshot - {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: Timeout
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.134_0_6998_89.mac.FloorPlan_Suite" name="TC2" time="58.313">
+      <system-out><![CDATA[
+COMMAND: POST /session/c731f1df4429d981678175bfaf12e674/window/maximize - {}
+RESULT: {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/c731f1df4429d981678175bfaf12e674/element - {"using":"xpath","value":"//input[@name=\"username\"]"}
+RESULT: {"using":"xpath","value":"//input[@name=\"username\"]"}
+COMMAND: GET /session/c731f1df4429d981678175bfaf12e674/element/f.2846E2A132EF3E9AAA36115D8A3F81CD.d.46FB1E00D08566A0481AB18FC1E26AB4.e.4/css/display - {}
+RESULT: {}
+COMMAND: POST /session/c731f1df4429d981678175bfaf12e674/element/f.2846E2A132EF3E9AAA36115D8A3F81CD.d.46FB1E00D08566A0481AB18FC1E26AB4.e.4/clear - {}
+RESULT: {}
+COMMAND: POST /session/c731f1df4429d981678175bfaf12e674/element/f.2846E2A132EF3E9AAA36115D8A3F81CD.d.46FB1E00D08566A0481AB18FC1E26AB4.e.4/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/c731f1df4429d981678175bfaf12e674/element/f.2846E2A132EF3E9AAA36115D8A3F81CD.d.46FB1E00D08566A0481AB18FC1E26AB4.e.5/clear - {}
+RESULT: {}
+COMMAND: POST /session/c731f1df4429d981678175bfaf12e674/element/f.2846E2A132EF3E9AAA36115D8A3F81CD.d.46FB1E00D08566A0481AB18FC1E26AB4.e.5/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/c731f1df4429d981678175bfaf12e674/element/f.2846E2A132EF3E9AAA36115D8A3F81CD.d.46FB1E00D08566A0481AB18FC1E26AB4.e.6/click - {}
+RESULT: {}
+COMMAND: GET /session/c731f1df4429d981678175bfaf12e674/element/f.2846E2A132EF3E9AAA36115D8A3F81CD.d.B792ACE4CD46F95E5D000ECDEB6FA9D4.e.58/rect - {}
+RESULT: {}
+COMMAND: GET /session/c731f1df4429d981678175bfaf12e674/window/rect - {}
+RESULT: {}
+COMMAND: POST /session/c731f1df4429d981678175bfaf12e674/actions - {"actions":[{"id":"action1","type":"wheel","parameters":{},"actions":[{"type":"scroll","x":-1267,"y":3079,"deltaX":0,"deltaY":0,"duration":0,"origin":{"element-6066-11e4-a52e-4f735466cecf":"f.2846E2A132EF3E9AAA36115D8A3F81CD.d.B792ACE4CD46F95E5D000ECDEB6FA9D4.e.58"}}]}]}
+RESULT: {"actions":[{"id":"action1","type":"wheel","parameters":{},"actions":[{"type":"scroll","x":-1267,"y":3079,"deltaX":0,"deltaY":0,"duration":0,"origin":{"element-6066-11e4-a52e-4f735466cecf":"f.2846E2A132EF3E9AAA36115D8A3F81CD.d.B792ACE4CD46F95E5D000ECDEB6FA9D4.e.58"}}]}]}
+COMMAND: GET /session/c731f1df4429d981678175bfaf12e674/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/c731f1df4429d981678175bfaf12e674/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/c731f1df4429d981678175bfaf12e674/element - {"using":"xpath","value":"//h2[text()=\"UAE Location List\"]"}
+RESULT: {"using":"xpath","value":"//h2[text()=\"UAE Location List\"]"}
+COMMAND: GET /session/c731f1df4429d981678175bfaf12e674/element/f.2846E2A132EF3E9AAA36115D8A3F81CD.d.A534E9B9564DF72FF496594B203F961F.e.51/rect - {}
+RESULT: {}
+COMMAND: GET /session/c731f1df4429d981678175bfaf12e674/window/rect - {}
+RESULT: {}
+COMMAND: POST /session/c731f1df4429d981678175bfaf12e674/actions - {"actions":[{"id":"action2","type":"wheel","parameters":{},"actions":[{"type":"scroll","x":-1267,"y":3158,"deltaX":0,"deltaY":0,"duration":0,"origin":{"element-6066-11e4-a52e-4f735466cecf":"f.2846E2A132EF3E9AAA36115D8A3F81CD.d.A534E9B9564DF72FF496594B203F961F.e.51"}}]}]}
+RESULT: {"actions":[{"id":"action2","type":"wheel","parameters":{},"actions":[{"type":"scroll","x":-1267,"y":3158,"deltaX":0,"deltaY":0,"duration":0,"origin":{"element-6066-11e4-a52e-4f735466cecf":"f.2846E2A132EF3E9AAA36115D8A3F81CD.d.A534E9B9564DF72FF496594B203F961F.e.51"}}]}]}
+COMMAND: GET /session/c731f1df4429d981678175bfaf12e674/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: DELETE /session/c731f1df4429d981678175bfaf12e674 - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

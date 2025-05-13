@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="0" errors="0" skipped="0">
+  <testsuite name="FloorPlan Suite" timestamp="2025-05-07T12:24:31" time="26.982" tests="1" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="FloorPlan Suite"/>
+      <property name="capabilities" value="chrome.135_0_7049_115.mac"/>
+      <property name="file" value="file://./test/specs/floorPlan.specs.js"/>
+    </properties>
+    <testcase classname="chrome.135_0_7049_115.mac.FloorPlan_Suite" name="TC5" time="26.973">
+      <system-out><![CDATA[
+COMMAND: POST /session/ebd8e474fd28a3c203e2cf62e8fa197a/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/ebd8e474fd28a3c203e2cf62e8fa197a/element - {"using":"xpath","value":"//input[@name=\"username\"]"}
+RESULT: {"using":"xpath","value":"//input[@name=\"username\"]"}
+COMMAND: GET /session/ebd8e474fd28a3c203e2cf62e8fa197a/element/f.BFC9973FC1577B7472F199826F53DD36.d.9F483B124A7A3AA94A1EC58DF2454E74.e.4/css/display - {}
+RESULT: {}
+COMMAND: POST /session/ebd8e474fd28a3c203e2cf62e8fa197a/element/f.BFC9973FC1577B7472F199826F53DD36.d.9F483B124A7A3AA94A1EC58DF2454E74.e.4/clear - {}
+RESULT: {}
+COMMAND: POST /session/ebd8e474fd28a3c203e2cf62e8fa197a/element/f.BFC9973FC1577B7472F199826F53DD36.d.9F483B124A7A3AA94A1EC58DF2454E74.e.4/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/ebd8e474fd28a3c203e2cf62e8fa197a/element/f.BFC9973FC1577B7472F199826F53DD36.d.9F483B124A7A3AA94A1EC58DF2454E74.e.5/clear - {}
+RESULT: {}
+COMMAND: POST /session/ebd8e474fd28a3c203e2cf62e8fa197a/element/f.BFC9973FC1577B7472F199826F53DD36.d.9F483B124A7A3AA94A1EC58DF2454E74.e.5/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/ebd8e474fd28a3c203e2cf62e8fa197a/element/f.BFC9973FC1577B7472F199826F53DD36.d.9F483B124A7A3AA94A1EC58DF2454E74.e.6/click - {}
+RESULT: {}
+COMMAND: GET /session/ebd8e474fd28a3c203e2cf62e8fa197a/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/ebd8e474fd28a3c203e2cf62e8fa197a/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/ebd8e474fd28a3c203e2cf62e8fa197a/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/ebd8e474fd28a3c203e2cf62e8fa197a/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/ebd8e474fd28a3c203e2cf62e8fa197a/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/ebd8e474fd28a3c203e2cf62e8fa197a/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/ebd8e474fd28a3c203e2cf62e8fa197a/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/ebd8e474fd28a3c203e2cf62e8fa197a/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/ebd8e474fd28a3c203e2cf62e8fa197a/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/ebd8e474fd28a3c203e2cf62e8fa197a/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/ebd8e474fd28a3c203e2cf62e8fa197a/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/ebd8e474fd28a3c203e2cf62e8fa197a/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/ebd8e474fd28a3c203e2cf62e8fa197a/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/ebd8e474fd28a3c203e2cf62e8fa197a/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/ebd8e474fd28a3c203e2cf62e8fa197a/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/ebd8e474fd28a3c203e2cf62e8fa197a/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: DELETE /session/ebd8e474fd28a3c203e2cf62e8fa197a - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

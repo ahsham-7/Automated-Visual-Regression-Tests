@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="3" failures="2" errors="0" skipped="1">
+  <testsuite name="FloorPlan Suite" timestamp="2025-03-14T17:59:27" time="134.659" tests="3" failures="2" errors="0" skipped="1">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="FloorPlan Suite"/>
+      <property name="capabilities" value="chrome.134_0_6998_89.mac"/>
+      <property name="file" value="file://./test/specs/floorPlan.specs.js"/>
+    </properties>
+    <testcase classname="chrome.134_0_6998_89.mac.FloorPlan_Suite" name="TC1" time="74.551">
+      <failure message="Command script.callFunction with id 49 (with the following parameter: {&quot;functionDeclaration&quot;:&quot;function anonymous(\n) {\nreturn (/* __wdio script__ */function hideScrollBars(hide) {\n    try {\n        if (hide) {\n            document.body.style.overflow = 'hidden';\n        }\n        else {\n            document.body.style.overflow = '';\n        }\n    }\n    catch (e) {\n    }\n}/* __wdio script end__ */).apply(this, arguments);\n}&quot;,&quot;awaitPromise&quot;:true,&quot;arguments&quot;:[{&quot;type&quot;:&quot;boolean&quot;,&quot;value&quot;:true}],&quot;target&quot;:{&quot;context&quot;:&quot;73E4C05FBC8DD109FA475B58DFEBF202&quot;}}) timed out"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/b09b4db79cef169d4b80fb9be876bca2/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/b09b4db79cef169d4b80fb9be876bca2/element - {"using":"xpath","value":"//input[@name=\"username\"]"}
+RESULT: {"using":"xpath","value":"//input[@name=\"username\"]"}
+COMMAND: GET /session/b09b4db79cef169d4b80fb9be876bca2/element/f.73E4C05FBC8DD109FA475B58DFEBF202.d.89B9E7296956C57BE7FE2A34131AF249.e.4/css/display - {}
+RESULT: {}
+COMMAND: POST /session/b09b4db79cef169d4b80fb9be876bca2/element/f.73E4C05FBC8DD109FA475B58DFEBF202.d.89B9E7296956C57BE7FE2A34131AF249.e.4/clear - {}
+RESULT: {}
+COMMAND: POST /session/b09b4db79cef169d4b80fb9be876bca2/element/f.73E4C05FBC8DD109FA475B58DFEBF202.d.89B9E7296956C57BE7FE2A34131AF249.e.4/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/b09b4db79cef169d4b80fb9be876bca2/element/f.73E4C05FBC8DD109FA475B58DFEBF202.d.89B9E7296956C57BE7FE2A34131AF249.e.6/clear - {}
+RESULT: {}
+COMMAND: POST /session/b09b4db79cef169d4b80fb9be876bca2/element/f.73E4C05FBC8DD109FA475B58DFEBF202.d.89B9E7296956C57BE7FE2A34131AF249.e.6/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/b09b4db79cef169d4b80fb9be876bca2/element/f.73E4C05FBC8DD109FA475B58DFEBF202.d.89B9E7296956C57BE7FE2A34131AF249.e.8/click - {}
+RESULT: {}
+COMMAND: GET /session/b09b4db79cef169d4b80fb9be876bca2/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/b09b4db79cef169d4b80fb9be876bca2/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/b09b4db79cef169d4b80fb9be876bca2/window/maximize - {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: Command script.callFunction with id 49 (with the following parameter: {"functionDeclaration":"function anonymous(\n) {\nreturn (/* __wdio script__ */function hideScrollBars(hide) {\n    try {\n        if (hide) {\n            document.body.style.overflow = 'hidden';\n        }\n        else {\n            document.body.style.overflow = '';\n        }\n    }\n    catch (e) {\n    }\n}/* __wdio script end__ */).apply(this, arguments);\n}","awaitPromise":true,"arguments":[{"type":"boolean","value":true}],"target":{"context":"73E4C05FBC8DD109FA475B58DFEBF202"}}) timed out
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.134_0_6998_89.mac.FloorPlan_Suite" name="TC2" time="0">
+      <skipped/>
+      <system-out><![CDATA[
+COMMAND: POST /session/b09b4db79cef169d4b80fb9be876bca2/window/maximize - {}
+COMMAND: DELETE /session/b09b4db79cef169d4b80fb9be876bca2 - {}
+RESULT: {}
+RESULT: {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.134_0_6998_89.mac.FloorPlan_Suite" name="before each hook for FloorPlan Suite" time="60.105">
+      <failure message="Failed to handle login process: waitUntil condition failed with the following reason: Command script.callFunction with id 72 (with the following parameter: {&quot;functionDeclaration&quot;:&quot;function anonymous(\n) {\nreturn (/* __wdio script__ */() => document.readyState/* __wdio script end__ */).apply(this, arguments);\n}&quot;,&quot;awaitPromise&quot;:true,&quot;arguments&quot;:[],&quot;target&quot;:{&quot;context&quot;:&quot;73E4C05FBC8DD109FA475B58DFEBF202&quot;}}) timed out"/>
+      <system-err><![CDATA[
+Error: Failed to handle login process: waitUntil condition failed with the following reason: Command script.callFunction with id 72 (with the following parameter: {"functionDeclaration":"function anonymous(\n) {\nreturn (/* __wdio script__ */() => document.readyState/* __wdio script end__ */).apply(this, arguments);\n}","awaitPromise":true,"arguments":[],"target":{"context":"73E4C05FBC8DD109FA475B58DFEBF202"}}) timed out
+    at Floorplan.conditionalLogin (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:174:15)
+    at listOnTimeout (node:internal/timers:538:9)
+    at process.processTimers (node:internal/timers:512:7)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/floorPlan.specs.js:7:9)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

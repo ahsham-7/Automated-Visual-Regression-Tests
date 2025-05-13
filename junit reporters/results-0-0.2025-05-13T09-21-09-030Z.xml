@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="1" errors="0" skipped="0">
+  <testsuite name="FloorPlan Suite" timestamp="2025-05-13T14:21:09" time="21.775" tests="1" failures="1" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="FloorPlan Suite"/>
+      <property name="capabilities" value="chrome.136_0_7103_93.mac"/>
+      <property name="file" value="file://./test/specs/floorPlan.specs.js"/>
+    </properties>
+    <testcase classname="chrome.136_0_7103_93.mac.FloorPlan_Suite" name="TC6" time="21.768">
+      <failure message="Page did not load within the expected time"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/9bee98bea2f7bdafef37b10b492851e2/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/9bee98bea2f7bdafef37b10b492851e2/element/f.F3B3801CEB7D93FF73807A416A437F35.d.95A7E754486E070004DDDC3E4EAEA8BF.e.4/css/display - {}
+RESULT: {}
+COMMAND: POST /session/9bee98bea2f7bdafef37b10b492851e2/element/f.F3B3801CEB7D93FF73807A416A437F35.d.95A7E754486E070004DDDC3E4EAEA8BF.e.4/clear - {}
+RESULT: {}
+COMMAND: POST /session/9bee98bea2f7bdafef37b10b492851e2/element/f.F3B3801CEB7D93FF73807A416A437F35.d.95A7E754486E070004DDDC3E4EAEA8BF.e.4/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/9bee98bea2f7bdafef37b10b492851e2/element/f.F3B3801CEB7D93FF73807A416A437F35.d.95A7E754486E070004DDDC3E4EAEA8BF.e.5/clear - {}
+RESULT: {}
+COMMAND: POST /session/9bee98bea2f7bdafef37b10b492851e2/element/f.F3B3801CEB7D93FF73807A416A437F35.d.95A7E754486E070004DDDC3E4EAEA8BF.e.5/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/9bee98bea2f7bdafef37b10b492851e2/element/f.F3B3801CEB7D93FF73807A416A437F35.d.95A7E754486E070004DDDC3E4EAEA8BF.e.6/click - {}
+RESULT: {}
+COMMAND: GET /session/9bee98bea2f7bdafef37b10b492851e2/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/9bee98bea2f7bdafef37b10b492851e2/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/9bee98bea2f7bdafef37b10b492851e2/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/9bee98bea2f7bdafef37b10b492851e2/window/maximize - {}
+RESULT: {}
+COMMAND: DELETE /session/9bee98bea2f7bdafef37b10b492851e2 - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: Page did not load within the expected time
+    at async Floorplan.waitForPageToLoad (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:206:5)
+    at async Floorplan.compareFullPageEnvironments (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:151:5)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/floorPlan.specs.js:34:9)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

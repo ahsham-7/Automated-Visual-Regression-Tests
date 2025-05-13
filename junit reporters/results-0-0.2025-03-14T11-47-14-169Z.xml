@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="2" failures="1" errors="0" skipped="1">
+  <testsuite name="FloorPlan Suite" timestamp="2025-03-14T16:47:15" time="9.588" tests="2" failures="1" errors="0" skipped="1">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="FloorPlan Suite"/>
+      <property name="capabilities" value="chrome.134_0_6998_89.mac"/>
+      <property name="file" value="file://./test/specs/floorPlan.specs.js"/>
+    </properties>
+    <testcase classname="chrome.134_0_6998_89.mac.FloorPlan_Suite" name="TC1" time="0">
+      <skipped/>
+      <system-out><![CDATA[
+COMMAND: POST /session/7d233c2c65e87c7161c4d6e9c256b439/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/7d233c2c65e87c7161c4d6e9c256b439/title - {}
+RESULT: {}
+COMMAND: GET /session/7d233c2c65e87c7161c4d6e9c256b439/title - {}
+RESULT: {}
+COMMAND: GET /session/7d233c2c65e87c7161c4d6e9c256b439/title - {}
+RESULT: {}
+COMMAND: GET /session/7d233c2c65e87c7161c4d6e9c256b439/title - {}
+RESULT: {}
+COMMAND: GET /session/7d233c2c65e87c7161c4d6e9c256b439/title - {}
+RESULT: {}
+COMMAND: GET /session/7d233c2c65e87c7161c4d6e9c256b439/title - {}
+RESULT: {}
+COMMAND: GET /session/7d233c2c65e87c7161c4d6e9c256b439/title - {}
+RESULT: {}
+COMMAND: GET /session/7d233c2c65e87c7161c4d6e9c256b439/title - {}
+RESULT: {}
+COMMAND: GET /session/7d233c2c65e87c7161c4d6e9c256b439/title - {}
+RESULT: {}
+COMMAND: GET /session/7d233c2c65e87c7161c4d6e9c256b439/title - {}
+RESULT: {}
+COMMAND: GET /session/7d233c2c65e87c7161c4d6e9c256b439/title - {}
+RESULT: {}
+COMMAND: GET /session/7d233c2c65e87c7161c4d6e9c256b439/title - {}
+RESULT: {}
+COMMAND: GET /session/7d233c2c65e87c7161c4d6e9c256b439/title - {}
+RESULT: {}
+COMMAND: GET /session/7d233c2c65e87c7161c4d6e9c256b439/title - {}
+RESULT: {}
+COMMAND: GET /session/7d233c2c65e87c7161c4d6e9c256b439/title - {}
+RESULT: {}
+COMMAND: GET /session/7d233c2c65e87c7161c4d6e9c256b439/title - {}
+RESULT: {}
+COMMAND: GET /session/7d233c2c65e87c7161c4d6e9c256b439/title - {}
+RESULT: {}
+COMMAND: GET /session/7d233c2c65e87c7161c4d6e9c256b439/title - {}
+RESULT: {}
+COMMAND: GET /session/7d233c2c65e87c7161c4d6e9c256b439/title - {}
+RESULT: {}
+COMMAND: GET /session/7d233c2c65e87c7161c4d6e9c256b439/title - {}
+RESULT: {}
+COMMAND: DELETE /session/7d233c2c65e87c7161c4d6e9c256b439 - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.134_0_6998_89.mac.FloorPlan_Suite" name="before each hook for FloorPlan Suite" time="9.586">
+      <failure message="Failed to handle login process: Login page did not load in time"/>
+      <system-err><![CDATA[
+Error: Failed to handle login process: Login page did not load in time
+    at Floorplan.conditionalLogin (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:166:15)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/floorPlan.specs.js:7:9)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

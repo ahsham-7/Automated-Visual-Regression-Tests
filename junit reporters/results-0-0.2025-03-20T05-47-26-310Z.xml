@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="3" failures="2" errors="0" skipped="1">
+  <testsuite name="FloorPlan Suite" timestamp="2025-03-20T10:47:27" time="165.116" tests="3" failures="2" errors="0" skipped="1">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="FloorPlan Suite"/>
+      <property name="capabilities" value="chrome.134_0_6998_118.mac"/>
+      <property name="file" value="file://./test/specs/floorPlan.specs.js"/>
+    </properties>
+    <testcase classname="chrome.134_0_6998_118.mac.FloorPlan_Suite" name="TC1" time="104.985">
+      <failure message="Timeout"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/abed711e2d5f69b2f615f75ebd13ec40/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/abed711e2d5f69b2f615f75ebd13ec40/element - {"using":"xpath","value":"//input[@name=\"username\"]"}
+RESULT: {"using":"xpath","value":"//input[@name=\"username\"]"}
+COMMAND: GET /session/abed711e2d5f69b2f615f75ebd13ec40/element/f.BF6C35502EDE8EBEC79E8592F531D1E2.d.1DFBB8670E28D1DD7C57D07BCA710AF2.e.4/css/display - {}
+RESULT: {}
+COMMAND: POST /session/abed711e2d5f69b2f615f75ebd13ec40/element/f.BF6C35502EDE8EBEC79E8592F531D1E2.d.1DFBB8670E28D1DD7C57D07BCA710AF2.e.4/clear - {}
+RESULT: {}
+COMMAND: POST /session/abed711e2d5f69b2f615f75ebd13ec40/element/f.BF6C35502EDE8EBEC79E8592F531D1E2.d.1DFBB8670E28D1DD7C57D07BCA710AF2.e.4/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/abed711e2d5f69b2f615f75ebd13ec40/element/f.BF6C35502EDE8EBEC79E8592F531D1E2.d.1DFBB8670E28D1DD7C57D07BCA710AF2.e.5/clear - {}
+RESULT: {}
+COMMAND: POST /session/abed711e2d5f69b2f615f75ebd13ec40/element/f.BF6C35502EDE8EBEC79E8592F531D1E2.d.1DFBB8670E28D1DD7C57D07BCA710AF2.e.5/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/abed711e2d5f69b2f615f75ebd13ec40/element/f.BF6C35502EDE8EBEC79E8592F531D1E2.d.1DFBB8670E28D1DD7C57D07BCA710AF2.e.6/click - {}
+RESULT: {}
+COMMAND: GET /session/abed711e2d5f69b2f615f75ebd13ec40/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/abed711e2d5f69b2f615f75ebd13ec40/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/abed711e2d5f69b2f615f75ebd13ec40/screenshot - {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: Timeout
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.134_0_6998_118.mac.FloorPlan_Suite" name="TC2" time="0">
+      <skipped/>
+      <system-out><![CDATA[
+COMMAND: POST /session/abed711e2d5f69b2f615f75ebd13ec40/window/maximize - {}
+COMMAND: DELETE /session/abed711e2d5f69b2f615f75ebd13ec40 - {}
+RESULT: {}
+COMMAND: GET /session/abed711e2d5f69b2f615f75ebd13ec40/window - {}
+RESULT: {}
+RESULT: {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.134_0_6998_118.mac.FloorPlan_Suite" name="before each hook for FloorPlan Suite" time="60.118">
+      <failure message="Failed to handle login process: waitUntil condition failed with the following reason: Command script.callFunction with id 49 (with the following parameter: {&quot;functionDeclaration&quot;:&quot;function anonymous(\n) {\nreturn (/* __wdio script__ */() => document.readyState/* __wdio script end__ */).apply(this, arguments);\n}&quot;,&quot;awaitPromise&quot;:true,&quot;arguments&quot;:[],&quot;target&quot;:{&quot;context&quot;:&quot;BF6C35502EDE8EBEC79E8592F531D1E2&quot;}}) timed out"/>
+      <system-err><![CDATA[
+Error: Failed to handle login process: waitUntil condition failed with the following reason: Command script.callFunction with id 49 (with the following parameter: {"functionDeclaration":"function anonymous(\n) {\nreturn (/* __wdio script__ */() => document.readyState/* __wdio script end__ */).apply(this, arguments);\n}","awaitPromise":true,"arguments":[],"target":{"context":"BF6C35502EDE8EBEC79E8592F531D1E2"}}) timed out
+    at Floorplan.conditionalLogin (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:174:15)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/floorPlan.specs.js:7:9)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

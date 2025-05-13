@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="2" failures="2" errors="0" skipped="0">
+  <testsuite name="FloorPlan Suite" timestamp="2025-03-21T17:45:12" time="29.995" tests="2" failures="2" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="FloorPlan Suite"/>
+      <property name="capabilities" value="chrome.134_0_6998_118.mac"/>
+      <property name="file" value="file://./test/specs/floorPlan.specs.js"/>
+    </properties>
+    <testcase classname="chrome.134_0_6998_118.mac.FloorPlan_Suite" name="TC1" time="17.282">
+      <failure message="Image differences detected"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/08acbcc5cc1d48733319745ac7b802a5/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/08acbcc5cc1d48733319745ac7b802a5/element - {"using":"xpath","value":"//input[@name=\"username\"]"}
+RESULT: {"using":"xpath","value":"//input[@name=\"username\"]"}
+COMMAND: GET /session/08acbcc5cc1d48733319745ac7b802a5/element/f.7FB0B081121B3FB1D4C1B8C7AB59D9DC.d.DDCF7043F116ED68D66F54A1760D236F.e.4/css/display - {}
+RESULT: {}
+COMMAND: POST /session/08acbcc5cc1d48733319745ac7b802a5/element/f.7FB0B081121B3FB1D4C1B8C7AB59D9DC.d.DDCF7043F116ED68D66F54A1760D236F.e.4/clear - {}
+RESULT: {}
+COMMAND: POST /session/08acbcc5cc1d48733319745ac7b802a5/element/f.7FB0B081121B3FB1D4C1B8C7AB59D9DC.d.DDCF7043F116ED68D66F54A1760D236F.e.4/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/08acbcc5cc1d48733319745ac7b802a5/element/f.7FB0B081121B3FB1D4C1B8C7AB59D9DC.d.DDCF7043F116ED68D66F54A1760D236F.e.5/clear - {}
+RESULT: {}
+COMMAND: POST /session/08acbcc5cc1d48733319745ac7b802a5/element/f.7FB0B081121B3FB1D4C1B8C7AB59D9DC.d.DDCF7043F116ED68D66F54A1760D236F.e.5/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/08acbcc5cc1d48733319745ac7b802a5/element/f.7FB0B081121B3FB1D4C1B8C7AB59D9DC.d.DDCF7043F116ED68D66F54A1760D236F.e.6/click - {}
+RESULT: {}
+COMMAND: GET /session/08acbcc5cc1d48733319745ac7b802a5/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/08acbcc5cc1d48733319745ac7b802a5/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/08acbcc5cc1d48733319745ac7b802a5/screenshot - {}
+RESULT: {}
+RESULT: undefined
+]]></system-out>
+      <system-err><![CDATA[
+Error: Image differences detected
+    at Floorplan.compareEnvironments (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:146:15)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/floorPlan.specs.js:15:8)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.134_0_6998_118.mac.FloorPlan_Suite" name="TC2" time="12.711">
+      <failure message="Image differences detected"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/08acbcc5cc1d48733319745ac7b802a5/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/08acbcc5cc1d48733319745ac7b802a5/element - {"using":"xpath","value":"//input[@name=\"username\"]"}
+RESULT: {"using":"xpath","value":"//input[@name=\"username\"]"}
+COMMAND: GET /session/08acbcc5cc1d48733319745ac7b802a5/element/f.7FB0B081121B3FB1D4C1B8C7AB59D9DC.d.761B3282ADF570CD354F557BF5FFCF6A.e.3/css/display - {}
+RESULT: {}
+COMMAND: POST /session/08acbcc5cc1d48733319745ac7b802a5/element/f.7FB0B081121B3FB1D4C1B8C7AB59D9DC.d.761B3282ADF570CD354F557BF5FFCF6A.e.3/clear - {}
+RESULT: {}
+COMMAND: POST /session/08acbcc5cc1d48733319745ac7b802a5/element/f.7FB0B081121B3FB1D4C1B8C7AB59D9DC.d.761B3282ADF570CD354F557BF5FFCF6A.e.3/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/08acbcc5cc1d48733319745ac7b802a5/element/f.7FB0B081121B3FB1D4C1B8C7AB59D9DC.d.761B3282ADF570CD354F557BF5FFCF6A.e.4/clear - {}
+RESULT: {}
+COMMAND: POST /session/08acbcc5cc1d48733319745ac7b802a5/element/f.7FB0B081121B3FB1D4C1B8C7AB59D9DC.d.761B3282ADF570CD354F557BF5FFCF6A.e.4/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/08acbcc5cc1d48733319745ac7b802a5/element/f.7FB0B081121B3FB1D4C1B8C7AB59D9DC.d.761B3282ADF570CD354F557BF5FFCF6A.e.5/click - {}
+RESULT: {}
+COMMAND: GET /session/08acbcc5cc1d48733319745ac7b802a5/element/f.7FB0B081121B3FB1D4C1B8C7AB59D9DC.d.561E7F3DC96418B2C83BCACB19149603.e.59/rect - {}
+RESULT: {}
+COMMAND: GET /session/08acbcc5cc1d48733319745ac7b802a5/window/rect - {}
+RESULT: {}
+COMMAND: POST /session/08acbcc5cc1d48733319745ac7b802a5/actions - {"actions":[{"id":"action1","type":"wheel","parameters":{},"actions":[{"type":"scroll","x":-1267,"y":3077,"deltaX":0,"deltaY":0,"duration":0,"origin":{"element-6066-11e4-a52e-4f735466cecf":"f.7FB0B081121B3FB1D4C1B8C7AB59D9DC.d.561E7F3DC96418B2C83BCACB19149603.e.59"}}]}]}
+RESULT: {"actions":[{"id":"action1","type":"wheel","parameters":{},"actions":[{"type":"scroll","x":-1267,"y":3077,"deltaX":0,"deltaY":0,"duration":0,"origin":{"element-6066-11e4-a52e-4f735466cecf":"f.7FB0B081121B3FB1D4C1B8C7AB59D9DC.d.561E7F3DC96418B2C83BCACB19149603.e.59"}}]}]}
+COMMAND: GET /session/08acbcc5cc1d48733319745ac7b802a5/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/08acbcc5cc1d48733319745ac7b802a5/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/08acbcc5cc1d48733319745ac7b802a5/element - {"using":"xpath","value":"//h2[text()=\"UAE Location List\"]"}
+RESULT: {"using":"xpath","value":"//h2[text()=\"UAE Location List\"]"}
+COMMAND: GET /session/08acbcc5cc1d48733319745ac7b802a5/element/f.7FB0B081121B3FB1D4C1B8C7AB59D9DC.d.70DB07B0ED08C78DB44140954B2A9562.e.52/rect - {}
+RESULT: {}
+COMMAND: GET /session/08acbcc5cc1d48733319745ac7b802a5/window/rect - {}
+RESULT: {}
+COMMAND: POST /session/08acbcc5cc1d48733319745ac7b802a5/actions - {"actions":[{"id":"action2","type":"wheel","parameters":{},"actions":[{"type":"scroll","x":-1267,"y":3156,"deltaX":0,"deltaY":0,"duration":0,"origin":{"element-6066-11e4-a52e-4f735466cecf":"f.7FB0B081121B3FB1D4C1B8C7AB59D9DC.d.70DB07B0ED08C78DB44140954B2A9562.e.52"}}]}]}
+RESULT: {"actions":[{"id":"action2","type":"wheel","parameters":{},"actions":[{"type":"scroll","x":-1267,"y":3156,"deltaX":0,"deltaY":0,"duration":0,"origin":{"element-6066-11e4-a52e-4f735466cecf":"f.7FB0B081121B3FB1D4C1B8C7AB59D9DC.d.70DB07B0ED08C78DB44140954B2A9562.e.52"}}]}]}
+COMMAND: GET /session/08acbcc5cc1d48733319745ac7b802a5/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: DELETE /session/08acbcc5cc1d48733319745ac7b802a5 - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: Image differences detected
+    at Floorplan.compareEnvironments (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:146:15)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/floorPlan.specs.js:18:9)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

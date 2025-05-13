@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="2" failures="2" errors="0" skipped="0">
+  <testsuite name="FloorPlan Suite" timestamp="2025-03-27T11:21:32" time="148.446" tests="2" failures="2" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="FloorPlan Suite"/>
+      <property name="capabilities" value="chrome.134_0_6998_166.mac"/>
+      <property name="file" value="file://./test/specs/floorPlan.specs.js"/>
+    </properties>
+    <testcase classname="chrome.134_0_6998_166.mac.FloorPlan_Suite" name="TC1" time="45.519">
+      <failure message="Image differences detected"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/b36a4f2b593ab834da982fc4a1c8e995/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/b36a4f2b593ab834da982fc4a1c8e995/element - {"using":"xpath","value":"//input[@name=\"username\"]"}
+RESULT: {"using":"xpath","value":"//input[@name=\"username\"]"}
+COMMAND: GET /session/b36a4f2b593ab834da982fc4a1c8e995/element/f.7485CE7B795A2BC049C080F033E10DA0.d.01FE13AC36E3855C74D12D0F0A4383FB.e.4/css/display - {}
+RESULT: {}
+COMMAND: POST /session/b36a4f2b593ab834da982fc4a1c8e995/element/f.7485CE7B795A2BC049C080F033E10DA0.d.01FE13AC36E3855C74D12D0F0A4383FB.e.4/clear - {}
+RESULT: {}
+COMMAND: POST /session/b36a4f2b593ab834da982fc4a1c8e995/element/f.7485CE7B795A2BC049C080F033E10DA0.d.01FE13AC36E3855C74D12D0F0A4383FB.e.4/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/b36a4f2b593ab834da982fc4a1c8e995/element/f.7485CE7B795A2BC049C080F033E10DA0.d.01FE13AC36E3855C74D12D0F0A4383FB.e.5/clear - {}
+RESULT: {}
+COMMAND: POST /session/b36a4f2b593ab834da982fc4a1c8e995/element/f.7485CE7B795A2BC049C080F033E10DA0.d.01FE13AC36E3855C74D12D0F0A4383FB.e.5/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/b36a4f2b593ab834da982fc4a1c8e995/element/f.7485CE7B795A2BC049C080F033E10DA0.d.01FE13AC36E3855C74D12D0F0A4383FB.e.6/click - {}
+RESULT: {}
+COMMAND: GET /session/b36a4f2b593ab834da982fc4a1c8e995/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/b36a4f2b593ab834da982fc4a1c8e995/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/b36a4f2b593ab834da982fc4a1c8e995/screenshot - {}
+RESULT: {}
+RESULT: undefined
+]]></system-out>
+      <system-err><![CDATA[
+Error: Image differences detected
+    at Floorplan.compareEnvironments (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:146:15)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/floorPlan.specs.js:15:8)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.134_0_6998_166.mac.FloorPlan_Suite" name="TC2" time="102.914">
+      <failure message="Timeout"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/b36a4f2b593ab834da982fc4a1c8e995/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/b36a4f2b593ab834da982fc4a1c8e995/element - {"using":"xpath","value":"//input[@name=\"username\"]"}
+RESULT: {"using":"xpath","value":"//input[@name=\"username\"]"}
+COMMAND: GET /session/b36a4f2b593ab834da982fc4a1c8e995/element/f.7485CE7B795A2BC049C080F033E10DA0.d.D4C74429847B6DB32B307FBD5ADD10B2.e.3/css/display - {}
+RESULT: {}
+COMMAND: POST /session/b36a4f2b593ab834da982fc4a1c8e995/element/f.7485CE7B795A2BC049C080F033E10DA0.d.D4C74429847B6DB32B307FBD5ADD10B2.e.3/clear - {}
+RESULT: {}
+COMMAND: POST /session/b36a4f2b593ab834da982fc4a1c8e995/element/f.7485CE7B795A2BC049C080F033E10DA0.d.D4C74429847B6DB32B307FBD5ADD10B2.e.3/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/b36a4f2b593ab834da982fc4a1c8e995/element/f.7485CE7B795A2BC049C080F033E10DA0.d.D4C74429847B6DB32B307FBD5ADD10B2.e.4/clear - {}
+RESULT: {}
+COMMAND: POST /session/b36a4f2b593ab834da982fc4a1c8e995/element/f.7485CE7B795A2BC049C080F033E10DA0.d.D4C74429847B6DB32B307FBD5ADD10B2.e.4/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/b36a4f2b593ab834da982fc4a1c8e995/element/f.7485CE7B795A2BC049C080F033E10DA0.d.D4C74429847B6DB32B307FBD5ADD10B2.e.5/click - {}
+RESULT: {}
+COMMAND: GET /session/b36a4f2b593ab834da982fc4a1c8e995/element/f.7485CE7B795A2BC049C080F033E10DA0.d.B11FBF15A6AFBD6C06DF0955C8E9971B.e.61/rect - {}
+RESULT: {}
+COMMAND: GET /session/b36a4f2b593ab834da982fc4a1c8e995/window/rect - {}
+RESULT: {}
+COMMAND: POST /session/b36a4f2b593ab834da982fc4a1c8e995/actions - {"actions":[{"id":"action1","type":"wheel","parameters":{},"actions":[{"type":"scroll","x":-1267,"y":3077,"deltaX":0,"deltaY":0,"duration":0,"origin":{"element-6066-11e4-a52e-4f735466cecf":"f.7485CE7B795A2BC049C080F033E10DA0.d.B11FBF15A6AFBD6C06DF0955C8E9971B.e.61"}}]}]}
+RESULT: {"actions":[{"id":"action1","type":"wheel","parameters":{},"actions":[{"type":"scroll","x":-1267,"y":3077,"deltaX":0,"deltaY":0,"duration":0,"origin":{"element-6066-11e4-a52e-4f735466cecf":"f.7485CE7B795A2BC049C080F033E10DA0.d.B11FBF15A6AFBD6C06DF0955C8E9971B.e.61"}}]}]}
+COMMAND: GET /session/b36a4f2b593ab834da982fc4a1c8e995/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/b36a4f2b593ab834da982fc4a1c8e995/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/b36a4f2b593ab834da982fc4a1c8e995/element - {"using":"xpath","value":"//h2[text()=\"UAE Location List\"]"}
+COMMAND: DELETE /session/b36a4f2b593ab834da982fc4a1c8e995 - {}
+RESULT: {"using":"xpath","value":"//h2[text()=\"UAE Location List\"]"}
+COMMAND: GET /session/b36a4f2b593ab834da982fc4a1c8e995/element/f.7485CE7B795A2BC049C080F033E10DA0.d.CB5C8F47D1381BFEBB941F0B076ACBA3.e.53/rect - {}
+RESULT: {}
+RESULT: {}
+COMMAND: POST /session/undefined/execute/sync - {"script":"<script> [20 bytes]","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.7485CE7B795A2BC049C080F033E10DA0.d.CB5C8F47D1381BFEBB941F0B076ACBA3.e.53","ELEMENT":"f.7485CE7B795A2BC049C080F033E10DA0.d.CB5C8F47D1381BFEBB941F0B076ACBA3.e.53"},{"block":"center","inline":"nearest"}]}
+RESULT: {"script":"<script> [20 bytes]","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.7485CE7B795A2BC049C080F033E10DA0.d.CB5C8F47D1381BFEBB941F0B076ACBA3.e.53","ELEMENT":"f.7485CE7B795A2BC049C080F033E10DA0.d.CB5C8F47D1381BFEBB941F0B076ACBA3.e.53"},{"block":"center","inline":"nearest"}]}
+]]></system-out>
+      <system-err><![CDATA[
+Error: Timeout
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

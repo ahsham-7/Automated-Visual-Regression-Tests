@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="2" failures="2" errors="0" skipped="0">
+  <testsuite name="FloorPlan Suite" timestamp="2025-03-27T11:06:05" time="228.66" tests="2" failures="2" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="FloorPlan Suite"/>
+      <property name="capabilities" value="chrome.134_0_6998_166.mac"/>
+      <property name="file" value="file://./test/specs/floorPlan.specs.js"/>
+    </properties>
+    <testcase classname="chrome.134_0_6998_166.mac.FloorPlan_Suite" name="TC1" time="108.026">
+      <failure message="Timeout"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/ea17a2e1945b2f4dc33826b607989f9e/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/ea17a2e1945b2f4dc33826b607989f9e/element - {"using":"xpath","value":"//input[@name=\"username\"]"}
+RESULT: {"using":"xpath","value":"//input[@name=\"username\"]"}
+COMMAND: GET /session/ea17a2e1945b2f4dc33826b607989f9e/element/f.4A5B286A0135A14AC5709B3B2714791A.d.4888EBC402055095D609A22A404BE3FF.e.5/css/display - {}
+RESULT: {}
+COMMAND: POST /session/ea17a2e1945b2f4dc33826b607989f9e/element/f.4A5B286A0135A14AC5709B3B2714791A.d.4888EBC402055095D609A22A404BE3FF.e.5/clear - {}
+RESULT: {}
+COMMAND: POST /session/ea17a2e1945b2f4dc33826b607989f9e/element/f.4A5B286A0135A14AC5709B3B2714791A.d.4888EBC402055095D609A22A404BE3FF.e.5/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/ea17a2e1945b2f4dc33826b607989f9e/element/f.4A5B286A0135A14AC5709B3B2714791A.d.4888EBC402055095D609A22A404BE3FF.e.6/clear - {}
+RESULT: {}
+COMMAND: POST /session/ea17a2e1945b2f4dc33826b607989f9e/element/f.4A5B286A0135A14AC5709B3B2714791A.d.4888EBC402055095D609A22A404BE3FF.e.6/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/ea17a2e1945b2f4dc33826b607989f9e/element/f.4A5B286A0135A14AC5709B3B2714791A.d.4888EBC402055095D609A22A404BE3FF.e.7/click - {}
+RESULT: {}
+COMMAND: GET /session/ea17a2e1945b2f4dc33826b607989f9e/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/ea17a2e1945b2f4dc33826b607989f9e/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/ea17a2e1945b2f4dc33826b607989f9e/screenshot - {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: Timeout
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.134_0_6998_166.mac.FloorPlan_Suite" name="TC2" time="120.615">
+      <failure message="Timeout"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/ea17a2e1945b2f4dc33826b607989f9e/window/maximize - {}
+RESULT: {}
+RESULT: {}
+RESULT: undefined
+COMMAND: GET /session/ea17a2e1945b2f4dc33826b607989f9e/element/f.4A5B286A0135A14AC5709B3B2714791A.d.8B60E5DA6C60DB5F8CD03F386775228A.e.51/rect - {}
+RESULT: {}
+COMMAND: GET /session/ea17a2e1945b2f4dc33826b607989f9e/window/rect - {}
+RESULT: {}
+COMMAND: POST /session/ea17a2e1945b2f4dc33826b607989f9e/actions - {"actions":[{"id":"action1","type":"wheel","parameters":{},"actions":[{"type":"scroll","x":-1267,"y":3079,"deltaX":0,"deltaY":0,"duration":0,"origin":{"element-6066-11e4-a52e-4f735466cecf":"f.4A5B286A0135A14AC5709B3B2714791A.d.8B60E5DA6C60DB5F8CD03F386775228A.e.51"}}]}]}
+RESULT: {"actions":[{"id":"action1","type":"wheel","parameters":{},"actions":[{"type":"scroll","x":-1267,"y":3079,"deltaX":0,"deltaY":0,"duration":0,"origin":{"element-6066-11e4-a52e-4f735466cecf":"f.4A5B286A0135A14AC5709B3B2714791A.d.8B60E5DA6C60DB5F8CD03F386775228A.e.51"}}]}]}
+COMMAND: GET /session/ea17a2e1945b2f4dc33826b607989f9e/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/ea17a2e1945b2f4dc33826b607989f9e/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/ea17a2e1945b2f4dc33826b607989f9e/element/f.4A5B286A0135A14AC5709B3B2714791A.d.CCB038E827AF67CDED62AAA955B89763.e.47/rect - {}
+RESULT: {}
+COMMAND: GET /session/ea17a2e1945b2f4dc33826b607989f9e/window/rect - {}
+RESULT: {}
+COMMAND: DELETE /session/ea17a2e1945b2f4dc33826b607989f9e - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: Timeout
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

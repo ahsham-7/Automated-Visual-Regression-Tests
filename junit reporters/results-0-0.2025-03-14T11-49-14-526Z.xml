@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="1" errors="0" skipped="0">
+  <testsuite name="FloorPlan Suite" timestamp="2025-03-14T16:49:15" time="10.955" tests="1" failures="1" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="FloorPlan Suite"/>
+      <property name="capabilities" value="chrome.134_0_6998_89.mac"/>
+      <property name="file" value="file://./test/specs/floorPlan.specs.js"/>
+    </properties>
+    <testcase classname="chrome.134_0_6998_89.mac.FloorPlan_Suite" name="TC1" time="10.95">
+      <failure message="WebDriver Bidi command &quot;script.callFunction&quot; failed with error: unknown error - Cannot find context with specified id"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/f80ab71c67f00d6437b55134ce0991bc/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/f80ab71c67f00d6437b55134ce0991bc/element - {"using":"xpath","value":"//input[@name=\"username\"]"}
+RESULT: {"using":"xpath","value":"//input[@name=\"username\"]"}
+COMMAND: GET /session/f80ab71c67f00d6437b55134ce0991bc/element/f.CF660C8D9322B1435308B168527B1EBD.d.96DE520CB3B167A3093B8D47B7EFC4BE.e.4/css/display - {}
+RESULT: {}
+COMMAND: POST /session/f80ab71c67f00d6437b55134ce0991bc/element/f.CF660C8D9322B1435308B168527B1EBD.d.96DE520CB3B167A3093B8D47B7EFC4BE.e.4/clear - {}
+RESULT: {}
+COMMAND: POST /session/f80ab71c67f00d6437b55134ce0991bc/element/f.CF660C8D9322B1435308B168527B1EBD.d.96DE520CB3B167A3093B8D47B7EFC4BE.e.4/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/f80ab71c67f00d6437b55134ce0991bc/element/f.CF660C8D9322B1435308B168527B1EBD.d.96DE520CB3B167A3093B8D47B7EFC4BE.e.5/clear - {}
+RESULT: {}
+COMMAND: POST /session/f80ab71c67f00d6437b55134ce0991bc/element/f.CF660C8D9322B1435308B168527B1EBD.d.96DE520CB3B167A3093B8D47B7EFC4BE.e.5/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/f80ab71c67f00d6437b55134ce0991bc/element/f.CF660C8D9322B1435308B168527B1EBD.d.96DE520CB3B167A3093B8D47B7EFC4BE.e.6/click - {}
+RESULT: {}
+COMMAND: GET /session/f80ab71c67f00d6437b55134ce0991bc/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/f80ab71c67f00d6437b55134ce0991bc/window/maximize - {}
+RESULT: {}
+COMMAND: DELETE /session/f80ab71c67f00d6437b55134ce0991bc - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: WebDriver Bidi command "script.callFunction" failed with error: unknown error - Cannot find context with specified id
+
+Driver Stack:
+    at Error
+    at     at new UnknownErrorException (<anonymous>:65:4788)
+    at     at CommandProcessor.processCommand (<anonymous>:453:9877)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

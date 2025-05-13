@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="4" failures="1" errors="0" skipped="0">
+  <testsuite name="FloorPlan Suite" timestamp="2025-05-13T14:58:30" time="47.488" tests="4" failures="1" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="FloorPlan Suite"/>
+      <property name="capabilities" value="chrome.136_0_7103_93.mac"/>
+      <property name="file" value="file://./test/specs/floorPlan.specs.js"/>
+    </properties>
+    <testcase classname="chrome.136_0_7103_93.mac.FloorPlan_Suite" name="TC1" time="8.477">
+      <system-out><![CDATA[
+COMMAND: POST /session/30467d98ce6dd575049dc7470ed9f6d0/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/30467d98ce6dd575049dc7470ed9f6d0/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/30467d98ce6dd575049dc7470ed9f6d0/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/30467d98ce6dd575049dc7470ed9f6d0/screenshot - {}
+RESULT: {}
+RESULT: undefined
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.136_0_7103_93.mac.FloorPlan_Suite" name="TC6" time="6.435">
+      <failure message="Failed to handle login process: Page did not load within the expected time"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/30467d98ce6dd575049dc7470ed9f6d0/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/30467d98ce6dd575049dc7470ed9f6d0/element - {"using":"xpath","value":"//input[@name=\"username\"]"}
+RESULT: {"using":"xpath","value":"//input[@name=\"username\"]"}
+COMMAND: GET /session/30467d98ce6dd575049dc7470ed9f6d0/element/f.36295BBF0E9A6DEFDF3DFBDB20642104.d.C156414CA16555175550E541C90E1855.e.3/css/display - {}
+RESULT: {}
+COMMAND: POST /session/30467d98ce6dd575049dc7470ed9f6d0/element/f.36295BBF0E9A6DEFDF3DFBDB20642104.d.C156414CA16555175550E541C90E1855.e.3/clear - {}
+RESULT: {}
+COMMAND: POST /session/30467d98ce6dd575049dc7470ed9f6d0/element/f.36295BBF0E9A6DEFDF3DFBDB20642104.d.C156414CA16555175550E541C90E1855.e.3/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/30467d98ce6dd575049dc7470ed9f6d0/element/f.36295BBF0E9A6DEFDF3DFBDB20642104.d.C156414CA16555175550E541C90E1855.e.4/clear - {}
+RESULT: {}
+COMMAND: POST /session/30467d98ce6dd575049dc7470ed9f6d0/element/f.36295BBF0E9A6DEFDF3DFBDB20642104.d.C156414CA16555175550E541C90E1855.e.4/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/30467d98ce6dd575049dc7470ed9f6d0/element/f.36295BBF0E9A6DEFDF3DFBDB20642104.d.C156414CA16555175550E541C90E1855.e.5/click - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: Failed to handle login process: Page did not load within the expected time
+    at Floorplan.conditionalLogin (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:193:15)
+    at async Floorplan.compareFullPageEnvironments (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:144:5)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/floorPlan.specs.js:45:9)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.136_0_7103_93.mac.FloorPlan_Suite" name="TC7" time="20.891">
+      <system-out><![CDATA[
+COMMAND: POST /session/30467d98ce6dd575049dc7470ed9f6d0/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/30467d98ce6dd575049dc7470ed9f6d0/element/f.36295BBF0E9A6DEFDF3DFBDB20642104.d.68C342D0B8C565668A3A7BFC9854FF10.e.66/css/display - {}
+RESULT: {}
+COMMAND: POST /session/30467d98ce6dd575049dc7470ed9f6d0/element/f.36295BBF0E9A6DEFDF3DFBDB20642104.d.68C342D0B8C565668A3A7BFC9854FF10.e.66/clear - {}
+RESULT: {}
+COMMAND: POST /session/30467d98ce6dd575049dc7470ed9f6d0/element/f.36295BBF0E9A6DEFDF3DFBDB20642104.d.68C342D0B8C565668A3A7BFC9854FF10.e.66/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/30467d98ce6dd575049dc7470ed9f6d0/element/f.36295BBF0E9A6DEFDF3DFBDB20642104.d.68C342D0B8C565668A3A7BFC9854FF10.e.67/clear - {}
+RESULT: {}
+COMMAND: POST /session/30467d98ce6dd575049dc7470ed9f6d0/element/f.36295BBF0E9A6DEFDF3DFBDB20642104.d.68C342D0B8C565668A3A7BFC9854FF10.e.67/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/30467d98ce6dd575049dc7470ed9f6d0/element/f.36295BBF0E9A6DEFDF3DFBDB20642104.d.68C342D0B8C565668A3A7BFC9854FF10.e.68/click - {}
+RESULT: {}
+COMMAND: GET /session/30467d98ce6dd575049dc7470ed9f6d0/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/30467d98ce6dd575049dc7470ed9f6d0/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/30467d98ce6dd575049dc7470ed9f6d0/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/30467d98ce6dd575049dc7470ed9f6d0/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/30467d98ce6dd575049dc7470ed9f6d0/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/30467d98ce6dd575049dc7470ed9f6d0/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/30467d98ce6dd575049dc7470ed9f6d0/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/30467d98ce6dd575049dc7470ed9f6d0/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/30467d98ce6dd575049dc7470ed9f6d0/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/30467d98ce6dd575049dc7470ed9f6d0/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/30467d98ce6dd575049dc7470ed9f6d0/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/30467d98ce6dd575049dc7470ed9f6d0/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/30467d98ce6dd575049dc7470ed9f6d0/screenshot - {}
+RESULT: {}
+RESULT: undefined
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.136_0_7103_93.mac.FloorPlan_Suite" name="TC8" time="11.666">
+      <system-out><![CDATA[
+COMMAND: POST /session/30467d98ce6dd575049dc7470ed9f6d0/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/30467d98ce6dd575049dc7470ed9f6d0/element - {"using":"xpath","value":"//input[@name=\"username\"]"}
+RESULT: {"using":"xpath","value":"//input[@name=\"username\"]"}
+COMMAND: GET /session/30467d98ce6dd575049dc7470ed9f6d0/element/f.36295BBF0E9A6DEFDF3DFBDB20642104.d.AE262FBA8C41252984498D9C7BAC696D.e.3/css/display - {}
+RESULT: {}
+COMMAND: POST /session/30467d98ce6dd575049dc7470ed9f6d0/element/f.36295BBF0E9A6DEFDF3DFBDB20642104.d.AE262FBA8C41252984498D9C7BAC696D.e.3/clear - {}
+RESULT: {}
+COMMAND: POST /session/30467d98ce6dd575049dc7470ed9f6d0/element/f.36295BBF0E9A6DEFDF3DFBDB20642104.d.AE262FBA8C41252984498D9C7BAC696D.e.3/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/30467d98ce6dd575049dc7470ed9f6d0/element/f.36295BBF0E9A6DEFDF3DFBDB20642104.d.AE262FBA8C41252984498D9C7BAC696D.e.4/clear - {}
+RESULT: {}
+COMMAND: POST /session/30467d98ce6dd575049dc7470ed9f6d0/element/f.36295BBF0E9A6DEFDF3DFBDB20642104.d.AE262FBA8C41252984498D9C7BAC696D.e.4/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/30467d98ce6dd575049dc7470ed9f6d0/element/f.36295BBF0E9A6DEFDF3DFBDB20642104.d.AE262FBA8C41252984498D9C7BAC696D.e.5/click - {}
+RESULT: {}
+COMMAND: GET /session/30467d98ce6dd575049dc7470ed9f6d0/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/30467d98ce6dd575049dc7470ed9f6d0/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/30467d98ce6dd575049dc7470ed9f6d0/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/30467d98ce6dd575049dc7470ed9f6d0/window/maximize - {}
+COMMAND: POST /session/30467d98ce6dd575049dc7470ed9f6d0/url - {"url":"https://www.bayut.com/floorplans/details-6128.html"}
+RESULT: {}
+RESULT: {"url":"https://www.bayut.com/floorplans/details-6128.html"}
+COMMAND: GET /session/30467d98ce6dd575049dc7470ed9f6d0/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/30467d98ce6dd575049dc7470ed9f6d0/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/30467d98ce6dd575049dc7470ed9f6d0/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: DELETE /session/30467d98ce6dd575049dc7470ed9f6d0 - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="2" failures="2" errors="0" skipped="0">
+  <testsuite name="FloorPlan Suite" timestamp="2025-03-21T16:59:10" time="87.081" tests="2" failures="2" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="FloorPlan Suite"/>
+      <property name="capabilities" value="chrome.134_0_6998_118.mac"/>
+      <property name="file" value="file://./test/specs/floorPlan.specs.js"/>
+    </properties>
+    <testcase classname="chrome.134_0_6998_118.mac.FloorPlan_Suite" name="TC1" time="74.944">
+      <failure message="updateHTMLReport is not defined"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/d9815c9ba9aba39ae053c6758c1ea059/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/d9815c9ba9aba39ae053c6758c1ea059/element - {"using":"xpath","value":"//input[@name=\"username\"]"}
+RESULT: {"using":"xpath","value":"//input[@name=\"username\"]"}
+COMMAND: GET /session/d9815c9ba9aba39ae053c6758c1ea059/element/f.69D16A960E6362085A9F576EA1D51811.d.A1DA101CFCF1B3C3B5C36C0F8A505477.e.5/css/display - {}
+RESULT: {}
+COMMAND: POST /session/d9815c9ba9aba39ae053c6758c1ea059/element/f.69D16A960E6362085A9F576EA1D51811.d.A1DA101CFCF1B3C3B5C36C0F8A505477.e.5/clear - {}
+RESULT: {}
+COMMAND: POST /session/d9815c9ba9aba39ae053c6758c1ea059/element/f.69D16A960E6362085A9F576EA1D51811.d.A1DA101CFCF1B3C3B5C36C0F8A505477.e.5/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/d9815c9ba9aba39ae053c6758c1ea059/element/f.69D16A960E6362085A9F576EA1D51811.d.A1DA101CFCF1B3C3B5C36C0F8A505477.e.6/clear - {}
+RESULT: {}
+COMMAND: POST /session/d9815c9ba9aba39ae053c6758c1ea059/element/f.69D16A960E6362085A9F576EA1D51811.d.A1DA101CFCF1B3C3B5C36C0F8A505477.e.6/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/d9815c9ba9aba39ae053c6758c1ea059/element/f.69D16A960E6362085A9F576EA1D51811.d.A1DA101CFCF1B3C3B5C36C0F8A505477.e.7/click - {}
+RESULT: {}
+COMMAND: GET /session/d9815c9ba9aba39ae053c6758c1ea059/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/d9815c9ba9aba39ae053c6758c1ea059/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/d9815c9ba9aba39ae053c6758c1ea059/screenshot - {}
+RESULT: {}
+RESULT: undefined
+]]></system-out>
+      <system-err><![CDATA[
+ReferenceError: updateHTMLReport is not defined
+    at Floorplan.compareEnvironments (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:144:9)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/floorPlan.specs.js:15:8)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.134_0_6998_118.mac.FloorPlan_Suite" name="TC2" time="12.131">
+      <failure message="Can't call scrollIntoView on element with selector &quot;//h2[text()=&quot;UAE Location List&quot;]&quot; because element wasn't found"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/d9815c9ba9aba39ae053c6758c1ea059/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/d9815c9ba9aba39ae053c6758c1ea059/element - {"using":"xpath","value":"//h2[text()=\"UAE Location List\"]"}
+RESULT: {"using":"xpath","value":"//h2[text()=\"UAE Location List\"]"}
+COMMAND: DELETE /session/d9815c9ba9aba39ae053c6758c1ea059 - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: Can't call scrollIntoView on element with selector "//h2[text()="UAE Location List"]" because element wasn't found
+    at async Floorplan.ScrollElement (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:81:9)
+    at async Floorplan.verifyUaeLocLists (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/floorplan.page.js:16:9)
+    at async file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/floorPlan.specs.js:18:126
+    at async Floorplan.compareEnvironments (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:124:21)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/floorPlan.specs.js:18:9)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

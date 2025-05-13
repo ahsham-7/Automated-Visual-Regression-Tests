@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="0" errors="0" skipped="0">
+  <testsuite name="FloorPlan Suite" timestamp="2025-04-23T16:45:47" time="44.084" tests="1" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="FloorPlan Suite"/>
+      <property name="capabilities" value="chrome.135_0_7049_96.mac"/>
+      <property name="file" value="file://./test/specs/floorPlan.specs.js"/>
+    </properties>
+    <testcase classname="chrome.135_0_7049_96.mac.FloorPlan_Suite" name="TC3" time="44.078">
+      <system-out><![CDATA[
+COMMAND: POST /session/8edc54044407c986577b808f4e815d16/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/8edc54044407c986577b808f4e815d16/element - {"using":"xpath","value":"//input[@name=\"username\"]"}
+RESULT: {"using":"xpath","value":"//input[@name=\"username\"]"}
+COMMAND: GET /session/8edc54044407c986577b808f4e815d16/element/f.22A925E2733630FC44D9850471693320.d.FE6E43B8A254DC089E5AD04DC1B62730.e.4/css/display - {}
+RESULT: {}
+COMMAND: POST /session/8edc54044407c986577b808f4e815d16/element/f.22A925E2733630FC44D9850471693320.d.FE6E43B8A254DC089E5AD04DC1B62730.e.4/clear - {}
+RESULT: {}
+COMMAND: POST /session/8edc54044407c986577b808f4e815d16/element/f.22A925E2733630FC44D9850471693320.d.FE6E43B8A254DC089E5AD04DC1B62730.e.4/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/8edc54044407c986577b808f4e815d16/element/f.22A925E2733630FC44D9850471693320.d.FE6E43B8A254DC089E5AD04DC1B62730.e.5/clear - {}
+RESULT: {}
+COMMAND: POST /session/8edc54044407c986577b808f4e815d16/element/f.22A925E2733630FC44D9850471693320.d.FE6E43B8A254DC089E5AD04DC1B62730.e.5/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/8edc54044407c986577b808f4e815d16/element/f.22A925E2733630FC44D9850471693320.d.FE6E43B8A254DC089E5AD04DC1B62730.e.6/click - {}
+RESULT: {}
+COMMAND: GET /session/8edc54044407c986577b808f4e815d16/element/f.22A925E2733630FC44D9850471693320.d.A45823F94133D253078BCCF7B3F17E5D.e.59/rect - {}
+RESULT: {}
+COMMAND: GET /session/8edc54044407c986577b808f4e815d16/window/rect - {}
+RESULT: {}
+COMMAND: POST /session/8edc54044407c986577b808f4e815d16/actions - {"actions":[{"id":"action1","type":"wheel","parameters":{},"actions":[{"type":"scroll","x":-1408,"y":3855,"deltaX":0,"deltaY":0,"duration":0,"origin":{"element-6066-11e4-a52e-4f735466cecf":"f.22A925E2733630FC44D9850471693320.d.A45823F94133D253078BCCF7B3F17E5D.e.59"}}]}]}
+RESULT: {"actions":[{"id":"action1","type":"wheel","parameters":{},"actions":[{"type":"scroll","x":-1408,"y":3855,"deltaX":0,"deltaY":0,"duration":0,"origin":{"element-6066-11e4-a52e-4f735466cecf":"f.22A925E2733630FC44D9850471693320.d.A45823F94133D253078BCCF7B3F17E5D.e.59"}}]}]}
+COMMAND: GET /session/8edc54044407c986577b808f4e815d16/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/8edc54044407c986577b808f4e815d16/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/8edc54044407c986577b808f4e815d16/element - {"using":"xpath","value":"//span[@aria-label=\"Scroll to top\"]"}
+RESULT: {"using":"xpath","value":"//span[@aria-label=\"Scroll to top\"]"}
+COMMAND: GET /session/8edc54044407c986577b808f4e815d16/element/f.22A925E2733630FC44D9850471693320.d.2C26E7F6CE913B4F06D3A480AD1C69E1.e.56/rect - {}
+RESULT: {}
+COMMAND: GET /session/8edc54044407c986577b808f4e815d16/window/rect - {}
+RESULT: {}
+COMMAND: POST /session/8edc54044407c986577b808f4e815d16/actions - {"actions":[{"id":"action2","type":"wheel","parameters":{},"actions":[{"type":"scroll","x":-1408,"y":4334,"deltaX":0,"deltaY":0,"duration":0,"origin":{"element-6066-11e4-a52e-4f735466cecf":"f.22A925E2733630FC44D9850471693320.d.2C26E7F6CE913B4F06D3A480AD1C69E1.e.56"}}]}]}
+RESULT: {"actions":[{"id":"action2","type":"wheel","parameters":{},"actions":[{"type":"scroll","x":-1408,"y":4334,"deltaX":0,"deltaY":0,"duration":0,"origin":{"element-6066-11e4-a52e-4f735466cecf":"f.22A925E2733630FC44D9850471693320.d.2C26E7F6CE913B4F06D3A480AD1C69E1.e.56"}}]}]}
+COMMAND: GET /session/8edc54044407c986577b808f4e815d16/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: DELETE /session/8edc54044407c986577b808f4e815d16 - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

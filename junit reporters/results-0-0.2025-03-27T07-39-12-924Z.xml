@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="2" failures="2" errors="0" skipped="0">
+  <testsuite name="FloorPlan Suite" timestamp="2025-03-27T12:39:14" time="144.12" tests="2" failures="2" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="FloorPlan Suite"/>
+      <property name="capabilities" value="chrome.134_0_6998_166.mac"/>
+      <property name="file" value="file://./test/specs/floorPlan.specs.js"/>
+    </properties>
+    <testcase classname="chrome.134_0_6998_166.mac.FloorPlan_Suite" name="TC1" time="9.115">
+      <failure message="WebDriver Bidi command &quot;script.callFunction&quot; failed with error: unknown error - Cannot find context with specified id"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/327793c20f138647deaf2583fb6b37fa/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/327793c20f138647deaf2583fb6b37fa/element - {"using":"xpath","value":"//input[@name=\"username\"]"}
+RESULT: {"using":"xpath","value":"//input[@name=\"username\"]"}
+COMMAND: GET /session/327793c20f138647deaf2583fb6b37fa/element/f.80149836440BDCEF5D8AA600BB7C5601.d.48775A44707447388F2A45DA1F35D10E.e.3/css/display - {}
+RESULT: {}
+COMMAND: POST /session/327793c20f138647deaf2583fb6b37fa/element/f.80149836440BDCEF5D8AA600BB7C5601.d.48775A44707447388F2A45DA1F35D10E.e.3/clear - {}
+RESULT: {}
+COMMAND: POST /session/327793c20f138647deaf2583fb6b37fa/element/f.80149836440BDCEF5D8AA600BB7C5601.d.48775A44707447388F2A45DA1F35D10E.e.3/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/327793c20f138647deaf2583fb6b37fa/element/f.80149836440BDCEF5D8AA600BB7C5601.d.48775A44707447388F2A45DA1F35D10E.e.5/clear - {}
+RESULT: {}
+COMMAND: POST /session/327793c20f138647deaf2583fb6b37fa/element/f.80149836440BDCEF5D8AA600BB7C5601.d.48775A44707447388F2A45DA1F35D10E.e.5/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/327793c20f138647deaf2583fb6b37fa/element/f.80149836440BDCEF5D8AA600BB7C5601.d.48775A44707447388F2A45DA1F35D10E.e.7/click - {}
+RESULT: {}
+COMMAND: GET /session/327793c20f138647deaf2583fb6b37fa/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/327793c20f138647deaf2583fb6b37fa/window/maximize - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: WebDriver Bidi command "script.callFunction" failed with error: unknown error - Cannot find context with specified id
+
+Driver Stack:
+    at Error
+    at     at new UnknownErrorException (<anonymous>:65:4788)
+    at     at CommandProcessor.processCommand (<anonymous>:453:9877)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.134_0_6998_166.mac.FloorPlan_Suite" name="TC2" time="134.996">
+      <failure message="Timeout"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/327793c20f138647deaf2583fb6b37fa/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/327793c20f138647deaf2583fb6b37fa/element - {"using":"xpath","value":"//input[@name=\"username\"]"}
+RESULT: {"using":"xpath","value":"//input[@name=\"username\"]"}
+COMMAND: GET /session/327793c20f138647deaf2583fb6b37fa/element/f.80149836440BDCEF5D8AA600BB7C5601.d.C6D9324D1922C09702F41F1A7E7C54FE.e.4/css/display - {}
+RESULT: {}
+COMMAND: POST /session/327793c20f138647deaf2583fb6b37fa/element/f.80149836440BDCEF5D8AA600BB7C5601.d.C6D9324D1922C09702F41F1A7E7C54FE.e.4/clear - {}
+RESULT: {}
+COMMAND: POST /session/327793c20f138647deaf2583fb6b37fa/element/f.80149836440BDCEF5D8AA600BB7C5601.d.C6D9324D1922C09702F41F1A7E7C54FE.e.4/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/327793c20f138647deaf2583fb6b37fa/element/f.80149836440BDCEF5D8AA600BB7C5601.d.C6D9324D1922C09702F41F1A7E7C54FE.e.5/clear - {}
+RESULT: {}
+COMMAND: POST /session/327793c20f138647deaf2583fb6b37fa/element/f.80149836440BDCEF5D8AA600BB7C5601.d.C6D9324D1922C09702F41F1A7E7C54FE.e.5/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/327793c20f138647deaf2583fb6b37fa/element/f.80149836440BDCEF5D8AA600BB7C5601.d.C6D9324D1922C09702F41F1A7E7C54FE.e.6/click - {}
+RESULT: {}
+COMMAND: GET /session/327793c20f138647deaf2583fb6b37fa/element/f.80149836440BDCEF5D8AA600BB7C5601.d.C1FC80C2EE595BC5E37D519FD127F359.e.61/rect - {}
+RESULT: {}
+COMMAND: GET /session/327793c20f138647deaf2583fb6b37fa/window/rect - {}
+RESULT: {}
+COMMAND: POST /session/327793c20f138647deaf2583fb6b37fa/actions - {"actions":[{"id":"action1","type":"wheel","parameters":{},"actions":[{"type":"scroll","x":-1267,"y":3079,"deltaX":0,"deltaY":0,"duration":0,"origin":{"element-6066-11e4-a52e-4f735466cecf":"f.80149836440BDCEF5D8AA600BB7C5601.d.C1FC80C2EE595BC5E37D519FD127F359.e.61"}}]}]}
+RESULT: {"actions":[{"id":"action1","type":"wheel","parameters":{},"actions":[{"type":"scroll","x":-1267,"y":3079,"deltaX":0,"deltaY":0,"duration":0,"origin":{"element-6066-11e4-a52e-4f735466cecf":"f.80149836440BDCEF5D8AA600BB7C5601.d.C1FC80C2EE595BC5E37D519FD127F359.e.61"}}]}]}
+COMMAND: GET /session/327793c20f138647deaf2583fb6b37fa/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/327793c20f138647deaf2583fb6b37fa/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/327793c20f138647deaf2583fb6b37fa/element - {"using":"xpath","value":"//h2[text()=\"UAE Location List\"]"}
+COMMAND: DELETE /session/327793c20f138647deaf2583fb6b37fa - {}
+RESULT: {"using":"xpath","value":"//h2[text()=\"UAE Location List\"]"}
+COMMAND: GET /session/327793c20f138647deaf2583fb6b37fa/element/f.80149836440BDCEF5D8AA600BB7C5601.d.201CC562C10B185E1FB81CB480F66037.e.52/rect - {}
+RESULT: {}
+RESULT: {}
+COMMAND: POST /session/undefined/execute/sync - {"script":"<script> [20 bytes]","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.80149836440BDCEF5D8AA600BB7C5601.d.201CC562C10B185E1FB81CB480F66037.e.52","ELEMENT":"f.80149836440BDCEF5D8AA600BB7C5601.d.201CC562C10B185E1FB81CB480F66037.e.52"},{"block":"center","inline":"nearest"}]}
+RESULT: {"script":"<script> [20 bytes]","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.80149836440BDCEF5D8AA600BB7C5601.d.201CC562C10B185E1FB81CB480F66037.e.52","ELEMENT":"f.80149836440BDCEF5D8AA600BB7C5601.d.201CC562C10B185E1FB81CB480F66037.e.52"},{"block":"center","inline":"nearest"}]}
+]]></system-out>
+      <system-err><![CDATA[
+Error: Timeout
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>
