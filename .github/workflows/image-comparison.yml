@@ -66,8 +66,8 @@ jobs:
         if: failure()
         uses: actions/upload-artifact@v3
         with:
-        name: reports
-        path: ./reports
+          name: reports
+          path: ./reports
 
       - name: Deploy to GitHub Pages
         if: always()
@@ -76,3 +76,4 @@ jobs:
           branch: gh-pages
           folder: gh-pages
           token: ${{ secrets.GITHUB_TOKEN }}
+
