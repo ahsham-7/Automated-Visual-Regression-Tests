@@ -44,23 +44,20 @@ jobs:
           cp ./reports/gh-pages/index.html ./gh-pages/index.html
         shell: bash
 
-      - name: Sanitize test suite name
-        run: echo "sanitizedTestSuite=${{ github.event.inputs.testSuiteName }}" >> $GITHUB_ENV
-
       - name: Prepare files for deployment
         run: |
-          mkdir -p gh-pages/images/baseline/desktop_chrome/${sanitizedTestSuite}
-          mkdir -p gh-pages/images/actual/desktop_chrome/${sanitizedTestSuite}
-          mkdir -p gh-pages/images/diff/desktop_chrome/${sanitizedTestSuite}
-          cp -R ./baseLineImages/desktop_chrome/${sanitizedTestSuite}/* ./gh-pages/images/baseline/desktop_chrome/${sanitizedTestSuite}/
-          cp -R ./actualImages/actual/desktop_chrome/${sanitizedTestSuite}/* ./gh-pages/images/actual/desktop_chrome/${sanitizedTestSuite}/
-          cp -R ./actualImages/diff/desktop_chrome/${sanitizedTestSuite}/* ./gh-pages/images/diff/desktop_chrome/${sanitizedTestSuite}/
+          mkdir -p gh-pages/images/baseline/desktop_chrome/
+          mkdir -p gh-pages/images/actual/desktop_chrome/
+          mkdir -p gh-pages/images/diff/desktop_chrome/
+          cp -R ./baseLineImages/desktop_chrome/* ./gh-pages/images/baseline/desktop_chrome/
+          cp -R ./actualImages/actual/desktop_chrome/* ./gh-pages/images/actual/desktop_chrome/
+          cp -R ./actualImages/diff/desktop_chrome/* ./gh-pages/images/diff/desktop_chrome/
 
       - name: Verify image files are copied
         run: |
-          ls -al ./gh-pages/images/baseline/desktop_chrome/${sanitizedTestSuite}
-          ls -al ./gh-pages/images/actual/desktop_chrome/${sanitizedTestSuite}
-          ls -al ./gh-pages/images/diff/desktop_chrome/${sanitizedTestSuite}
+          ls -al ./gh-pages/images/baseline/desktop_chrome
+          ls -al ./gh-pages/images/actual/desktop_chrome
+          ls -al ./gh-pages/images/diff/desktop_chrome
 
       - name: Upload reports folder for debugging
         if: failure()
