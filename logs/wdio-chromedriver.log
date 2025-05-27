@@ -2,6 +2,6 @@ Starting ChromeDriver 136.0.7103.49 (031848bc6ad02b97854f3d6154d3aefd0434756a-re
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully on port 9515.
-[1748340166.560][WARNING]: Deprecated chrome option is ignored: useAutomationExtension
-[1748340166.560][WARNING]: Deprecated chrome option is ignored: useAutomationExtension
-[1748340167.887][WARNING]: This version of ChromeDriver has not been tested with Chrome version 137.
+[1748349848.252][WARNING]: Deprecated chrome option is ignored: useAutomationExtension
+[1748349848.252][WARNING]: Deprecated chrome option is ignored: useAutomationExtension
+[1748349849.241][WARNING]: This version of ChromeDriver has not been tested with Chrome version 137.
