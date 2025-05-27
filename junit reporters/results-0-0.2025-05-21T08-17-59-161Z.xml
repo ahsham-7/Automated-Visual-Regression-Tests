@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="6" failures="4" errors="0" skipped="0">
+  <testsuite name="AgentHomePage Suite" timestamp="2025-05-21T13:18:00" time="216.879" tests="6" failures="4" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="AgentHomePage Suite"/>
+      <property name="capabilities" value="chrome.136_0_7103_114.mac"/>
+      <property name="file" value="file://./test/specs/agentHomepage.specs.js"/>
+    </properties>
+    <testcase classname="chrome.136_0_7103_114.mac.AgentHomePage_Suite" name="TC1" time="59.162">
+      <failure message="Image differences detected"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/8b243c1c7d9848b2dc5139bc86f291f2/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/8b243c1c7d9848b2dc5139bc86f291f2/refresh - {}
+RESULT: {}
+COMMAND: GET /session/8b243c1c7d9848b2dc5139bc86f291f2/window - {}
+RESULT: {}
+COMMAND: GET /session/8b243c1c7d9848b2dc5139bc86f291f2/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/8b243c1c7d9848b2dc5139bc86f291f2/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/8b243c1c7d9848b2dc5139bc86f291f2/element - {"using":"xpath","value":"//input[@name=\"username\"]"}
+RESULT: {"using":"xpath","value":"//input[@name=\"username\"]"}
+COMMAND: GET /session/8b243c1c7d9848b2dc5139bc86f291f2/element/f.BBB6588640AF1F6DDF1F7589ABFE93F6.d.43BF9D1428AA7328B514176919788FE7.e.3/css/display - {}
+RESULT: {}
+COMMAND: POST /session/8b243c1c7d9848b2dc5139bc86f291f2/element/f.BBB6588640AF1F6DDF1F7589ABFE93F6.d.43BF9D1428AA7328B514176919788FE7.e.3/clear - {}
+RESULT: {}
+COMMAND: POST /session/8b243c1c7d9848b2dc5139bc86f291f2/element/f.BBB6588640AF1F6DDF1F7589ABFE93F6.d.43BF9D1428AA7328B514176919788FE7.e.3/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/8b243c1c7d9848b2dc5139bc86f291f2/element/f.BBB6588640AF1F6DDF1F7589ABFE93F6.d.43BF9D1428AA7328B514176919788FE7.e.4/clear - {}
+RESULT: {}
+COMMAND: POST /session/8b243c1c7d9848b2dc5139bc86f291f2/element/f.BBB6588640AF1F6DDF1F7589ABFE93F6.d.43BF9D1428AA7328B514176919788FE7.e.4/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/8b243c1c7d9848b2dc5139bc86f291f2/element/f.BBB6588640AF1F6DDF1F7589ABFE93F6.d.43BF9D1428AA7328B514176919788FE7.e.5/click - {}
+RESULT: {}
+COMMAND: GET /session/8b243c1c7d9848b2dc5139bc86f291f2/screenshot - {}
+RESULT: {}
+RESULT: undefined
+]]></system-out>
+      <system-err><![CDATA[
+Error: Image differences detected
+    at agentHomepage.compareEnvironments (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:132:15)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/agentHomepage.specs.js:13:9)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.136_0_7103_114.mac.AgentHomePage_Suite" name="TC2" time="30.508">
+      <failure message="Image differences detected (3.871% mismatch)"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/8b243c1c7d9848b2dc5139bc86f291f2/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/8b243c1c7d9848b2dc5139bc86f291f2/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/8b243c1c7d9848b2dc5139bc86f291f2/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/8b243c1c7d9848b2dc5139bc86f291f2/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/8b243c1c7d9848b2dc5139bc86f291f2/element/f.BBB6588640AF1F6DDF1F7589ABFE93F6.d.30FC81D8C83D21D4F6DD50CCE27DADBA.e.3/css/display - {}
+RESULT: {}
+COMMAND: POST /session/8b243c1c7d9848b2dc5139bc86f291f2/element/f.BBB6588640AF1F6DDF1F7589ABFE93F6.d.30FC81D8C83D21D4F6DD50CCE27DADBA.e.3/clear - {}
+RESULT: {}
+COMMAND: POST /session/8b243c1c7d9848b2dc5139bc86f291f2/element/f.BBB6588640AF1F6DDF1F7589ABFE93F6.d.30FC81D8C83D21D4F6DD50CCE27DADBA.e.3/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/8b243c1c7d9848b2dc5139bc86f291f2/element/f.BBB6588640AF1F6DDF1F7589ABFE93F6.d.30FC81D8C83D21D4F6DD50CCE27DADBA.e.4/clear - {}
+RESULT: {}
+COMMAND: POST /session/8b243c1c7d9848b2dc5139bc86f291f2/element/f.BBB6588640AF1F6DDF1F7589ABFE93F6.d.30FC81D8C83D21D4F6DD50CCE27DADBA.e.4/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/8b243c1c7d9848b2dc5139bc86f291f2/element/f.BBB6588640AF1F6DDF1F7589ABFE93F6.d.30FC81D8C83D21D4F6DD50CCE27DADBA.e.5/click - {}
+RESULT: {}
+COMMAND: GET /session/8b243c1c7d9848b2dc5139bc86f291f2/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/8b243c1c7d9848b2dc5139bc86f291f2/screenshot - {}
+RESULT: {}
+RESULT: undefined
+]]></system-out>
+      <system-err><![CDATA[
+Error: Image differences detected (3.871% mismatch)
+    at agentHomepage.compareFullPageEnvironments (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:166:15)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/agentHomepage.specs.js:24:9)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.136_0_7103_114.mac.AgentHomePage_Suite" name="TC3" time="91.58">
+      <failure message="Image differences detected (13.377% mismatch)"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/8b243c1c7d9848b2dc5139bc86f291f2/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/8b243c1c7d9848b2dc5139bc86f291f2/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/8b243c1c7d9848b2dc5139bc86f291f2/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/8b243c1c7d9848b2dc5139bc86f291f2/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/8b243c1c7d9848b2dc5139bc86f291f2/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/8b243c1c7d9848b2dc5139bc86f291f2/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/8b243c1c7d9848b2dc5139bc86f291f2/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/8b243c1c7d9848b2dc5139bc86f291f2/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/8b243c1c7d9848b2dc5139bc86f291f2/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/8b243c1c7d9848b2dc5139bc86f291f2/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/8b243c1c7d9848b2dc5139bc86f291f2/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/8b243c1c7d9848b2dc5139bc86f291f2/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/8b243c1c7d9848b2dc5139bc86f291f2/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/8b243c1c7d9848b2dc5139bc86f291f2/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/8b243c1c7d9848b2dc5139bc86f291f2/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/8b243c1c7d9848b2dc5139bc86f291f2/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/8b243c1c7d9848b2dc5139bc86f291f2/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/8b243c1c7d9848b2dc5139bc86f291f2/element/f.BBB6588640AF1F6DDF1F7589ABFE93F6.d.EB569EE847BF7EC4D2E52D1F2F5D83F7.e.3/css/display - {}
+RESULT: {}
+COMMAND: POST /session/8b243c1c7d9848b2dc5139bc86f291f2/element/f.BBB6588640AF1F6DDF1F7589ABFE93F6.d.EB569EE847BF7EC4D2E52D1F2F5D83F7.e.3/clear - {}
+RESULT: {}
+COMMAND: POST /session/8b243c1c7d9848b2dc5139bc86f291f2/element/f.BBB6588640AF1F6DDF1F7589ABFE93F6.d.EB569EE847BF7EC4D2E52D1F2F5D83F7.e.3/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/8b243c1c7d9848b2dc5139bc86f291f2/element/f.BBB6588640AF1F6DDF1F7589ABFE93F6.d.EB569EE847BF7EC4D2E52D1F2F5D83F7.e.4/clear - {}
+RESULT: {}
+COMMAND: POST /session/8b243c1c7d9848b2dc5139bc86f291f2/element/f.BBB6588640AF1F6DDF1F7589ABFE93F6.d.EB569EE847BF7EC4D2E52D1F2F5D83F7.e.4/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/8b243c1c7d9848b2dc5139bc86f291f2/element/f.BBB6588640AF1F6DDF1F7589ABFE93F6.d.EB569EE847BF7EC4D2E52D1F2F5D83F7.e.5/click - {}
+RESULT: {}
+COMMAND: GET /session/8b243c1c7d9848b2dc5139bc86f291f2/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/8b243c1c7d9848b2dc5139bc86f291f2/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/8b243c1c7d9848b2dc5139bc86f291f2/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/8b243c1c7d9848b2dc5139bc86f291f2/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/8b243c1c7d9848b2dc5139bc86f291f2/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/8b243c1c7d9848b2dc5139bc86f291f2/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/8b243c1c7d9848b2dc5139bc86f291f2/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/8b243c1c7d9848b2dc5139bc86f291f2/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/8b243c1c7d9848b2dc5139bc86f291f2/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/8b243c1c7d9848b2dc5139bc86f291f2/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/8b243c1c7d9848b2dc5139bc86f291f2/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/8b243c1c7d9848b2dc5139bc86f291f2/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/8b243c1c7d9848b2dc5139bc86f291f2/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/8b243c1c7d9848b2dc5139bc86f291f2/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/8b243c1c7d9848b2dc5139bc86f291f2/screenshot - {}
+RESULT: {}
+RESULT: undefined
+]]></system-out>
+      <system-err><![CDATA[
+Error: Image differences detected (13.377% mismatch)
+    at agentHomepage.compareFullPageEnvironments (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:166:15)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/agentHomepage.specs.js:35:9)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.136_0_7103_114.mac.AgentHomePage_Suite" name="TC4" time="12.94">
+      <system-out><![CDATA[
+COMMAND: POST /session/8b243c1c7d9848b2dc5139bc86f291f2/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/8b243c1c7d9848b2dc5139bc86f291f2/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/8b243c1c7d9848b2dc5139bc86f291f2/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/8b243c1c7d9848b2dc5139bc86f291f2/element/f.BBB6588640AF1F6DDF1F7589ABFE93F6.d.6943970B90307C4E7D6B9CC5136FCBC1.e.4/css/display - {}
+RESULT: {}
+COMMAND: POST /session/8b243c1c7d9848b2dc5139bc86f291f2/element/f.BBB6588640AF1F6DDF1F7589ABFE93F6.d.6943970B90307C4E7D6B9CC5136FCBC1.e.4/clear - {}
+RESULT: {}
+COMMAND: POST /session/8b243c1c7d9848b2dc5139bc86f291f2/element/f.BBB6588640AF1F6DDF1F7589ABFE93F6.d.6943970B90307C4E7D6B9CC5136FCBC1.e.4/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/8b243c1c7d9848b2dc5139bc86f291f2/element/f.BBB6588640AF1F6DDF1F7589ABFE93F6.d.6943970B90307C4E7D6B9CC5136FCBC1.e.5/clear - {}
+RESULT: {}
+COMMAND: POST /session/8b243c1c7d9848b2dc5139bc86f291f2/element/f.BBB6588640AF1F6DDF1F7589ABFE93F6.d.6943970B90307C4E7D6B9CC5136FCBC1.e.5/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/8b243c1c7d9848b2dc5139bc86f291f2/element/f.BBB6588640AF1F6DDF1F7589ABFE93F6.d.6943970B90307C4E7D6B9CC5136FCBC1.e.6/click - {}
+RESULT: {}
+COMMAND: GET /session/8b243c1c7d9848b2dc5139bc86f291f2/screenshot - {}
+RESULT: {}
+RESULT: undefined
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.136_0_7103_114.mac.AgentHomePage_Suite" name="TC5" time="13.397">
+      <failure message="Image differences detected"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/8b243c1c7d9848b2dc5139bc86f291f2/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/8b243c1c7d9848b2dc5139bc86f291f2/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/8b243c1c7d9848b2dc5139bc86f291f2/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/8b243c1c7d9848b2dc5139bc86f291f2/element/f.BBB6588640AF1F6DDF1F7589ABFE93F6.d.B070B54B92FCB699E2145E89BC646714.e.3/css/display - {}
+RESULT: {}
+COMMAND: POST /session/8b243c1c7d9848b2dc5139bc86f291f2/element/f.BBB6588640AF1F6DDF1F7589ABFE93F6.d.B070B54B92FCB699E2145E89BC646714.e.3/clear - {}
+RESULT: {}
+COMMAND: POST /session/8b243c1c7d9848b2dc5139bc86f291f2/element/f.BBB6588640AF1F6DDF1F7589ABFE93F6.d.B070B54B92FCB699E2145E89BC646714.e.3/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/8b243c1c7d9848b2dc5139bc86f291f2/element/f.BBB6588640AF1F6DDF1F7589ABFE93F6.d.B070B54B92FCB699E2145E89BC646714.e.4/clear - {}
+RESULT: {}
+COMMAND: POST /session/8b243c1c7d9848b2dc5139bc86f291f2/element/f.BBB6588640AF1F6DDF1F7589ABFE93F6.d.B070B54B92FCB699E2145E89BC646714.e.4/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/8b243c1c7d9848b2dc5139bc86f291f2/element/f.BBB6588640AF1F6DDF1F7589ABFE93F6.d.B070B54B92FCB699E2145E89BC646714.e.5/click - {}
+RESULT: {}
+COMMAND: GET /session/8b243c1c7d9848b2dc5139bc86f291f2/screenshot - {}
+RESULT: {}
+RESULT: undefined
+]]></system-out>
+      <system-err><![CDATA[
+Error: Image differences detected
+    at agentHomepage.compareEnvironments (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:132:15)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/agentHomepage.specs.js:59:9)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.136_0_7103_114.mac.AgentHomePage_Suite" name="TC6" time="9.262">
+      <system-out><![CDATA[
+COMMAND: POST /session/8b243c1c7d9848b2dc5139bc86f291f2/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/8b243c1c7d9848b2dc5139bc86f291f2/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/8b243c1c7d9848b2dc5139bc86f291f2/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/8b243c1c7d9848b2dc5139bc86f291f2/element - {"using":"xpath","value":"//input[@name=\"username\"]"}
+RESULT: {"using":"xpath","value":"//input[@name=\"username\"]"}
+COMMAND: GET /session/8b243c1c7d9848b2dc5139bc86f291f2/element/f.BBB6588640AF1F6DDF1F7589ABFE93F6.d.D7107A875D73CA6A628A2C5E7A7F7FEB.e.3/css/display - {}
+RESULT: {}
+COMMAND: POST /session/8b243c1c7d9848b2dc5139bc86f291f2/element/f.BBB6588640AF1F6DDF1F7589ABFE93F6.d.D7107A875D73CA6A628A2C5E7A7F7FEB.e.3/clear - {}
+RESULT: {}
+COMMAND: POST /session/8b243c1c7d9848b2dc5139bc86f291f2/element/f.BBB6588640AF1F6DDF1F7589ABFE93F6.d.D7107A875D73CA6A628A2C5E7A7F7FEB.e.3/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/8b243c1c7d9848b2dc5139bc86f291f2/element/f.BBB6588640AF1F6DDF1F7589ABFE93F6.d.D7107A875D73CA6A628A2C5E7A7F7FEB.e.4/clear - {}
+RESULT: {}
+COMMAND: POST /session/8b243c1c7d9848b2dc5139bc86f291f2/element/f.BBB6588640AF1F6DDF1F7589ABFE93F6.d.D7107A875D73CA6A628A2C5E7A7F7FEB.e.4/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/8b243c1c7d9848b2dc5139bc86f291f2/element/f.BBB6588640AF1F6DDF1F7589ABFE93F6.d.D7107A875D73CA6A628A2C5E7A7F7FEB.e.5/click - {}
+RESULT: {}
+COMMAND: GET /session/8b243c1c7d9848b2dc5139bc86f291f2/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: DELETE /session/8b243c1c7d9848b2dc5139bc86f291f2 - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

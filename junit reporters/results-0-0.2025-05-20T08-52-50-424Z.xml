@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="4" failures="1" errors="0" skipped="0">
+  <testsuite name="AgentHomePage Suite" timestamp="2025-05-20T13:52:51" time="32.112" tests="4" failures="1" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="AgentHomePage Suite"/>
+      <property name="capabilities" value="chrome.136_0_7103_114.mac"/>
+      <property name="file" value="file://./test/specs/agentHomepage.specs.js"/>
+    </properties>
+    <testcase classname="chrome.136_0_7103_114.mac.AgentHomePage_Suite" name="TC4" time="13.329">
+      <system-out><![CDATA[
+COMMAND: POST /session/6327f8e70f77446d85881b53b98d32bd/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/6327f8e70f77446d85881b53b98d32bd/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/6327f8e70f77446d85881b53b98d32bd/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/6327f8e70f77446d85881b53b98d32bd/screenshot - {}
+RESULT: {}
+RESULT: undefined
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.136_0_7103_114.mac.AgentHomePage_Suite" name="TC5" time="1.066">
+      <failure message="WebDriver Bidi command &quot;script.callFunction&quot; failed with error: unknown error - Cannot find context with specified id"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/6327f8e70f77446d85881b53b98d32bd/window/maximize - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: WebDriver Bidi command "script.callFunction" failed with error: unknown error - Cannot find context with specified id
+
+Driver Stack:
+    at Error
+    at     at new UnknownErrorException (<anonymous>:65:5072)
+    at     at CommandProcessor.processCommand (<anonymous>:469:10360)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.136_0_7103_114.mac.AgentHomePage_Suite" name="TC6" time="9.373">
+      <system-out><![CDATA[
+COMMAND: POST /session/6327f8e70f77446d85881b53b98d32bd/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/6327f8e70f77446d85881b53b98d32bd/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/6327f8e70f77446d85881b53b98d32bd/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/6327f8e70f77446d85881b53b98d32bd/screenshot - {}
+RESULT: {}
+RESULT: undefined
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.136_0_7103_114.mac.AgentHomePage_Suite" name="TC7" time="8.33">
+      <system-out><![CDATA[
+COMMAND: POST /session/6327f8e70f77446d85881b53b98d32bd/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/6327f8e70f77446d85881b53b98d32bd/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/6327f8e70f77446d85881b53b98d32bd/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/6327f8e70f77446d85881b53b98d32bd/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: DELETE /session/6327f8e70f77446d85881b53b98d32bd - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

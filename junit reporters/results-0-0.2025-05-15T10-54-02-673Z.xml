@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="2" failures="2" errors="0" skipped="0">
+  <testsuite name="AgentHomePage Suite" timestamp="2025-05-15T15:54:03" time="61.164" tests="2" failures="2" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="AgentHomePage Suite"/>
+      <property name="capabilities" value="chrome.136_0_7103_113.mac"/>
+      <property name="file" value="file://./test/specs/agentHomepage.specs.js"/>
+    </properties>
+    <testcase classname="chrome.136_0_7103_113.mac.AgentHomePage_Suite" name="TC1" time="1.16">
+      <failure message="WebDriver Bidi command &quot;script.callFunction&quot; failed with error: unknown error - Cannot find context with specified id"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/a4d79739bfcacd4f0c15dc464bcafcec/window/maximize - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: WebDriver Bidi command "script.callFunction" failed with error: unknown error - Cannot find context with specified id
+
+Driver Stack:
+    at Error
+    at     at new UnknownErrorException (<anonymous>:65:5072)
+    at     at CommandProcessor.processCommand (<anonymous>:469:10360)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.136_0_7103_113.mac.AgentHomePage_Suite" name="TC2" time="60.002">
+      <failure message="Command browsingContext.navigate with id 14 (with the following parameter: {&quot;context&quot;:&quot;30E73CB18C59E0C1ED445582ED14F1ED&quot;,&quot;url&quot;:&quot;https://www.bayut.com/brokers/&quot;,&quot;wait&quot;:&quot;complete&quot;}) timed out"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/a4d79739bfcacd4f0c15dc464bcafcec/url - {"url":"https://www.bayut.com/brokers/"}
+COMMAND: DELETE /session/a4d79739bfcacd4f0c15dc464bcafcec - {}
+RESULT: {"url":"https://www.bayut.com/brokers/"}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: Command browsingContext.navigate with id 14 (with the following parameter: {"context":"30E73CB18C59E0C1ED445582ED14F1ED","url":"https://www.bayut.com/brokers/","wait":"complete"}) timed out
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="1" errors="0" skipped="0">
+  <testsuite name="AgentHomePage Suite" timestamp="2025-05-20T10:56:42" time="10.459" tests="1" failures="1" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="AgentHomePage Suite"/>
+      <property name="capabilities" value="chrome.136_0_7103_114.mac"/>
+      <property name="file" value="file://./test/specs/agentHomepage.specs.js"/>
+    </properties>
+    <testcase classname="chrome.136_0_7103_114.mac.AgentHomePage_Suite" name="TC2" time="10.457">
+      <failure message="this.conditionalLogin is not a function"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/47dc03a040bde1349bcc910aaee60582/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/47dc03a040bde1349bcc910aaee60582/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/47dc03a040bde1349bcc910aaee60582/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/47dc03a040bde1349bcc910aaee60582/window/maximize - {}
+RESULT: {}
+COMMAND: DELETE /session/47dc03a040bde1349bcc910aaee60582 - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+TypeError: this.conditionalLogin is not a function
+    at agentHomepage.compareFullPageEnvironments (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:159:16)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/agentHomepage.specs.js:24:9)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

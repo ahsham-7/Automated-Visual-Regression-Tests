@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="1" errors="0" skipped="0">
+  <testsuite name="AgentHomePage Suite" timestamp="2025-05-15T16:38:49" time="1.028" tests="1" failures="1" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="AgentHomePage Suite"/>
+      <property name="capabilities" value="chrome.136_0_7103_113.mac"/>
+      <property name="file" value="file://./test/specs/agentHomepage.specs.js"/>
+    </properties>
+    <testcase classname="chrome.136_0_7103_113.mac.AgentHomePage_Suite" name="TC1" time="1.026">
+      <failure message="browser.saveBaselineScreen is not a function"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/189cf655e538b341b1f690a089b413ca/window/maximize - {}
+RESULT: {}
+COMMAND: DELETE /session/189cf655e538b341b1f690a089b413ca - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+TypeError: browser.saveBaselineScreen is not a function
+    at agentHomepage.SaveBaselineShot (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:46:23)
+    at agentHomepage.compareEnvironments (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:119:20)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/agentHomepage.specs.js:13:9)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

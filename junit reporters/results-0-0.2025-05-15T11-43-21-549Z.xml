@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="0" errors="0" skipped="0">
+  <testsuite name="AgentHomePage Suite" timestamp="2025-05-15T16:43:22" time="17.667" tests="1" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="AgentHomePage Suite"/>
+      <property name="capabilities" value="chrome.136_0_7103_113.mac"/>
+      <property name="file" value="file://./test/specs/agentHomepage.specs.js"/>
+    </properties>
+    <testcase classname="chrome.136_0_7103_113.mac.AgentHomePage_Suite" name="TC1" time="17.662">
+      <system-out><![CDATA[
+COMMAND: POST /session/a52e6f0fa4ec9818dfbb2cdeafe1533b/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/a52e6f0fa4ec9818dfbb2cdeafe1533b/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/a52e6f0fa4ec9818dfbb2cdeafe1533b/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/a52e6f0fa4ec9818dfbb2cdeafe1533b/element/f.4268FDD92873CB6F2F7319836B98A050.d.F08D0CA11D33CE5F6D6EAE6C01B55987.e.3/css/display - {}
+RESULT: {}
+COMMAND: POST /session/a52e6f0fa4ec9818dfbb2cdeafe1533b/element/f.4268FDD92873CB6F2F7319836B98A050.d.F08D0CA11D33CE5F6D6EAE6C01B55987.e.3/clear - {}
+RESULT: {}
+COMMAND: POST /session/a52e6f0fa4ec9818dfbb2cdeafe1533b/element/f.4268FDD92873CB6F2F7319836B98A050.d.F08D0CA11D33CE5F6D6EAE6C01B55987.e.3/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/a52e6f0fa4ec9818dfbb2cdeafe1533b/element/f.4268FDD92873CB6F2F7319836B98A050.d.F08D0CA11D33CE5F6D6EAE6C01B55987.e.4/clear - {}
+RESULT: {}
+COMMAND: POST /session/a52e6f0fa4ec9818dfbb2cdeafe1533b/element/f.4268FDD92873CB6F2F7319836B98A050.d.F08D0CA11D33CE5F6D6EAE6C01B55987.e.4/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/a52e6f0fa4ec9818dfbb2cdeafe1533b/element/f.4268FDD92873CB6F2F7319836B98A050.d.F08D0CA11D33CE5F6D6EAE6C01B55987.e.5/click - {}
+RESULT: {}
+COMMAND: GET /session/a52e6f0fa4ec9818dfbb2cdeafe1533b/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: DELETE /session/a52e6f0fa4ec9818dfbb2cdeafe1533b - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

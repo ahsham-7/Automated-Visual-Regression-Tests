@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="2" failures="0" errors="0" skipped="0">
+  <testsuite name="AgentHomePage Suite" timestamp="2025-05-15T16:17:54" time="23.245" tests="2" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="AgentHomePage Suite"/>
+      <property name="capabilities" value="chrome.136_0_7103_113.mac"/>
+      <property name="file" value="file://./test/specs/agentHomepage.specs.js"/>
+    </properties>
+    <testcase classname="chrome.136_0_7103_113.mac.AgentHomePage_Suite" name="TC1" time="14.962">
+      <system-out><![CDATA[
+COMMAND: POST /session/85b15fc0a1b79c4d9cac4b4c26caa178/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/85b15fc0a1b79c4d9cac4b4c26caa178/element/f.709010463FDBCE6F651F52743290BBAD.d.25E6787D3DE909BDFEDD286561160E30.e.4/css/display - {}
+RESULT: {}
+COMMAND: POST /session/85b15fc0a1b79c4d9cac4b4c26caa178/element/f.709010463FDBCE6F651F52743290BBAD.d.25E6787D3DE909BDFEDD286561160E30.e.4/clear - {}
+RESULT: {}
+COMMAND: POST /session/85b15fc0a1b79c4d9cac4b4c26caa178/element/f.709010463FDBCE6F651F52743290BBAD.d.25E6787D3DE909BDFEDD286561160E30.e.4/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/85b15fc0a1b79c4d9cac4b4c26caa178/element/f.709010463FDBCE6F651F52743290BBAD.d.25E6787D3DE909BDFEDD286561160E30.e.5/clear - {}
+RESULT: {}
+COMMAND: POST /session/85b15fc0a1b79c4d9cac4b4c26caa178/element/f.709010463FDBCE6F651F52743290BBAD.d.25E6787D3DE909BDFEDD286561160E30.e.5/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/85b15fc0a1b79c4d9cac4b4c26caa178/element/f.709010463FDBCE6F651F52743290BBAD.d.25E6787D3DE909BDFEDD286561160E30.e.6/click - {}
+RESULT: {}
+COMMAND: GET /session/85b15fc0a1b79c4d9cac4b4c26caa178/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/85b15fc0a1b79c4d9cac4b4c26caa178/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/85b15fc0a1b79c4d9cac4b4c26caa178/screenshot - {}
+RESULT: {}
+RESULT: undefined
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.136_0_7103_113.mac.AgentHomePage_Suite" name="TC2" time="8.275">
+      <system-out><![CDATA[
+COMMAND: POST /session/85b15fc0a1b79c4d9cac4b4c26caa178/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/85b15fc0a1b79c4d9cac4b4c26caa178/element - {"using":"xpath","value":"//input[@name=\"username\"]"}
+RESULT: {"using":"xpath","value":"//input[@name=\"username\"]"}
+COMMAND: GET /session/85b15fc0a1b79c4d9cac4b4c26caa178/element/f.709010463FDBCE6F651F52743290BBAD.d.123D4B9A395E855822D48D40A438B67B.e.4/css/display - {}
+RESULT: {}
+COMMAND: POST /session/85b15fc0a1b79c4d9cac4b4c26caa178/element/f.709010463FDBCE6F651F52743290BBAD.d.123D4B9A395E855822D48D40A438B67B.e.4/clear - {}
+RESULT: {}
+COMMAND: POST /session/85b15fc0a1b79c4d9cac4b4c26caa178/element/f.709010463FDBCE6F651F52743290BBAD.d.123D4B9A395E855822D48D40A438B67B.e.4/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/85b15fc0a1b79c4d9cac4b4c26caa178/element/f.709010463FDBCE6F651F52743290BBAD.d.123D4B9A395E855822D48D40A438B67B.e.5/clear - {}
+RESULT: {}
+COMMAND: POST /session/85b15fc0a1b79c4d9cac4b4c26caa178/element/f.709010463FDBCE6F651F52743290BBAD.d.123D4B9A395E855822D48D40A438B67B.e.5/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/85b15fc0a1b79c4d9cac4b4c26caa178/element/f.709010463FDBCE6F651F52743290BBAD.d.123D4B9A395E855822D48D40A438B67B.e.6/click - {}
+RESULT: {}
+COMMAND: GET /session/85b15fc0a1b79c4d9cac4b4c26caa178/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/85b15fc0a1b79c4d9cac4b4c26caa178/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/85b15fc0a1b79c4d9cac4b4c26caa178/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/85b15fc0a1b79c4d9cac4b4c26caa178/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/85b15fc0a1b79c4d9cac4b4c26caa178/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: DELETE /session/85b15fc0a1b79c4d9cac4b4c26caa178 - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

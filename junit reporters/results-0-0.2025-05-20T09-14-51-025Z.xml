@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="3" failures="3" errors="0" skipped="0">
+  <testsuite name="AgentHomePage Suite" timestamp="2025-05-20T14:14:51" time="19.856" tests="3" failures="3" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="AgentHomePage Suite"/>
+      <property name="capabilities" value="chrome.136_0_7103_114.mac"/>
+      <property name="file" value="file://./test/specs/agentHomepage.specs.js"/>
+    </properties>
+    <testcase classname="chrome.136_0_7103_114.mac.AgentHomePage_Suite" name="TC4" time="10.053">
+      <failure message="Image differences detected"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/e15436331989129c6281294acbe635dd/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/e15436331989129c6281294acbe635dd/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/e15436331989129c6281294acbe635dd/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/e15436331989129c6281294acbe635dd/screenshot - {}
+RESULT: {}
+RESULT: undefined
+]]></system-out>
+      <system-err><![CDATA[
+Error: Image differences detected
+    at agentHomepage.compareEnvironments (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:132:15)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/agentHomepage.specs.js:47:9)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.136_0_7103_114.mac.AgentHomePage_Suite" name="TC5" time="1.5">
+      <failure message="WebDriver Bidi command &quot;script.callFunction&quot; failed with error: unknown error - Cannot find context with specified id"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/e15436331989129c6281294acbe635dd/window/maximize - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: WebDriver Bidi command "script.callFunction" failed with error: unknown error - Cannot find context with specified id
+
+Driver Stack:
+    at Error
+    at     at new UnknownErrorException (<anonymous>:65:5072)
+    at     at CommandProcessor.processCommand (<anonymous>:469:10360)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.136_0_7103_114.mac.AgentHomePage_Suite" name="TC6" time="8.296">
+      <failure message="Image differences detected"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/e15436331989129c6281294acbe635dd/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/e15436331989129c6281294acbe635dd/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/e15436331989129c6281294acbe635dd/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/e15436331989129c6281294acbe635dd/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: DELETE /session/e15436331989129c6281294acbe635dd - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: Image differences detected
+    at agentHomepage.compareEnvironments (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:132:15)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/agentHomepage.specs.js:69:9)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

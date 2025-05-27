@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="1" errors="0" skipped="0">
+  <testsuite name="AgentHomePage Suite" timestamp="2025-05-15T18:02:55" time="1.079" tests="1" failures="1" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="AgentHomePage Suite"/>
+      <property name="capabilities" value="chrome.136_0_7103_113.mac"/>
+      <property name="file" value="file://./test/specs/agentHomepage.specs.js"/>
+    </properties>
+    <testcase classname="chrome.136_0_7103_113.mac.AgentHomePage_Suite" name="TC2" time="1.077">
+      <failure message="TypeError: Cannot read properties of null (reading 'scrollHeight')"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/9a33fe9b0c82712c0bb822a7d4dca96e/window/maximize - {}
+RESULT: {}
+COMMAND: DELETE /session/9a33fe9b0c82712c0bb822a7d4dca96e - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+WebdriverBidiExeception: TypeError: Cannot read properties of null (reading 'scrollHeight')
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

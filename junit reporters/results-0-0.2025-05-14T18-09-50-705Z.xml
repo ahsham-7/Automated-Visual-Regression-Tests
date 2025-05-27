@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="2" failures="0" errors="0" skipped="0">
+  <testsuite name="AgentHomePage Suite" timestamp="2025-05-14T23:09:51" time="34.506" tests="2" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="AgentHomePage Suite"/>
+      <property name="capabilities" value="chrome.136_0_7103_93.mac"/>
+      <property name="file" value="file://./test/specs/agentHomepage.specs.js"/>
+    </properties>
+    <testcase classname="chrome.136_0_7103_93.mac.AgentHomePage_Suite" name="TC1" time="22.286">
+      <system-out><![CDATA[
+COMMAND: POST /session/bb0c96128abbbbfe9c0ce26713ef8b71/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/bb0c96128abbbbfe9c0ce26713ef8b71/element/f.8128381D6FED4298CF0A218581E73714.d.F184CC3C662041D3566D9488459D5A4E.e.3/css/display - {}
+RESULT: {}
+COMMAND: POST /session/bb0c96128abbbbfe9c0ce26713ef8b71/element/f.8128381D6FED4298CF0A218581E73714.d.F184CC3C662041D3566D9488459D5A4E.e.3/clear - {}
+RESULT: {}
+COMMAND: POST /session/bb0c96128abbbbfe9c0ce26713ef8b71/element/f.8128381D6FED4298CF0A218581E73714.d.F184CC3C662041D3566D9488459D5A4E.e.3/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/bb0c96128abbbbfe9c0ce26713ef8b71/element/f.8128381D6FED4298CF0A218581E73714.d.F184CC3C662041D3566D9488459D5A4E.e.5/clear - {}
+RESULT: {}
+COMMAND: POST /session/bb0c96128abbbbfe9c0ce26713ef8b71/element/f.8128381D6FED4298CF0A218581E73714.d.F184CC3C662041D3566D9488459D5A4E.e.5/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/bb0c96128abbbbfe9c0ce26713ef8b71/element/f.8128381D6FED4298CF0A218581E73714.d.F184CC3C662041D3566D9488459D5A4E.e.7/click - {}
+RESULT: {}
+COMMAND: GET /session/bb0c96128abbbbfe9c0ce26713ef8b71/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/bb0c96128abbbbfe9c0ce26713ef8b71/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/bb0c96128abbbbfe9c0ce26713ef8b71/screenshot - {}
+RESULT: {}
+RESULT: undefined
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.136_0_7103_93.mac.AgentHomePage_Suite" name="TC2" time="12.211">
+      <system-out><![CDATA[
+COMMAND: POST /session/bb0c96128abbbbfe9c0ce26713ef8b71/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/bb0c96128abbbbfe9c0ce26713ef8b71/element - {"using":"xpath","value":"//input[@name=\"username\"]"}
+RESULT: {"using":"xpath","value":"//input[@name=\"username\"]"}
+COMMAND: GET /session/bb0c96128abbbbfe9c0ce26713ef8b71/element/f.8128381D6FED4298CF0A218581E73714.d.D081074670FCE46C0EF09A179961B675.e.3/css/display - {}
+RESULT: {}
+COMMAND: POST /session/bb0c96128abbbbfe9c0ce26713ef8b71/element/f.8128381D6FED4298CF0A218581E73714.d.D081074670FCE46C0EF09A179961B675.e.3/clear - {}
+RESULT: {}
+COMMAND: POST /session/bb0c96128abbbbfe9c0ce26713ef8b71/element/f.8128381D6FED4298CF0A218581E73714.d.D081074670FCE46C0EF09A179961B675.e.3/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/bb0c96128abbbbfe9c0ce26713ef8b71/element/f.8128381D6FED4298CF0A218581E73714.d.D081074670FCE46C0EF09A179961B675.e.4/clear - {}
+RESULT: {}
+COMMAND: POST /session/bb0c96128abbbbfe9c0ce26713ef8b71/element/f.8128381D6FED4298CF0A218581E73714.d.D081074670FCE46C0EF09A179961B675.e.4/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/bb0c96128abbbbfe9c0ce26713ef8b71/element/f.8128381D6FED4298CF0A218581E73714.d.D081074670FCE46C0EF09A179961B675.e.5/click - {}
+RESULT: {}
+COMMAND: GET /session/bb0c96128abbbbfe9c0ce26713ef8b71/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/bb0c96128abbbbfe9c0ce26713ef8b71/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/bb0c96128abbbbfe9c0ce26713ef8b71/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/bb0c96128abbbbfe9c0ce26713ef8b71/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/bb0c96128abbbbfe9c0ce26713ef8b71/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: DELETE /session/bb0c96128abbbbfe9c0ce26713ef8b71 - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

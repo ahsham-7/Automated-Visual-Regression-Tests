@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="0" errors="0" skipped="0">
+  <testsuite name="AgentHomePage Suite" timestamp="2025-05-20T14:11:43" time="49.772" tests="1" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="AgentHomePage Suite"/>
+      <property name="capabilities" value="chrome.136_0_7103_114.mac"/>
+      <property name="file" value="file://./test/specs/agentHomepage.specs.js"/>
+    </properties>
+    <testcase classname="chrome.136_0_7103_114.mac.AgentHomePage_Suite" name="TC4" time="49.766">
+      <system-out><![CDATA[
+COMMAND: POST /session/a4f9d8ce6cd729b320dce58af233efaf/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/a4f9d8ce6cd729b320dce58af233efaf/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/a4f9d8ce6cd729b320dce58af233efaf/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/a4f9d8ce6cd729b320dce58af233efaf/element - {"using":"xpath","value":"//input[@name=\"username\"]"}
+RESULT: {"using":"xpath","value":"//input[@name=\"username\"]"}
+COMMAND: GET /session/a4f9d8ce6cd729b320dce58af233efaf/element/f.1DB7E951E1F6EC62ACCE61E2DC2FAFB6.d.EA3DC023543FD06ABD8543AD858D5E2C.e.3/css/display - {}
+RESULT: {}
+COMMAND: POST /session/a4f9d8ce6cd729b320dce58af233efaf/element/f.1DB7E951E1F6EC62ACCE61E2DC2FAFB6.d.EA3DC023543FD06ABD8543AD858D5E2C.e.3/clear - {}
+RESULT: {}
+COMMAND: POST /session/a4f9d8ce6cd729b320dce58af233efaf/element/f.1DB7E951E1F6EC62ACCE61E2DC2FAFB6.d.EA3DC023543FD06ABD8543AD858D5E2C.e.3/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/a4f9d8ce6cd729b320dce58af233efaf/element/f.1DB7E951E1F6EC62ACCE61E2DC2FAFB6.d.EA3DC023543FD06ABD8543AD858D5E2C.e.4/clear - {}
+RESULT: {}
+COMMAND: POST /session/a4f9d8ce6cd729b320dce58af233efaf/element/f.1DB7E951E1F6EC62ACCE61E2DC2FAFB6.d.EA3DC023543FD06ABD8543AD858D5E2C.e.4/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/a4f9d8ce6cd729b320dce58af233efaf/element/f.1DB7E951E1F6EC62ACCE61E2DC2FAFB6.d.EA3DC023543FD06ABD8543AD858D5E2C.e.5/click - {}
+RESULT: {}
+COMMAND: GET /session/a4f9d8ce6cd729b320dce58af233efaf/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: DELETE /session/a4f9d8ce6cd729b320dce58af233efaf - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

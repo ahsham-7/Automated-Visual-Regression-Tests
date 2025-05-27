@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="1" errors="0" skipped="0">
+  <testsuite name="AgentHomePage Suite" timestamp="2025-05-15T12:25:51" time="18.179" tests="1" failures="1" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="AgentHomePage Suite"/>
+      <property name="capabilities" value="chrome.136_0_7103_113.mac"/>
+      <property name="file" value="file://./test/specs/agentHomepage.specs.js"/>
+    </properties>
+    <testcase classname="chrome.136_0_7103_113.mac.AgentHomePage_Suite" name="TC2" time="18.177">
+      <failure message="Image differences detected (undefined% mismatch)"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/1d0d375887669a431de96266def3c493/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/1d0d375887669a431de96266def3c493/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/1d0d375887669a431de96266def3c493/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/1d0d375887669a431de96266def3c493/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/1d0d375887669a431de96266def3c493/element/f.A6306BC1C2BB8F9E68E6F49701F7C6F2.d.AF2CBB5C6836DD7CB774EFD81BBA2073.e.3/css/display - {}
+RESULT: {}
+COMMAND: POST /session/1d0d375887669a431de96266def3c493/element/f.A6306BC1C2BB8F9E68E6F49701F7C6F2.d.AF2CBB5C6836DD7CB774EFD81BBA2073.e.3/clear - {}
+RESULT: {}
+COMMAND: POST /session/1d0d375887669a431de96266def3c493/element/f.A6306BC1C2BB8F9E68E6F49701F7C6F2.d.AF2CBB5C6836DD7CB774EFD81BBA2073.e.3/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/1d0d375887669a431de96266def3c493/element/f.A6306BC1C2BB8F9E68E6F49701F7C6F2.d.AF2CBB5C6836DD7CB774EFD81BBA2073.e.4/clear - {}
+RESULT: {}
+COMMAND: POST /session/1d0d375887669a431de96266def3c493/element/f.A6306BC1C2BB8F9E68E6F49701F7C6F2.d.AF2CBB5C6836DD7CB774EFD81BBA2073.e.4/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/1d0d375887669a431de96266def3c493/element/f.A6306BC1C2BB8F9E68E6F49701F7C6F2.d.AF2CBB5C6836DD7CB774EFD81BBA2073.e.5/click - {}
+RESULT: {}
+COMMAND: GET /session/1d0d375887669a431de96266def3c493/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/1d0d375887669a431de96266def3c493/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: DELETE /session/1d0d375887669a431de96266def3c493 - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: Image differences detected (undefined% mismatch)
+    at agentHomepage.compareFullPageEnvironments (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:176:15)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/agentHomepage.specs.js:24:9)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

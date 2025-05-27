@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="2" failures="2" errors="0" skipped="0">
+  <testsuite name="AgentHomePage Suite" timestamp="2025-05-15T15:49:58" time="27.68" tests="2" failures="2" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="AgentHomePage Suite"/>
+      <property name="capabilities" value="chrome.136_0_7103_113.mac"/>
+      <property name="file" value="file://./test/specs/agentHomepage.specs.js"/>
+    </properties>
+    <testcase classname="chrome.136_0_7103_113.mac.AgentHomePage_Suite" name="TC1" time="15.14">
+      <failure message="&#xA;#####################################################################################&#xA; Baseline image not found, save the actual image manually to the baseline.&#xA; The image can be found here:&#xA; /Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/actualImage/actual/desktop_chrome/actual/desktop_chrome/AgentHomePage/Verify_default_view_of_Agent_Home_Page.png&#xA; If you want the module to auto save a non existing image to the baseline you&#xA; can provide 'autoSaveBaseline: true' to the options.&#xA;#####################################################################################&#xA;"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/6c211949c6cb0386f6f8c87334f733ca/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/6c211949c6cb0386f6f8c87334f733ca/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/6c211949c6cb0386f6f8c87334f733ca/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/6c211949c6cb0386f6f8c87334f733ca/element/f.EBD883D7DBB4A852F6C010BB4023FAC6.d.03C2AB828E24CC20E7ED726DD68D3FCB.e.3/css/display - {}
+RESULT: {}
+COMMAND: POST /session/6c211949c6cb0386f6f8c87334f733ca/element/f.EBD883D7DBB4A852F6C010BB4023FAC6.d.03C2AB828E24CC20E7ED726DD68D3FCB.e.3/clear - {}
+RESULT: {}
+COMMAND: POST /session/6c211949c6cb0386f6f8c87334f733ca/element/f.EBD883D7DBB4A852F6C010BB4023FAC6.d.03C2AB828E24CC20E7ED726DD68D3FCB.e.3/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/6c211949c6cb0386f6f8c87334f733ca/element/f.EBD883D7DBB4A852F6C010BB4023FAC6.d.03C2AB828E24CC20E7ED726DD68D3FCB.e.4/clear - {}
+RESULT: {}
+COMMAND: POST /session/6c211949c6cb0386f6f8c87334f733ca/element/f.EBD883D7DBB4A852F6C010BB4023FAC6.d.03C2AB828E24CC20E7ED726DD68D3FCB.e.4/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/6c211949c6cb0386f6f8c87334f733ca/element/f.EBD883D7DBB4A852F6C010BB4023FAC6.d.03C2AB828E24CC20E7ED726DD68D3FCB.e.5/click - {}
+RESULT: {}
+COMMAND: GET /session/6c211949c6cb0386f6f8c87334f733ca/screenshot - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: 
+#####################################################################################
+ Baseline image not found, save the actual image manually to the baseline.
+ The image can be found here:
+ /Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/actualImage/actual/desktop_chrome/actual/desktop_chrome/AgentHomePage/Verify_default_view_of_Agent_Home_Page.png
+ If you want the module to auto save a non existing image to the baseline you
+ can provide 'autoSaveBaseline: true' to the options.
+#####################################################################################
+
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.136_0_7103_113.mac.AgentHomePage_Suite" name="TC2" time="12.537">
+      <failure message="&#xA;#####################################################################################&#xA; Baseline image not found, save the actual image manually to the baseline.&#xA; The image can be found here:&#xA; /Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/actualImage/actual/desktop_chrome/actual/desktop_chrome/AgentHomePage/Verify_full_view_of_Agent_Home_Page.png&#xA; If you want the module to auto save a non existing image to the baseline you&#xA; can provide 'autoSaveBaseline: true' to the options.&#xA;#####################################################################################&#xA;"/>
+      <system-out><![CDATA[
+COMMAND: GET /session/6c211949c6cb0386f6f8c87334f733ca/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/6c211949c6cb0386f6f8c87334f733ca/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: GET /session/6c211949c6cb0386f6f8c87334f733ca/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/6c211949c6cb0386f6f8c87334f733ca/screenshot - {}
+RESULT: {}
+COMMAND: DELETE /session/6c211949c6cb0386f6f8c87334f733ca - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: 
+#####################################################################################
+ Baseline image not found, save the actual image manually to the baseline.
+ The image can be found here:
+ /Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/actualImage/actual/desktop_chrome/actual/desktop_chrome/AgentHomePage/Verify_full_view_of_Agent_Home_Page.png
+ If you want the module to auto save a non existing image to the baseline you
+ can provide 'autoSaveBaseline: true' to the options.
+#####################################################################################
+
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

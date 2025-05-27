@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="0" errors="0" skipped="0">
+  <testsuite name="AgentHomePage Suite" timestamp="2025-05-20T13:11:58" time="27.579" tests="1" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="AgentHomePage Suite"/>
+      <property name="capabilities" value="chrome.136_0_7103_114.mac"/>
+      <property name="file" value="file://./test/specs/agentHomepage.specs.js"/>
+    </properties>
+    <testcase classname="chrome.136_0_7103_114.mac.AgentHomePage_Suite" name="TC2" time="27.577">
+      <system-out><![CDATA[
+COMMAND: POST /session/eee1cec1278445cdad54abc3cc51a88e/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/eee1cec1278445cdad54abc3cc51a88e/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/eee1cec1278445cdad54abc3cc51a88e/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/eee1cec1278445cdad54abc3cc51a88e/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/eee1cec1278445cdad54abc3cc51a88e/element/f.23AD8B8F24963ADC72A84B80D1D399FD.d.400366B106AB6A45F6B7B34D8771759E.e.3/css/display - {}
+RESULT: {}
+COMMAND: POST /session/eee1cec1278445cdad54abc3cc51a88e/element/f.23AD8B8F24963ADC72A84B80D1D399FD.d.400366B106AB6A45F6B7B34D8771759E.e.3/clear - {}
+RESULT: {}
+COMMAND: POST /session/eee1cec1278445cdad54abc3cc51a88e/element/f.23AD8B8F24963ADC72A84B80D1D399FD.d.400366B106AB6A45F6B7B34D8771759E.e.3/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/eee1cec1278445cdad54abc3cc51a88e/element/f.23AD8B8F24963ADC72A84B80D1D399FD.d.400366B106AB6A45F6B7B34D8771759E.e.4/clear - {}
+RESULT: {}
+COMMAND: POST /session/eee1cec1278445cdad54abc3cc51a88e/element/f.23AD8B8F24963ADC72A84B80D1D399FD.d.400366B106AB6A45F6B7B34D8771759E.e.4/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/eee1cec1278445cdad54abc3cc51a88e/element/f.23AD8B8F24963ADC72A84B80D1D399FD.d.400366B106AB6A45F6B7B34D8771759E.e.5/click - {}
+RESULT: {}
+COMMAND: GET /session/eee1cec1278445cdad54abc3cc51a88e/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/eee1cec1278445cdad54abc3cc51a88e/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: DELETE /session/eee1cec1278445cdad54abc3cc51a88e - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

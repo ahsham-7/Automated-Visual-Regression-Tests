@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="0" errors="0" skipped="0">
+  <testsuite name="AgentHomePage Suite" timestamp="2025-05-20T13:21:19" time="86.212" tests="1" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="AgentHomePage Suite"/>
+      <property name="capabilities" value="chrome.136_0_7103_114.mac"/>
+      <property name="file" value="file://./test/specs/agentHomepage.specs.js"/>
+    </properties>
+    <testcase classname="chrome.136_0_7103_114.mac.AgentHomePage_Suite" name="TC3" time="86.198">
+      <system-out><![CDATA[
+COMMAND: POST /session/a594df0debfec4294a0df482c65a663d/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/a594df0debfec4294a0df482c65a663d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/a594df0debfec4294a0df482c65a663d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/a594df0debfec4294a0df482c65a663d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/a594df0debfec4294a0df482c65a663d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/a594df0debfec4294a0df482c65a663d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/a594df0debfec4294a0df482c65a663d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/a594df0debfec4294a0df482c65a663d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/a594df0debfec4294a0df482c65a663d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/a594df0debfec4294a0df482c65a663d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/a594df0debfec4294a0df482c65a663d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/a594df0debfec4294a0df482c65a663d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/a594df0debfec4294a0df482c65a663d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/a594df0debfec4294a0df482c65a663d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/a594df0debfec4294a0df482c65a663d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/a594df0debfec4294a0df482c65a663d/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/a594df0debfec4294a0df482c65a663d/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/a594df0debfec4294a0df482c65a663d/element/f.BE27C0089618BB8911C034DA7285606B.d.08A57D332D35E04FDFF5B177D05875F5.e.3/css/display - {}
+RESULT: {}
+COMMAND: POST /session/a594df0debfec4294a0df482c65a663d/element/f.BE27C0089618BB8911C034DA7285606B.d.08A57D332D35E04FDFF5B177D05875F5.e.3/clear - {}
+RESULT: {}
+COMMAND: POST /session/a594df0debfec4294a0df482c65a663d/element/f.BE27C0089618BB8911C034DA7285606B.d.08A57D332D35E04FDFF5B177D05875F5.e.3/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/a594df0debfec4294a0df482c65a663d/element/f.BE27C0089618BB8911C034DA7285606B.d.08A57D332D35E04FDFF5B177D05875F5.e.4/clear - {}
+RESULT: {}
+COMMAND: POST /session/a594df0debfec4294a0df482c65a663d/element/f.BE27C0089618BB8911C034DA7285606B.d.08A57D332D35E04FDFF5B177D05875F5.e.4/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/a594df0debfec4294a0df482c65a663d/element/f.BE27C0089618BB8911C034DA7285606B.d.08A57D332D35E04FDFF5B177D05875F5.e.5/click - {}
+RESULT: {}
+COMMAND: GET /session/a594df0debfec4294a0df482c65a663d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/a594df0debfec4294a0df482c65a663d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/a594df0debfec4294a0df482c65a663d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/a594df0debfec4294a0df482c65a663d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/a594df0debfec4294a0df482c65a663d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/a594df0debfec4294a0df482c65a663d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/a594df0debfec4294a0df482c65a663d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/a594df0debfec4294a0df482c65a663d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/a594df0debfec4294a0df482c65a663d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/a594df0debfec4294a0df482c65a663d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/a594df0debfec4294a0df482c65a663d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/a594df0debfec4294a0df482c65a663d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/a594df0debfec4294a0df482c65a663d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/a594df0debfec4294a0df482c65a663d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/a594df0debfec4294a0df482c65a663d/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: DELETE /session/a594df0debfec4294a0df482c65a663d - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

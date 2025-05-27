@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="2" failures="1" errors="0" skipped="0">
+  <testsuite name="AgentHomePage Suite" timestamp="2025-05-15T12:29:58" time="22.66" tests="2" failures="1" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="AgentHomePage Suite"/>
+      <property name="capabilities" value="chrome.136_0_7103_113.mac"/>
+      <property name="file" value="file://./test/specs/agentHomepage.specs.js"/>
+    </properties>
+    <testcase classname="chrome.136_0_7103_113.mac.AgentHomePage_Suite" name="TC1" time="12.455">
+      <system-out><![CDATA[
+COMMAND: POST /session/b1038d4be3600c2d86f4514c30384cc9/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/b1038d4be3600c2d86f4514c30384cc9/element/f.D82C4EF17F9D11B560280B027CB690AB.d.2E47EDA75A457E009465A7A2C82A2669.e.4/css/display - {}
+RESULT: {}
+COMMAND: POST /session/b1038d4be3600c2d86f4514c30384cc9/element/f.D82C4EF17F9D11B560280B027CB690AB.d.2E47EDA75A457E009465A7A2C82A2669.e.4/clear - {}
+RESULT: {}
+COMMAND: POST /session/b1038d4be3600c2d86f4514c30384cc9/element/f.D82C4EF17F9D11B560280B027CB690AB.d.2E47EDA75A457E009465A7A2C82A2669.e.4/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/b1038d4be3600c2d86f4514c30384cc9/element/f.D82C4EF17F9D11B560280B027CB690AB.d.2E47EDA75A457E009465A7A2C82A2669.e.5/clear - {}
+RESULT: {}
+COMMAND: POST /session/b1038d4be3600c2d86f4514c30384cc9/element/f.D82C4EF17F9D11B560280B027CB690AB.d.2E47EDA75A457E009465A7A2C82A2669.e.5/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/b1038d4be3600c2d86f4514c30384cc9/element/f.D82C4EF17F9D11B560280B027CB690AB.d.2E47EDA75A457E009465A7A2C82A2669.e.6/click - {}
+RESULT: {}
+COMMAND: GET /session/b1038d4be3600c2d86f4514c30384cc9/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/b1038d4be3600c2d86f4514c30384cc9/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/b1038d4be3600c2d86f4514c30384cc9/screenshot - {}
+RESULT: {}
+RESULT: undefined
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.136_0_7103_113.mac.AgentHomePage_Suite" name="TC2" time="10.199">
+      <failure message="Image differences detected (undefined% mismatch)"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/b1038d4be3600c2d86f4514c30384cc9/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/b1038d4be3600c2d86f4514c30384cc9/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/b1038d4be3600c2d86f4514c30384cc9/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/b1038d4be3600c2d86f4514c30384cc9/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/b1038d4be3600c2d86f4514c30384cc9/element/f.D82C4EF17F9D11B560280B027CB690AB.d.17427DAF90BD64EA0AF07A990E7D5FA3.e.3/css/display - {}
+RESULT: {}
+COMMAND: POST /session/b1038d4be3600c2d86f4514c30384cc9/element/f.D82C4EF17F9D11B560280B027CB690AB.d.17427DAF90BD64EA0AF07A990E7D5FA3.e.3/clear - {}
+RESULT: {}
+COMMAND: POST /session/b1038d4be3600c2d86f4514c30384cc9/element/f.D82C4EF17F9D11B560280B027CB690AB.d.17427DAF90BD64EA0AF07A990E7D5FA3.e.3/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/b1038d4be3600c2d86f4514c30384cc9/element/f.D82C4EF17F9D11B560280B027CB690AB.d.17427DAF90BD64EA0AF07A990E7D5FA3.e.4/clear - {}
+RESULT: {}
+COMMAND: POST /session/b1038d4be3600c2d86f4514c30384cc9/element/f.D82C4EF17F9D11B560280B027CB690AB.d.17427DAF90BD64EA0AF07A990E7D5FA3.e.4/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/b1038d4be3600c2d86f4514c30384cc9/element/f.D82C4EF17F9D11B560280B027CB690AB.d.17427DAF90BD64EA0AF07A990E7D5FA3.e.5/click - {}
+RESULT: {}
+COMMAND: GET /session/b1038d4be3600c2d86f4514c30384cc9/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/b1038d4be3600c2d86f4514c30384cc9/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: DELETE /session/b1038d4be3600c2d86f4514c30384cc9 - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: Image differences detected (undefined% mismatch)
+    at agentHomepage.compareFullPageEnvironments (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:176:15)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/agentHomepage.specs.js:24:9)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

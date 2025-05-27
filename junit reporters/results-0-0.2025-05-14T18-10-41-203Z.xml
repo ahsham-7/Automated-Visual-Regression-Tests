@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="2" failures="2" errors="0" skipped="0">
+  <testsuite name="AgentHomePage Suite" timestamp="2025-05-14T23:10:42" time="25.548" tests="2" failures="2" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="AgentHomePage Suite"/>
+      <property name="capabilities" value="chrome.136_0_7103_93.mac"/>
+      <property name="file" value="file://./test/specs/agentHomepage.specs.js"/>
+    </properties>
+    <testcase classname="chrome.136_0_7103_93.mac.AgentHomePage_Suite" name="TC1" time="22.037">
+      <failure message="Image differences detected"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/b4b835260c1113343afdf71b9f7a2861/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/b4b835260c1113343afdf71b9f7a2861/element/f.0649F350692EA5E6A549E1702A3DE35D.d.E25368464110B18864327497CEF8E774.e.5/css/display - {}
+RESULT: {}
+COMMAND: POST /session/b4b835260c1113343afdf71b9f7a2861/element/f.0649F350692EA5E6A549E1702A3DE35D.d.E25368464110B18864327497CEF8E774.e.5/clear - {}
+RESULT: {}
+COMMAND: POST /session/b4b835260c1113343afdf71b9f7a2861/element/f.0649F350692EA5E6A549E1702A3DE35D.d.E25368464110B18864327497CEF8E774.e.5/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/b4b835260c1113343afdf71b9f7a2861/element/f.0649F350692EA5E6A549E1702A3DE35D.d.E25368464110B18864327497CEF8E774.e.6/clear - {}
+RESULT: {}
+COMMAND: POST /session/b4b835260c1113343afdf71b9f7a2861/element/f.0649F350692EA5E6A549E1702A3DE35D.d.E25368464110B18864327497CEF8E774.e.6/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/b4b835260c1113343afdf71b9f7a2861/element/f.0649F350692EA5E6A549E1702A3DE35D.d.E25368464110B18864327497CEF8E774.e.7/click - {}
+RESULT: {}
+COMMAND: GET /session/b4b835260c1113343afdf71b9f7a2861/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/b4b835260c1113343afdf71b9f7a2861/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/b4b835260c1113343afdf71b9f7a2861/screenshot - {}
+RESULT: {}
+RESULT: undefined
+]]></system-out>
+      <system-err><![CDATA[
+Error: Image differences detected
+    at agentHomepage.compareEnvironments (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:132:15)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/agentHomepage.specs.js:13:9)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.136_0_7103_93.mac.AgentHomePage_Suite" name="TC2" time="3.498">
+      <failure message="TypeError: Cannot read properties of null (reading 'scrollHeight')"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/b4b835260c1113343afdf71b9f7a2861/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/b4b835260c1113343afdf71b9f7a2861/element/f.0649F350692EA5E6A549E1702A3DE35D.d.4E2B8D7B95586ED3470C4E713CA7868D.e.3/css/display - {}
+RESULT: {}
+COMMAND: POST /session/b4b835260c1113343afdf71b9f7a2861/element/f.0649F350692EA5E6A549E1702A3DE35D.d.4E2B8D7B95586ED3470C4E713CA7868D.e.3/clear - {}
+RESULT: {}
+COMMAND: POST /session/b4b835260c1113343afdf71b9f7a2861/element/f.0649F350692EA5E6A549E1702A3DE35D.d.4E2B8D7B95586ED3470C4E713CA7868D.e.3/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/b4b835260c1113343afdf71b9f7a2861/element/f.0649F350692EA5E6A549E1702A3DE35D.d.4E2B8D7B95586ED3470C4E713CA7868D.e.4/clear - {}
+RESULT: {}
+COMMAND: POST /session/b4b835260c1113343afdf71b9f7a2861/element/f.0649F350692EA5E6A549E1702A3DE35D.d.4E2B8D7B95586ED3470C4E713CA7868D.e.4/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/b4b835260c1113343afdf71b9f7a2861/element/f.0649F350692EA5E6A549E1702A3DE35D.d.4E2B8D7B95586ED3470C4E713CA7868D.e.5/click - {}
+RESULT: {}
+COMMAND: DELETE /session/b4b835260c1113343afdf71b9f7a2861 - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+WebdriverBidiExeception: TypeError: Cannot read properties of null (reading 'scrollHeight')
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

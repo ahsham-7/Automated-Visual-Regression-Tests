@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="6" failures="3" errors="0" skipped="0">
+  <testsuite name="AgentHomePage Suite" timestamp="2025-05-20T16:17:45" time="129.333" tests="6" failures="3" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="AgentHomePage Suite"/>
+      <property name="capabilities" value="chrome.136_0_7103_114.mac"/>
+      <property name="file" value="file://./test/specs/agentHomepage.specs.js"/>
+    </properties>
+    <testcase classname="chrome.136_0_7103_114.mac.AgentHomePage_Suite" name="TC1" time="19.698">
+      <system-out><![CDATA[
+COMMAND: POST /session/fa9676949686a14ae60b873b14c0068d/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/fa9676949686a14ae60b873b14c0068d/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/fa9676949686a14ae60b873b14c0068d/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/fa9676949686a14ae60b873b14c0068d/element - {"using":"xpath","value":"//input[@name=\"username\"]"}
+RESULT: {"using":"xpath","value":"//input[@name=\"username\"]"}
+COMMAND: GET /session/fa9676949686a14ae60b873b14c0068d/element/f.EDC56B3E3A933BAE4C3EF469B49821C1.d.5EFDEA80938F95E99CB9E6411C194C90.e.3/css/display - {}
+RESULT: {}
+COMMAND: POST /session/fa9676949686a14ae60b873b14c0068d/element/f.EDC56B3E3A933BAE4C3EF469B49821C1.d.5EFDEA80938F95E99CB9E6411C194C90.e.3/clear - {}
+RESULT: {}
+COMMAND: POST /session/fa9676949686a14ae60b873b14c0068d/element/f.EDC56B3E3A933BAE4C3EF469B49821C1.d.5EFDEA80938F95E99CB9E6411C194C90.e.3/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/fa9676949686a14ae60b873b14c0068d/element/f.EDC56B3E3A933BAE4C3EF469B49821C1.d.5EFDEA80938F95E99CB9E6411C194C90.e.5/clear - {}
+RESULT: {}
+COMMAND: POST /session/fa9676949686a14ae60b873b14c0068d/element/f.EDC56B3E3A933BAE4C3EF469B49821C1.d.5EFDEA80938F95E99CB9E6411C194C90.e.5/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/fa9676949686a14ae60b873b14c0068d/element/f.EDC56B3E3A933BAE4C3EF469B49821C1.d.5EFDEA80938F95E99CB9E6411C194C90.e.7/click - {}
+RESULT: {}
+COMMAND: GET /session/fa9676949686a14ae60b873b14c0068d/screenshot - {}
+RESULT: {}
+RESULT: undefined
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.136_0_7103_114.mac.AgentHomePage_Suite" name="TC2" time="16.577">
+      <system-out><![CDATA[
+COMMAND: POST /session/fa9676949686a14ae60b873b14c0068d/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/fa9676949686a14ae60b873b14c0068d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/fa9676949686a14ae60b873b14c0068d/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/fa9676949686a14ae60b873b14c0068d/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/fa9676949686a14ae60b873b14c0068d/element/f.EDC56B3E3A933BAE4C3EF469B49821C1.d.3569E83B2E93FF046C5F5AC793328E88.e.3/css/display - {}
+RESULT: {}
+COMMAND: POST /session/fa9676949686a14ae60b873b14c0068d/element/f.EDC56B3E3A933BAE4C3EF469B49821C1.d.3569E83B2E93FF046C5F5AC793328E88.e.3/clear - {}
+RESULT: {}
+COMMAND: POST /session/fa9676949686a14ae60b873b14c0068d/element/f.EDC56B3E3A933BAE4C3EF469B49821C1.d.3569E83B2E93FF046C5F5AC793328E88.e.3/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/fa9676949686a14ae60b873b14c0068d/element/f.EDC56B3E3A933BAE4C3EF469B49821C1.d.3569E83B2E93FF046C5F5AC793328E88.e.4/clear - {}
+RESULT: {}
+COMMAND: POST /session/fa9676949686a14ae60b873b14c0068d/element/f.EDC56B3E3A933BAE4C3EF469B49821C1.d.3569E83B2E93FF046C5F5AC793328E88.e.4/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/fa9676949686a14ae60b873b14c0068d/element/f.EDC56B3E3A933BAE4C3EF469B49821C1.d.3569E83B2E93FF046C5F5AC793328E88.e.5/click - {}
+RESULT: {}
+COMMAND: GET /session/fa9676949686a14ae60b873b14c0068d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/fa9676949686a14ae60b873b14c0068d/screenshot - {}
+RESULT: {}
+RESULT: undefined
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.136_0_7103_114.mac.AgentHomePage_Suite" name="TC3" time="76.97">
+      <system-out><![CDATA[
+COMMAND: POST /session/fa9676949686a14ae60b873b14c0068d/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/fa9676949686a14ae60b873b14c0068d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/fa9676949686a14ae60b873b14c0068d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/fa9676949686a14ae60b873b14c0068d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/fa9676949686a14ae60b873b14c0068d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/fa9676949686a14ae60b873b14c0068d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/fa9676949686a14ae60b873b14c0068d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/fa9676949686a14ae60b873b14c0068d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/fa9676949686a14ae60b873b14c0068d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/fa9676949686a14ae60b873b14c0068d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/fa9676949686a14ae60b873b14c0068d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/fa9676949686a14ae60b873b14c0068d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/fa9676949686a14ae60b873b14c0068d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/fa9676949686a14ae60b873b14c0068d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/fa9676949686a14ae60b873b14c0068d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/fa9676949686a14ae60b873b14c0068d/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/fa9676949686a14ae60b873b14c0068d/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/fa9676949686a14ae60b873b14c0068d/element/f.EDC56B3E3A933BAE4C3EF469B49821C1.d.0C397C3B6EA012C7BAF883D5AFA9536B.e.3/css/display - {}
+RESULT: {}
+COMMAND: POST /session/fa9676949686a14ae60b873b14c0068d/element/f.EDC56B3E3A933BAE4C3EF469B49821C1.d.0C397C3B6EA012C7BAF883D5AFA9536B.e.3/clear - {}
+RESULT: {}
+COMMAND: POST /session/fa9676949686a14ae60b873b14c0068d/element/f.EDC56B3E3A933BAE4C3EF469B49821C1.d.0C397C3B6EA012C7BAF883D5AFA9536B.e.3/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/fa9676949686a14ae60b873b14c0068d/element/f.EDC56B3E3A933BAE4C3EF469B49821C1.d.0C397C3B6EA012C7BAF883D5AFA9536B.e.4/clear - {}
+RESULT: {}
+COMMAND: POST /session/fa9676949686a14ae60b873b14c0068d/element/f.EDC56B3E3A933BAE4C3EF469B49821C1.d.0C397C3B6EA012C7BAF883D5AFA9536B.e.4/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/fa9676949686a14ae60b873b14c0068d/element/f.EDC56B3E3A933BAE4C3EF469B49821C1.d.0C397C3B6EA012C7BAF883D5AFA9536B.e.5/click - {}
+RESULT: {}
+COMMAND: GET /session/fa9676949686a14ae60b873b14c0068d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/fa9676949686a14ae60b873b14c0068d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/fa9676949686a14ae60b873b14c0068d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/fa9676949686a14ae60b873b14c0068d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/fa9676949686a14ae60b873b14c0068d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/fa9676949686a14ae60b873b14c0068d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/fa9676949686a14ae60b873b14c0068d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/fa9676949686a14ae60b873b14c0068d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/fa9676949686a14ae60b873b14c0068d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/fa9676949686a14ae60b873b14c0068d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/fa9676949686a14ae60b873b14c0068d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/fa9676949686a14ae60b873b14c0068d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/fa9676949686a14ae60b873b14c0068d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/fa9676949686a14ae60b873b14c0068d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/fa9676949686a14ae60b873b14c0068d/screenshot - {}
+RESULT: {}
+RESULT: undefined
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.136_0_7103_114.mac.AgentHomePage_Suite" name="TC4" time="2.323">
+      <failure message="WebDriver Bidi command &quot;script.callFunction&quot; failed with error: unknown error - Cannot find context with specified id"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/fa9676949686a14ae60b873b14c0068d/window/maximize - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: WebDriver Bidi command "script.callFunction" failed with error: unknown error - Cannot find context with specified id
+
+Driver Stack:
+    at Error
+    at     at new UnknownErrorException (<anonymous>:65:5072)
+    at     at CommandProcessor.processCommand (<anonymous>:469:10360)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.136_0_7103_114.mac.AgentHomePage_Suite" name="TC5" time="8.496">
+      <failure message="WebDriver Bidi command &quot;script.callFunction&quot; failed with error: unknown error - Cannot find context with specified id"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/fa9676949686a14ae60b873b14c0068d/window/maximize - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: WebDriver Bidi command "script.callFunction" failed with error: unknown error - Cannot find context with specified id
+
+Driver Stack:
+    at Error
+    at     at new UnknownErrorException (<anonymous>:65:5072)
+    at     at CommandProcessor.processCommand (<anonymous>:469:10360)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.136_0_7103_114.mac.AgentHomePage_Suite" name="TC6" time="5.239">
+      <failure message="WebDriver Bidi command &quot;script.callFunction&quot; failed with error: unknown error - Cannot find context with specified id"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/fa9676949686a14ae60b873b14c0068d/window/maximize - {}
+RESULT: {}
+COMMAND: DELETE /session/fa9676949686a14ae60b873b14c0068d - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: WebDriver Bidi command "script.callFunction" failed with error: unknown error - Cannot find context with specified id
+
+Driver Stack:
+    at Error
+    at     at new UnknownErrorException (<anonymous>:65:5072)
+    at     at CommandProcessor.processCommand (<anonymous>:469:10360)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

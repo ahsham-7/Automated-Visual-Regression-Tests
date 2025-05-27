@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="2" failures="1" errors="0" skipped="0">
+  <testsuite name="AgentHomePage Suite" timestamp="2025-05-14T23:30:23" time="32.984" tests="2" failures="1" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="AgentHomePage Suite"/>
+      <property name="capabilities" value="chrome.136_0_7103_93.mac"/>
+      <property name="file" value="file://./test/specs/agentHomepage.specs.js"/>
+    </properties>
+    <testcase classname="chrome.136_0_7103_93.mac.AgentHomePage_Suite" name="TC1" time="23.721">
+      <system-out><![CDATA[
+COMMAND: POST /session/bedc838499db48818e30353b5ddd72ac/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/bedc838499db48818e30353b5ddd72ac/element/f.ACC184AF4E91DC71CABED3DBD65EEE04.d.49462D9038ADE3A175DD1B4014BCBB4B.e.4/css/display - {}
+RESULT: {}
+COMMAND: POST /session/bedc838499db48818e30353b5ddd72ac/element/f.ACC184AF4E91DC71CABED3DBD65EEE04.d.49462D9038ADE3A175DD1B4014BCBB4B.e.4/clear - {}
+RESULT: {}
+COMMAND: POST /session/bedc838499db48818e30353b5ddd72ac/element/f.ACC184AF4E91DC71CABED3DBD65EEE04.d.49462D9038ADE3A175DD1B4014BCBB4B.e.4/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/bedc838499db48818e30353b5ddd72ac/element/f.ACC184AF4E91DC71CABED3DBD65EEE04.d.49462D9038ADE3A175DD1B4014BCBB4B.e.5/clear - {}
+RESULT: {}
+COMMAND: POST /session/bedc838499db48818e30353b5ddd72ac/element/f.ACC184AF4E91DC71CABED3DBD65EEE04.d.49462D9038ADE3A175DD1B4014BCBB4B.e.5/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/bedc838499db48818e30353b5ddd72ac/element/f.ACC184AF4E91DC71CABED3DBD65EEE04.d.49462D9038ADE3A175DD1B4014BCBB4B.e.6/click - {}
+RESULT: {}
+COMMAND: GET /session/bedc838499db48818e30353b5ddd72ac/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/bedc838499db48818e30353b5ddd72ac/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/bedc838499db48818e30353b5ddd72ac/screenshot - {}
+RESULT: {}
+RESULT: undefined
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.136_0_7103_93.mac.AgentHomePage_Suite" name="TC2" time="9.258">
+      <failure message="Image differences detected"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/bedc838499db48818e30353b5ddd72ac/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/bedc838499db48818e30353b5ddd72ac/element/f.ACC184AF4E91DC71CABED3DBD65EEE04.d.A0EE8730E47E148239F902F5FEDEF34F.e.4/css/display - {}
+RESULT: {}
+COMMAND: POST /session/bedc838499db48818e30353b5ddd72ac/element/f.ACC184AF4E91DC71CABED3DBD65EEE04.d.A0EE8730E47E148239F902F5FEDEF34F.e.4/clear - {}
+RESULT: {}
+COMMAND: POST /session/bedc838499db48818e30353b5ddd72ac/element/f.ACC184AF4E91DC71CABED3DBD65EEE04.d.A0EE8730E47E148239F902F5FEDEF34F.e.4/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/bedc838499db48818e30353b5ddd72ac/element/f.ACC184AF4E91DC71CABED3DBD65EEE04.d.A0EE8730E47E148239F902F5FEDEF34F.e.5/clear - {}
+RESULT: {}
+COMMAND: POST /session/bedc838499db48818e30353b5ddd72ac/element/f.ACC184AF4E91DC71CABED3DBD65EEE04.d.A0EE8730E47E148239F902F5FEDEF34F.e.5/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/bedc838499db48818e30353b5ddd72ac/element/f.ACC184AF4E91DC71CABED3DBD65EEE04.d.A0EE8730E47E148239F902F5FEDEF34F.e.6/click - {}
+RESULT: {}
+COMMAND: GET /session/bedc838499db48818e30353b5ddd72ac/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/bedc838499db48818e30353b5ddd72ac/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/bedc838499db48818e30353b5ddd72ac/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/bedc838499db48818e30353b5ddd72ac/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/bedc838499db48818e30353b5ddd72ac/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: DELETE /session/bedc838499db48818e30353b5ddd72ac - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: Image differences detected
+    at agentHomepage.compareFullPageEnvironments (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:166:15)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/agentHomepage.specs.js:24:9)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

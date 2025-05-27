@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="2" failures="1" errors="0" skipped="0">
+  <testsuite name="AgentHomePage Suite" timestamp="2025-05-14T23:15:37" time="30.452" tests="2" failures="1" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="AgentHomePage Suite"/>
+      <property name="capabilities" value="chrome.136_0_7103_93.mac"/>
+      <property name="file" value="file://./test/specs/agentHomepage.specs.js"/>
+    </properties>
+    <testcase classname="chrome.136_0_7103_93.mac.AgentHomePage_Suite" name="TC1" time="20.199">
+      <failure message="Image differences detected"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/cd66b42d8e2b2e17a2ba739a01e1e560/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/cd66b42d8e2b2e17a2ba739a01e1e560/element/f.1FE70656E09962AD79BFD52900E806F6.d.C30DEEE6C7F913097C5236484D2F8B6A.e.4/css/display - {}
+RESULT: {}
+COMMAND: POST /session/cd66b42d8e2b2e17a2ba739a01e1e560/element/f.1FE70656E09962AD79BFD52900E806F6.d.C30DEEE6C7F913097C5236484D2F8B6A.e.4/clear - {}
+RESULT: {}
+COMMAND: POST /session/cd66b42d8e2b2e17a2ba739a01e1e560/element/f.1FE70656E09962AD79BFD52900E806F6.d.C30DEEE6C7F913097C5236484D2F8B6A.e.4/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/cd66b42d8e2b2e17a2ba739a01e1e560/element/f.1FE70656E09962AD79BFD52900E806F6.d.C30DEEE6C7F913097C5236484D2F8B6A.e.5/clear - {}
+RESULT: {}
+COMMAND: POST /session/cd66b42d8e2b2e17a2ba739a01e1e560/element/f.1FE70656E09962AD79BFD52900E806F6.d.C30DEEE6C7F913097C5236484D2F8B6A.e.5/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/cd66b42d8e2b2e17a2ba739a01e1e560/element/f.1FE70656E09962AD79BFD52900E806F6.d.C30DEEE6C7F913097C5236484D2F8B6A.e.6/click - {}
+RESULT: {}
+COMMAND: GET /session/cd66b42d8e2b2e17a2ba739a01e1e560/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/cd66b42d8e2b2e17a2ba739a01e1e560/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/cd66b42d8e2b2e17a2ba739a01e1e560/screenshot - {}
+RESULT: {}
+RESULT: undefined
+]]></system-out>
+      <system-err><![CDATA[
+Error: Image differences detected
+    at agentHomepage.compareEnvironments (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:132:15)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/agentHomepage.specs.js:13:9)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.136_0_7103_93.mac.AgentHomePage_Suite" name="TC2" time="10.248">
+      <system-out><![CDATA[
+COMMAND: POST /session/cd66b42d8e2b2e17a2ba739a01e1e560/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/cd66b42d8e2b2e17a2ba739a01e1e560/element/f.1FE70656E09962AD79BFD52900E806F6.d.780DD04C999FF076C26175F5AFC2F8F0.e.3/css/display - {}
+RESULT: {}
+COMMAND: POST /session/cd66b42d8e2b2e17a2ba739a01e1e560/element/f.1FE70656E09962AD79BFD52900E806F6.d.780DD04C999FF076C26175F5AFC2F8F0.e.3/clear - {}
+RESULT: {}
+COMMAND: POST /session/cd66b42d8e2b2e17a2ba739a01e1e560/element/f.1FE70656E09962AD79BFD52900E806F6.d.780DD04C999FF076C26175F5AFC2F8F0.e.3/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/cd66b42d8e2b2e17a2ba739a01e1e560/element/f.1FE70656E09962AD79BFD52900E806F6.d.780DD04C999FF076C26175F5AFC2F8F0.e.4/clear - {}
+RESULT: {}
+COMMAND: POST /session/cd66b42d8e2b2e17a2ba739a01e1e560/element/f.1FE70656E09962AD79BFD52900E806F6.d.780DD04C999FF076C26175F5AFC2F8F0.e.4/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/cd66b42d8e2b2e17a2ba739a01e1e560/element/f.1FE70656E09962AD79BFD52900E806F6.d.780DD04C999FF076C26175F5AFC2F8F0.e.5/click - {}
+RESULT: {}
+COMMAND: GET /session/cd66b42d8e2b2e17a2ba739a01e1e560/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/cd66b42d8e2b2e17a2ba739a01e1e560/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/cd66b42d8e2b2e17a2ba739a01e1e560/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/cd66b42d8e2b2e17a2ba739a01e1e560/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/cd66b42d8e2b2e17a2ba739a01e1e560/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: DELETE /session/cd66b42d8e2b2e17a2ba739a01e1e560 - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

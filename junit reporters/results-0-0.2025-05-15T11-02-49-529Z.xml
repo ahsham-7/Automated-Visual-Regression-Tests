@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="2" failures="2" errors="0" skipped="0">
+  <testsuite name="AgentHomePage Suite" timestamp="2025-05-15T16:02:50" time="50.004" tests="2" failures="2" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="AgentHomePage Suite"/>
+      <property name="capabilities" value="chrome.136_0_7103_113.mac"/>
+      <property name="file" value="file://./test/specs/agentHomepage.specs.js"/>
+    </properties>
+    <testcase classname="chrome.136_0_7103_113.mac.AgentHomePage_Suite" name="TC1" time="40.117">
+      <failure message="ENOENT: no such file or directory, copyfile '/Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/actualImages/actual/desktop_chrome/AgentHomePage/Verify_default_view_of_Agent_Home_Page-.png' -> '/Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/baselineImages/AgentHomePage/Verify_default_view_of_Agent_Home_Page-.png'"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/35c4f16fb0fd25f6c2499c8ed8f9f3af/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/35c4f16fb0fd25f6c2499c8ed8f9f3af/screenshot - {}
+RESULT: {}
+RESULT: undefined
+]]></system-out>
+      <system-err><![CDATA[
+Error: ENOENT: no such file or directory, copyfile '/Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/actualImages/actual/desktop_chrome/AgentHomePage/Verify_default_view_of_Agent_Home_Page-.png' -> '/Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/baselineImages/AgentHomePage/Verify_default_view_of_Agent_Home_Page-.png'
+    at Object.copyFileSync (node:fs:2982:3)
+    at agentHomepage.compareEnvironments (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:139:8)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/agentHomepage.specs.js:13:9)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.136_0_7103_113.mac.AgentHomePage_Suite" name="TC2" time="9.885">
+      <failure message="&#xA;#####################################################################################&#xA; Baseline image not found, save the actual image manually to the baseline.&#xA; The image can be found here:&#xA; /Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/actualImages/actual/AgentHomePage/Verify_full_view_of_Agent_Home_Page-.png&#xA; If you want the module to auto save a non existing image to the baseline you&#xA; can provide 'autoSaveBaseline: true' to the options.&#xA;#####################################################################################&#xA;"/>
+      <system-out><![CDATA[
+COMMAND: GET /session/35c4f16fb0fd25f6c2499c8ed8f9f3af/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/35c4f16fb0fd25f6c2499c8ed8f9f3af/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: GET /session/35c4f16fb0fd25f6c2499c8ed8f9f3af/screenshot - {}
+RESULT: {}
+COMMAND: DELETE /session/35c4f16fb0fd25f6c2499c8ed8f9f3af - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: 
+#####################################################################################
+ Baseline image not found, save the actual image manually to the baseline.
+ The image can be found here:
+ /Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/actualImages/actual/AgentHomePage/Verify_full_view_of_Agent_Home_Page-.png
+ If you want the module to auto save a non existing image to the baseline you
+ can provide 'autoSaveBaseline: true' to the options.
+#####################################################################################
+
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -8,7 +8,7 @@ puppeteer.use(StealthPlugin());
 export const config = {
     runner: "local",
     path: "/",
-    specs: ["./test/specs/floorPlan.specs.js"], // Update as per your test structure
+    specs: ["./test/specs/agentHomepage.specs.js"], // Update as per your test structure
     maxInstances: 1,
     capabilities: [{
         browserName: "chrome",

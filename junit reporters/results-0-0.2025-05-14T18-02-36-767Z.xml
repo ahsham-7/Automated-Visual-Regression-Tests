@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="1" errors="0" skipped="0">
+  <testsuite name="AgentHomePage Suite" timestamp="2025-05-14T23:02:37" time="17.296" tests="1" failures="1" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="AgentHomePage Suite"/>
+      <property name="capabilities" value="chrome.136_0_7103_93.mac"/>
+      <property name="file" value="file://./test/specs/agentHomepage.specs.js"/>
+    </properties>
+    <testcase classname="chrome.136_0_7103_93.mac.AgentHomePage_Suite" name="TC1" time="17.294">
+      <failure message="WebDriver Bidi command &quot;script.callFunction&quot; failed with error: unknown error - Cannot find context with specified id"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/3961a55fb54ded110f4202992dfdacc1/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/3961a55fb54ded110f4202992dfdacc1/element/f.9ECFFAFADB5F8D3D9D787F672174C406.d.394B9CF9BB120082FF9F8EF02F580B6C.e.4/css/display - {}
+RESULT: {}
+COMMAND: POST /session/3961a55fb54ded110f4202992dfdacc1/element/f.9ECFFAFADB5F8D3D9D787F672174C406.d.394B9CF9BB120082FF9F8EF02F580B6C.e.4/clear - {}
+RESULT: {}
+COMMAND: POST /session/3961a55fb54ded110f4202992dfdacc1/element/f.9ECFFAFADB5F8D3D9D787F672174C406.d.394B9CF9BB120082FF9F8EF02F580B6C.e.4/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/3961a55fb54ded110f4202992dfdacc1/element/f.9ECFFAFADB5F8D3D9D787F672174C406.d.394B9CF9BB120082FF9F8EF02F580B6C.e.5/clear - {}
+RESULT: {}
+COMMAND: POST /session/3961a55fb54ded110f4202992dfdacc1/element/f.9ECFFAFADB5F8D3D9D787F672174C406.d.394B9CF9BB120082FF9F8EF02F580B6C.e.5/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/3961a55fb54ded110f4202992dfdacc1/element/f.9ECFFAFADB5F8D3D9D787F672174C406.d.394B9CF9BB120082FF9F8EF02F580B6C.e.6/click - {}
+RESULT: {}
+COMMAND: GET /session/3961a55fb54ded110f4202992dfdacc1/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/3961a55fb54ded110f4202992dfdacc1/window/maximize - {}
+RESULT: {}
+COMMAND: DELETE /session/3961a55fb54ded110f4202992dfdacc1 - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: WebDriver Bidi command "script.callFunction" failed with error: unknown error - Cannot find context with specified id
+
+Driver Stack:
+    at Error
+    at     at new UnknownErrorException (<anonymous>:65:5072)
+    at     at CommandProcessor.processCommand (<anonymous>:469:10360)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>
