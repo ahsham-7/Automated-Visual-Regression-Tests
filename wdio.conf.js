@@ -18,6 +18,7 @@ export const config = {
                 "--disable-infobars",
                 "--no-sandbox",
                 "--disable-dev-shm-usage",
+                `--user-data-dir=/tmp/chrome-profile-${process.env.WDIO_WORKER_ID || 0}`,
                 "--disable-gpu",
                 "--window-size=1920,1080",
                 "--disable-popup-blocking",
