@@ -9,7 +9,7 @@ export const config = {
     runner: "local",
     path: "/",
     specs: ['./test/specs/agentHomepage.specs.js','./test/specs/floorPlan.specs.js'], // Update as per your test structure
-    maxInstances: 1,
+    maxInstances: 10,
     capabilities: [{
         browserName: "chrome",
         "goog:chromeOptions": {
