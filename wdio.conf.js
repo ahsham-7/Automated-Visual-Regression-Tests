@@ -10,26 +10,25 @@ export const config = {
     path: "/",
     specs: ['./test/specs/agentHomepage.specs.js','./test/specs/floorPlan.specs.js'], // Update as per your test structure
     maxInstances: 10,
-    capabilities: [{
-        browserName: "chrome",
-        "goog:chromeOptions": {
-            args: [
-                "--disable-blink-features=AutomationControlled",
-                "--disable-infobars",
-                "--no-sandbox",
-                "--disable-dev-shm-usage",
-                `--user-data-dir=/tmp/chrome-profile-${Math.floor(Math.random() * 10000)}`,
-                "--disable-gpu",
-                "--window-size=1920,1080",
-                "--disable-popup-blocking",
-                "--disable-notifications",
-                "--remote-debugging-port=9222",
-                "--disable-features=IsolateOrigins,site-per-process"
-            ],
-            excludeSwitches: ["enable-automation"],
-            useAutomationExtension: false
-        }
-    }],
+capabilities: Array.from({ length: 2 }).map((_, index) => ({
+  browserName: 'chrome',
+  'goog:chromeOptions': {
+    args: [
+      '--headless',
+      '--disable-gpu',
+      '--no-sandbox',
+      '--disable-dev-shm-usage',
+      `--user-data-dir=/tmp/chrome-profile-${Date.now()}-${index}`, // ✅ truly unique
+      '--window-size=1920,1080',
+      '--disable-blink-features=AutomationControlled',
+      '--disable-infobars',
+      '--disable-popup-blocking',
+      '--disable-notifications',
+    ],
+    excludeSwitches: ['enable-automation'],
+    useAutomationExtension: false,
+  },
+})),
     logLevel: "info",
     outputDir: join(process.cwd(), "logs"), // Example usage of `join`
     framework: "mocha",
