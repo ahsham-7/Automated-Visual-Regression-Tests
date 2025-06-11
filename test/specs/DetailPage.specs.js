@@ -2,9 +2,6 @@ import DetailPage from '../pageobjects/detail.page.js'
 import { updateHTMLReport, writeReport } from '../../reports/generateReport.js'
 import { error } from 'console';
 describe("Detail Page Suite", async ()=>{
-  after(() => {
-    writeReport(); // Write the report after all tests
-  });
   it('TC1', async () => { 
     const testSuite = 'Detail Page';
     const screenshotName = 'Detail Page default view';

@@ -4,10 +4,6 @@ import agentHomepage from '../pageobjects/findmyagenthome.page.js'
 
 describe("AgentHomePage Suite", () => {
 
-    after(() => {
-        writeReport(); 
-    });
-
     it("TC1", async () => {
         const formattedName = Page.formatScreenshot("Verify default view of Agent Home Page");
         await agentHomepage.compareEnvironments(

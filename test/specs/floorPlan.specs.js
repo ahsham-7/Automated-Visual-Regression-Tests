@@ -4,9 +4,7 @@ import Page from '../pageobjects/page.js';
 
 describe("FloorPlan Suite", () => {
 
-    after(() => {
-        writeReport(); 
-    });
+ 
 
     it("TC1", async () => {
         const formattedName = Page.formatScreenshot("Verify Default View FloorPlan");
