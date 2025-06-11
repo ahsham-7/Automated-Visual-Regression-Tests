@@ -9,9 +9,7 @@ const __dirname = dirname(__filename);
 
 // Define the report directory for index.html
 const reportDir = path.join(__dirname, 'gh-pages');
-
-
-
+const reportDataPath = path.join(reportDir, 'reportData.json');
 
 // Initialize HTML content for the report
 let htmlContent = `
@@ -94,8 +92,7 @@ let htmlContent = `
   <div class="container">
 `;
 
-// Function to add a test result to the HTML report
-
+// Function to add a test result to the HTML report and save to JSON
 function updateHTMLReport(testSuite, screenshotName, testDescription, diffGenerated) {
   const baseUrl = 'https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/';
   const sanitizedTestSuite = testSuite.replace(/ /g, '_');
@@ -127,8 +124,35 @@ function updateHTMLReport(testSuite, screenshotName, testDescription, diffGenera
       </div>
   </div>
   `;
-}
 
+  // Update JSON file logic
+  const reportEntry = {
+    testSuite,
+    screenshotName,
+    testDescription,
+    diffGenerated
+  };
+
+  let reportData = [];
+
+  try {
+    if (fs.existsSync(reportDataPath)) {
+      const rawData = fs.readFileSync(reportDataPath, 'utf-8');
+      reportData = JSON.parse(rawData);
+    }
+  } catch (err) {
+    console.error('Error reading existing reportData.json:', err);
+  }
+
+  reportData.push(reportEntry);
+
+  try {
+    fs.mkdirSync(reportDir, { recursive: true });
+    fs.writeFileSync(reportDataPath, JSON.stringify(reportData, null, 2));
+  } catch (err) {
+    console.error('Error writing reportData.json:', err);
+  }
+}
 
 // Function to write the final HTML report
 function writeReport() {

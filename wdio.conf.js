@@ -1,4 +1,5 @@
 import { join } from "path";
+import { writeReport } from './gh-pages/report.js'; // ✅ Add this line
 
 export const config = {
   runner: "local",
@@ -63,6 +64,13 @@ export const config = {
   mochaOpts: {
     ui: "bdd",
     timeout: 200000
-  }
+  },
 
+  /**
+   * This is the important hook.
+   * Only write the final HTML report after all specs complete.
+   */
+  onComplete: function () {
+    writeReport(); // ✅ Call once after all tests complete
+  }
 };
