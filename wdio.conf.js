@@ -68,6 +68,10 @@ export const config = {
     timeout: 200000
   },
 
+  before: async function () {
+  await browser.setWindowSize(1920, 1080);
+},
+
   /**
    * ✅ Clear reportData.json before test run
    */
