@@ -1,5 +1,4 @@
 import { join } from "path";
-import fs from "fs";
 import { clearReportData, writeReport } from './reports/generateReport.js';
 
 export const config = {
@@ -9,17 +8,18 @@ export const config = {
     "./test/specs/agentHomepage.specs.js",
     "./test/specs/floorPlan.specs.js"
   ],
-  maxInstances: 1,
 
-  capabilities: Array.from({ length: 2 }).map((_, index) => ({
+  // ✅ Run multiple tests in parallel (change to 1 if stability is needed)
+  maxInstances: 4,
+
+  capabilities: [{
     browserName: 'chrome',
     'goog:chromeOptions': {
       args: [
-        'headless',
+        '--headless',
         '--disable-gpu',
         '--no-sandbox',
         '--disable-dev-shm-usage',
-        `--user-data-dir=/tmp/chrome-profile-${Date.now()}-${index}`,
         '--window-size=1920,1080',
         '--disable-blink-features=AutomationControlled',
         '--disable-infobars',
@@ -29,7 +29,7 @@ export const config = {
       excludeSwitches: ['enable-automation'],
       useAutomationExtension: false
     }
-  })),
+  }],
 
   logLevel: "info",
   outputDir: join(process.cwd(), "logs"),
@@ -67,15 +67,19 @@ export const config = {
     timeout: 200000
   },
 
-  // ✅ Clear report JSON at the beginning
+  /**
+   * ✅ Clear reportData.json before test run
+   */
   onPrepare: function () {
     clearReportData();
-    console.log('Cleared previous report data.');
+    console.log('✅ Cleared previous report data.');
   },
 
-  // ✅ Generate final HTML after tests
+  /**
+   * ✅ Write report after all tests complete
+   */
   onComplete: function () {
     writeReport();
-    console.log('Final report written.');
+    console.log('✅ Final report written.');
   }
 };
