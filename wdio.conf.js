@@ -22,6 +22,7 @@ export const config = {
         '--disable-dev-shm-usage',
         '--window-size=1920,1080',
         '--disable-blink-features=AutomationControlled',
+        '--window-size=1920,1080',
         '--disable-infobars',
         '--disable-popup-blocking',
         '--disable-notifications'
