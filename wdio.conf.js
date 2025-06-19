@@ -16,7 +16,7 @@ export const config = {
     browserName: 'chrome',
     'goog:chromeOptions': {
       args: [
-        'headless',
+        '--headless=new',
         '--disable-gpu',
         '--no-sandbox',
         '--disable-dev-shm-usage',
