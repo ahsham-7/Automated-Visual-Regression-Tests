@@ -110,9 +110,10 @@ export default class Page {
 
 
 
-    async compareEnvironments(testSuite, screenshotName, testDescription, prodUrl, stageUrl, pageAction = null) {
+async compareEnvironments(testSuite, screenshotName, testDescription, prodUrl, stageUrl, pageAction = null) {
     // Step 1: Open Production and save baseline
     await this.openProduction(prodUrl, true);
+    await browser.setWindowSize(1920, 1080); // Ensure resolution
     await this.waitForPageToLoad_SimpleCompare();
 
     if (pageAction) await pageAction();
@@ -122,6 +123,7 @@ export default class Page {
 
     // Step 2: Open Staging and compare
     await this.openStage(stageUrl, true);
+    await browser.setWindowSize(1920, 1080); // Ensure resolution
     await this.waitForPageToLoad_SimpleCompare();
     await this.conditionalLogin_SimpleCompare();
 
@@ -147,9 +149,11 @@ export default class Page {
 }
 
 
+
     async compareFullPageEnvironments(testSuite, screenshotName, testDescription, prodUrl, stageUrl, pageAction = null) {
     // Step 1: Open Production and save as baseline
     await this.openProduction(prodUrl, true);
+    await browser.setWindowSize(1920, 1080); // Ensure resolution
     await this.waitForPageToLoad();
 
     if (pageAction) await pageAction();
@@ -160,6 +164,7 @@ export default class Page {
 
     // Step 2: Open Staging and compare as actual
     await this.openStage(stageUrl, true);
+    await browser.setWindowSize(1920, 1080); // Ensure resolution
     await this.waitForPageToLoad();
     await this.conditionalLogin();
 
@@ -191,6 +196,7 @@ export default class Page {
         console.log('✅ No visual differences detected.');
     }
 }
+
 
 
 //    async compareEnvironments(testSuite, screenshotName, testDescription, prodUrl, stageUrl, pageAction = null) {
