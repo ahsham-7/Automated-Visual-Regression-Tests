@@ -2,15 +2,9 @@ Starting ChromeDriver 136.0.7103.49 (031848bc6ad02b97854f3d6154d3aefd0434756a-re
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully on port 9515.
-[1750324280.815][WARNING]: Deprecated chrome option is ignored: useAutomationExtension
-[1750324280.815][WARNING]: Deprecated chrome option is ignored: useAutomationExtension
-[1750324281.388][WARNING]: This version of ChromeDriver has not been tested with Chrome version 137.
-[1750324496.831][WARNING]: Deprecated chrome option is ignored: useAutomationExtension
-[1750324496.831][WARNING]: Deprecated chrome option is ignored: useAutomationExtension
-[1750324497.465][WARNING]: This version of ChromeDriver has not been tested with Chrome version 137.
-[1750324714.333][WARNING]: Deprecated chrome option is ignored: useAutomationExtension
-[1750324714.333][WARNING]: Deprecated chrome option is ignored: useAutomationExtension
-[1750324714.857][WARNING]: This version of ChromeDriver has not been tested with Chrome version 137.
-[1750324914.664][WARNING]: Deprecated chrome option is ignored: useAutomationExtension
-[1750324914.664][WARNING]: Deprecated chrome option is ignored: useAutomationExtension
-[1750324915.101][WARNING]: This version of ChromeDriver has not been tested with Chrome version 137.
+[1750329531.364][WARNING]: Deprecated chrome option is ignored: useAutomationExtension
+[1750329531.364][WARNING]: Deprecated chrome option is ignored: useAutomationExtension
+[1750329531.364][WARNING]: Deprecated chrome option is ignored: useAutomationExtension
+[1750329531.364][WARNING]: Deprecated chrome option is ignored: useAutomationExtension
+[1750329533.404][WARNING]: This version of ChromeDriver has not been tested with Chrome version 137.
+[1750329533.405][WARNING]: This version of ChromeDriver has not been tested with Chrome version 137.
