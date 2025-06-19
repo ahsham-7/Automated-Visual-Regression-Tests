@@ -71,6 +71,8 @@ export const config = {
 
   before: async function () {
   await browser.setWindowSize(1920, 1080);
+  const size = await browser.getWindowSize();
+console.log('📏 Current resolution before screenshot:', size);
 },
 
   /**
