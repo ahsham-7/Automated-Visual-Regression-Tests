@@ -16,12 +16,14 @@ export const config = {
     browserName: 'chrome',
     'goog:chromeOptions': {
       args: [
+        'headless',
         '--disable-gpu',
         '--no-sandbox',
         '--disable-dev-shm-usage',
         '--window-size=1920,1080',
+        '--force-device-scale-factor=1',
+        '--hide-scrollbars',
         '--disable-blink-features=AutomationControlled',
-        '--window-size=1920,1080',
         '--disable-infobars',
         '--disable-popup-blocking',
         '--disable-notifications'
