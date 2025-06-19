@@ -1,8 +1,8 @@
-import { updateHTMLReport, writeReport } from '../../reports/generateReport.js';
 import Page from '../pageobjects/page.js';
 import agentHomepage from '../pageobjects/findmyagenthome.page.js'
 
 describe("AgentHomePage Suite", () => {
+
 
     it("TC1", async () => {
         const formattedName = Page.formatScreenshot("Verify default view of Agent Home Page");

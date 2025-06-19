@@ -1,4 +1,5 @@
-import { updateHTMLReport, writeReport } from '../../reports/generateReport.js';
+
+import { addTestResult } from '../../reports/generateReport.js';
 
 export default class Page {
 
@@ -107,9 +108,11 @@ export default class Page {
         await this.LoginBtn.click();
     }
 
-   async compareEnvironments(testSuite, screenshotName, testDescription, prodUrl, stageUrl, pageAction = null) {
+
+
+    async compareEnvironments(testSuite, screenshotName, testDescription, prodUrl, stageUrl, pageAction = null) {
     // Step 1: Open Production and save baseline
-     await this.openProduction(prodUrl, true);
+    await this.openProduction(prodUrl, true);
     await this.waitForPageToLoad_SimpleCompare();
 
     if (pageAction) await pageAction();
@@ -126,49 +129,132 @@ export default class Page {
     await browser.pause(2000);
 
     const result = await browser.checkScreen(`${testSuite}/${screenshotName}`);
+    const passed = result === 0;
 
-    if (result !== 0) {
-        updateHTMLReport(testSuite, screenshotName, testDescription, true);
+    addTestResult({
+        testSuite,
+        screenshotName,
+        testDescription,
+        expectedImage: `images/expected/desktop_chrome/${testSuite}/${screenshotName}-.png`,
+        actualImage: `images/actual/desktop_chrome/${testSuite}/${screenshotName}-.png`,
+        diffImage: `images/diff/desktop_chrome/${testSuite}/${screenshotName}-.png`,
+        passed,
+    });
+
+    if (!passed) {
         throw new Error('Image differences detected');
     }
 }
 
 
-async compareFullPageEnvironments(testSuite, screenshotName, testDescription, prodUrl, stageUrl, pageAction = null) {
+    async compareFullPageEnvironments(testSuite, screenshotName, testDescription, prodUrl, stageUrl, pageAction = null) {
     // Step 1: Open Production and save as baseline
-    this.openProduction(prodUrl, true);
+    await this.openProduction(prodUrl, true);
     await this.waitForPageToLoad();
 
     if (pageAction) await pageAction();
-
     await browser.pause(1000);
+
     console.log('📸 Saving baseline from Production...');
     await browser.saveFullPageScreen(`${testSuite}/${screenshotName}`, {}, { fullPageScrollTimeout: 150 });
 
     // Step 2: Open Staging and compare as actual
-    this.openStage(stageUrl, true);
+    await this.openStage(stageUrl, true);
     await this.waitForPageToLoad();
     await this.conditionalLogin();
 
     if (pageAction) await pageAction();
-
     await browser.pause(2000);
+
     console.log('📸 Checking full page screen on Staging...');
     const result = await browser.checkFullPageScreen(`${testSuite}/${screenshotName}`, {}, { fullPageScrollTimeout: 150 });
 
     console.log('🧪 Full Page Comparison Result:', result);
 
     const mismatch = typeof result === 'number' ? result : parseFloat(result.misMatchPercentage || result[0]?.misMatchPercentage || 0);
+    const passed = mismatch === 0;
 
-    if (mismatch > 0) {
+    addTestResult({
+        testSuite,
+        screenshotName,
+        testDescription,
+        expectedImage: `images/expected/desktop_chrome/${testSuite}/${screenshotName}-.png`,
+        actualImage: `images/actual/desktop_chrome/${testSuite}/${screenshotName}-.png`,
+        diffImage: `images/diff/desktop_chrome/${testSuite}/${screenshotName}-.png`,
+        passed,
+    });
+
+    if (!passed) {
         console.log(`❌ Visual mismatch detected: ${mismatch}%`);
-        updateHTMLReport(testSuite, screenshotName, testDescription, true);
         throw new Error(`Image differences detected (${mismatch}% mismatch)`);
     } else {
         console.log('✅ No visual differences detected.');
-        updateHTMLReport(testSuite, screenshotName, testDescription, false);
     }
 }
+
+
+//    async compareEnvironments(testSuite, screenshotName, testDescription, prodUrl, stageUrl, pageAction = null) {
+//     // Step 1: Open Production and save baseline
+//      await this.openProduction(prodUrl, true);
+//     await this.waitForPageToLoad_SimpleCompare();
+
+//     if (pageAction) await pageAction();
+//     await browser.pause(1000);
+
+//     await browser.saveScreen(`${testSuite}/${screenshotName}`);
+
+//     // Step 2: Open Staging and compare
+//     await this.openStage(stageUrl, true);
+//     await this.waitForPageToLoad_SimpleCompare();
+//     await this.conditionalLogin_SimpleCompare();
+
+//     if (pageAction) await pageAction();
+//     await browser.pause(2000);
+
+//     const result = await browser.checkScreen(`${testSuite}/${screenshotName}`);
+
+//     if (result !== 0) {
+//         updateHTMLReport(testSuite, screenshotName, testDescription, true);
+//         throw new Error('Image differences detected');
+//     }
+// }
+
+
+// async compareFullPageEnvironments(testSuite, screenshotName, testDescription, prodUrl, stageUrl, pageAction = null) {
+//     // Step 1: Open Production and save as baseline
+//     this.openProduction(prodUrl, true);
+//     await this.waitForPageToLoad();
+
+//     if (pageAction) await pageAction();
+
+//     await browser.pause(1000);
+//     console.log('📸 Saving baseline from Production...');
+//     await browser.saveFullPageScreen(`${testSuite}/${screenshotName}`, {}, { fullPageScrollTimeout: 150 });
+
+//     // Step 2: Open Staging and compare as actual
+//     this.openStage(stageUrl, true);
+//     await this.waitForPageToLoad();
+//     await this.conditionalLogin();
+
+//     if (pageAction) await pageAction();
+
+//     await browser.pause(2000);
+//     console.log('📸 Checking full page screen on Staging...');
+//     const result = await browser.checkFullPageScreen(`${testSuite}/${screenshotName}`, {}, { fullPageScrollTimeout: 150 });
+
+//     console.log('🧪 Full Page Comparison Result:', result);
+
+//     const mismatch = typeof result === 'number' ? result : parseFloat(result.misMatchPercentage || result[0]?.misMatchPercentage || 0);
+
+//     if (mismatch > 0) {
+//         console.log(`❌ Visual mismatch detected: ${mismatch}%`);
+//         updateHTMLReport(testSuite, screenshotName, testDescription, true);
+//         throw new Error(`Image differences detected (${mismatch}% mismatch)`);
+//     } else {
+//         console.log('✅ No visual differences detected.');
+//         updateHTMLReport(testSuite, screenshotName, testDescription, false);
+//     }
+// }
 
 
 

@@ -1,5 +1,4 @@
 import Floorplan from '../pageobjects/floorplan.page.js';
-import { updateHTMLReport, writeReport } from '../../reports/generateReport.js';
 import Page from '../pageobjects/page.js';
 
 describe("FloorPlan Suite", () => {

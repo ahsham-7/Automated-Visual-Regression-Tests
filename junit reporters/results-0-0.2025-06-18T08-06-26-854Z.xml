@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="6" failures="6" errors="0" skipped="0">
+  <testsuite name="AgentHomePage Suite" timestamp="2025-06-18T13:06:28" time="526.704" tests="6" failures="6" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="AgentHomePage Suite"/>
+      <property name="capabilities" value="chrome.137_0_7151_104.mac"/>
+      <property name="file" value="file://./test/specs/agentHomepage.specs.js"/>
+    </properties>
+    <testcase classname="chrome.137_0_7151_104.mac.AgentHomePage_Suite" name="TC1" time="107.703">
+      <failure message="Image differences detected"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/3ab5521e2f489ce4bfa2f0394782784d/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/3ab5521e2f489ce4bfa2f0394782784d/refresh - {}
+RESULT: {}
+COMMAND: GET /session/3ab5521e2f489ce4bfa2f0394782784d/window - {}
+RESULT: {}
+COMMAND: GET /session/3ab5521e2f489ce4bfa2f0394782784d/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/3ab5521e2f489ce4bfa2f0394782784d/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/3ab5521e2f489ce4bfa2f0394782784d/element - {"using":"xpath","value":"//input[@name=\"username\"]"}
+RESULT: {"using":"xpath","value":"//input[@name=\"username\"]"}
+COMMAND: GET /session/3ab5521e2f489ce4bfa2f0394782784d/element/f.5DD3CA69AA2C369953FB53AA9F9F7A4E.d.9ED21C785DBA44AFE07F2FB28635BDBB.e.2/css/display - {}
+RESULT: {}
+COMMAND: POST /session/3ab5521e2f489ce4bfa2f0394782784d/element/f.5DD3CA69AA2C369953FB53AA9F9F7A4E.d.9ED21C785DBA44AFE07F2FB28635BDBB.e.2/clear - {}
+RESULT: {}
+COMMAND: POST /session/3ab5521e2f489ce4bfa2f0394782784d/element/f.5DD3CA69AA2C369953FB53AA9F9F7A4E.d.9ED21C785DBA44AFE07F2FB28635BDBB.e.2/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/3ab5521e2f489ce4bfa2f0394782784d/element/f.5DD3CA69AA2C369953FB53AA9F9F7A4E.d.9ED21C785DBA44AFE07F2FB28635BDBB.e.4/clear - {}
+RESULT: {}
+COMMAND: POST /session/3ab5521e2f489ce4bfa2f0394782784d/element/f.5DD3CA69AA2C369953FB53AA9F9F7A4E.d.9ED21C785DBA44AFE07F2FB28635BDBB.e.4/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/3ab5521e2f489ce4bfa2f0394782784d/element/f.5DD3CA69AA2C369953FB53AA9F9F7A4E.d.9ED21C785DBA44AFE07F2FB28635BDBB.e.7/click - {}
+RESULT: {}
+COMMAND: GET /session/3ab5521e2f489ce4bfa2f0394782784d/screenshot - {}
+RESULT: {}
+RESULT: undefined
+]]></system-out>
+      <system-err><![CDATA[
+Error: Image differences detected
+    at agentHomepage.compareEnvironments (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:145:15)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/agentHomepage.specs.js:9:9)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.137_0_7151_104.mac.AgentHomePage_Suite" name="TC2" time="101.702">
+      <failure message="this.conditionalLogin is not a function"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/3ab5521e2f489ce4bfa2f0394782784d/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/3ab5521e2f489ce4bfa2f0394782784d/refresh - {}
+RESULT: {}
+COMMAND: GET /session/3ab5521e2f489ce4bfa2f0394782784d/window - {}
+RESULT: {}
+COMMAND: GET /session/3ab5521e2f489ce4bfa2f0394782784d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/3ab5521e2f489ce4bfa2f0394782784d/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/3ab5521e2f489ce4bfa2f0394782784d/window/maximize - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+TypeError: this.conditionalLogin is not a function
+    at agentHomepage.compareFullPageEnvironments (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:164:16)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/agentHomepage.specs.js:20:9)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.137_0_7151_104.mac.AgentHomePage_Suite" name="TC3" time="195.261">
+      <failure message="this.conditionalLogin is not a function"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/3ab5521e2f489ce4bfa2f0394782784d/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/3ab5521e2f489ce4bfa2f0394782784d/refresh - {}
+RESULT: {}
+COMMAND: GET /session/3ab5521e2f489ce4bfa2f0394782784d/window - {}
+RESULT: {}
+COMMAND: GET /session/3ab5521e2f489ce4bfa2f0394782784d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/3ab5521e2f489ce4bfa2f0394782784d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/3ab5521e2f489ce4bfa2f0394782784d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/3ab5521e2f489ce4bfa2f0394782784d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/3ab5521e2f489ce4bfa2f0394782784d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/3ab5521e2f489ce4bfa2f0394782784d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/3ab5521e2f489ce4bfa2f0394782784d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/3ab5521e2f489ce4bfa2f0394782784d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/3ab5521e2f489ce4bfa2f0394782784d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/3ab5521e2f489ce4bfa2f0394782784d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/3ab5521e2f489ce4bfa2f0394782784d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/3ab5521e2f489ce4bfa2f0394782784d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/3ab5521e2f489ce4bfa2f0394782784d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/3ab5521e2f489ce4bfa2f0394782784d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/3ab5521e2f489ce4bfa2f0394782784d/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/3ab5521e2f489ce4bfa2f0394782784d/window/maximize - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+TypeError: this.conditionalLogin is not a function
+    at agentHomepage.compareFullPageEnvironments (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:164:16)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/agentHomepage.specs.js:31:9)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.137_0_7151_104.mac.AgentHomePage_Suite" name="TC4" time="76.454">
+      <failure message="Image differences detected"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/3ab5521e2f489ce4bfa2f0394782784d/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/3ab5521e2f489ce4bfa2f0394782784d/refresh - {}
+RESULT: {}
+COMMAND: GET /session/3ab5521e2f489ce4bfa2f0394782784d/window - {}
+RESULT: {}
+COMMAND: GET /session/3ab5521e2f489ce4bfa2f0394782784d/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/3ab5521e2f489ce4bfa2f0394782784d/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/3ab5521e2f489ce4bfa2f0394782784d/element - {"using":"xpath","value":"//input[@name=\"username\"]"}
+RESULT: {"using":"xpath","value":"//input[@name=\"username\"]"}
+COMMAND: GET /session/3ab5521e2f489ce4bfa2f0394782784d/element/f.5DD3CA69AA2C369953FB53AA9F9F7A4E.d.92849785DF1B693493CED468511823BC.e.2/css/display - {}
+RESULT: {}
+COMMAND: POST /session/3ab5521e2f489ce4bfa2f0394782784d/element/f.5DD3CA69AA2C369953FB53AA9F9F7A4E.d.92849785DF1B693493CED468511823BC.e.2/clear - {}
+RESULT: {}
+COMMAND: POST /session/3ab5521e2f489ce4bfa2f0394782784d/element/f.5DD3CA69AA2C369953FB53AA9F9F7A4E.d.92849785DF1B693493CED468511823BC.e.2/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/3ab5521e2f489ce4bfa2f0394782784d/element/f.5DD3CA69AA2C369953FB53AA9F9F7A4E.d.92849785DF1B693493CED468511823BC.e.4/clear - {}
+RESULT: {}
+COMMAND: POST /session/3ab5521e2f489ce4bfa2f0394782784d/element/f.5DD3CA69AA2C369953FB53AA9F9F7A4E.d.92849785DF1B693493CED468511823BC.e.4/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/3ab5521e2f489ce4bfa2f0394782784d/element/f.5DD3CA69AA2C369953FB53AA9F9F7A4E.d.92849785DF1B693493CED468511823BC.e.7/click - {}
+RESULT: {}
+COMMAND: GET /session/3ab5521e2f489ce4bfa2f0394782784d/screenshot - {}
+RESULT: {}
+RESULT: undefined
+]]></system-out>
+      <system-err><![CDATA[
+Error: Image differences detected
+    at agentHomepage.compareEnvironments (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:145:15)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/agentHomepage.specs.js:43:9)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.137_0_7151_104.mac.AgentHomePage_Suite" name="TC5" time="5.07">
+      <failure message="WebDriver Bidi command &quot;script.callFunction&quot; failed with error: unknown error - Cannot find context with specified id"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/3ab5521e2f489ce4bfa2f0394782784d/window/maximize - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: WebDriver Bidi command "script.callFunction" failed with error: unknown error - Cannot find context with specified id
+
+Driver Stack:
+    at Error
+    at     at new UnknownErrorException (<anonymous>:65:5072)
+    at     at CommandProcessor.processCommand (<anonymous>:469:10360)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.137_0_7151_104.mac.AgentHomePage_Suite" name="TC6" time="40.505">
+      <failure message="Image differences detected"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/3ab5521e2f489ce4bfa2f0394782784d/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/3ab5521e2f489ce4bfa2f0394782784d/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/3ab5521e2f489ce4bfa2f0394782784d/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/3ab5521e2f489ce4bfa2f0394782784d/element - {"using":"xpath","value":"//input[@name=\"username\"]"}
+RESULT: {"using":"xpath","value":"//input[@name=\"username\"]"}
+COMMAND: GET /session/3ab5521e2f489ce4bfa2f0394782784d/element/f.5DD3CA69AA2C369953FB53AA9F9F7A4E.d.50ADE7609D96558AE8C3E5C9ECAEDFBC.e.3/css/display - {}
+RESULT: {}
+COMMAND: POST /session/3ab5521e2f489ce4bfa2f0394782784d/element/f.5DD3CA69AA2C369953FB53AA9F9F7A4E.d.50ADE7609D96558AE8C3E5C9ECAEDFBC.e.3/clear - {}
+RESULT: {}
+COMMAND: POST /session/3ab5521e2f489ce4bfa2f0394782784d/element/f.5DD3CA69AA2C369953FB53AA9F9F7A4E.d.50ADE7609D96558AE8C3E5C9ECAEDFBC.e.3/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/3ab5521e2f489ce4bfa2f0394782784d/element/f.5DD3CA69AA2C369953FB53AA9F9F7A4E.d.50ADE7609D96558AE8C3E5C9ECAEDFBC.e.4/clear - {}
+RESULT: {}
+COMMAND: POST /session/3ab5521e2f489ce4bfa2f0394782784d/element/f.5DD3CA69AA2C369953FB53AA9F9F7A4E.d.50ADE7609D96558AE8C3E5C9ECAEDFBC.e.4/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/3ab5521e2f489ce4bfa2f0394782784d/element/f.5DD3CA69AA2C369953FB53AA9F9F7A4E.d.50ADE7609D96558AE8C3E5C9ECAEDFBC.e.5/click - {}
+RESULT: {}
+COMMAND: GET /session/3ab5521e2f489ce4bfa2f0394782784d/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: DELETE /session/3ab5521e2f489ce4bfa2f0394782784d - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: Image differences detected
+    at agentHomepage.compareEnvironments (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:145:15)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/agentHomepage.specs.js:65:9)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

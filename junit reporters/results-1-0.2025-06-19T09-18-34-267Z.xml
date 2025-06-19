@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="6" failures="6" errors="0" skipped="0">
+  <testsuite name="AgentHomePage Suite" timestamp="2025-06-19T14:18:34" time="198.602" tests="6" failures="6" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="AgentHomePage Suite"/>
+      <property name="capabilities" value="chrome.137_0_7151_104.mac"/>
+      <property name="file" value="file://./test/specs/agentHomepage.specs.js"/>
+    </properties>
+    <testcase classname="chrome.137_0_7151_104.mac.AgentHomePage_Suite" name="TC1" time="15.583">
+      <failure message="Image differences detected"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/64f0da75d415c0a10586540437379a44/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/64f0da75d415c0a10586540437379a44/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/64f0da75d415c0a10586540437379a44/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/64f0da75d415c0a10586540437379a44/element/f.616508D5851BBCFBD7A1789AF4FA52CA.d.3B3EB17C315BF4D9DF919A3129866F26.e.3/css/display - {}
+RESULT: {}
+COMMAND: POST /session/64f0da75d415c0a10586540437379a44/element/f.616508D5851BBCFBD7A1789AF4FA52CA.d.3B3EB17C315BF4D9DF919A3129866F26.e.3/clear - {}
+RESULT: {}
+COMMAND: POST /session/64f0da75d415c0a10586540437379a44/element/f.616508D5851BBCFBD7A1789AF4FA52CA.d.3B3EB17C315BF4D9DF919A3129866F26.e.3/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/64f0da75d415c0a10586540437379a44/element/f.616508D5851BBCFBD7A1789AF4FA52CA.d.3B3EB17C315BF4D9DF919A3129866F26.e.4/clear - {}
+RESULT: {}
+COMMAND: POST /session/64f0da75d415c0a10586540437379a44/element/f.616508D5851BBCFBD7A1789AF4FA52CA.d.3B3EB17C315BF4D9DF919A3129866F26.e.4/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/64f0da75d415c0a10586540437379a44/element/f.616508D5851BBCFBD7A1789AF4FA52CA.d.3B3EB17C315BF4D9DF919A3129866F26.e.5/click - {}
+RESULT: {}
+COMMAND: GET /session/64f0da75d415c0a10586540437379a44/screenshot - {}
+RESULT: {}
+RESULT: undefined
+]]></system-out>
+      <system-err><![CDATA[
+Error: Image differences detected
+    at agentHomepage.compareEnvironments (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:145:15)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/agentHomepage.specs.js:9:9)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.137_0_7151_104.mac.AgentHomePage_Suite" name="TC2" time="27.554">
+      <failure message="Image differences detected (3.792% mismatch)"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/64f0da75d415c0a10586540437379a44/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/64f0da75d415c0a10586540437379a44/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/64f0da75d415c0a10586540437379a44/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/64f0da75d415c0a10586540437379a44/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/64f0da75d415c0a10586540437379a44/element/f.616508D5851BBCFBD7A1789AF4FA52CA.d.632A2626C75F7AEFF12B62C326A37EF5.e.3/css/display - {}
+RESULT: {}
+COMMAND: POST /session/64f0da75d415c0a10586540437379a44/element/f.616508D5851BBCFBD7A1789AF4FA52CA.d.632A2626C75F7AEFF12B62C326A37EF5.e.3/clear - {}
+RESULT: {}
+COMMAND: POST /session/64f0da75d415c0a10586540437379a44/element/f.616508D5851BBCFBD7A1789AF4FA52CA.d.632A2626C75F7AEFF12B62C326A37EF5.e.3/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/64f0da75d415c0a10586540437379a44/element/f.616508D5851BBCFBD7A1789AF4FA52CA.d.632A2626C75F7AEFF12B62C326A37EF5.e.4/clear - {}
+RESULT: {}
+COMMAND: POST /session/64f0da75d415c0a10586540437379a44/element/f.616508D5851BBCFBD7A1789AF4FA52CA.d.632A2626C75F7AEFF12B62C326A37EF5.e.4/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/64f0da75d415c0a10586540437379a44/element/f.616508D5851BBCFBD7A1789AF4FA52CA.d.632A2626C75F7AEFF12B62C326A37EF5.e.5/click - {}
+RESULT: {}
+COMMAND: GET /session/64f0da75d415c0a10586540437379a44/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/64f0da75d415c0a10586540437379a44/screenshot - {}
+RESULT: {}
+RESULT: undefined
+]]></system-out>
+      <system-err><![CDATA[
+Error: Image differences detected (3.792% mismatch)
+    at agentHomepage.compareFullPageEnvironments (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:189:15)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/agentHomepage.specs.js:20:9)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.137_0_7151_104.mac.AgentHomePage_Suite" name="TC3" time="104.394">
+      <failure message="Image differences detected (14.03% mismatch)"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/64f0da75d415c0a10586540437379a44/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/64f0da75d415c0a10586540437379a44/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/64f0da75d415c0a10586540437379a44/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/64f0da75d415c0a10586540437379a44/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/64f0da75d415c0a10586540437379a44/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/64f0da75d415c0a10586540437379a44/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/64f0da75d415c0a10586540437379a44/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/64f0da75d415c0a10586540437379a44/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/64f0da75d415c0a10586540437379a44/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/64f0da75d415c0a10586540437379a44/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/64f0da75d415c0a10586540437379a44/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/64f0da75d415c0a10586540437379a44/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/64f0da75d415c0a10586540437379a44/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/64f0da75d415c0a10586540437379a44/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/64f0da75d415c0a10586540437379a44/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/64f0da75d415c0a10586540437379a44/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/64f0da75d415c0a10586540437379a44/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/64f0da75d415c0a10586540437379a44/element/f.616508D5851BBCFBD7A1789AF4FA52CA.d.3C6C193A1CB2F01B1B1DF648CC41056F.e.3/css/display - {}
+RESULT: {}
+COMMAND: POST /session/64f0da75d415c0a10586540437379a44/element/f.616508D5851BBCFBD7A1789AF4FA52CA.d.3C6C193A1CB2F01B1B1DF648CC41056F.e.3/clear - {}
+RESULT: {}
+COMMAND: POST /session/64f0da75d415c0a10586540437379a44/element/f.616508D5851BBCFBD7A1789AF4FA52CA.d.3C6C193A1CB2F01B1B1DF648CC41056F.e.3/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/64f0da75d415c0a10586540437379a44/element/f.616508D5851BBCFBD7A1789AF4FA52CA.d.3C6C193A1CB2F01B1B1DF648CC41056F.e.4/clear - {}
+RESULT: {}
+COMMAND: POST /session/64f0da75d415c0a10586540437379a44/element/f.616508D5851BBCFBD7A1789AF4FA52CA.d.3C6C193A1CB2F01B1B1DF648CC41056F.e.4/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/64f0da75d415c0a10586540437379a44/element/f.616508D5851BBCFBD7A1789AF4FA52CA.d.3C6C193A1CB2F01B1B1DF648CC41056F.e.5/click - {}
+RESULT: {}
+COMMAND: GET /session/64f0da75d415c0a10586540437379a44/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/64f0da75d415c0a10586540437379a44/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/64f0da75d415c0a10586540437379a44/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/64f0da75d415c0a10586540437379a44/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/64f0da75d415c0a10586540437379a44/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/64f0da75d415c0a10586540437379a44/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/64f0da75d415c0a10586540437379a44/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/64f0da75d415c0a10586540437379a44/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/64f0da75d415c0a10586540437379a44/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/64f0da75d415c0a10586540437379a44/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/64f0da75d415c0a10586540437379a44/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/64f0da75d415c0a10586540437379a44/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/64f0da75d415c0a10586540437379a44/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/64f0da75d415c0a10586540437379a44/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/64f0da75d415c0a10586540437379a44/screenshot - {}
+RESULT: {}
+RESULT: undefined
+]]></system-out>
+      <system-err><![CDATA[
+Error: Image differences detected (14.03% mismatch)
+    at agentHomepage.compareFullPageEnvironments (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:189:15)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/agentHomepage.specs.js:31:9)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.137_0_7151_104.mac.AgentHomePage_Suite" name="TC4" time="18.042">
+      <failure message="Image differences detected"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/64f0da75d415c0a10586540437379a44/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/64f0da75d415c0a10586540437379a44/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/64f0da75d415c0a10586540437379a44/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/64f0da75d415c0a10586540437379a44/element/f.616508D5851BBCFBD7A1789AF4FA52CA.d.3EA74BEBE103623F04F5C2D0A42E3220.e.3/css/display - {}
+RESULT: {}
+COMMAND: POST /session/64f0da75d415c0a10586540437379a44/element/f.616508D5851BBCFBD7A1789AF4FA52CA.d.3EA74BEBE103623F04F5C2D0A42E3220.e.3/clear - {}
+RESULT: {}
+COMMAND: POST /session/64f0da75d415c0a10586540437379a44/element/f.616508D5851BBCFBD7A1789AF4FA52CA.d.3EA74BEBE103623F04F5C2D0A42E3220.e.3/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/64f0da75d415c0a10586540437379a44/element/f.616508D5851BBCFBD7A1789AF4FA52CA.d.3EA74BEBE103623F04F5C2D0A42E3220.e.4/clear - {}
+RESULT: {}
+COMMAND: POST /session/64f0da75d415c0a10586540437379a44/element/f.616508D5851BBCFBD7A1789AF4FA52CA.d.3EA74BEBE103623F04F5C2D0A42E3220.e.4/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/64f0da75d415c0a10586540437379a44/element/f.616508D5851BBCFBD7A1789AF4FA52CA.d.3EA74BEBE103623F04F5C2D0A42E3220.e.5/click - {}
+RESULT: {}
+COMMAND: GET /session/64f0da75d415c0a10586540437379a44/screenshot - {}
+RESULT: {}
+RESULT: undefined
+]]></system-out>
+      <system-err><![CDATA[
+Error: Image differences detected
+    at agentHomepage.compareEnvironments (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:145:15)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/agentHomepage.specs.js:43:9)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.137_0_7151_104.mac.AgentHomePage_Suite" name="TC5" time="14.169">
+      <failure message="Image differences detected"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/64f0da75d415c0a10586540437379a44/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/64f0da75d415c0a10586540437379a44/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/64f0da75d415c0a10586540437379a44/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/64f0da75d415c0a10586540437379a44/element/f.616508D5851BBCFBD7A1789AF4FA52CA.d.3DDBBD78FBC3E27BC1E3A257C0616A55.e.3/css/display - {}
+RESULT: {}
+COMMAND: POST /session/64f0da75d415c0a10586540437379a44/element/f.616508D5851BBCFBD7A1789AF4FA52CA.d.3DDBBD78FBC3E27BC1E3A257C0616A55.e.3/clear - {}
+RESULT: {}
+COMMAND: POST /session/64f0da75d415c0a10586540437379a44/element/f.616508D5851BBCFBD7A1789AF4FA52CA.d.3DDBBD78FBC3E27BC1E3A257C0616A55.e.3/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/64f0da75d415c0a10586540437379a44/element/f.616508D5851BBCFBD7A1789AF4FA52CA.d.3DDBBD78FBC3E27BC1E3A257C0616A55.e.4/clear - {}
+RESULT: {}
+COMMAND: POST /session/64f0da75d415c0a10586540437379a44/element/f.616508D5851BBCFBD7A1789AF4FA52CA.d.3DDBBD78FBC3E27BC1E3A257C0616A55.e.4/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/64f0da75d415c0a10586540437379a44/element/f.616508D5851BBCFBD7A1789AF4FA52CA.d.3DDBBD78FBC3E27BC1E3A257C0616A55.e.5/click - {}
+RESULT: {}
+COMMAND: GET /session/64f0da75d415c0a10586540437379a44/screenshot - {}
+RESULT: {}
+RESULT: undefined
+]]></system-out>
+      <system-err><![CDATA[
+Error: Image differences detected
+    at agentHomepage.compareEnvironments (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:145:15)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/agentHomepage.specs.js:55:9)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.137_0_7151_104.mac.AgentHomePage_Suite" name="TC6" time="18.853">
+      <failure message="Image differences detected"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/64f0da75d415c0a10586540437379a44/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/64f0da75d415c0a10586540437379a44/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/64f0da75d415c0a10586540437379a44/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/64f0da75d415c0a10586540437379a44/element/f.616508D5851BBCFBD7A1789AF4FA52CA.d.636731CE8CD9E95E9BC6DFDFE626210F.e.3/css/display - {}
+RESULT: {}
+COMMAND: POST /session/64f0da75d415c0a10586540437379a44/element/f.616508D5851BBCFBD7A1789AF4FA52CA.d.636731CE8CD9E95E9BC6DFDFE626210F.e.3/clear - {}
+RESULT: {}
+COMMAND: POST /session/64f0da75d415c0a10586540437379a44/element/f.616508D5851BBCFBD7A1789AF4FA52CA.d.636731CE8CD9E95E9BC6DFDFE626210F.e.3/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/64f0da75d415c0a10586540437379a44/element/f.616508D5851BBCFBD7A1789AF4FA52CA.d.636731CE8CD9E95E9BC6DFDFE626210F.e.4/clear - {}
+RESULT: {}
+COMMAND: POST /session/64f0da75d415c0a10586540437379a44/element/f.616508D5851BBCFBD7A1789AF4FA52CA.d.636731CE8CD9E95E9BC6DFDFE626210F.e.4/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/64f0da75d415c0a10586540437379a44/element/f.616508D5851BBCFBD7A1789AF4FA52CA.d.636731CE8CD9E95E9BC6DFDFE626210F.e.5/click - {}
+RESULT: {}
+COMMAND: GET /session/64f0da75d415c0a10586540437379a44/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: DELETE /session/64f0da75d415c0a10586540437379a44 - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: Image differences detected
+    at agentHomepage.compareEnvironments (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:145:15)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/agentHomepage.specs.js:65:9)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

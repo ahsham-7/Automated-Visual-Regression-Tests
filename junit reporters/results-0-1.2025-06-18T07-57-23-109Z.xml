@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="7" failures="7" errors="0" skipped="0">
+  <testsuite name="FloorPlan Suite" timestamp="2025-06-18T12:57:23" time="160.072" tests="7" failures="7" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="FloorPlan Suite"/>
+      <property name="capabilities" value="chrome.137_0_7151_104.mac"/>
+      <property name="file" value="file://./test/specs/floorPlan.specs.js"/>
+    </properties>
+    <testcase classname="chrome.137_0_7151_104.mac.FloorPlan_Suite" name="TC1" time="49.789">
+      <failure message="Image differences detected"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/60fe4bbe69a8639f803aea8924d5eeb7/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/60fe4bbe69a8639f803aea8924d5eeb7/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/60fe4bbe69a8639f803aea8924d5eeb7/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/60fe4bbe69a8639f803aea8924d5eeb7/element - {"using":"xpath","value":"//input[@name=\"username\"]"}
+RESULT: {"using":"xpath","value":"//input[@name=\"username\"]"}
+COMMAND: GET /session/60fe4bbe69a8639f803aea8924d5eeb7/element/f.DABC7CE98453EA5904C6554378E72920.d.18418C674695F28998340E2FB93F122F.e.3/css/display - {}
+RESULT: {}
+COMMAND: POST /session/60fe4bbe69a8639f803aea8924d5eeb7/element/f.DABC7CE98453EA5904C6554378E72920.d.18418C674695F28998340E2FB93F122F.e.3/clear - {}
+RESULT: {}
+COMMAND: POST /session/60fe4bbe69a8639f803aea8924d5eeb7/element/f.DABC7CE98453EA5904C6554378E72920.d.18418C674695F28998340E2FB93F122F.e.3/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/60fe4bbe69a8639f803aea8924d5eeb7/element/f.DABC7CE98453EA5904C6554378E72920.d.18418C674695F28998340E2FB93F122F.e.4/clear - {}
+RESULT: {}
+COMMAND: POST /session/60fe4bbe69a8639f803aea8924d5eeb7/element/f.DABC7CE98453EA5904C6554378E72920.d.18418C674695F28998340E2FB93F122F.e.4/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/60fe4bbe69a8639f803aea8924d5eeb7/element/f.DABC7CE98453EA5904C6554378E72920.d.18418C674695F28998340E2FB93F122F.e.5/click - {}
+RESULT: {}
+COMMAND: GET /session/60fe4bbe69a8639f803aea8924d5eeb7/screenshot - {}
+RESULT: {}
+RESULT: undefined
+]]></system-out>
+      <system-err><![CDATA[
+Error: Image differences detected
+    at Floorplan.compareEnvironments (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:145:15)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/floorPlan.specs.js:10:9)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.137_0_7151_104.mac.FloorPlan_Suite" name="TC2" time="12.547">
+      <failure message="Can't call scrollIntoView on element with selector &quot;//h2[text()=&quot;UAE Location List&quot;]&quot; because element wasn't found"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/60fe4bbe69a8639f803aea8924d5eeb7/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/60fe4bbe69a8639f803aea8924d5eeb7/element/f.DABC7CE98453EA5904C6554378E72920.d.F3429A0CD7FD313A6605E7B94C86D755.e.53/rect - {}
+RESULT: {}
+COMMAND: GET /session/60fe4bbe69a8639f803aea8924d5eeb7/window/rect - {}
+RESULT: {}
+COMMAND: POST /session/60fe4bbe69a8639f803aea8924d5eeb7/actions - {"actions":[{"id":"action1","type":"wheel","parameters":{},"actions":[{"type":"scroll","x":-1267,"y":3158,"deltaX":0,"deltaY":0,"duration":0,"origin":{"element-6066-11e4-a52e-4f735466cecf":"f.DABC7CE98453EA5904C6554378E72920.d.F3429A0CD7FD313A6605E7B94C86D755.e.53"}}]}]}
+RESULT: {"actions":[{"id":"action1","type":"wheel","parameters":{},"actions":[{"type":"scroll","x":-1267,"y":3158,"deltaX":0,"deltaY":0,"duration":0,"origin":{"element-6066-11e4-a52e-4f735466cecf":"f.DABC7CE98453EA5904C6554378E72920.d.F3429A0CD7FD313A6605E7B94C86D755.e.53"}}]}]}
+COMMAND: GET /session/60fe4bbe69a8639f803aea8924d5eeb7/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/60fe4bbe69a8639f803aea8924d5eeb7/window/maximize - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: Can't call scrollIntoView on element with selector "//h2[text()="UAE Location List"]" because element wasn't found
+    at async Floorplan.ScrollElement (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:80:9)
+    at async Floorplan.verifyUaeLocLists (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/floorplan.page.js:22:9)
+    at async file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/floorPlan.specs.js:27:25
+    at async Floorplan.compareEnvironments (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:128:21)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/floorPlan.specs.js:21:9)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.137_0_7151_104.mac.FloorPlan_Suite" name="TC3" time="14.223">
+      <failure message="Can't call scrollIntoView on element with selector &quot;//span[@aria-label=&quot;Scroll to top&quot;]&quot; because element wasn't found"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/60fe4bbe69a8639f803aea8924d5eeb7/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/60fe4bbe69a8639f803aea8924d5eeb7/element/f.DABC7CE98453EA5904C6554378E72920.d.260C92D7C4EBAE17B1780193020EF2FC.e.49/rect - {}
+RESULT: {}
+COMMAND: GET /session/60fe4bbe69a8639f803aea8924d5eeb7/window/rect - {}
+RESULT: {}
+COMMAND: POST /session/60fe4bbe69a8639f803aea8924d5eeb7/actions - {"actions":[{"id":"action2","type":"wheel","parameters":{},"actions":[{"type":"scroll","x":-1408,"y":4411,"deltaX":0,"deltaY":0,"duration":0,"origin":{"element-6066-11e4-a52e-4f735466cecf":"f.DABC7CE98453EA5904C6554378E72920.d.260C92D7C4EBAE17B1780193020EF2FC.e.49"}}]}]}
+RESULT: {"actions":[{"id":"action2","type":"wheel","parameters":{},"actions":[{"type":"scroll","x":-1408,"y":4411,"deltaX":0,"deltaY":0,"duration":0,"origin":{"element-6066-11e4-a52e-4f735466cecf":"f.DABC7CE98453EA5904C6554378E72920.d.260C92D7C4EBAE17B1780193020EF2FC.e.49"}}]}]}
+COMMAND: GET /session/60fe4bbe69a8639f803aea8924d5eeb7/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/60fe4bbe69a8639f803aea8924d5eeb7/window/maximize - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: Can't call scrollIntoView on element with selector "//span[@aria-label="Scroll to top"]" because element wasn't found
+    at async Floorplan.ScrollElement (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:80:9)
+    at async Floorplan.VerifyBottomLinks (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/floorplan.page.js:25:9)
+    at async file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/floorPlan.specs.js:39:25
+    at async Floorplan.compareEnvironments (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:128:21)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/floorPlan.specs.js:33:9)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.137_0_7151_104.mac.FloorPlan_Suite" name="TC4" time="10.766">
+      <failure message="Image differences detected"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/60fe4bbe69a8639f803aea8924d5eeb7/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/60fe4bbe69a8639f803aea8924d5eeb7/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/60fe4bbe69a8639f803aea8924d5eeb7/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/60fe4bbe69a8639f803aea8924d5eeb7/screenshot - {}
+RESULT: {}
+RESULT: undefined
+]]></system-out>
+      <system-err><![CDATA[
+Error: Image differences detected
+    at Floorplan.compareEnvironments (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:145:15)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/floorPlan.specs.js:45:9)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.137_0_7151_104.mac.FloorPlan_Suite" name="TC5" time="23.78">
+      <failure message="this.conditionalLogin is not a function"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/60fe4bbe69a8639f803aea8924d5eeb7/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/60fe4bbe69a8639f803aea8924d5eeb7/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/60fe4bbe69a8639f803aea8924d5eeb7/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/60fe4bbe69a8639f803aea8924d5eeb7/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/60fe4bbe69a8639f803aea8924d5eeb7/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/60fe4bbe69a8639f803aea8924d5eeb7/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/60fe4bbe69a8639f803aea8924d5eeb7/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/60fe4bbe69a8639f803aea8924d5eeb7/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/60fe4bbe69a8639f803aea8924d5eeb7/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/60fe4bbe69a8639f803aea8924d5eeb7/window/maximize - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+TypeError: this.conditionalLogin is not a function
+    at Floorplan.compareFullPageEnvironments (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:164:16)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/floorPlan.specs.js:56:9)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.137_0_7151_104.mac.FloorPlan_Suite" name="TC6" time="24.279">
+      <failure message="this.conditionalLogin is not a function"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/60fe4bbe69a8639f803aea8924d5eeb7/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/60fe4bbe69a8639f803aea8924d5eeb7/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/60fe4bbe69a8639f803aea8924d5eeb7/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/60fe4bbe69a8639f803aea8924d5eeb7/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/60fe4bbe69a8639f803aea8924d5eeb7/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/60fe4bbe69a8639f803aea8924d5eeb7/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/60fe4bbe69a8639f803aea8924d5eeb7/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/60fe4bbe69a8639f803aea8924d5eeb7/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/60fe4bbe69a8639f803aea8924d5eeb7/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/60fe4bbe69a8639f803aea8924d5eeb7/window/maximize - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+TypeError: this.conditionalLogin is not a function
+    at Floorplan.compareFullPageEnvironments (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:164:16)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/floorPlan.specs.js:67:9)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.137_0_7151_104.mac.FloorPlan_Suite" name="TC7" time="24.682">
+      <failure message="this.conditionalLogin is not a function"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/60fe4bbe69a8639f803aea8924d5eeb7/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/60fe4bbe69a8639f803aea8924d5eeb7/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/60fe4bbe69a8639f803aea8924d5eeb7/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/60fe4bbe69a8639f803aea8924d5eeb7/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/60fe4bbe69a8639f803aea8924d5eeb7/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/60fe4bbe69a8639f803aea8924d5eeb7/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/60fe4bbe69a8639f803aea8924d5eeb7/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/60fe4bbe69a8639f803aea8924d5eeb7/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/60fe4bbe69a8639f803aea8924d5eeb7/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/60fe4bbe69a8639f803aea8924d5eeb7/window/maximize - {}
+RESULT: {}
+COMMAND: DELETE /session/60fe4bbe69a8639f803aea8924d5eeb7 - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+TypeError: this.conditionalLogin is not a function
+    at Floorplan.compareFullPageEnvironments (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:164:16)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/floorPlan.specs.js:78:9)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

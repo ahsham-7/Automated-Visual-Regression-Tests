@@ -2,193 +2,587 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Visual Regression Report</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       background-color: #f4f4f4;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      padding: 20px;
     }
     h1 {
-      background-color: #4CAF50;
+      background: #4CAF50;
       color: white;
-      width: 100%;
+      padding: 20px;
       text-align: center;
-      margin: 0;
-      padding: 20px 0;
     }
     .container {
-      width: 80%;
-      margin: 20px auto;
+      max-width: 1100px;
+      margin: auto;
       background: white;
       padding: 20px;
       border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
     .test-section {
-      margin-bottom: 40px;
+      border-bottom: 1px solid #ccc;
+      padding: 20px 0;
     }
     .test-heading {
-      font-size: 1.5em;
-      margin-bottom: 20px;
+      font-size: 1.4em;
+      margin-bottom: 10px;
       color: #333;
-      border-bottom: 2px solid #4CAF50;
-      padding-bottom: 10px;
     }
     .test-description {
-      font-size: 1em;
       margin-bottom: 10px;
-      color: #555;
+      color: #666;
     }
     .image-diff {
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-around;
-      align-items: center;
-      margin-bottom: 20px;
     }
     .image-diff div {
-      flex: 1;
-      margin: 0 10px;
+      margin: 10px;
       text-align: center;
     }
     .image-diff button {
-      display: inline-block;
-      padding: 10px 20px;
-      margin: 10px;
-      font-size: 1em;
+      background: #007bff;
       color: white;
-      background-color: #007bff;
+      padding: 10px 15px;
       border: none;
       border-radius: 5px;
       cursor: pointer;
     }
     .image-diff button:hover {
-      background-color: #0056b3;
+      background: #0056b3;
     }
   </style>
 </head>
 <body>
   <h1>Visual Regression Report</h1>
   <div class="container">
-
-  <div class="test-section">
-      <div class="test-heading">Floorplan</div>
-      <div class="test-description">Verify_Default_View_Floor_Plan</div>
-      <div class="image-diff">
-          <div>
-              <h3>Baseline</h3>
-              <button onclick="window.open('https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/baseline/desktop_chrome/Floorplan/Verify_Default_View_FloorPlan-.png', '_blank')">View Baseline</button>
+    
+        <div class="test-section">
+          <div class="test-heading">AgentHomePage - Verify_default_view_of_Agent_Home_Page</div>
+          <div class="test-description">Verify default view of Agent Home Page</div>
+          <div class="test-description"><strong>Status:</strong> ❌ Failed</div>
+          <div class="image-diff">
+            <div>
+              <div><strong>Expected</strong></div>
+              <a href="https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/baseline/desktop_chrome/AgentHomePage/Verify_default_view_of_Agent_Home_Page-.png" target="_blank"><button>View</button></a>
+            </div>
+            <div>
+              <div><strong>Actual</strong></div>
+              <a href="https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/actual/desktop_chrome/AgentHomePage/Verify_default_view_of_Agent_Home_Page-.png" target="_blank"><button>View</button></a>
+            </div>
+            <div>
+              <div><strong>Diff</strong></div>
+              <a href="https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/diff/desktop_chrome/AgentHomePage/Verify_default_view_of_Agent_Home_Page-.png" target="_blank"><button>View</button></a>
+            </div>
           </div>
-          <div>
-              <h3>Actual</h3>
-              <button onclick="window.open('https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/actual/desktop_chrome/Floorplan/Verify_Default_View_FloorPlan-.png', '_blank')">View Actual</button>
+        </div>
+      
+        <div class="test-section">
+          <div class="test-heading">AgentHomePage - Verify_full_view_of_Agent_Home_Page</div>
+          <div class="test-description">Verify full view of Agent Home Page</div>
+          <div class="test-description"><strong>Status:</strong> ❌ Failed</div>
+          <div class="image-diff">
+            <div>
+              <div><strong>Expected</strong></div>
+              <a href="https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/baseline/desktop_chrome/AgentHomePage/Verify_full_view_of_Agent_Home_Page-.png" target="_blank"><button>View</button></a>
+            </div>
+            <div>
+              <div><strong>Actual</strong></div>
+              <a href="https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/actual/desktop_chrome/AgentHomePage/Verify_full_view_of_Agent_Home_Page-.png" target="_blank"><button>View</button></a>
+            </div>
+            <div>
+              <div><strong>Diff</strong></div>
+              <a href="https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/diff/desktop_chrome/AgentHomePage/Verify_full_view_of_Agent_Home_Page-.png" target="_blank"><button>View</button></a>
+            </div>
           </div>
-          
-          <div>
-              <h3>Diff</h3>
-              <button onclick="window.open('https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/diff/desktop_chrome/Floorplan/Verify_Default_View_FloorPlan-.png', '_blank')">View Diff</button>
+        </div>
+      
+        <div class="test-section">
+          <div class="test-heading">AgentHomePage - Verify_full_view_of_Agent_Search_Page</div>
+          <div class="test-description">Verify full view of Agent Search Page</div>
+          <div class="test-description"><strong>Status:</strong> ❌ Failed</div>
+          <div class="image-diff">
+            <div>
+              <div><strong>Expected</strong></div>
+              <a href="https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/baseline/desktop_chrome/AgentHomePage/Verify_full_view_of_Agent_Search_Page-.png" target="_blank"><button>View</button></a>
+            </div>
+            <div>
+              <div><strong>Actual</strong></div>
+              <a href="https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/actual/desktop_chrome/AgentHomePage/Verify_full_view_of_Agent_Search_Page-.png" target="_blank"><button>View</button></a>
+            </div>
+            <div>
+              <div><strong>Diff</strong></div>
+              <a href="https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/diff/desktop_chrome/AgentHomePage/Verify_full_view_of_Agent_Search_Page-.png" target="_blank"><button>View</button></a>
+            </div>
           </div>
-          
-      </div>
+        </div>
+      
+        <div class="test-section">
+          <div class="test-heading">AgentHomePage - Verify_Agent_Search_Page:_Uae_Loc</div>
+          <div class="test-description">Verify Agent Search Page: Uae Loc</div>
+          <div class="test-description"><strong>Status:</strong> ❌ Failed</div>
+          <div class="image-diff">
+            <div>
+              <div><strong>Expected</strong></div>
+              <a href="https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/baseline/desktop_chrome/AgentHomePage/Verify_Agent_Search_Page:_Uae_Loc-.png" target="_blank"><button>View</button></a>
+            </div>
+            <div>
+              <div><strong>Actual</strong></div>
+              <a href="https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/actual/desktop_chrome/AgentHomePage/Verify_Agent_Search_Page:_Uae_Loc-.png" target="_blank"><button>View</button></a>
+            </div>
+            <div>
+              <div><strong>Diff</strong></div>
+              <a href="https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/diff/desktop_chrome/AgentHomePage/Verify_Agent_Search_Page:_Uae_Loc-.png" target="_blank"><button>View</button></a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="test-section">
+          <div class="test-heading">AgentHomePage - Verify_Agent_Search_Page:_Dubai_Loc</div>
+          <div class="test-description">Verify Agent Search Page: Uae Loc</div>
+          <div class="test-description"><strong>Status:</strong> ❌ Failed</div>
+          <div class="image-diff">
+            <div>
+              <div><strong>Expected</strong></div>
+              <a href="https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/baseline/desktop_chrome/AgentHomePage/Verify_Agent_Search_Page:_Dubai_Loc-.png" target="_blank"><button>View</button></a>
+            </div>
+            <div>
+              <div><strong>Actual</strong></div>
+              <a href="https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/actual/desktop_chrome/AgentHomePage/Verify_Agent_Search_Page:_Dubai_Loc-.png" target="_blank"><button>View</button></a>
+            </div>
+            <div>
+              <div><strong>Diff</strong></div>
+              <a href="https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/diff/desktop_chrome/AgentHomePage/Verify_Agent_Search_Page:_Dubai_Loc-.png" target="_blank"><button>View</button></a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="test-section">
+          <div class="test-heading">AgentHomePage - Verify_Agent_Search_Page:_AbuDhabi_Loc</div>
+          <div class="test-description">Verify Agent Search Page: Uae Loc</div>
+          <div class="test-description"><strong>Status:</strong> ❌ Failed</div>
+          <div class="image-diff">
+            <div>
+              <div><strong>Expected</strong></div>
+              <a href="https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/baseline/desktop_chrome/AgentHomePage/Verify_Agent_Search_Page:_AbuDhabi_Loc-.png" target="_blank"><button>View</button></a>
+            </div>
+            <div>
+              <div><strong>Actual</strong></div>
+              <a href="https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/actual/desktop_chrome/AgentHomePage/Verify_Agent_Search_Page:_AbuDhabi_Loc-.png" target="_blank"><button>View</button></a>
+            </div>
+            <div>
+              <div><strong>Diff</strong></div>
+              <a href="https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/diff/desktop_chrome/AgentHomePage/Verify_Agent_Search_Page:_AbuDhabi_Loc-.png" target="_blank"><button>View</button></a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="test-section">
+          <div class="test-heading">Floorplan - Verify_Default_View_FloorPlan</div>
+          <div class="test-description">Verify_Default_View_Floor_Plan</div>
+          <div class="test-description"><strong>Status:</strong> ❌ Failed</div>
+          <div class="image-diff">
+            <div>
+              <div><strong>Expected</strong></div>
+              <a href="https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/baseline/desktop_chrome/Floorplan/Verify_Default_View_FloorPlan-.png" target="_blank"><button>View</button></a>
+            </div>
+            <div>
+              <div><strong>Actual</strong></div>
+              <a href="https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/actual/desktop_chrome/Floorplan/Verify_Default_View_FloorPlan-.png" target="_blank"><button>View</button></a>
+            </div>
+            <div>
+              <div><strong>Diff</strong></div>
+              <a href="https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/diff/desktop_chrome/Floorplan/Verify_Default_View_FloorPlan-.png" target="_blank"><button>View</button></a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="test-section">
+          <div class="test-heading">Floorplan - Verify_FloorPlan_UAE_location_SEO</div>
+          <div class="test-description">Verify FloorPlan UAE location SEO</div>
+          <div class="test-description"><strong>Status:</strong> ❌ Failed</div>
+          <div class="image-diff">
+            <div>
+              <div><strong>Expected</strong></div>
+              <a href="https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/baseline/desktop_chrome/Floorplan/Verify_FloorPlan_UAE_location_SEO-.png" target="_blank"><button>View</button></a>
+            </div>
+            <div>
+              <div><strong>Actual</strong></div>
+              <a href="https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/actual/desktop_chrome/Floorplan/Verify_FloorPlan_UAE_location_SEO-.png" target="_blank"><button>View</button></a>
+            </div>
+            <div>
+              <div><strong>Diff</strong></div>
+              <a href="https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/diff/desktop_chrome/Floorplan/Verify_FloorPlan_UAE_location_SEO-.png" target="_blank"><button>View</button></a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="test-section">
+          <div class="test-heading">Floorplan - Verify_FloorPlan_BottomList</div>
+          <div class="test-description">Verify FloorPlan BottomList</div>
+          <div class="test-description"><strong>Status:</strong> ❌ Failed</div>
+          <div class="image-diff">
+            <div>
+              <div><strong>Expected</strong></div>
+              <a href="https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/baseline/desktop_chrome/Floorplan/Verify_FloorPlan_BottomList-.png" target="_blank"><button>View</button></a>
+            </div>
+            <div>
+              <div><strong>Actual</strong></div>
+              <a href="https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/actual/desktop_chrome/Floorplan/Verify_FloorPlan_BottomList-.png" target="_blank"><button>View</button></a>
+            </div>
+            <div>
+              <div><strong>Diff</strong></div>
+              <a href="https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/diff/desktop_chrome/Floorplan/Verify_FloorPlan_BottomList-.png" target="_blank"><button>View</button></a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="test-section">
+          <div class="test-heading">Floorplan - Verify_FloorPlan_MainCards</div>
+          <div class="test-description">Verify FloorPlan MainCards</div>
+          <div class="test-description"><strong>Status:</strong> ❌ Failed</div>
+          <div class="image-diff">
+            <div>
+              <div><strong>Expected</strong></div>
+              <a href="https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/baseline/desktop_chrome/Floorplan/Verify_FloorPlan_MainCards-.png" target="_blank"><button>View</button></a>
+            </div>
+            <div>
+              <div><strong>Actual</strong></div>
+              <a href="https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/actual/desktop_chrome/Floorplan/Verify_FloorPlan_MainCards-.png" target="_blank"><button>View</button></a>
+            </div>
+            <div>
+              <div><strong>Diff</strong></div>
+              <a href="https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/diff/desktop_chrome/Floorplan/Verify_FloorPlan_MainCards-.png" target="_blank"><button>View</button></a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="test-section">
+          <div class="test-heading">Floorplan - Verify_FloorPlan_AbuDhabi_Location</div>
+          <div class="test-description">Verify FloorPlan AbuDhabi Location</div>
+          <div class="test-description"><strong>Status:</strong> ❌ Failed</div>
+          <div class="image-diff">
+            <div>
+              <div><strong>Expected</strong></div>
+              <a href="https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/baseline/desktop_chrome/Floorplan/Verify_FloorPlan_AbuDhabi_Location-.png" target="_blank"><button>View</button></a>
+            </div>
+            <div>
+              <div><strong>Actual</strong></div>
+              <a href="https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/actual/desktop_chrome/Floorplan/Verify_FloorPlan_AbuDhabi_Location-.png" target="_blank"><button>View</button></a>
+            </div>
+            <div>
+              <div><strong>Diff</strong></div>
+              <a href="https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/diff/desktop_chrome/Floorplan/Verify_FloorPlan_AbuDhabi_Location-.png" target="_blank"><button>View</button></a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="test-section">
+          <div class="test-heading">Floorplan - Verify_FloorPlan_Actuall_FloorPlan_Location</div>
+          <div class="test-description">Verify FloorPlan Actuall FloorPlan Location</div>
+          <div class="test-description"><strong>Status:</strong> ❌ Failed</div>
+          <div class="image-diff">
+            <div>
+              <div><strong>Expected</strong></div>
+              <a href="https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/baseline/desktop_chrome/Floorplan/Verify_FloorPlan_Actuall_FloorPlan_Location-.png" target="_blank"><button>View</button></a>
+            </div>
+            <div>
+              <div><strong>Actual</strong></div>
+              <a href="https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/actual/desktop_chrome/Floorplan/Verify_FloorPlan_Actuall_FloorPlan_Location-.png" target="_blank"><button>View</button></a>
+            </div>
+            <div>
+              <div><strong>Diff</strong></div>
+              <a href="https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/diff/desktop_chrome/Floorplan/Verify_FloorPlan_Actuall_FloorPlan_Location-.png" target="_blank"><button>View</button></a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="test-section">
+          <div class="test-heading">Floorplan - Verify_FloorPlan_DPV</div>
+          <div class="test-description">Verify FloorPlan DPV</div>
+          <div class="test-description"><strong>Status:</strong> ❌ Failed</div>
+          <div class="image-diff">
+            <div>
+              <div><strong>Expected</strong></div>
+              <a href="https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/baseline/desktop_chrome/Floorplan/Verify_FloorPlan_DPV-.png" target="_blank"><button>View</button></a>
+            </div>
+            <div>
+              <div><strong>Actual</strong></div>
+              <a href="https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/actual/desktop_chrome/Floorplan/Verify_FloorPlan_DPV-.png" target="_blank"><button>View</button></a>
+            </div>
+            <div>
+              <div><strong>Diff</strong></div>
+              <a href="https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/diff/desktop_chrome/Floorplan/Verify_FloorPlan_DPV-.png" target="_blank"><button>View</button></a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="test-section">
+          <div class="test-heading">AgentHomePage - Verify_default_view_of_Agent_Home_Page</div>
+          <div class="test-description">Verify default view of Agent Home Page</div>
+          <div class="test-description"><strong>Status:</strong> ❌ Failed</div>
+          <div class="image-diff">
+            <div>
+              <div><strong>Expected</strong></div>
+              <a href="https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/baseline/desktop_chrome/AgentHomePage/Verify_default_view_of_Agent_Home_Page-.png" target="_blank"><button>View</button></a>
+            </div>
+            <div>
+              <div><strong>Actual</strong></div>
+              <a href="https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/actual/desktop_chrome/AgentHomePage/Verify_default_view_of_Agent_Home_Page-.png" target="_blank"><button>View</button></a>
+            </div>
+            <div>
+              <div><strong>Diff</strong></div>
+              <a href="https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/diff/desktop_chrome/AgentHomePage/Verify_default_view_of_Agent_Home_Page-.png" target="_blank"><button>View</button></a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="test-section">
+          <div class="test-heading">AgentHomePage - Verify_full_view_of_Agent_Home_Page</div>
+          <div class="test-description">Verify full view of Agent Home Page</div>
+          <div class="test-description"><strong>Status:</strong> ❌ Failed</div>
+          <div class="image-diff">
+            <div>
+              <div><strong>Expected</strong></div>
+              <a href="https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/baseline/desktop_chrome/AgentHomePage/Verify_full_view_of_Agent_Home_Page-.png" target="_blank"><button>View</button></a>
+            </div>
+            <div>
+              <div><strong>Actual</strong></div>
+              <a href="https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/actual/desktop_chrome/AgentHomePage/Verify_full_view_of_Agent_Home_Page-.png" target="_blank"><button>View</button></a>
+            </div>
+            <div>
+              <div><strong>Diff</strong></div>
+              <a href="https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/diff/desktop_chrome/AgentHomePage/Verify_full_view_of_Agent_Home_Page-.png" target="_blank"><button>View</button></a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="test-section">
+          <div class="test-heading">AgentHomePage - Verify_full_view_of_Agent_Search_Page</div>
+          <div class="test-description">Verify full view of Agent Search Page</div>
+          <div class="test-description"><strong>Status:</strong> ❌ Failed</div>
+          <div class="image-diff">
+            <div>
+              <div><strong>Expected</strong></div>
+              <a href="https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/baseline/desktop_chrome/AgentHomePage/Verify_full_view_of_Agent_Search_Page-.png" target="_blank"><button>View</button></a>
+            </div>
+            <div>
+              <div><strong>Actual</strong></div>
+              <a href="https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/actual/desktop_chrome/AgentHomePage/Verify_full_view_of_Agent_Search_Page-.png" target="_blank"><button>View</button></a>
+            </div>
+            <div>
+              <div><strong>Diff</strong></div>
+              <a href="https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/diff/desktop_chrome/AgentHomePage/Verify_full_view_of_Agent_Search_Page-.png" target="_blank"><button>View</button></a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="test-section">
+          <div class="test-heading">AgentHomePage - Verify_Agent_Search_Page:_Uae_Loc</div>
+          <div class="test-description">Verify Agent Search Page: Uae Loc</div>
+          <div class="test-description"><strong>Status:</strong> ❌ Failed</div>
+          <div class="image-diff">
+            <div>
+              <div><strong>Expected</strong></div>
+              <a href="https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/baseline/desktop_chrome/AgentHomePage/Verify_Agent_Search_Page:_Uae_Loc-.png" target="_blank"><button>View</button></a>
+            </div>
+            <div>
+              <div><strong>Actual</strong></div>
+              <a href="https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/actual/desktop_chrome/AgentHomePage/Verify_Agent_Search_Page:_Uae_Loc-.png" target="_blank"><button>View</button></a>
+            </div>
+            <div>
+              <div><strong>Diff</strong></div>
+              <a href="https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/diff/desktop_chrome/AgentHomePage/Verify_Agent_Search_Page:_Uae_Loc-.png" target="_blank"><button>View</button></a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="test-section">
+          <div class="test-heading">AgentHomePage - Verify_Agent_Search_Page:_Dubai_Loc</div>
+          <div class="test-description">Verify Agent Search Page: Uae Loc</div>
+          <div class="test-description"><strong>Status:</strong> ❌ Failed</div>
+          <div class="image-diff">
+            <div>
+              <div><strong>Expected</strong></div>
+              <a href="https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/baseline/desktop_chrome/AgentHomePage/Verify_Agent_Search_Page:_Dubai_Loc-.png" target="_blank"><button>View</button></a>
+            </div>
+            <div>
+              <div><strong>Actual</strong></div>
+              <a href="https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/actual/desktop_chrome/AgentHomePage/Verify_Agent_Search_Page:_Dubai_Loc-.png" target="_blank"><button>View</button></a>
+            </div>
+            <div>
+              <div><strong>Diff</strong></div>
+              <a href="https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/diff/desktop_chrome/AgentHomePage/Verify_Agent_Search_Page:_Dubai_Loc-.png" target="_blank"><button>View</button></a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="test-section">
+          <div class="test-heading">AgentHomePage - Verify_Agent_Search_Page:_AbuDhabi_Loc</div>
+          <div class="test-description">Verify Agent Search Page: Uae Loc</div>
+          <div class="test-description"><strong>Status:</strong> ❌ Failed</div>
+          <div class="image-diff">
+            <div>
+              <div><strong>Expected</strong></div>
+              <a href="https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/baseline/desktop_chrome/AgentHomePage/Verify_Agent_Search_Page:_AbuDhabi_Loc-.png" target="_blank"><button>View</button></a>
+            </div>
+            <div>
+              <div><strong>Actual</strong></div>
+              <a href="https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/actual/desktop_chrome/AgentHomePage/Verify_Agent_Search_Page:_AbuDhabi_Loc-.png" target="_blank"><button>View</button></a>
+            </div>
+            <div>
+              <div><strong>Diff</strong></div>
+              <a href="https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/diff/desktop_chrome/AgentHomePage/Verify_Agent_Search_Page:_AbuDhabi_Loc-.png" target="_blank"><button>View</button></a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="test-section">
+          <div class="test-heading">Floorplan - Verify_Default_View_FloorPlan</div>
+          <div class="test-description">Verify_Default_View_Floor_Plan</div>
+          <div class="test-description"><strong>Status:</strong> ❌ Failed</div>
+          <div class="image-diff">
+            <div>
+              <div><strong>Expected</strong></div>
+              <a href="https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/baseline/desktop_chrome/Floorplan/Verify_Default_View_FloorPlan-.png" target="_blank"><button>View</button></a>
+            </div>
+            <div>
+              <div><strong>Actual</strong></div>
+              <a href="https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/actual/desktop_chrome/Floorplan/Verify_Default_View_FloorPlan-.png" target="_blank"><button>View</button></a>
+            </div>
+            <div>
+              <div><strong>Diff</strong></div>
+              <a href="https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/diff/desktop_chrome/Floorplan/Verify_Default_View_FloorPlan-.png" target="_blank"><button>View</button></a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="test-section">
+          <div class="test-heading">Floorplan - Verify_FloorPlan_UAE_location_SEO</div>
+          <div class="test-description">Verify FloorPlan UAE location SEO</div>
+          <div class="test-description"><strong>Status:</strong> ❌ Failed</div>
+          <div class="image-diff">
+            <div>
+              <div><strong>Expected</strong></div>
+              <a href="https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/baseline/desktop_chrome/Floorplan/Verify_FloorPlan_UAE_location_SEO-.png" target="_blank"><button>View</button></a>
+            </div>
+            <div>
+              <div><strong>Actual</strong></div>
+              <a href="https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/actual/desktop_chrome/Floorplan/Verify_FloorPlan_UAE_location_SEO-.png" target="_blank"><button>View</button></a>
+            </div>
+            <div>
+              <div><strong>Diff</strong></div>
+              <a href="https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/diff/desktop_chrome/Floorplan/Verify_FloorPlan_UAE_location_SEO-.png" target="_blank"><button>View</button></a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="test-section">
+          <div class="test-heading">Floorplan - Verify_FloorPlan_BottomList</div>
+          <div class="test-description">Verify FloorPlan BottomList</div>
+          <div class="test-description"><strong>Status:</strong> ❌ Failed</div>
+          <div class="image-diff">
+            <div>
+              <div><strong>Expected</strong></div>
+              <a href="https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/baseline/desktop_chrome/Floorplan/Verify_FloorPlan_BottomList-.png" target="_blank"><button>View</button></a>
+            </div>
+            <div>
+              <div><strong>Actual</strong></div>
+              <a href="https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/actual/desktop_chrome/Floorplan/Verify_FloorPlan_BottomList-.png" target="_blank"><button>View</button></a>
+            </div>
+            <div>
+              <div><strong>Diff</strong></div>
+              <a href="https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/diff/desktop_chrome/Floorplan/Verify_FloorPlan_BottomList-.png" target="_blank"><button>View</button></a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="test-section">
+          <div class="test-heading">Floorplan - Verify_FloorPlan_MainCards</div>
+          <div class="test-description">Verify FloorPlan MainCards</div>
+          <div class="test-description"><strong>Status:</strong> ❌ Failed</div>
+          <div class="image-diff">
+            <div>
+              <div><strong>Expected</strong></div>
+              <a href="https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/baseline/desktop_chrome/Floorplan/Verify_FloorPlan_MainCards-.png" target="_blank"><button>View</button></a>
+            </div>
+            <div>
+              <div><strong>Actual</strong></div>
+              <a href="https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/actual/desktop_chrome/Floorplan/Verify_FloorPlan_MainCards-.png" target="_blank"><button>View</button></a>
+            </div>
+            <div>
+              <div><strong>Diff</strong></div>
+              <a href="https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/diff/desktop_chrome/Floorplan/Verify_FloorPlan_MainCards-.png" target="_blank"><button>View</button></a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="test-section">
+          <div class="test-heading">Floorplan - Verify_FloorPlan_AbuDhabi_Location</div>
+          <div class="test-description">Verify FloorPlan AbuDhabi Location</div>
+          <div class="test-description"><strong>Status:</strong> ❌ Failed</div>
+          <div class="image-diff">
+            <div>
+              <div><strong>Expected</strong></div>
+              <a href="https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/baseline/desktop_chrome/Floorplan/Verify_FloorPlan_AbuDhabi_Location-.png" target="_blank"><button>View</button></a>
+            </div>
+            <div>
+              <div><strong>Actual</strong></div>
+              <a href="https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/actual/desktop_chrome/Floorplan/Verify_FloorPlan_AbuDhabi_Location-.png" target="_blank"><button>View</button></a>
+            </div>
+            <div>
+              <div><strong>Diff</strong></div>
+              <a href="https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/diff/desktop_chrome/Floorplan/Verify_FloorPlan_AbuDhabi_Location-.png" target="_blank"><button>View</button></a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="test-section">
+          <div class="test-heading">Floorplan - Verify_FloorPlan_Actuall_FloorPlan_Location</div>
+          <div class="test-description">Verify FloorPlan Actuall FloorPlan Location</div>
+          <div class="test-description"><strong>Status:</strong> ❌ Failed</div>
+          <div class="image-diff">
+            <div>
+              <div><strong>Expected</strong></div>
+              <a href="https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/baseline/desktop_chrome/Floorplan/Verify_FloorPlan_Actuall_FloorPlan_Location-.png" target="_blank"><button>View</button></a>
+            </div>
+            <div>
+              <div><strong>Actual</strong></div>
+              <a href="https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/actual/desktop_chrome/Floorplan/Verify_FloorPlan_Actuall_FloorPlan_Location-.png" target="_blank"><button>View</button></a>
+            </div>
+            <div>
+              <div><strong>Diff</strong></div>
+              <a href="https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/diff/desktop_chrome/Floorplan/Verify_FloorPlan_Actuall_FloorPlan_Location-.png" target="_blank"><button>View</button></a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="test-section">
+          <div class="test-heading">Floorplan - Verify_FloorPlan_DPV</div>
+          <div class="test-description">Verify FloorPlan DPV</div>
+          <div class="test-description"><strong>Status:</strong> ❌ Failed</div>
+          <div class="image-diff">
+            <div>
+              <div><strong>Expected</strong></div>
+              <a href="https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/baseline/desktop_chrome/Floorplan/Verify_FloorPlan_DPV-.png" target="_blank"><button>View</button></a>
+            </div>
+            <div>
+              <div><strong>Actual</strong></div>
+              <a href="https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/actual/desktop_chrome/Floorplan/Verify_FloorPlan_DPV-.png" target="_blank"><button>View</button></a>
+            </div>
+            <div>
+              <div><strong>Diff</strong></div>
+              <a href="https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/diff/desktop_chrome/Floorplan/Verify_FloorPlan_DPV-.png" target="_blank"><button>View</button></a>
+            </div>
+          </div>
+        </div>
+      
   </div>
-  
-  <div class="test-section">
-      <div class="test-heading">Floorplan</div>
-      <div class="test-description">Verify FloorPlan UAE location SEO</div>
-      <div class="image-diff">
-          <div>
-              <h3>Baseline</h3>
-              <button onclick="window.open('https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/baseline/desktop_chrome/Floorplan/Verify_FloorPlan_UAE_location_SEO-.png', '_blank')">View Baseline</button>
-          </div>
-          <div>
-              <h3>Actual</h3>
-              <button onclick="window.open('https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/actual/desktop_chrome/Floorplan/Verify_FloorPlan_UAE_location_SEO-.png', '_blank')">View Actual</button>
-          </div>
-          
-          <div>
-              <h3>Diff</h3>
-              <button onclick="window.open('https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/diff/desktop_chrome/Floorplan/Verify_FloorPlan_UAE_location_SEO-.png', '_blank')">View Diff</button>
-          </div>
-          
-      </div>
-  </div>
-  
-  <div class="test-section">
-      <div class="test-heading">Floorplan</div>
-      <div class="test-description">Verify FloorPlan MainCards</div>
-      <div class="image-diff">
-          <div>
-              <h3>Baseline</h3>
-              <button onclick="window.open('https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/baseline/desktop_chrome/Floorplan/Verify_FloorPlan_MainCards-.png', '_blank')">View Baseline</button>
-          </div>
-          <div>
-              <h3>Actual</h3>
-              <button onclick="window.open('https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/actual/desktop_chrome/Floorplan/Verify_FloorPlan_MainCards-.png', '_blank')">View Actual</button>
-          </div>
-          
-          <div>
-              <h3>Diff</h3>
-              <button onclick="window.open('https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/diff/desktop_chrome/Floorplan/Verify_FloorPlan_MainCards-.png', '_blank')">View Diff</button>
-          </div>
-          
-      </div>
-  </div>
-  
-  <div class="test-section">
-      <div class="test-heading">Floorplan</div>
-      <div class="test-description">Verify FloorPlan AbuDhabi Location</div>
-      <div class="image-diff">
-          <div>
-              <h3>Baseline</h3>
-              <button onclick="window.open('https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/baseline/desktop_chrome/Floorplan/Verify_FloorPlan_AbuDhabi_Location-.png', '_blank')">View Baseline</button>
-          </div>
-          <div>
-              <h3>Actual</h3>
-              <button onclick="window.open('https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/actual/desktop_chrome/Floorplan/Verify_FloorPlan_AbuDhabi_Location-.png', '_blank')">View Actual</button>
-          </div>
-          
-      </div>
-  </div>
-  
-  <div class="test-section">
-      <div class="test-heading">Floorplan</div>
-      <div class="test-description">Verify FloorPlan Actuall FloorPlan Location</div>
-      <div class="image-diff">
-          <div>
-              <h3>Baseline</h3>
-              <button onclick="window.open('https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/baseline/desktop_chrome/Floorplan/Verify_FloorPlan_Actuall_FloorPlan_Location-.png', '_blank')">View Baseline</button>
-          </div>
-          <div>
-              <h3>Actual</h3>
-              <button onclick="window.open('https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/actual/desktop_chrome/Floorplan/Verify_FloorPlan_Actuall_FloorPlan_Location-.png', '_blank')">View Actual</button>
-          </div>
-          
-      </div>
-  </div>
-  
-  <div class="test-section">
-      <div class="test-heading">Floorplan</div>
-      <div class="test-description">Verify FloorPlan DPV</div>
-      <div class="image-diff">
-          <div>
-              <h3>Baseline</h3>
-              <button onclick="window.open('https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/baseline/desktop_chrome/Floorplan/Verify_FloorPlan_DPV-.png', '_blank')">View Baseline</button>
-          </div>
-          <div>
-              <h3>Actual</h3>
-              <button onclick="window.open('https://ahsham-7.github.io/Automated-Visual-Regression-Tests/images/actual/desktop_chrome/Floorplan/Verify_FloorPlan_DPV-.png', '_blank')">View Actual</button>
-          </div>
-          
-      </div>
-  </div>
-  
-  </div>
-  </body>
-  </html>
-  
+</body>
+</html>

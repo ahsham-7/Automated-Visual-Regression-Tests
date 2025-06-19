@@ -1,5 +1,6 @@
 import { join } from "path";
-import { writeReport } from './gh-pages/report.js'; // ✅ Add this line
+import fs from "fs";
+import { clearReportData, writeReport } from './reports/generateReport.js';
 
 export const config = {
   runner: "local",
@@ -8,17 +9,17 @@ export const config = {
     "./test/specs/agentHomepage.specs.js",
     "./test/specs/floorPlan.specs.js"
   ],
-  maxInstances: 2, // Limit for GitHub Actions reliability
+  maxInstances: 1,
 
   capabilities: Array.from({ length: 2 }).map((_, index) => ({
     browserName: 'chrome',
     'goog:chromeOptions': {
       args: [
-        '--headless',
+        'headless',
         '--disable-gpu',
         '--no-sandbox',
         '--disable-dev-shm-usage',
-        `--user-data-dir=/tmp/chrome-profile-${Date.now()}-${index}`, // ✅ unique profile
+        `--user-data-dir=/tmp/chrome-profile-${Date.now()}-${index}`,
         '--window-size=1920,1080',
         '--disable-blink-features=AutomationControlled',
         '--disable-infobars',
@@ -66,11 +67,15 @@ export const config = {
     timeout: 200000
   },
 
-  /**
-   * This is the important hook.
-   * Only write the final HTML report after all specs complete.
-   */
+  // ✅ Clear report JSON at the beginning
+  onPrepare: function () {
+    clearReportData();
+    console.log('Cleared previous report data.');
+  },
+
+  // ✅ Generate final HTML after tests
   onComplete: function () {
-    writeReport(); // ✅ Call once after all tests complete
+    writeReport();
+    console.log('Final report written.');
   }
 };

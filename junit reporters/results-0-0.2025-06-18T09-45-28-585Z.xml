@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="6" failures="6" errors="0" skipped="0">
+  <testsuite name="AgentHomePage Suite" timestamp="2025-06-18T14:45:29" time="259.066" tests="6" failures="6" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="AgentHomePage Suite"/>
+      <property name="capabilities" value="chrome.137_0_7151_104.mac"/>
+      <property name="file" value="file://./test/specs/agentHomepage.specs.js"/>
+    </properties>
+    <testcase classname="chrome.137_0_7151_104.mac.AgentHomePage_Suite" name="TC1" time="45.251">
+      <failure message="ENOENT: no such file or directory, open '/Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/reports/reports/gh-pages/reportData.json'"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/81459a24b38c22a39640b54b03b8d5e1/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/81459a24b38c22a39640b54b03b8d5e1/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/81459a24b38c22a39640b54b03b8d5e1/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/81459a24b38c22a39640b54b03b8d5e1/element - {"using":"xpath","value":"//input[@name=\"username\"]"}
+RESULT: {"using":"xpath","value":"//input[@name=\"username\"]"}
+COMMAND: GET /session/81459a24b38c22a39640b54b03b8d5e1/element/f.99C9B9C64DED14B71D53F8EC6FA7E641.d.E94DD9F07EA0A2FA65D2A38D5BCC4EC4.e.3/css/display - {}
+RESULT: {}
+COMMAND: POST /session/81459a24b38c22a39640b54b03b8d5e1/element/f.99C9B9C64DED14B71D53F8EC6FA7E641.d.E94DD9F07EA0A2FA65D2A38D5BCC4EC4.e.3/clear - {}
+RESULT: {}
+COMMAND: POST /session/81459a24b38c22a39640b54b03b8d5e1/element/f.99C9B9C64DED14B71D53F8EC6FA7E641.d.E94DD9F07EA0A2FA65D2A38D5BCC4EC4.e.3/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/81459a24b38c22a39640b54b03b8d5e1/element/f.99C9B9C64DED14B71D53F8EC6FA7E641.d.E94DD9F07EA0A2FA65D2A38D5BCC4EC4.e.4/clear - {}
+RESULT: {}
+COMMAND: POST /session/81459a24b38c22a39640b54b03b8d5e1/element/f.99C9B9C64DED14B71D53F8EC6FA7E641.d.E94DD9F07EA0A2FA65D2A38D5BCC4EC4.e.4/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/81459a24b38c22a39640b54b03b8d5e1/element/f.99C9B9C64DED14B71D53F8EC6FA7E641.d.E94DD9F07EA0A2FA65D2A38D5BCC4EC4.e.5/click - {}
+RESULT: {}
+COMMAND: GET /session/81459a24b38c22a39640b54b03b8d5e1/screenshot - {}
+RESULT: {}
+RESULT: undefined
+]]></system-out>
+      <system-err><![CDATA[
+Error: ENOENT: no such file or directory, open '/Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/reports/reports/gh-pages/reportData.json'
+    at Object.openSync (node:fs:596:3)
+    at Object.writeFileSync (node:fs:2322:35)
+    at addTestResult (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/reports/generateReport.js:38:6)
+    at agentHomepage.compareEnvironments (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:134:5)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/agentHomepage.specs.js:9:9)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.137_0_7151_104.mac.AgentHomePage_Suite" name="TC2" time="25.732">
+      <failure message="ENOENT: no such file or directory, open '/Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/reports/reports/gh-pages/reportData.json'"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/81459a24b38c22a39640b54b03b8d5e1/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/81459a24b38c22a39640b54b03b8d5e1/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/81459a24b38c22a39640b54b03b8d5e1/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/81459a24b38c22a39640b54b03b8d5e1/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/81459a24b38c22a39640b54b03b8d5e1/element/f.99C9B9C64DED14B71D53F8EC6FA7E641.d.5F3A3F1FCB079935250489FD0096E36B.e.3/css/display - {}
+RESULT: {}
+COMMAND: POST /session/81459a24b38c22a39640b54b03b8d5e1/element/f.99C9B9C64DED14B71D53F8EC6FA7E641.d.5F3A3F1FCB079935250489FD0096E36B.e.3/clear - {}
+RESULT: {}
+COMMAND: POST /session/81459a24b38c22a39640b54b03b8d5e1/element/f.99C9B9C64DED14B71D53F8EC6FA7E641.d.5F3A3F1FCB079935250489FD0096E36B.e.3/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/81459a24b38c22a39640b54b03b8d5e1/element/f.99C9B9C64DED14B71D53F8EC6FA7E641.d.5F3A3F1FCB079935250489FD0096E36B.e.4/clear - {}
+RESULT: {}
+COMMAND: POST /session/81459a24b38c22a39640b54b03b8d5e1/element/f.99C9B9C64DED14B71D53F8EC6FA7E641.d.5F3A3F1FCB079935250489FD0096E36B.e.4/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/81459a24b38c22a39640b54b03b8d5e1/element/f.99C9B9C64DED14B71D53F8EC6FA7E641.d.5F3A3F1FCB079935250489FD0096E36B.e.5/click - {}
+RESULT: {}
+COMMAND: GET /session/81459a24b38c22a39640b54b03b8d5e1/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/81459a24b38c22a39640b54b03b8d5e1/screenshot - {}
+RESULT: {}
+RESULT: undefined
+]]></system-out>
+      <system-err><![CDATA[
+Error: ENOENT: no such file or directory, open '/Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/reports/reports/gh-pages/reportData.json'
+    at Object.openSync (node:fs:596:3)
+    at Object.writeFileSync (node:fs:2322:35)
+    at addTestResult (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/reports/generateReport.js:38:6)
+    at agentHomepage.compareFullPageEnvironments (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:177:5)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/agentHomepage.specs.js:20:9)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.137_0_7151_104.mac.AgentHomePage_Suite" name="TC3" time="107.257">
+      <failure message="ENOENT: no such file or directory, open '/Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/reports/reports/gh-pages/reportData.json'"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/81459a24b38c22a39640b54b03b8d5e1/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/81459a24b38c22a39640b54b03b8d5e1/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/81459a24b38c22a39640b54b03b8d5e1/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/81459a24b38c22a39640b54b03b8d5e1/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/81459a24b38c22a39640b54b03b8d5e1/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/81459a24b38c22a39640b54b03b8d5e1/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/81459a24b38c22a39640b54b03b8d5e1/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/81459a24b38c22a39640b54b03b8d5e1/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/81459a24b38c22a39640b54b03b8d5e1/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/81459a24b38c22a39640b54b03b8d5e1/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/81459a24b38c22a39640b54b03b8d5e1/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/81459a24b38c22a39640b54b03b8d5e1/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/81459a24b38c22a39640b54b03b8d5e1/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/81459a24b38c22a39640b54b03b8d5e1/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/81459a24b38c22a39640b54b03b8d5e1/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/81459a24b38c22a39640b54b03b8d5e1/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/81459a24b38c22a39640b54b03b8d5e1/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/81459a24b38c22a39640b54b03b8d5e1/element/f.99C9B9C64DED14B71D53F8EC6FA7E641.d.BB36EAE407DB252D2DACD6E159C0F192.e.3/css/display - {}
+RESULT: {}
+COMMAND: POST /session/81459a24b38c22a39640b54b03b8d5e1/element/f.99C9B9C64DED14B71D53F8EC6FA7E641.d.BB36EAE407DB252D2DACD6E159C0F192.e.3/clear - {}
+RESULT: {}
+COMMAND: POST /session/81459a24b38c22a39640b54b03b8d5e1/element/f.99C9B9C64DED14B71D53F8EC6FA7E641.d.BB36EAE407DB252D2DACD6E159C0F192.e.3/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/81459a24b38c22a39640b54b03b8d5e1/element/f.99C9B9C64DED14B71D53F8EC6FA7E641.d.BB36EAE407DB252D2DACD6E159C0F192.e.4/clear - {}
+RESULT: {}
+COMMAND: POST /session/81459a24b38c22a39640b54b03b8d5e1/element/f.99C9B9C64DED14B71D53F8EC6FA7E641.d.BB36EAE407DB252D2DACD6E159C0F192.e.4/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/81459a24b38c22a39640b54b03b8d5e1/element/f.99C9B9C64DED14B71D53F8EC6FA7E641.d.BB36EAE407DB252D2DACD6E159C0F192.e.5/click - {}
+RESULT: {}
+COMMAND: GET /session/81459a24b38c22a39640b54b03b8d5e1/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/81459a24b38c22a39640b54b03b8d5e1/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/81459a24b38c22a39640b54b03b8d5e1/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/81459a24b38c22a39640b54b03b8d5e1/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/81459a24b38c22a39640b54b03b8d5e1/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/81459a24b38c22a39640b54b03b8d5e1/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/81459a24b38c22a39640b54b03b8d5e1/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/81459a24b38c22a39640b54b03b8d5e1/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/81459a24b38c22a39640b54b03b8d5e1/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/81459a24b38c22a39640b54b03b8d5e1/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/81459a24b38c22a39640b54b03b8d5e1/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/81459a24b38c22a39640b54b03b8d5e1/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/81459a24b38c22a39640b54b03b8d5e1/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/81459a24b38c22a39640b54b03b8d5e1/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/81459a24b38c22a39640b54b03b8d5e1/screenshot - {}
+RESULT: {}
+RESULT: undefined
+]]></system-out>
+      <system-err><![CDATA[
+Error: ENOENT: no such file or directory, open '/Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/reports/reports/gh-pages/reportData.json'
+    at Object.openSync (node:fs:596:3)
+    at Object.writeFileSync (node:fs:2322:35)
+    at addTestResult (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/reports/generateReport.js:38:6)
+    at agentHomepage.compareFullPageEnvironments (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:177:5)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/agentHomepage.specs.js:31:9)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.137_0_7151_104.mac.AgentHomePage_Suite" name="TC4" time="20.638">
+      <failure message="ENOENT: no such file or directory, open '/Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/reports/reports/gh-pages/reportData.json'"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/81459a24b38c22a39640b54b03b8d5e1/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/81459a24b38c22a39640b54b03b8d5e1/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/81459a24b38c22a39640b54b03b8d5e1/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/81459a24b38c22a39640b54b03b8d5e1/screenshot - {}
+RESULT: {}
+RESULT: undefined
+]]></system-out>
+      <system-err><![CDATA[
+Error: ENOENT: no such file or directory, open '/Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/reports/reports/gh-pages/reportData.json'
+    at Object.openSync (node:fs:596:3)
+    at Object.writeFileSync (node:fs:2322:35)
+    at addTestResult (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/reports/generateReport.js:38:6)
+    at agentHomepage.compareEnvironments (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:134:5)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/agentHomepage.specs.js:43:9)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.137_0_7151_104.mac.AgentHomePage_Suite" name="TC5" time="30.066">
+      <failure message="WebDriverError: invalid session id when running &quot;refresh&quot; with method &quot;POST&quot;"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/81459a24b38c22a39640b54b03b8d5e1/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/81459a24b38c22a39640b54b03b8d5e1/refresh - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+invalid session id: WebDriverError: invalid session id when running "refresh" with method "POST"
+    at async agentHomepage.waitForPageToLoad_SimpleCompare (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:346:9)
+    at async agentHomepage.compareEnvironments (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:116:5)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/agentHomepage.specs.js:55:9)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.137_0_7151_104.mac.AgentHomePage_Suite" name="TC6" time="30.089">
+      <failure message="WebDriverError: invalid session id when running &quot;refresh&quot; with method &quot;POST&quot;"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/81459a24b38c22a39640b54b03b8d5e1/window/maximize - {}
+COMMAND: GET /session/81459a24b38c22a39640b54b03b8d5e1/window - {}
+COMMAND: GET /session/81459a24b38c22a39640b54b03b8d5e1/window - {}
+RESULT: {}
+RESULT: {}
+RESULT: {}
+COMMAND: GET /session/81459a24b38c22a39640b54b03b8d5e1/window - {}
+RESULT: {}
+COMMAND: GET /session/81459a24b38c22a39640b54b03b8d5e1/window - {}
+RESULT: {}
+COMMAND: GET /session/81459a24b38c22a39640b54b03b8d5e1/window - {}
+RESULT: {}
+COMMAND: GET /session/81459a24b38c22a39640b54b03b8d5e1/window - {}
+RESULT: {}
+COMMAND: GET /session/81459a24b38c22a39640b54b03b8d5e1/window - {}
+RESULT: {}
+COMMAND: GET /session/81459a24b38c22a39640b54b03b8d5e1/window - {}
+RESULT: {}
+COMMAND: GET /session/81459a24b38c22a39640b54b03b8d5e1/window - {}
+RESULT: {}
+COMMAND: GET /session/81459a24b38c22a39640b54b03b8d5e1/window - {}
+RESULT: {}
+COMMAND: GET /session/81459a24b38c22a39640b54b03b8d5e1/window - {}
+RESULT: {}
+COMMAND: GET /session/81459a24b38c22a39640b54b03b8d5e1/window - {}
+RESULT: {}
+COMMAND: GET /session/81459a24b38c22a39640b54b03b8d5e1/window - {}
+RESULT: {}
+COMMAND: GET /session/81459a24b38c22a39640b54b03b8d5e1/window - {}
+RESULT: {}
+COMMAND: GET /session/81459a24b38c22a39640b54b03b8d5e1/window - {}
+RESULT: {}
+COMMAND: GET /session/81459a24b38c22a39640b54b03b8d5e1/window - {}
+RESULT: {}
+COMMAND: GET /session/81459a24b38c22a39640b54b03b8d5e1/window - {}
+RESULT: {}
+COMMAND: GET /session/81459a24b38c22a39640b54b03b8d5e1/window - {}
+RESULT: {}
+COMMAND: GET /session/81459a24b38c22a39640b54b03b8d5e1/window - {}
+RESULT: {}
+COMMAND: GET /session/81459a24b38c22a39640b54b03b8d5e1/window - {}
+RESULT: {}
+COMMAND: GET /session/81459a24b38c22a39640b54b03b8d5e1/window - {}
+RESULT: {}
+COMMAND: GET /session/81459a24b38c22a39640b54b03b8d5e1/window - {}
+RESULT: {}
+COMMAND: GET /session/81459a24b38c22a39640b54b03b8d5e1/window - {}
+RESULT: {}
+COMMAND: GET /session/81459a24b38c22a39640b54b03b8d5e1/window - {}
+RESULT: {}
+COMMAND: GET /session/81459a24b38c22a39640b54b03b8d5e1/window - {}
+RESULT: {}
+COMMAND: GET /session/81459a24b38c22a39640b54b03b8d5e1/window - {}
+RESULT: {}
+COMMAND: GET /session/81459a24b38c22a39640b54b03b8d5e1/window - {}
+RESULT: {}
+COMMAND: GET /session/81459a24b38c22a39640b54b03b8d5e1/window - {}
+RESULT: {}
+COMMAND: GET /session/81459a24b38c22a39640b54b03b8d5e1/window - {}
+RESULT: {}
+COMMAND: GET /session/81459a24b38c22a39640b54b03b8d5e1/window - {}
+RESULT: {}
+COMMAND: GET /session/81459a24b38c22a39640b54b03b8d5e1/window - {}
+RESULT: {}
+COMMAND: POST /session/81459a24b38c22a39640b54b03b8d5e1/refresh - {}
+RESULT: {}
+COMMAND: DELETE /session/81459a24b38c22a39640b54b03b8d5e1 - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+invalid session id: WebDriverError: invalid session id when running "refresh" with method "POST"
+    at async agentHomepage.waitForPageToLoad_SimpleCompare (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:346:9)
+    at async agentHomepage.compareEnvironments (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:116:5)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/agentHomepage.specs.js:65:9)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

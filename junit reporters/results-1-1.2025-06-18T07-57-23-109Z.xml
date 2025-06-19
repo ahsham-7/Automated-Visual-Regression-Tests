@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="7" failures="7" errors="0" skipped="0">
+  <testsuite name="FloorPlan Suite" timestamp="2025-06-18T12:57:23" time="179.126" tests="7" failures="7" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="FloorPlan Suite"/>
+      <property name="capabilities" value="chrome.137_0_7151_104.mac"/>
+      <property name="file" value="file://./test/specs/floorPlan.specs.js"/>
+    </properties>
+    <testcase classname="chrome.137_0_7151_104.mac.FloorPlan_Suite" name="TC1" time="60.435">
+      <failure message="Image differences detected"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/0816cbc5a70d0e710970197662e520f7/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/0816cbc5a70d0e710970197662e520f7/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/0816cbc5a70d0e710970197662e520f7/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/0816cbc5a70d0e710970197662e520f7/element - {"using":"xpath","value":"//input[@name=\"username\"]"}
+RESULT: {"using":"xpath","value":"//input[@name=\"username\"]"}
+COMMAND: GET /session/0816cbc5a70d0e710970197662e520f7/element/f.7B059BE6B3482A7FA8B2342C8B3830AE.d.C83582204D40D3253F50DD8D3D8922BF.e.3/css/display - {}
+RESULT: {}
+COMMAND: POST /session/0816cbc5a70d0e710970197662e520f7/element/f.7B059BE6B3482A7FA8B2342C8B3830AE.d.C83582204D40D3253F50DD8D3D8922BF.e.3/clear - {}
+RESULT: {}
+COMMAND: POST /session/0816cbc5a70d0e710970197662e520f7/element/f.7B059BE6B3482A7FA8B2342C8B3830AE.d.C83582204D40D3253F50DD8D3D8922BF.e.3/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/0816cbc5a70d0e710970197662e520f7/element/f.7B059BE6B3482A7FA8B2342C8B3830AE.d.C83582204D40D3253F50DD8D3D8922BF.e.4/clear - {}
+RESULT: {}
+COMMAND: POST /session/0816cbc5a70d0e710970197662e520f7/element/f.7B059BE6B3482A7FA8B2342C8B3830AE.d.C83582204D40D3253F50DD8D3D8922BF.e.4/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/0816cbc5a70d0e710970197662e520f7/element/f.7B059BE6B3482A7FA8B2342C8B3830AE.d.C83582204D40D3253F50DD8D3D8922BF.e.5/click - {}
+RESULT: {}
+COMMAND: GET /session/0816cbc5a70d0e710970197662e520f7/screenshot - {}
+RESULT: {}
+RESULT: undefined
+]]></system-out>
+      <system-err><![CDATA[
+Error: Image differences detected
+    at Floorplan.compareEnvironments (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:145:15)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/floorPlan.specs.js:10:9)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.137_0_7151_104.mac.FloorPlan_Suite" name="TC2" time="15.558">
+      <failure message="Can't call scrollIntoView on element with selector &quot;//h2[text()=&quot;UAE Location List&quot;]&quot; because element wasn't found"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/0816cbc5a70d0e710970197662e520f7/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/0816cbc5a70d0e710970197662e520f7/element/f.7B059BE6B3482A7FA8B2342C8B3830AE.d.0C820A640949A4DEE265196B17928072.e.49/rect - {}
+RESULT: {}
+COMMAND: GET /session/0816cbc5a70d0e710970197662e520f7/window/rect - {}
+RESULT: {}
+COMMAND: POST /session/0816cbc5a70d0e710970197662e520f7/actions - {"actions":[{"id":"action1","type":"wheel","parameters":{},"actions":[{"type":"scroll","x":-1267,"y":3158,"deltaX":0,"deltaY":0,"duration":0,"origin":{"element-6066-11e4-a52e-4f735466cecf":"f.7B059BE6B3482A7FA8B2342C8B3830AE.d.0C820A640949A4DEE265196B17928072.e.49"}}]}]}
+RESULT: {"actions":[{"id":"action1","type":"wheel","parameters":{},"actions":[{"type":"scroll","x":-1267,"y":3158,"deltaX":0,"deltaY":0,"duration":0,"origin":{"element-6066-11e4-a52e-4f735466cecf":"f.7B059BE6B3482A7FA8B2342C8B3830AE.d.0C820A640949A4DEE265196B17928072.e.49"}}]}]}
+COMMAND: GET /session/0816cbc5a70d0e710970197662e520f7/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/0816cbc5a70d0e710970197662e520f7/window/maximize - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: Can't call scrollIntoView on element with selector "//h2[text()="UAE Location List"]" because element wasn't found
+    at async Floorplan.ScrollElement (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:80:9)
+    at async Floorplan.verifyUaeLocLists (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/floorplan.page.js:22:9)
+    at async file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/floorPlan.specs.js:27:25
+    at async Floorplan.compareEnvironments (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:128:21)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/floorPlan.specs.js:21:9)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.137_0_7151_104.mac.FloorPlan_Suite" name="TC3" time="13.605">
+      <failure message="Image differences detected"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/0816cbc5a70d0e710970197662e520f7/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/0816cbc5a70d0e710970197662e520f7/element/f.7B059BE6B3482A7FA8B2342C8B3830AE.d.B78ABB958E39DC2CB6FEE80054950733.e.53/rect - {}
+RESULT: {}
+COMMAND: GET /session/0816cbc5a70d0e710970197662e520f7/window/rect - {}
+RESULT: {}
+COMMAND: POST /session/0816cbc5a70d0e710970197662e520f7/actions - {"actions":[{"id":"action2","type":"wheel","parameters":{},"actions":[{"type":"scroll","x":-1408,"y":4411,"deltaX":0,"deltaY":0,"duration":0,"origin":{"element-6066-11e4-a52e-4f735466cecf":"f.7B059BE6B3482A7FA8B2342C8B3830AE.d.B78ABB958E39DC2CB6FEE80054950733.e.53"}}]}]}
+RESULT: {"actions":[{"id":"action2","type":"wheel","parameters":{},"actions":[{"type":"scroll","x":-1408,"y":4411,"deltaX":0,"deltaY":0,"duration":0,"origin":{"element-6066-11e4-a52e-4f735466cecf":"f.7B059BE6B3482A7FA8B2342C8B3830AE.d.B78ABB958E39DC2CB6FEE80054950733.e.53"}}]}]}
+COMMAND: GET /session/0816cbc5a70d0e710970197662e520f7/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/0816cbc5a70d0e710970197662e520f7/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/0816cbc5a70d0e710970197662e520f7/element/f.7B059BE6B3482A7FA8B2342C8B3830AE.d.8C4BEC6C8DC3E70051446BC4FC1E21F7.e.3/css/display - {}
+RESULT: {}
+COMMAND: POST /session/0816cbc5a70d0e710970197662e520f7/element/f.7B059BE6B3482A7FA8B2342C8B3830AE.d.8C4BEC6C8DC3E70051446BC4FC1E21F7.e.3/clear - {}
+RESULT: {}
+COMMAND: POST /session/0816cbc5a70d0e710970197662e520f7/element/f.7B059BE6B3482A7FA8B2342C8B3830AE.d.8C4BEC6C8DC3E70051446BC4FC1E21F7.e.3/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/0816cbc5a70d0e710970197662e520f7/element/f.7B059BE6B3482A7FA8B2342C8B3830AE.d.8C4BEC6C8DC3E70051446BC4FC1E21F7.e.4/clear - {}
+RESULT: {}
+COMMAND: POST /session/0816cbc5a70d0e710970197662e520f7/element/f.7B059BE6B3482A7FA8B2342C8B3830AE.d.8C4BEC6C8DC3E70051446BC4FC1E21F7.e.4/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/0816cbc5a70d0e710970197662e520f7/element/f.7B059BE6B3482A7FA8B2342C8B3830AE.d.8C4BEC6C8DC3E70051446BC4FC1E21F7.e.5/click - {}
+RESULT: {}
+COMMAND: GET /session/0816cbc5a70d0e710970197662e520f7/element/f.7B059BE6B3482A7FA8B2342C8B3830AE.d.0350ABCCCD168323AE545371660D361E.e.14/rect - {}
+RESULT: {}
+COMMAND: GET /session/0816cbc5a70d0e710970197662e520f7/window/rect - {}
+RESULT: {}
+COMMAND: POST /session/0816cbc5a70d0e710970197662e520f7/actions - {"actions":[{"id":"action3","type":"wheel","parameters":{},"actions":[{"type":"scroll","x":-1408,"y":3857,"deltaX":0,"deltaY":0,"duration":0,"origin":{"element-6066-11e4-a52e-4f735466cecf":"f.7B059BE6B3482A7FA8B2342C8B3830AE.d.0350ABCCCD168323AE545371660D361E.e.14"}}]}]}
+RESULT: {"actions":[{"id":"action3","type":"wheel","parameters":{},"actions":[{"type":"scroll","x":-1408,"y":3857,"deltaX":0,"deltaY":0,"duration":0,"origin":{"element-6066-11e4-a52e-4f735466cecf":"f.7B059BE6B3482A7FA8B2342C8B3830AE.d.0350ABCCCD168323AE545371660D361E.e.14"}}]}]}
+COMMAND: GET /session/0816cbc5a70d0e710970197662e520f7/screenshot - {}
+RESULT: {}
+RESULT: undefined
+]]></system-out>
+      <system-err><![CDATA[
+Error: Image differences detected
+    at Floorplan.compareEnvironments (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:145:15)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/floorPlan.specs.js:33:9)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.137_0_7151_104.mac.FloorPlan_Suite" name="TC4" time="14.776">
+      <failure message="Image differences detected"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/0816cbc5a70d0e710970197662e520f7/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/0816cbc5a70d0e710970197662e520f7/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/0816cbc5a70d0e710970197662e520f7/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/0816cbc5a70d0e710970197662e520f7/element/f.7B059BE6B3482A7FA8B2342C8B3830AE.d.7FFE8B4D35A752D7C81DD64C0192B66F.e.3/css/display - {}
+RESULT: {}
+COMMAND: POST /session/0816cbc5a70d0e710970197662e520f7/element/f.7B059BE6B3482A7FA8B2342C8B3830AE.d.7FFE8B4D35A752D7C81DD64C0192B66F.e.3/clear - {}
+RESULT: {}
+COMMAND: POST /session/0816cbc5a70d0e710970197662e520f7/element/f.7B059BE6B3482A7FA8B2342C8B3830AE.d.7FFE8B4D35A752D7C81DD64C0192B66F.e.3/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/0816cbc5a70d0e710970197662e520f7/element/f.7B059BE6B3482A7FA8B2342C8B3830AE.d.7FFE8B4D35A752D7C81DD64C0192B66F.e.4/clear - {}
+RESULT: {}
+COMMAND: POST /session/0816cbc5a70d0e710970197662e520f7/element/f.7B059BE6B3482A7FA8B2342C8B3830AE.d.7FFE8B4D35A752D7C81DD64C0192B66F.e.4/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/0816cbc5a70d0e710970197662e520f7/element/f.7B059BE6B3482A7FA8B2342C8B3830AE.d.7FFE8B4D35A752D7C81DD64C0192B66F.e.5/click - {}
+RESULT: {}
+COMMAND: GET /session/0816cbc5a70d0e710970197662e520f7/screenshot - {}
+RESULT: {}
+RESULT: undefined
+]]></system-out>
+      <system-err><![CDATA[
+Error: Image differences detected
+    at Floorplan.compareEnvironments (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:145:15)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/floorPlan.specs.js:45:9)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.137_0_7151_104.mac.FloorPlan_Suite" name="TC5" time="24.309">
+      <failure message="this.conditionalLogin is not a function"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/0816cbc5a70d0e710970197662e520f7/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/0816cbc5a70d0e710970197662e520f7/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/0816cbc5a70d0e710970197662e520f7/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/0816cbc5a70d0e710970197662e520f7/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/0816cbc5a70d0e710970197662e520f7/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/0816cbc5a70d0e710970197662e520f7/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/0816cbc5a70d0e710970197662e520f7/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/0816cbc5a70d0e710970197662e520f7/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/0816cbc5a70d0e710970197662e520f7/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/0816cbc5a70d0e710970197662e520f7/window/maximize - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+TypeError: this.conditionalLogin is not a function
+    at Floorplan.compareFullPageEnvironments (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:164:16)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/floorPlan.specs.js:56:9)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.137_0_7151_104.mac.FloorPlan_Suite" name="TC6" time="24.695">
+      <failure message="this.conditionalLogin is not a function"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/0816cbc5a70d0e710970197662e520f7/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/0816cbc5a70d0e710970197662e520f7/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/0816cbc5a70d0e710970197662e520f7/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/0816cbc5a70d0e710970197662e520f7/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/0816cbc5a70d0e710970197662e520f7/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/0816cbc5a70d0e710970197662e520f7/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/0816cbc5a70d0e710970197662e520f7/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/0816cbc5a70d0e710970197662e520f7/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/0816cbc5a70d0e710970197662e520f7/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/0816cbc5a70d0e710970197662e520f7/window/maximize - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+TypeError: this.conditionalLogin is not a function
+    at Floorplan.compareFullPageEnvironments (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:164:16)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/floorPlan.specs.js:67:9)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.137_0_7151_104.mac.FloorPlan_Suite" name="TC7" time="25.738">
+      <failure message="this.conditionalLogin is not a function"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/0816cbc5a70d0e710970197662e520f7/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/0816cbc5a70d0e710970197662e520f7/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/0816cbc5a70d0e710970197662e520f7/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/0816cbc5a70d0e710970197662e520f7/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/0816cbc5a70d0e710970197662e520f7/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/0816cbc5a70d0e710970197662e520f7/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/0816cbc5a70d0e710970197662e520f7/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/0816cbc5a70d0e710970197662e520f7/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/0816cbc5a70d0e710970197662e520f7/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/0816cbc5a70d0e710970197662e520f7/window/maximize - {}
+RESULT: {}
+COMMAND: DELETE /session/0816cbc5a70d0e710970197662e520f7 - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+TypeError: this.conditionalLogin is not a function
+    at Floorplan.compareFullPageEnvironments (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:164:16)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/floorPlan.specs.js:78:9)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

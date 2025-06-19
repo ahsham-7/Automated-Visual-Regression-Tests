@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="6" failures="6" errors="0" skipped="0">
+  <testsuite name="AgentHomePage Suite" timestamp="2025-06-18T13:06:28" time="539.332" tests="6" failures="6" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="AgentHomePage Suite"/>
+      <property name="capabilities" value="chrome.137_0_7151_104.mac"/>
+      <property name="file" value="file://./test/specs/agentHomepage.specs.js"/>
+    </properties>
+    <testcase classname="chrome.137_0_7151_104.mac.AgentHomePage_Suite" name="TC1" time="109.77">
+      <failure message="Image differences detected"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/c403726e4dd20843f2782f9371aa9bf5/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/c403726e4dd20843f2782f9371aa9bf5/refresh - {}
+RESULT: {}
+COMMAND: GET /session/c403726e4dd20843f2782f9371aa9bf5/window - {}
+RESULT: {}
+COMMAND: GET /session/c403726e4dd20843f2782f9371aa9bf5/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/c403726e4dd20843f2782f9371aa9bf5/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/c403726e4dd20843f2782f9371aa9bf5/element - {"using":"xpath","value":"//input[@name=\"username\"]"}
+RESULT: {"using":"xpath","value":"//input[@name=\"username\"]"}
+COMMAND: GET /session/c403726e4dd20843f2782f9371aa9bf5/element/f.5461CCA366B79C24A5EAFC8F2626270A.d.EE223DB8D08D8884934858282DD03603.e.2/css/display - {}
+RESULT: {}
+COMMAND: POST /session/c403726e4dd20843f2782f9371aa9bf5/element/f.5461CCA366B79C24A5EAFC8F2626270A.d.EE223DB8D08D8884934858282DD03603.e.2/clear - {}
+RESULT: {}
+COMMAND: POST /session/c403726e4dd20843f2782f9371aa9bf5/element/f.5461CCA366B79C24A5EAFC8F2626270A.d.EE223DB8D08D8884934858282DD03603.e.2/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/c403726e4dd20843f2782f9371aa9bf5/element/f.5461CCA366B79C24A5EAFC8F2626270A.d.EE223DB8D08D8884934858282DD03603.e.4/clear - {}
+RESULT: {}
+COMMAND: POST /session/c403726e4dd20843f2782f9371aa9bf5/element/f.5461CCA366B79C24A5EAFC8F2626270A.d.EE223DB8D08D8884934858282DD03603.e.4/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/c403726e4dd20843f2782f9371aa9bf5/element/f.5461CCA366B79C24A5EAFC8F2626270A.d.EE223DB8D08D8884934858282DD03603.e.7/click - {}
+RESULT: {}
+COMMAND: GET /session/c403726e4dd20843f2782f9371aa9bf5/screenshot - {}
+RESULT: {}
+RESULT: undefined
+]]></system-out>
+      <system-err><![CDATA[
+Error: Image differences detected
+    at agentHomepage.compareEnvironments (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:145:15)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/agentHomepage.specs.js:9:9)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.137_0_7151_104.mac.AgentHomePage_Suite" name="TC2" time="107.83">
+      <failure message="this.conditionalLogin is not a function"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/c403726e4dd20843f2782f9371aa9bf5/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/c403726e4dd20843f2782f9371aa9bf5/refresh - {}
+RESULT: {}
+COMMAND: GET /session/c403726e4dd20843f2782f9371aa9bf5/window - {}
+RESULT: {}
+COMMAND: GET /session/c403726e4dd20843f2782f9371aa9bf5/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/c403726e4dd20843f2782f9371aa9bf5/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/c403726e4dd20843f2782f9371aa9bf5/window/maximize - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+TypeError: this.conditionalLogin is not a function
+    at agentHomepage.compareFullPageEnvironments (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:164:16)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/agentHomepage.specs.js:20:9)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.137_0_7151_104.mac.AgentHomePage_Suite" name="TC3" time="177.025">
+      <failure message="this.conditionalLogin is not a function"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/c403726e4dd20843f2782f9371aa9bf5/window/maximize - {}
+COMMAND: POST /session/c403726e4dd20843f2782f9371aa9bf5/refresh - {}
+RESULT: {}
+RESULT: {}
+COMMAND: GET /session/c403726e4dd20843f2782f9371aa9bf5/window - {}
+RESULT: {}
+COMMAND: GET /session/c403726e4dd20843f2782f9371aa9bf5/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/c403726e4dd20843f2782f9371aa9bf5/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/c403726e4dd20843f2782f9371aa9bf5/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/c403726e4dd20843f2782f9371aa9bf5/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/c403726e4dd20843f2782f9371aa9bf5/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/c403726e4dd20843f2782f9371aa9bf5/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/c403726e4dd20843f2782f9371aa9bf5/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/c403726e4dd20843f2782f9371aa9bf5/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/c403726e4dd20843f2782f9371aa9bf5/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/c403726e4dd20843f2782f9371aa9bf5/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/c403726e4dd20843f2782f9371aa9bf5/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/c403726e4dd20843f2782f9371aa9bf5/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/c403726e4dd20843f2782f9371aa9bf5/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/c403726e4dd20843f2782f9371aa9bf5/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/c403726e4dd20843f2782f9371aa9bf5/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/c403726e4dd20843f2782f9371aa9bf5/window/maximize - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+TypeError: this.conditionalLogin is not a function
+    at agentHomepage.compareFullPageEnvironments (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:164:16)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/agentHomepage.specs.js:31:9)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.137_0_7151_104.mac.AgentHomePage_Suite" name="TC4" time="97.808">
+      <failure message="Image differences detected"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/c403726e4dd20843f2782f9371aa9bf5/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/c403726e4dd20843f2782f9371aa9bf5/refresh - {}
+RESULT: {}
+COMMAND: GET /session/c403726e4dd20843f2782f9371aa9bf5/window - {}
+RESULT: {}
+COMMAND: GET /session/c403726e4dd20843f2782f9371aa9bf5/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/c403726e4dd20843f2782f9371aa9bf5/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/c403726e4dd20843f2782f9371aa9bf5/element/f.5461CCA366B79C24A5EAFC8F2626270A.d.7EDD8202228C9A7ABF48701EC91510A7.e.4/css/display - {}
+RESULT: {}
+COMMAND: POST /session/c403726e4dd20843f2782f9371aa9bf5/element/f.5461CCA366B79C24A5EAFC8F2626270A.d.7EDD8202228C9A7ABF48701EC91510A7.e.4/clear - {}
+RESULT: {}
+COMMAND: POST /session/c403726e4dd20843f2782f9371aa9bf5/element/f.5461CCA366B79C24A5EAFC8F2626270A.d.7EDD8202228C9A7ABF48701EC91510A7.e.4/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/c403726e4dd20843f2782f9371aa9bf5/element/f.5461CCA366B79C24A5EAFC8F2626270A.d.7EDD8202228C9A7ABF48701EC91510A7.e.5/clear - {}
+RESULT: {}
+COMMAND: POST /session/c403726e4dd20843f2782f9371aa9bf5/element/f.5461CCA366B79C24A5EAFC8F2626270A.d.7EDD8202228C9A7ABF48701EC91510A7.e.5/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/c403726e4dd20843f2782f9371aa9bf5/element/f.5461CCA366B79C24A5EAFC8F2626270A.d.7EDD8202228C9A7ABF48701EC91510A7.e.6/click - {}
+RESULT: {}
+COMMAND: GET /session/c403726e4dd20843f2782f9371aa9bf5/screenshot - {}
+RESULT: {}
+RESULT: undefined
+]]></system-out>
+      <system-err><![CDATA[
+Error: Image differences detected
+    at agentHomepage.compareEnvironments (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:145:15)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/agentHomepage.specs.js:43:9)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.137_0_7151_104.mac.AgentHomePage_Suite" name="TC5" time="20.041">
+      <failure message="Image differences detected"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/c403726e4dd20843f2782f9371aa9bf5/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/c403726e4dd20843f2782f9371aa9bf5/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/c403726e4dd20843f2782f9371aa9bf5/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/c403726e4dd20843f2782f9371aa9bf5/screenshot - {}
+RESULT: {}
+RESULT: undefined
+]]></system-out>
+      <system-err><![CDATA[
+Error: Image differences detected
+    at agentHomepage.compareEnvironments (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:145:15)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/agentHomepage.specs.js:55:9)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.137_0_7151_104.mac.AgentHomePage_Suite" name="TC6" time="26.846">
+      <failure message="Image differences detected"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/c403726e4dd20843f2782f9371aa9bf5/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/c403726e4dd20843f2782f9371aa9bf5/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/c403726e4dd20843f2782f9371aa9bf5/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/c403726e4dd20843f2782f9371aa9bf5/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: DELETE /session/c403726e4dd20843f2782f9371aa9bf5 - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: Image differences detected
+    at agentHomepage.compareEnvironments (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:145:15)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/agentHomepage.specs.js:65:9)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>
