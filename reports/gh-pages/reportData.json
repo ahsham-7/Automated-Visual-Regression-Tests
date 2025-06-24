@@ -1,5 +1,11 @@
 [
   {
+    "testSuite": "Floorplan",
+    "screenshotName": "Verify_Default_View_FloorPlan",
+    "testDescription": "Verify_Default_View_Floor_Plan",
+    "passed": true
+  },
+  {
     "testSuite": "AgentHomePage",
     "screenshotName": "Verify_default_view_of_Agent_Home_Page",
     "testDescription": "Verify default view of Agent Home Page",
@@ -7,44 +13,20 @@
   },
   {
     "testSuite": "Floorplan",
-    "screenshotName": "Verify_Default_View_FloorPlan",
-    "testDescription": "Verify_Default_View_Floor_Plan",
-    "passed": false
-  },
-  {
-    "testSuite": "Floorplan",
     "screenshotName": "Verify_FloorPlan_UAE_location_SEO",
     "testDescription": "Verify FloorPlan UAE location SEO",
-    "passed": false
-  },
-  {
-    "testSuite": "AgentHomePage",
-    "screenshotName": "Verify_full_view_of_Agent_Home_Page",
-    "testDescription": "Verify full view of Agent Home Page",
-    "passed": false
+    "passed": true
   },
   {
     "testSuite": "Floorplan",
     "screenshotName": "Verify_FloorPlan_BottomList",
     "testDescription": "Verify FloorPlan BottomList",
-    "passed": false
-  },
-  {
-    "testSuite": "Floorplan",
-    "screenshotName": "Verify_FloorPlan_MainCards",
-    "testDescription": "Verify FloorPlan MainCards",
-    "passed": false
-  },
-  {
-    "testSuite": "Floorplan",
-    "screenshotName": "Verify_FloorPlan_AbuDhabi_Location",
-    "testDescription": "Verify FloorPlan AbuDhabi Location",
-    "passed": false
+    "passed": true
   },
   {
     "testSuite": "AgentHomePage",
-    "screenshotName": "Verify_full_view_of_Agent_Search_Page",
-    "testDescription": "Verify full view of Agent Search Page",
+    "screenshotName": "Verify_full_view_of_Agent_Home_Page",
+    "testDescription": "Verify full view of Agent Home Page",
     "passed": false
   },
   {
@@ -61,9 +43,9 @@
   },
   {
     "testSuite": "Floorplan",
-    "screenshotName": "Verify_FloorPlan_Actuall_FloorPlan_Location",
-    "testDescription": "Verify FloorPlan Actuall FloorPlan Location",
-    "passed": false
+    "screenshotName": "Verify_FloorPlan_AbuDhabi_Location",
+    "testDescription": "Verify FloorPlan AbuDhabi Location",
+    "passed": true
   },
   {
     "testSuite": "AgentHomePage",
@@ -73,8 +55,14 @@
   },
   {
     "testSuite": "Floorplan",
+    "screenshotName": "Verify_FloorPlan_Actuall_FloorPlan_Location",
+    "testDescription": "Verify FloorPlan Actuall FloorPlan Location",
+    "passed": true
+  },
+  {
+    "testSuite": "Floorplan",
     "screenshotName": "Verify_FloorPlan_DPV",
     "testDescription": "Verify FloorPlan DPV",
-    "passed": false
+    "passed": true
   }
 ]

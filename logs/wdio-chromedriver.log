@@ -2,9 +2,11 @@ Starting ChromeDriver 136.0.7103.49 (031848bc6ad02b97854f3d6154d3aefd0434756a-re
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully on port 9515.
-[1750329531.364][WARNING]: Deprecated chrome option is ignored: useAutomationExtension
-[1750329531.364][WARNING]: Deprecated chrome option is ignored: useAutomationExtension
-[1750329531.364][WARNING]: Deprecated chrome option is ignored: useAutomationExtension
-[1750329531.364][WARNING]: Deprecated chrome option is ignored: useAutomationExtension
-[1750329533.404][WARNING]: This version of ChromeDriver has not been tested with Chrome version 137.
-[1750329533.405][WARNING]: This version of ChromeDriver has not been tested with Chrome version 137.
+[1750408016.814][WARNING]: Deprecated chrome option is ignored: useAutomationExtension
+[1750408016.814][WARNING]: Deprecated chrome option is ignored: useAutomationExtension
+[1750408016.814][WARNING]: Deprecated chrome option is ignored: useAutomationExtension
+[1750408016.814][WARNING]: Deprecated chrome option is ignored: useAutomationExtension
+[1750408018.142][WARNING]: This version of ChromeDriver has not been tested with Chrome version 137.
+[1750408018.143][WARNING]: This version of ChromeDriver has not been tested with Chrome version 137.
+[1750408380.860][SEVERE]: Timed out receiving message from renderer: 300.000
+[1750408380.861][SEVERE]: Timed out receiving message from renderer: 300.000
