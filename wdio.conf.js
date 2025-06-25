@@ -6,10 +6,10 @@ export const config = {
   path: "/",
   specs: [
     "./test/specs/agentHomepage.specs.js",
-    "./test/specs/floorPlan.specs.js"
+    "./test/specs/floorPlan.specs.js",
+    "./test/specs/HomePage.specs.js"
   ],
 
-  // ✅ Run multiple tests in parallel (change to 1 if stability is needed)
   maxInstances: 4,
 
   capabilities: [{
@@ -80,7 +80,7 @@ console.log('📏 Current resolution before screenshot:', size);
    */
   onPrepare: function () {
     clearReportData();
-    console.log('✅ Cleared previous report data.');
+    console.log('Cleared previous report data.');
   },
 
   /**
@@ -88,6 +88,6 @@ console.log('📏 Current resolution before screenshot:', size);
    */
   onComplete: function () {
     writeReport();
-    console.log('✅ Final report written.');
+    console.log('Final report written.');
   }
 };

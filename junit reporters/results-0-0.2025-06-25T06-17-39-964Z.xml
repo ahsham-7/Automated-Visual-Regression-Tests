@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="5" failures="5" errors="0" skipped="0">
+  <testsuite name="HomePage Suit" timestamp="2025-06-25T11:17:41" time="0.056" tests="5" failures="5" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="HomePage Suit"/>
+      <property name="capabilities" value="chrome.138_0_7204_49.mac"/>
+      <property name="file" value="file://./test/specs/HomePage.specs.js"/>
+    </properties>
+    <testcase classname="chrome.138_0_7204_49.mac.HomePage_Suit" name="TC1" time="0.018">
+      <failure message="Page is not defined"/>
+      <system-err><![CDATA[
+ReferenceError: Page is not defined
+    at Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/HomePage.specs.js:14:31)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.138_0_7204_49.mac.HomePage_Suit" name="TC2" time="0.01">
+      <failure message="Page is not defined"/>
+      <system-err><![CDATA[
+ReferenceError: Page is not defined
+    at Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/HomePage.specs.js:25:31)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.138_0_7204_49.mac.HomePage_Suit" name="TC3" time="0.011">
+      <failure message="Page is not defined"/>
+      <system-err><![CDATA[
+ReferenceError: Page is not defined
+    at Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/HomePage.specs.js:37:31)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.138_0_7204_49.mac.HomePage_Suit" name="TC4" time="0.003">
+      <failure message="Page is not defined"/>
+      <system-err><![CDATA[
+ReferenceError: Page is not defined
+    at Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/HomePage.specs.js:49:31)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.138_0_7204_49.mac.HomePage_Suit" name="TC5" time="0.01">
+      <failure message="Page is not defined"/>
+      <system-out><![CDATA[
+COMMAND: DELETE /session/e5bc6f6f92f7c5d3895e31534e0df327 - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+ReferenceError: Page is not defined
+    at Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/HomePage.specs.js:61:31)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

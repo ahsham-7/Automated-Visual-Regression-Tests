@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="5" failures="4" errors="0" skipped="0">
+  <testsuite name="HomePage Suit" timestamp="2025-06-25T11:18:06" time="56.342" tests="5" failures="4" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="HomePage Suit"/>
+      <property name="capabilities" value="chrome.138_0_7204_49.mac"/>
+      <property name="file" value="file://./test/specs/HomePage.specs.js"/>
+    </properties>
+    <testcase classname="chrome.138_0_7204_49.mac.HomePage_Suit" name="TC1" time="25.774">
+      <system-out><![CDATA[
+COMMAND: POST /session/b620d8c139aea56e3441562a15993f0b/window/maximize - {}
+COMMAND: POST /session/b620d8c139aea56e3441562a15993f0b/window/rect - {"x":null,"y":null,"width":1920,"height":1080}
+RESULT: {}
+RESULT: {"x":null,"y":null,"width":1920,"height":1080}
+COMMAND: GET /session/b620d8c139aea56e3441562a15993f0b/window/rect - {}
+RESULT: {}
+COMMAND: GET /session/b620d8c139aea56e3441562a15993f0b/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/b620d8c139aea56e3441562a15993f0b/window/maximize - {}
+COMMAND: POST /session/b620d8c139aea56e3441562a15993f0b/window/rect - {"x":null,"y":null,"width":1920,"height":1080}
+RESULT: {}
+RESULT: {"x":null,"y":null,"width":1920,"height":1080}
+COMMAND: GET /session/b620d8c139aea56e3441562a15993f0b/window/rect - {}
+RESULT: {}
+COMMAND: GET /session/b620d8c139aea56e3441562a15993f0b/element/f.21105069FAD0502140FFC0B67B756CE5.d.19A666C59D139644AAD407A30982D54E.e.3/css/display - {}
+RESULT: {}
+COMMAND: POST /session/b620d8c139aea56e3441562a15993f0b/element/f.21105069FAD0502140FFC0B67B756CE5.d.19A666C59D139644AAD407A30982D54E.e.3/clear - {}
+RESULT: {}
+COMMAND: POST /session/b620d8c139aea56e3441562a15993f0b/element/f.21105069FAD0502140FFC0B67B756CE5.d.19A666C59D139644AAD407A30982D54E.e.3/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/b620d8c139aea56e3441562a15993f0b/element/f.21105069FAD0502140FFC0B67B756CE5.d.19A666C59D139644AAD407A30982D54E.e.4/clear - {}
+RESULT: {}
+COMMAND: POST /session/b620d8c139aea56e3441562a15993f0b/element/f.21105069FAD0502140FFC0B67B756CE5.d.19A666C59D139644AAD407A30982D54E.e.4/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/b620d8c139aea56e3441562a15993f0b/element/f.21105069FAD0502140FFC0B67B756CE5.d.19A666C59D139644AAD407A30982D54E.e.5/click - {}
+RESULT: {}
+COMMAND: GET /session/b620d8c139aea56e3441562a15993f0b/screenshot - {}
+RESULT: {}
+RESULT: undefined
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.138_0_7204_49.mac.HomePage_Suit" name="TC2" time="12.806">
+      <failure message="homePage.clickTab is not a function"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/b620d8c139aea56e3441562a15993f0b/window/maximize - {}
+COMMAND: POST /session/b620d8c139aea56e3441562a15993f0b/window/rect - {"x":null,"y":null,"width":1920,"height":1080}
+RESULT: {}
+RESULT: {"x":null,"y":null,"width":1920,"height":1080}
+COMMAND: GET /session/b620d8c139aea56e3441562a15993f0b/window/rect - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+TypeError: homePage.clickTab is not a function
+    at file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/HomePage.specs.js:33:40
+    at HomePage.compareEnvironments (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:123:27)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/HomePage.specs.js:27:9)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.138_0_7204_49.mac.HomePage_Suit" name="TC3" time="5.737">
+      <failure message="homePage.clickTab is not a function"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/b620d8c139aea56e3441562a15993f0b/window/maximize - {}
+COMMAND: POST /session/b620d8c139aea56e3441562a15993f0b/window/rect - {"x":null,"y":null,"width":1920,"height":1080}
+RESULT: {}
+RESULT: {"x":null,"y":null,"width":1920,"height":1080}
+COMMAND: GET /session/b620d8c139aea56e3441562a15993f0b/window/rect - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+TypeError: homePage.clickTab is not a function
+    at file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/HomePage.specs.js:45:40
+    at HomePage.compareEnvironments (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:123:27)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/HomePage.specs.js:39:9)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.138_0_7204_49.mac.HomePage_Suit" name="TC4" time="5.653">
+      <failure message="homePage.clickTab is not a function"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/b620d8c139aea56e3441562a15993f0b/window/maximize - {}
+COMMAND: POST /session/b620d8c139aea56e3441562a15993f0b/window/rect - {"x":null,"y":null,"width":1920,"height":1080}
+RESULT: {}
+RESULT: {"x":null,"y":null,"width":1920,"height":1080}
+COMMAND: GET /session/b620d8c139aea56e3441562a15993f0b/window/rect - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+TypeError: homePage.clickTab is not a function
+    at file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/HomePage.specs.js:57:40
+    at HomePage.compareEnvironments (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:123:27)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/HomePage.specs.js:51:9)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.138_0_7204_49.mac.HomePage_Suit" name="TC5" time="6.367">
+      <failure message="homePage.clickTab is not a function"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/b620d8c139aea56e3441562a15993f0b/window/maximize - {}
+COMMAND: POST /session/b620d8c139aea56e3441562a15993f0b/window/rect - {"x":null,"y":null,"width":1920,"height":1080}
+RESULT: {}
+RESULT: {"x":null,"y":null,"width":1920,"height":1080}
+COMMAND: GET /session/b620d8c139aea56e3441562a15993f0b/window/rect - {}
+RESULT: {}
+COMMAND: DELETE /session/b620d8c139aea56e3441562a15993f0b - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+TypeError: homePage.clickTab is not a function
+    at file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/HomePage.specs.js:69:40
+    at HomePage.compareEnvironments (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:123:27)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/HomePage.specs.js:63:9)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="1" errors="0" skipped="0">
+  <testsuite name="HomePage Suit" timestamp="2025-06-25T10:54:18" time="0.023" tests="1" failures="1" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="HomePage Suit"/>
+      <property name="capabilities" value="chrome.138_0_7204_49.mac"/>
+      <property name="file" value="file://./test/specs/HomePage.specs.js"/>
+    </properties>
+    <testcase classname="chrome.138_0_7204_49.mac.HomePage_Suit" name="Verify Carousals via Backward button" time="0.019">
+      <failure message="homePage.waitforElementDisplay is not a function"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/253db7f8896cd5f20dafd62253b3b0be/window/maximize - {}
+COMMAND: DELETE /session/253db7f8896cd5f20dafd62253b3b0be - {}
+RESULT: {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+TypeError: homePage.waitforElementDisplay is not a function
+    at Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/HomePage.specs.js:82:24)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

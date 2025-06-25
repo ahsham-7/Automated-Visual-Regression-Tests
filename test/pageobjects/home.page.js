@@ -27,6 +27,9 @@ class HomePage extends Page{
     get Carousal(){
         return $('//div[@class="db481140"]')
     }
+    get CountrySwitcher(){
+        return $('//button[@aria-label="Select country"]')
+    }
     get DubaiTransactionTab(){
         return $('//button[@aria-label="Transactions"]')
     }
@@ -36,6 +39,19 @@ class HomePage extends Page{
     get NewProjectsTab(){
         return $('//button[@aria-label="New Projects"]')
     }
+    getTabByName(tabName) {
+        return $(`//button[@aria-label="${tabName}"]`);
+    }
+      async clickTab(tabName) {
+        const tab = this.getTabByName(tabName);
+        await this.waitForElementDisplayed(tab)
+        await tab.click();
+    }
+    async OpenCountrySwitcher(){
+        await this.CountrySwitcher.click()
+    }
+
+
 
     
 }

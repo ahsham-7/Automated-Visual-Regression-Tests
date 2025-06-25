@@ -1,80 +1,38 @@
 [
   {
-    "testSuite": "AgentHomePage",
-    "screenshotName": "Verify_default_view_of_Agent_Home_Page",
-    "testDescription": "Verify default view of Agent Home Page",
+    "testSuite": "HomePage",
+    "screenshotName": "Verify_Homepage:_Properties_Tab",
+    "testDescription": "Verify Properties Tab on HomePage",
     "passed": false
   },
   {
-    "testSuite": "Floorplan",
-    "screenshotName": "Verify_Default_View_FloorPlan",
-    "testDescription": "Verify_Default_View_Floor_Plan",
-    "passed": true
-  },
-  {
-    "testSuite": "Floorplan",
-    "screenshotName": "Verify_FloorPlan_UAE_location_SEO",
-    "testDescription": "Verify FloorPlan UAE location SEO",
-    "passed": true
-  },
-  {
-    "testSuite": "Floorplan",
-    "screenshotName": "Verify_FloorPlan_BottomList",
-    "testDescription": "Verify FloorPlan BottomList",
-    "passed": true
-  },
-  {
-    "testSuite": "AgentHomePage",
-    "screenshotName": "Verify_full_view_of_Agent_Home_Page",
-    "testDescription": "Verify full view of Agent Home Page",
+    "testSuite": "HomePage",
+    "screenshotName": "Verify_Homepage:_New_Projects_Tab",
+    "testDescription": "Verify New Projects Tab on HomePage",
     "passed": false
   },
   {
-    "testSuite": "Floorplan",
-    "screenshotName": "Verify_FloorPlan_MainCards",
-    "testDescription": "Verify FloorPlan MainCards",
-    "passed": true
-  },
-  {
-    "testSuite": "Floorplan",
-    "screenshotName": "Verify_FloorPlan_AbuDhabi_Location",
-    "testDescription": "Verify FloorPlan AbuDhabi Location",
-    "passed": true
-  },
-  {
-    "testSuite": "AgentHomePage",
-    "screenshotName": "Verify_full_view_of_Agent_Search_Page",
-    "testDescription": "Verify full view of Agent Search Page",
+    "testSuite": "HomePage",
+    "screenshotName": "Verify_Homepage:_DT_Transactions_Tab",
+    "testDescription": "Verify Transactions Tab on HomePage",
     "passed": false
   },
   {
-    "testSuite": "Floorplan",
-    "screenshotName": "Verify_FloorPlan_Actuall_FloorPlan_Location",
-    "testDescription": "Verify FloorPlan Actuall FloorPlan Location",
-    "passed": true
-  },
-  {
-    "testSuite": "AgentHomePage",
-    "screenshotName": "Verify_Agent_Search_Page:_Uae_Loc",
-    "testDescription": "Verify Agent Search Page: Uae Loc",
+    "testSuite": "HomePage",
+    "screenshotName": "Verify_Homepage:_TruEstimate_Tab",
+    "testDescription": "Verify TruEstimate Tab on HomePage",
     "passed": false
   },
   {
-    "testSuite": "AgentHomePage",
-    "screenshotName": "Verify_Agent_Search_Page:_Dubai_Loc",
-    "testDescription": "Verify Agent Search Page: Uae Loc",
+    "testSuite": "HomePage",
+    "screenshotName": "Verify_Homepage:_Agents_Tab",
+    "testDescription": "Verify Agents Tab on HomePage",
     "passed": false
   },
   {
-    "testSuite": "Floorplan",
-    "screenshotName": "Verify_FloorPlan_DPV",
-    "testDescription": "Verify FloorPlan DPV",
-    "passed": true
-  },
-  {
-    "testSuite": "AgentHomePage",
-    "screenshotName": "Verify_Agent_Search_Page:_AbuDhabi_Loc",
-    "testDescription": "Verify Agent Search Page: Uae Loc",
+    "testSuite": "HomePage",
+    "screenshotName": "Verify_Homepage_Country_Switcher",
+    "testDescription": "Verify Homepage Country Switcher",
     "passed": false
   }
 ]

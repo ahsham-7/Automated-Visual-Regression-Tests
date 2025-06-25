@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="5" failures="5" errors="0" skipped="0">
+  <testsuite name="HomePage Suit" timestamp="2025-06-25T11:33:17" time="55.872" tests="5" failures="5" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="HomePage Suit"/>
+      <property name="capabilities" value="chrome.138_0_7204_49.mac"/>
+      <property name="file" value="file://./test/specs/HomePage.specs.js"/>
+    </properties>
+    <testcase classname="chrome.138_0_7204_49.mac.HomePage_Suit" name="TC1" time="32.907">
+      <failure message="Image differences detected"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/13857a23a44691a43d90f2da2af9acfc/window/maximize - {}
+COMMAND: POST /session/13857a23a44691a43d90f2da2af9acfc/window/rect - {"x":null,"y":null,"width":1920,"height":1080}
+RESULT: {}
+RESULT: {"x":null,"y":null,"width":1920,"height":1080}
+COMMAND: GET /session/13857a23a44691a43d90f2da2af9acfc/window/rect - {}
+RESULT: {}
+COMMAND: GET /session/13857a23a44691a43d90f2da2af9acfc/screenshot - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/13857a23a44691a43d90f2da2af9acfc/window/maximize - {}
+COMMAND: POST /session/13857a23a44691a43d90f2da2af9acfc/window/rect - {"x":null,"y":null,"width":1920,"height":1080}
+RESULT: {}
+RESULT: {"x":null,"y":null,"width":1920,"height":1080}
+COMMAND: GET /session/13857a23a44691a43d90f2da2af9acfc/window/rect - {}
+RESULT: {}
+COMMAND: GET /session/13857a23a44691a43d90f2da2af9acfc/element/f.14F0104AAEE852B04DBDA23568B346E1.d.77FA415B94077500888635F71923D29F.e.3/css/display - {}
+RESULT: {}
+COMMAND: POST /session/13857a23a44691a43d90f2da2af9acfc/element/f.14F0104AAEE852B04DBDA23568B346E1.d.77FA415B94077500888635F71923D29F.e.3/clear - {}
+RESULT: {}
+COMMAND: POST /session/13857a23a44691a43d90f2da2af9acfc/element/f.14F0104AAEE852B04DBDA23568B346E1.d.77FA415B94077500888635F71923D29F.e.3/value - {"text":"sl"}
+RESULT: {"text":"sl"}
+COMMAND: POST /session/13857a23a44691a43d90f2da2af9acfc/element/f.14F0104AAEE852B04DBDA23568B346E1.d.77FA415B94077500888635F71923D29F.e.4/clear - {}
+RESULT: {}
+COMMAND: POST /session/13857a23a44691a43d90f2da2af9acfc/element/f.14F0104AAEE852B04DBDA23568B346E1.d.77FA415B94077500888635F71923D29F.e.4/value - {"text":"getin1"}
+RESULT: {"text":"getin1"}
+COMMAND: POST /session/13857a23a44691a43d90f2da2af9acfc/element/f.14F0104AAEE852B04DBDA23568B346E1.d.77FA415B94077500888635F71923D29F.e.5/click - {}
+RESULT: {}
+COMMAND: GET /session/13857a23a44691a43d90f2da2af9acfc/screenshot - {}
+RESULT: {}
+RESULT: undefined
+]]></system-out>
+      <system-err><![CDATA[
+Error: Image differences detected
+    at HomePage.compareEnvironments (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:158:15)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/HomePage.specs.js:15:9)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.138_0_7204_49.mac.HomePage_Suit" name="TC2" time="5.028">
+      <failure message="homePage is not defined"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/13857a23a44691a43d90f2da2af9acfc/window/maximize - {}
+COMMAND: POST /session/13857a23a44691a43d90f2da2af9acfc/window/rect - {"x":null,"y":null,"width":1920,"height":1080}
+RESULT: {}
+RESULT: {"x":null,"y":null,"width":1920,"height":1080}
+COMMAND: GET /session/13857a23a44691a43d90f2da2af9acfc/window/rect - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+ReferenceError: homePage is not defined
+    at file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/HomePage.specs.js:32:25
+    at HomePage.compareEnvironments (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:123:27)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/HomePage.specs.js:26:9)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.138_0_7204_49.mac.HomePage_Suit" name="TC3" time="4.856">
+      <failure message="homePage is not defined"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/13857a23a44691a43d90f2da2af9acfc/window/maximize - {}
+COMMAND: POST /session/13857a23a44691a43d90f2da2af9acfc/window/rect - {"x":null,"y":null,"width":1920,"height":1080}
+RESULT: {}
+RESULT: {"x":null,"y":null,"width":1920,"height":1080}
+COMMAND: GET /session/13857a23a44691a43d90f2da2af9acfc/window/rect - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+ReferenceError: homePage is not defined
+    at file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/HomePage.specs.js:44:25
+    at HomePage.compareEnvironments (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:123:27)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/HomePage.specs.js:38:9)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.138_0_7204_49.mac.HomePage_Suit" name="TC4" time="5.277">
+      <failure message="homePage is not defined"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/13857a23a44691a43d90f2da2af9acfc/window/maximize - {}
+COMMAND: POST /session/13857a23a44691a43d90f2da2af9acfc/window/rect - {"x":null,"y":null,"width":1920,"height":1080}
+RESULT: {}
+RESULT: {"x":null,"y":null,"width":1920,"height":1080}
+COMMAND: GET /session/13857a23a44691a43d90f2da2af9acfc/window/rect - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+ReferenceError: homePage is not defined
+    at file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/HomePage.specs.js:56:25
+    at HomePage.compareEnvironments (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:123:27)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/HomePage.specs.js:50:9)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.138_0_7204_49.mac.HomePage_Suit" name="TC5" time="7.793">
+      <failure message="homePage is not defined"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/13857a23a44691a43d90f2da2af9acfc/window/maximize - {}
+COMMAND: POST /session/13857a23a44691a43d90f2da2af9acfc/window/rect - {"x":null,"y":null,"width":1920,"height":1080}
+RESULT: {}
+RESULT: {"x":null,"y":null,"width":1920,"height":1080}
+COMMAND: GET /session/13857a23a44691a43d90f2da2af9acfc/window/rect - {}
+RESULT: {}
+COMMAND: DELETE /session/13857a23a44691a43d90f2da2af9acfc - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+ReferenceError: homePage is not defined
+    at file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/HomePage.specs.js:68:25
+    at HomePage.compareEnvironments (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/pageobjects/page.js:123:27)
+    at async Context.<anonymous> (file:///Users/ahshamkhan/Desktop/Webdriver.io/Automated-Visual-Regression-Tests/test/specs/HomePage.specs.js:62:9)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>
