@@ -33,24 +33,11 @@ class HomePage extends Page{
     get ChatGptTab(){
         return $('//button[@aria-label="BayutGPT button"]')
     }
+    get NewProjectsTab(){
+        return $('//button[@aria-label="New Projects"]')
+    }
 
     
-    async SaveShot(name){
-        await browser.saveScreen(`${name}`, {})
-   }
-   async CompareShot(name){
-        await expect(
-             await browser.checkScreen(`${name}`, {
-        })).toEqual(0)
-   } 
-   async waitforElementDisplay(x,y){
-    await browser.waitUntil(async()=> {
-      return (await y.isDisplayed())
-    }, {
-      timeout: x,
-    })}
-    // async waitExistence(element,time){
-    //     await browser.waitForExist(element,time);
-    // }
 }
+
 export default new HomePage();

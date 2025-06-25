@@ -113,23 +113,33 @@ export default class Page {
 async compareEnvironments(testSuite, screenshotName, testDescription, prodUrl, stageUrl, pageAction = null) {
     // Step 1: Open Production and save baseline
     await this.openProduction(prodUrl, true);
-    await browser.setWindowSize(1920, 1080); // Ensure resolution
+    await browser.setWindowSize(1920, 1080);
+    await browser.pause(1000); // Allow resize to stabilize
+    const prodSize = await browser.getWindowSize();
+    console.log('📏 Production window size:', prodSize);
+
     await this.waitForPageToLoad_SimpleCompare();
 
     if (pageAction) await pageAction();
     await browser.pause(1000);
 
+    console.log('📸 Saving baseline from Production...');
     await browser.saveScreen(`${testSuite}/${screenshotName}`);
 
-    // Step 2: Open Staging and compare
+    // Step 2: Open Staging and capture actual
     await this.openStage(stageUrl, true);
-    await browser.setWindowSize(1920, 1080); // Ensure resolution
+    await browser.setWindowSize(1920, 1080);
+    await browser.pause(1000); // Allow resize to stabilize
+    const stageSize = await browser.getWindowSize();
+    console.log('📏 Staging window size:', stageSize);
+
     await this.waitForPageToLoad_SimpleCompare();
     await this.conditionalLogin_SimpleCompare();
 
     if (pageAction) await pageAction();
     await browser.pause(2000);
 
+    console.log('📸 Checking screen on Staging...');
     const result = await browser.checkScreen(`${testSuite}/${screenshotName}`);
     const passed = result === 0;
 
@@ -144,9 +154,13 @@ async compareEnvironments(testSuite, screenshotName, testDescription, prodUrl, s
     });
 
     if (!passed) {
+        console.log(`❌ Visual mismatch detected.`);
         throw new Error('Image differences detected');
+    } else {
+        console.log('✅ No visual differences detected.');
     }
 }
+
 
 
 
